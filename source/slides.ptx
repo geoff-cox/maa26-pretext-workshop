@@ -5,8 +5,8 @@
 	<docinfo/>
 
 	<slideshow>
-		<title>Designing a Student-Centered Open Textbook</title>
-		<subtitle>JMM 2026, Washington DC</subtitle>
+		<title>PreTeXt Onboarding Workshop</title>
+		<subtitle>MAA 2026, Washington DC</subtitle>
 
 		<xi:include href="./frontmatter-slides.ptx" />
 
