@@ -24,8 +24,7 @@
 					<li>
 						<title>Presentation</title>
 						<p>
-							<line>▷ <url href="https://geoff-cox.github.io/debook-talk/talk/slides.html">Slides</url></line>
-							<line>▷ <url href="https://geoff-cox.github.io/matlab-course/ma310/frontmatter.html">Course Homepage</url></line>
+							<line>▷ <url href="https://geoff-cox.github.io/maa26-pretext-workshop/talk/slides.html">Slides</url></line>
 							<line>▷ <url href="https://runestone.academy/ns/books/published/debookrs/">Textbook (viewable - HTML)</url></line>
 							<line>▷ <url href="https://github.com/geoff-cox/debookrs">Textbook (source - GitHub)</url></line>
 						</p>
@@ -45,11 +44,6 @@
 							<line>▷ <url href="https://www.youtube.com/@RunestoneInteractive/playlists">Videos</url></line>
 					</li>
 
-					<li>
-						<title>Student Survey</title>
-							<line>▷ <url href="https://forms.office.com/r/gLb4rexa7x">Questions</url></line>
-							<!-- <line>▷ <url href="https://forms.office.com/Pages/DesignPageV2.aspx?prevorigin=shell&amp;origin=NeoPortalPage&amp;subpage=design&amp;id=4z1IZVEtrkChgq1uMCZB8ddSa3pknIFDmEUymlk3Pk9UNENTMllIT0VPSFVNME5CSkNTUzVEWjBUUi4u&amp;analysis=false&amp;topview=Presentation">Responses (<m>n = 6</m>)</url></line> -->
-					</li>
 				</dl>
 			</p>
 		</section>
