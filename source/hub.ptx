@@ -1,0 +1,1166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude">
+
+	<docinfo/>
+
+	<article>
+		<title>Designing a Student-Centered Open Textbook - JMM 2026</title>
+
+		<xi:include href="./frontmatter-hub.ptx" />
+
+		<section xml:id="resources-links">
+			<title>Resources &amp; Links</title>
+
+			<p>
+				<dl width="narrow">
+					<li>
+						<title>Contact</title>
+						<p>
+							<line>▷ <url href="mailto://coxgeoff@vmi.edu">Geoff: coxgeoff@vmi.edu</url></line>
+							<line>▷ <url href="mailto://pattersonba@vmi.edu">Blain: pattersonba@vmi.edu</url></line>
+						</p>
+					</li>
+					
+					<li>
+						<title>Presentation</title>
+						<p>
+							<line>▷ <url href="https://geoff-cox.github.io/debook-talk/talk/slides.html">Slides</url></line>
+							<line>▷ <url href="https://geoff-cox.github.io/matlab-course/ma310/frontmatter.html">Course Homepage</url></line>
+							<line>▷ <url href="https://runestone.academy/ns/books/published/debookrs/">Textbook (viewable - HTML)</url></line>
+							<line>▷ <url href="https://github.com/geoff-cox/debookrs">Textbook (source - GitHub)</url></line>
+						</p>
+					</li>
+
+					<li>
+						<title><pretext/></title>
+							<line>▷ <url href="https://pretextbook.org">Homepage</url></line>
+							<line>▷ <url href="https://runestone.academy/ns/books/published/debookrs/"><pretext/> Guide</url></line>
+							<line>▷ <url href="https://pretextbook.org/community.html">Help Forums</url></line>
+					</li>
+
+					<li>
+						<title>Runestone Academy</title>
+							<line>▷ <url href="https://runestone.academy/">Homepage</url></line>
+							<line>▷ <url href="https://guide.runestone.academy">Users Guide</url></line>
+							<line>▷ <url href="https://www.youtube.com/@RunestoneInteractive/playlists">Videos</url></line>
+					</li>
+
+					<li>
+						<title>Student Survey</title>
+							<line>▷ <url href="https://forms.office.com/r/gLb4rexa7x">Questions</url></line>
+							<!-- <line>▷ <url href="https://forms.office.com/Pages/DesignPageV2.aspx?prevorigin=shell&amp;origin=NeoPortalPage&amp;subpage=design&amp;id=4z1IZVEtrkChgq1uMCZB8ddSa3pknIFDmEUymlk3Pk9UNENTMllIT0VPSFVNME5CSkNTUzVEWjBUUi4u&amp;analysis=false&amp;topview=Presentation">Responses (<m>n = 6</m>)</url></line> -->
+					</li>
+				</dl>
+			</p>
+		</section>
+
+		<section xml:id="talk-demo-interactive-features">
+			<title>Interactive Features</title>
+
+			<subsection xml:id="talk-demo-third-party-apps">
+				<title>Third-Party Apps</title>
+
+				<introduction>
+					<p>
+						Embedded Interactives
+					</p>
+				</introduction>
+				
+				<subsubsection xml:id="talk-demo-geogebra">
+					<title>GeoGebra</title>
+					<interactive geogebra="KGn2d4Qd" width="100%" aspect="3:1" reset-icon="yes"/>
+				</subsubsection>
+
+				<subsubsection xml:id="talk-demo-desmos">
+					<title>Desmos</title>
+					<interactive desmos="ttox1bvxku" width="100%" aspect="2:1"/>
+				</subsubsection>
+
+				<subsubsection xml:id="talk-demo-google-maps">
+					<title>Google Maps</title>
+					<interactive iframe="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3692.286430663061!2d-77.02612656602201!3d38.90499299644047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b7ed3715b137%3A0x32771de147fa5350!2sWalter%20E.%20Washington%20Convention%20Center!5e0!3m2!1sen!2sus!4v1766949594608!5m2!1sen!2sus" width="95%" aspect="2:1"/>
+				</subsubsection>
+			</subsection>
+
+			<subsection xml:id="talk-demo-reading-questions">
+				<title>Reading Questions</title>
+
+				<subsection>
+					<title>✔ True/False</title>
+					
+					<exercise label="vector-space-dimension">
+						<title>True/False</title>
+						<statement correct="no">
+							<p>
+								Every vector space has finite dimension.
+							</p>
+						</statement>
+						<feedback>
+							<p>
+								The vector space of all polynomials with finite degree has a basis,
+								<m>B = \{1,x,x^2,x^3,\dots\}</m>, which is infinte.
+							</p>
+						</feedback>
+					</exercise>
+
+				</subsection>
+
+				<subsubsection>
+					<title>✔ Multiple-Choice</title>
+					
+					<exercise label="multiple-choice-not-randomized">
+						<title>Multiple-Choice, Not Randomized, One Answer</title>
+						<statement>
+							<p>What color is a stop sign?</p>
+						</statement>
+						<choices>
+							<choice>
+								<statement>
+									<p>Green</p>
+								</statement>
+								<feedback>
+									<p>Green means<q>go!</q>.</p>
+								</feedback>
+							</choice>
+							<choice correct="yes">
+								<statement>
+									<p>Red</p>
+								</statement>
+								<feedback>
+									<p>Red is universally used for prohibited activities or serious warnings.</p>
+								</feedback>
+							</choice>
+							<choice>
+								<statement>
+									<p>White</p>
+								</statement>
+								<feedback>
+									<p>White might be hard to see.</p>
+								</feedback>
+							</choice>
+						</choices>
+						<hint><p>What did you see last time you went driving?</p></hint>
+						<hint><p>Maybe go out for a drive?</p></hint>
+					</exercise>
+				</subsubsection>
+
+				<subsubsection>
+					<title>✔ Matching</title>
+
+					<exercise label="lt-common-transforms-prereading-questions-1"><title>Exponential Integration Rules</title>
+						<statement>
+							<p>
+								Match each function of <m>t</m> with its antiderivative. Assume <m>K</m> is a constant.
+							</p>
+						</statement>
+						<cardsort>
+							<match>
+								<premise><me>f(t) = \frac{K}{t}</me></premise>
+								<response><me>K\ln|t| + C</me></response>
+							</match>
+							<match>
+								<premise><me>g(t) = \frac{1}{K}</me></premise>
+								<response><me>\frac{t}{K} + C</me></response>
+							</match>
+							<match>
+								<premise><me>h(t) = e^{Kt}</me></premise>
+								<response><me>\frac{1}{K} e^{Kt} + C</me></response>
+							</match>
+							<match>
+								<premise><me>h(t) = e^{K}</me></premise>
+								<response><me>t e^{K} + C</me></response>
+							</match>
+							<match>
+								<premise><me>m(t) = \frac{t}{K}</me></premise>
+								<response><me>\frac{t^2}{2K} + C</me></response>
+							</match>
+							<match>
+								<response><me>\ln|K| + C</me></response>
+							</match>
+						</cardsort>
+					</exercise>
+				</subsubsection>
+
+				<subsubsection>
+					<title>✔ Clickable-Area</title>
+					
+					<exercise xml:id="lt-derivative-transfer-prereading-questions-2">
+						<title><e component="emoji">📖❓</e>  Integration by Parts</title>
+						<statement>
+							<p>Click on the correct integration by parts formula.</p>
+						</statement>
+						<areas>
+							<p><m>\vphantom{m}</m></p>
+							<sidebyside margins="10% 5%">
+								<p><area correct="no"> <m>\displaystyle \int u\ dv = u\ v + \int v\ du</m></area></p>
+								<p><area correct="no"> <m>\displaystyle \int u\ dv = u\ v - \int u\ dv</m></area></p>
+							</sidebyside>
+							<p><m>\vphantom{m}</m></p>
+							<sidebyside margins="10% 5%">
+								<p><area correct="yes"><m>\displaystyle \int u\ dv = u\ v - \int v\ du</m></area></p>
+								<p><area correct="no"> <m>\displaystyle \int u\ dv = u\ dv - \int v\ du</m></area></p>
+							</sidebyside>
+							<p><m>\vphantom{m}</m></p>
+						</areas>
+					</exercise>
+				</subsubsection>
+
+				<subsubsection>
+					<title>✔ Fill-in-the-Blank</title>
+					
+					<exercise label="ex-demo-jscmp-primes">
+					<title>Fill-In, Prime less then 20</title>
+					<statement>
+						<p>
+							What is an example of a prime number less than 20?
+							<fillin width="5" answer="13"/>
+						</p>
+					</statement>
+					<evaluation>
+						<evaluate>
+							<test correct="yes">
+								<jscmp><!-- test if number is in a list -->
+									[2, 3, 5, 7, 11, 13, 17, 19].includes(Number(ans))
+								</jscmp>
+								<feedback>
+									<p>
+										Any number from the list <m>\{2, 3, 5, 7, 11, 13, 17, 19\}</m> is a prime number less than 20.
+									</p>
+								</feedback>
+							</test>
+							<test>
+								<jscmp><!-- find why it fails to be in list -->
+									function(){
+										const val=Number(ans);
+										if (val &lt;= 0) { return "You need to give a positive integer." }
+										if (val &gt;= 20) { return "The integer must be less than 20." }
+										for (let i=2; i&lt;=3; i++) {
+										if (val % i == 0) { return `Your answer is composite since it is divisible by ${i}.` }
+									}
+									return false;
+									}()
+								</jscmp>
+							</test>
+						</evaluate>
+					</evaluation>
+					</exercise>
+				</subsubsection>
+
+				<subsubsection>
+					<title>✔ Interactive Coding</title>
+
+					<p>
+						See how the code below counts the number of digits in an integer.
+					</p>
+
+					<program label="partial-program-two" interactive="activecode" language="python">
+						<code>
+							num = 569
+							nDigits = 0
+							print(f"How many digits are in the integer {num}")
+							temp = num
+							while temp > 1:
+								temp = temp/10
+								nDigits = nDigits + 1
+								print(f"  temp={temp}")
+
+							print(f"{num} has {nDigits} digits")
+						</code>
+					</program>
+
+					<!-- <p>
+						If your book is on Runestone server, you can also include questions. Here is an example:
+						<url href="https://runestone.academy/ns/books/published/PTXSB/code-lens.html#program-codelens-python-questions">CodeLens with questions</url>.
+					</p> -->
+				</subsubsection>
+
+				<!-- <subsubsection>
+					<title>✔ Coding with Datasets</title>
+
+					<p>
+						You can import datasets as a csv, txt, or even hardcoded, like so:
+					</p>
+
+					<datafile label="file-global-climate-one" xml:id="file-global-climate-one" filename="ccdata1.txt" rows="18" cols="40" editable="yes" include-source="no">
+						<pre>
+						1850    -0.37     2.24E-7
+						1860    -0.34     3.94E-7
+						1870    -0.28     6.6E-7
+						1880    -0.24     1.10
+						1890    -0.42     1.72
+						1900    -0.20     2.38
+						1910    -0.49     3.34
+						1920    -0.25     4.01
+						1930    -0.14     4.53
+						1940    +0.01     5.50
+						1950    -0.17     6.63
+						1960    -0.05     10.5
+						1970    -0.03     16.0
+						1980    +0.09     20.3
+						1990    +0.30     22.6
+						2000    +0.29     24.9
+						2010    +0.56     32.7
+						2019    +0.74     33.3
+						</pre>
+					</datafile>
+
+					<p>
+						This data can be used in a code-block for coding and/or interaction. 
+					</p>
+
+					<program label="python-average-climate" xml:id="python-average-climate" interactive="activecode" language="python" include-source="no">
+						<code>
+							ccfile = open("ccdata1.txt", "r")
+
+							print("Years with increasing avg. temp")
+							print("YEAR  △ TEMP(°C)  CO2 (gigatons)")
+							for aline in ccfile:
+								values = aline.split()
+								if float(values[1]) > 0:
+									print(f"{values[0]}  {values[1]}        {values[2]}")
+
+							ccfile.close()
+						</code>
+					</program>
+
+				</subsubsection> -->
+
+			</subsection>
+
+			<subsection label="talk-demo-authored-interactives">
+				<title>Authored (Advanced)</title>
+
+				<subsubsection>
+					<title>DoenetML</title> -->
+					<p>
+						<interactive label="interactive-doenetml-example" platform="doenetml" width="100%">
+							<slate surface="doenetml">
+							&lt;p&gt; Adjust the vectors &lt;m&gt;\vec u&lt;/m&gt;, &lt;m&gt;\vec v&lt;/m&gt;, and &lt;m&gt;\vec w&lt;/m&gt; in the left graph to visualize the areas calculated by &lt;m&gt;\det[\vec u\hspace{0.5em}\vec w]&lt;/m&gt;, &lt;m&gt;\det[\vec v\hspace{0.5em}\vec w]&lt;/m&gt;, and &lt;m&gt;\det[\vec u+\vec v\hspace{0.5em}\vec w]&lt;/m&gt;. &lt;/p&gt;
+							&lt;setup&gt;
+							&lt;line through="(0,0) $v" name="vLine"/&gt;
+							&lt;math simplify="true" name="c"&gt;$cv.x/$v.x&lt;/math&gt;
+							&lt;/setup&gt;
+							&lt;sideBySide&gt;
+							&lt;graph xmin="-4" ymin="-4" xmax="16" ymax="16"&gt;
+							&lt;m draggable="false" anchor="(10,14)"&gt;
+							\det[\vec u\hspace{0.5em}\vec w],
+							\det[\vec v\hspace{0.5em}\vec w]
+							&lt;/m&gt;
+							&lt;point name="u" styleNumber="3"&gt;
+							(6,2)
+							&lt;label&gt;&lt;m&gt;\vec u&lt;/m&gt;&lt;/label&gt;
+							&lt;/point&gt;
+							&lt;point name="w" styleNumber="3"&gt;
+							(3,7)
+							&lt;label&gt;&lt;m&gt;\vec w&lt;/m&gt;&lt;/label&gt;
+							&lt;/point&gt;
+							&lt;point name="uPlusV" styleNumber="4"&gt;
+							(9,5)
+							&lt;label&gt;&lt;m&gt;\vec v&lt;/m&gt;&lt;/label&gt;
+							&lt;/point&gt;
+							&lt;polygon
+							vertices="(0,0) $u $u+$w $w"
+							filled="true"
+							draggable="false"
+							styleNumber="3"
+							/&gt;
+							&lt;polygon
+							vertices="$u $uPlusV $uPlusV+$w $u+$w"
+							filled="true"
+							draggable="false"
+							styleNumber="4"
+							/&gt;
+							&lt;lineSegment endpoints="(0,0) $uPlusV" styleNumber="6"/&gt;
+							&lt;lineSegment endpoints="$w $uPlusV+$w" styleNumber="6"/&gt;
+							&lt;/graph&gt;
+							&lt;graph xmin="-4" ymin="-4" xmax="16" ymax="16"&gt;
+							&lt;m draggable="false" anchor="(12,14)"&gt;
+							\det[\vec u+\vec v\hspace{0.5em}\vec w]
+							&lt;/m&gt;
+							&lt;polygon
+							vertices="(0,0) $uPlusV $uPlusV+$w $w"
+							filled="true"
+							draggable="false"
+							styleNumber="2"
+							/&gt;
+							&lt;point draggable="false" styleNumber="3"&gt;
+							$w
+							&lt;label&gt;&lt;m&gt;\vec w&lt;/m&gt;&lt;/label&gt;
+							&lt;/point&gt;
+							&lt;point draggable="false" styleNumber="4"&gt;
+							$uPlusV
+							&lt;label&gt;&lt;m&gt;\vec u+\vec v&lt;/m&gt;&lt;/label&gt;
+							&lt;/point&gt;
+							&lt;lineSegment endpoints="(0,0) $u" styleNumber="6"/&gt;
+							&lt;lineSegment endpoints="$u $uPlusV" styleNumber="6"/&gt;
+							&lt;lineSegment endpoints="$w $w+$u" styleNumber="6"/&gt;
+							&lt;lineSegment endpoints="$w+$u $w+$uPlusV" styleNumber="6"/&gt;
+							&lt;/graph&gt;
+							&lt;/sideBySide&gt;
+							</slate>
+						</interactive>
+					</p>
+				</subsubsection>
+
+				<subsubsection>
+					<title>JSXGraph</title>
+
+					<sidebyside widths="50% 50%">
+						<interactive xml:id="interactive-fermats-spiral" platform="jsxgraph" source="code/fermats-spiral.js">
+							<slate xml:id="jsxgraph-fermats-spiral" surface="jsxboard"/>
+						</interactive>
+
+						<interactive xml:id="interactive-bspline" platform="jsxgraph" source="code/bspline.js">
+							<slate xml:id="jsxgraph-bspline" surface="jsxboard"/>
+						</interactive>
+					</sidebyside>
+
+					<interactive xml:id="interactive-infinity" platform="jsxgraph" width="100%" source="code/infinity.js">
+						<slate xml:id="jsxgraph-infinity" surface="jsxboard" aspect="1:1"/>
+					</interactive>
+				</subsubsection>
+
+			</subsection>
+		
+		</section>
+
+		<section xml:id="textbook-highlights">
+			<title>Textbook Highlights</title>
+			
+			<p>
+				Talk highlight links:
+				<ul>
+					<li><url href="https://runestone.academy/ns/books/published/debookrs/connection-to-alg-calc.html">Audio</url></li>
+					<li><url href="https://runestone.academy/ns/books/published/debookrs/class-problems-main.html">Multi-part Questions (prob 2)</url></li>
+					<li><url href="https://runestone.academy/ns/books/published/debookrs/visualizing-solutions.html">Interactive Visualization</url></li>
+					<li><url href="https://runestone.academy/ns/books/published/debookrs/autonomous-eqns.html">Tikz</url></li>
+					<li><url href="https://runestone.academy/ns/books/published/debookrs/chpt-laplace-transform-method.html">Slide Show</url></li>
+					<li><url href="https://runestone.academy/ns/books/published/debookrs/unit-step-functions.html#def-windowed-unit-step">More Vizualization</url></li>
+				</ul>
+			</p>
+		</section>
+
+		<section xml:id="getting-started-w-pretext">
+			<title><pretext /> Setup Guide</title>
+
+			<subsection xml:id="workspace-setup">
+				<title>Workspace Setup</title>
+				<p>
+					The quickest and easiest way to get started with <pretext /> is through GitHub.
+					Using a GitHub Codespace means you don't need to install anything locally —
+					everything runs in your browser with all dependencies preconfigured.
+					Here's how to set it up:
+				</p>
+
+				<p>
+					<dl>
+						<li>
+							<title>Create a GitHub Account</title>
+							<p>
+								<ol>
+									<li>Go to <url href="https://github.com">GitHub</url>.</li>
+									<li>Create an account (it's free for individual users).</li>
+								</ol>
+							</p>
+						</li>
+
+						<li>
+							<title>Import the <pretext /> Codespace Template</title>
+							<p>
+								<ol>
+									<li>Visit the official <url href="https://github.com/PreTeXtBook/pretext-codespace"><pretext /> Codespace</url> repository on GitHub.</li>
+									<li>
+										<p>
+											<sidebyside widths="12% 38% 2% 24% 24%">
+												<p>Click</p>
+												<p><image width="100%" source="use-this-template.png"/></p>
+												<p/>
+												<p>and choose</p>
+												<p/>
+											</sidebyside>
+											<q>Create a New Repository</q>.
+										</p>
+									</li>
+									<li>
+										<p>
+											In the new window, fill in:
+											<ul>
+												<li><c>Repository name</c></li>
+												<li><c>Description</c> — optional.</li>
+												<li><c>Visibility</c> — choose <q>Public</q> or <q>Private</q>.</li>
+											</ul>
+											Then click <q>Create repository</q>.
+											GitHub will copy the official <pretext /> codespace into your account as a new repo.
+										</p>
+									</li>
+								</ol>
+							</p>
+						</li>
+
+						<li>
+							<title>Start Your Codespace</title>
+							<p>
+								<ol>
+									<li>If you weren't automatically redirected, go to your GitHub account and open the new repository you just created.</li>
+									<li>
+										<p>
+											<sidebyside widths="12% 18% 2% 68% 0%">
+												<p>Click</p>
+												<p><image width="100%" source="code-button.png"/></p>
+												<p/>
+												<p>and open the <q>Codespaces</q> tab.</p>
+												<p/>
+											</sidebyside>
+										</p>
+									</li>
+									<li>
+										<p>
+											<sidebyside widths="35% 48% 17%">
+												<p>In this tab, click</p>
+												<p><image width="100%" source="create-codespace.png"/></p>
+												<p/>
+											</sidebyside>
+										</p>
+									</li>
+									<li>
+										The Codespace will begin setting up. This may take a few minutes the first time.
+										When complete, you'll have a fully functional <pretext /> workspace running in your browser.
+									</li>
+								</ol>
+							</p>
+						</li>
+					</dl>
+				</p>
+			</subsection>
+
+			<subsection xml:id="minimal-project">
+				<title>A Minimal Project</title>
+
+				<introduction>
+					<p>
+						Once your Codespace loads, it'll will look like so: 
+					</p>
+
+					<image source="fresh-codespace.png"/>
+
+					<p>
+						It's ready for <pretext/>, but it needs a few files first. If you click on the <c>README.md</c> and scroll down to <q>Creating a New Project</q>, you'll find some directions for initiating a <pretext/> project.
+					</p>
+				</introduction>
+
+				<subsection>
+					<title>Creating a New Book</title>
+						
+					<p>
+						<dl>
+							<li>
+								<title>Creating a New <pretext/> Project</title>
+								<p>
+									<ol>
+										<li>Hit <c>F1</c> to open the command palette.</li>
+										<li>Type <q>pretext</q>.</li>
+										<li>Scroll down and select <q><pretext/>: New Project</q>.</li>
+										<li>Select the type of document you want to create. For this demo, we'll choose <c>book</c>.</li>
+										<li>Select the location of your project, but the default should be the one you want.</li>
+									</ol>
+								</p>
+							</li>
+						</dl>
+					</p>
+
+					<p>
+						Completing these steps will populate your codespace with all the files you need to author in <pretext />. In fact, it also provides a template that build right-away.
+					</p>
+
+					<image source="new-book.png"/>
+				</subsection>
+
+				<subsection>
+					<title>Your First Build</title>
+					<p>
+						<dl>
+							<li>
+								<title>Building A <pretext/> Book</title>
+								<p>
+									<ol>
+										<li>
+											<p>
+												Locate the <c>▷ PreTeXt</c> button on the bottom tool bar.
+												<sidebyside>
+													<p><image width="100%" source="pretext-button.png"/></p>
+												</sidebyside>
+											</p>
+										</li>
+										<li>To build the book, select <q>Build default target</q>.</li>
+										<li>The default is the <c>html</c> version of the book. Let's also build a <c>pdf</c> version of the book as well.</li>
+										<li>Click on the <c>▷ PreTeXt</c> button and select <q>Build Another Target</q> followed by the <q>print</q> option.</li>
+										<li>The results of both of these builds should now be in the <c>output</c> folder.</li>
+									</ol>
+								</p>
+							</li>
+						</dl>
+					</p>
+				</subsection>
+
+				<subsection>
+					<title>Viewing the Output</title>
+					<p>
+						<dl>
+							<li>
+								<title>Viewing A <pretext/> Book</title>
+								<p>
+									<ol>
+										<li>Now, we can view both the <c>html</c> and <c>pdf</c> version of the template book.</li>
+										<li>To view them, click on the <c>▷ PreTeXt</c> button again and select <q>View Full Document</q> then choose either the <q>web</q> or <q>print</q> option.</li>
+										<li>In either case, a new broswer window should open. If the <c>html</c> doesn't display in the broswer, try refreshing the page.</li>
+									</ol>
+								</p>
+							</li>
+						</dl>
+					</p>
+				</subsection>
+			</subsection>
+		
+			<subsection xml:id="having-a-look-around">
+				<title>Having A Look Around</title>
+				<p>
+					Once your Codespace loads, you'll see a ready-to-use <pretext /> project folder.
+					You could begin writing immediately, but before doing so it's helpful to understand
+					the structure and purpose of the key folders and files.
+				</p>
+
+				<assemblage>
+					<title>Notable Folders &amp; Files</title>
+					<p>
+						<dl>
+							<li>
+								<title><c>source</c></title>
+								<p>
+									This folder contains your <pretext /> document files. Typically separated by chapter or section, plus a <c>main.ptx</c> file, which pulls them together.
+								</p>
+							</li>
+
+							<li>
+								<title><c>output</c></title>
+								<p>
+									The <c>output</c> folder is automatically generated when you build your project and contains the final product, ready to view or publish.
+									You don't edit anything here.
+								</p>
+							</li>
+
+							<li>
+								<title><c>assets</c></title>
+								<p>
+									A general-purpose folder for supporting materials like images, data files, videos, etc. When you reference these in your source, <pretext /> includes them automatically.
+								</p>
+							</li>
+						</dl>
+					</p>
+				
+					<p>
+						<dl>
+							<li>
+								<title><c>project.ptx</c></title>
+								<p>
+									The central configuration file that describes your entire project. This is where you specify the formats you want to generate and what files are needed to build them.
+								</p>
+							</li>
+
+							<li>
+								<title><c>main.ptx</c></title>
+								<p>
+									The entry point of your <pretext/> document that ties together all chapters or sections. It's like the <q>table of contents</q> of your project.
+								</p>
+							</li>
+
+							<li>
+								<title><c>publication.ptx</c></title>
+								<p>
+									This settings file that contains all the visual knobs for customizing the output of your documents.
+								</p>
+							</li>
+						</dl>
+					</p>
+				</assemblage>
+			</subsection>
+		</section>
+
+		<section>
+			<title>Student Feedback Survey</title>
+
+			<subsection>
+				<title>Purpose and Consent</title>
+
+				<p>
+					This survey gathers feedback on your experience using an interactive
+					differential equations textbook. The goal is to understand how
+					interactive reading questions and other features influence student
+					learning and engagement.
+				</p>
+
+				<p>
+					Your participation is completely voluntary. You may skip any question
+					or stop at any time. Responses are collected anonymously, and no
+					identifying information will be shared or published.
+				</p>
+
+				<p>
+					Aggregated results may be used for educational research, presentations,
+					and peer-reviewed publication to improve interactive learning design.
+				</p>
+
+				<p>
+					Estimated time to complete this survey is five to ten minutes. By
+					proceeding, you indicate that you are at least eighteen years old and
+					consent to participate in this study.
+				</p>
+			</subsection>
+
+			<exercises>
+				<title>Background Information</title>
+
+				<exercise>
+					<title>What is your major?</title>
+					<statement>
+						<p></p>
+					</statement>
+					<choices>
+						<choice><statement><p>Applied Mathematics</p></statement></choice>
+						<choice><statement><p>Physics</p></statement></choice>
+						<choice><statement><p>Engineering</p></statement></choice>
+						<choice><statement><p>Other</p></statement></choice>
+					</choices>
+				</exercise>
+
+				<exercise>
+					<title>What is your class standing?</title>
+					<statement>
+						<p></p>
+					</statement>
+					<choices>
+						<choice><statement><p>Freshman</p></statement></choice>
+						<choice><statement><p>Sophomore</p></statement></choice>
+						<choice><statement><p>Junior</p></statement></choice>
+						<choice><statement><p>Senior</p></statement></choice>
+					</choices>
+				</exercise>
+
+				<exercise>
+					<title>Is this your first time taking a differential equations course?</title>
+					<statement>
+						<p></p>
+					</statement>
+					<choices>
+						<choice><statement><p>Yes</p></statement></choice>
+						<choice><statement><p>No</p></statement></choice>
+					</choices>
+				</exercise>
+
+				<exercise>
+					<title>Have you used an interactive textbook in any course before?</title>
+					<statement>
+						<p></p>
+					</statement>
+					<choices>
+						<choice><statement><p>Yes</p></statement></choice>
+						<choice><statement><p>No</p></statement></choice>
+					</choices>
+				</exercise>
+
+				<exercise>
+					<title>How do you primarily access this textbook?</title>
+					<statement>
+						<p></p>
+					</statement>
+					<choices>
+						<choice><statement><p>Laptop</p></statement></choice>
+						<choice><statement><p>Desktop</p></statement></choice>
+						<choice><statement><p>Tablet</p></statement></choice>
+						<choice><statement><p>Phone</p></statement></choice>
+						<choice><statement><p>Other</p></statement></choice>
+					</choices>
+				</exercise>
+			</exercises>
+
+			<exercises>
+				<title>Engagement and Usage</title>
+
+				<exercise>
+					<title>How often do you use the interactive reading questions?</title>
+					<statement>
+						<p></p>
+					</statement>
+					<choices>
+						<choice><statement><p>Never</p></statement></choice>
+						<choice><statement><p>Rarely</p></statement></choice>
+						<choice><statement><p>Occasionally</p></statement></choice>
+						<choice><statement><p>Frequently</p></statement></choice>
+						<choice><statement><p>Always</p></statement></choice>
+					</choices>
+				</exercise>
+
+				<exercise>
+					<title>Indicate how often you do the following when using the interactive reading questions</title>
+					<statement>
+						<p>
+							(0=Never, 1=Rarely, 2=Occasionally, 3=Often, 4=Always)
+							<tabular valign="top" top="minor" bottom="minor" left="minor">
+								<col halign="left"/>
+								<col halign="center"/>
+								<col halign="center"/>
+								<col halign="center"/>
+								<col halign="center"/>
+								<col halign="center" right="minor"/>
+								<row>
+									<cell>You answer the reading questions seriously.</cell>
+									<cell>0</cell><cell>1</cell><cell>2</cell><cell>3</cell><cell>4</cell>
+								</row>
+								<row>
+									<cell>You review the feedback explanations after answering.</cell>
+									<cell>0</cell><cell>1</cell><cell>2</cell><cell>3</cell><cell>4</cell>
+								</row>
+								<row>
+									<cell>
+										Even when your answer is correct, you select the other answer
+										choices to read the feedback.
+									</cell>
+									<cell>0</cell><cell>1</cell><cell>2</cell><cell>3</cell><cell>4</cell>
+								</row>
+							</tabular>
+						</p>
+					</statement>
+				</exercise>
+
+				<exercise>
+					<title>How helpful are each of the following question types for your learning?</title>
+					<statement>
+						<p>
+							<tabular top="minor" bottom="minor" left="minor">
+								<col width="30%" halign="left"/>
+								<col halign="center"/>
+								<col halign="center"/>
+								<col halign="center"/>
+								<col halign="center"/>
+								<col halign="center" right="minor"/>
+								<row>
+									<cell><m></m></cell>
+									<cell>Don't know</cell>
+									<cell>Not helpful</cell>
+									<cell>Somewhat helpful</cell>
+									<cell>Helpful</cell>
+									<cell>Very helpful</cell>
+								</row>
+								<row>
+									<cell><m>\textbf{True–False}</m></cell>
+									<cell> 〇 </cell><cell> 〇 </cell><cell> 〇 </cell><cell> 〇 </cell><cell> 〇 </cell>
+								</row>
+								<row>
+									<cell><m>\textbf{Multiple-Choice}</m></cell>
+									<cell> 〇 </cell><cell> 〇 </cell><cell> 〇 </cell><cell> 〇 </cell><cell> 〇 </cell>
+								</row>
+								<row>
+									<cell><m>\textbf{Matching}</m></cell>
+									<cell> 〇 </cell><cell> 〇 </cell><cell> 〇 </cell><cell> 〇 </cell><cell> 〇 </cell>
+								</row>
+								<row>
+									<cell><m>\textbf{Fill-in-the-blank}</m></cell>
+									<cell> 〇 </cell><cell> 〇 </cell><cell> 〇 </cell><cell> 〇 </cell><cell> 〇 </cell>
+								</row>
+								<row>
+									<cell><m>\textbf{Click-on selection}</m></cell>
+									<cell> 〇 </cell><cell> 〇 </cell><cell> 〇 </cell><cell> 〇 </cell><cell> 〇 </cell>
+								</row>
+							</tabular>
+						</p>
+					</statement>
+
+
+				</exercise>
+
+				<exercise>
+					<title>About how many hours per week do you spend using the interactive textbook?</title>
+					<statement>
+						<p>
+							Please enter the amount of hours as a number = <fillin mode="string" answer="" width="2"/>
+						</p>
+					</statement>
+					
+					<evaluation>
+						<evaluate>
+							<test>
+								<strcmp>.*</strcmp>
+								<feedback><p>Your answer has been recorded.</p></feedback>
+							</test>
+						</evaluate>
+					</evaluation>
+				</exercise>
+			</exercises>
+
+			<exercises>
+				<title>Learning Experience</title>
+
+				<exercise>
+					<title>Please rate how much you agree with each statement</title>
+					<statement>
+						<p>
+							<tabular valign="top" top="minor" bottom="minor" left="minor">
+								<col width="10%" halign="left"/>
+								<col halign="center"/>
+								<col halign="center"/>
+								<col halign="center"/>
+								<col halign="center"/>
+								<col halign="center" right="minor"/>
+								<row>
+									<cell/>
+									<cell colspan="2"><p>Disagree</p></cell>
+									<cell><p>Neutral</p></cell>
+									<cell colspan="2"><p>Agree</p></cell>
+								</row>
+								<row>
+									<cell>
+										<p>
+										The interactive features help me understand differential equations
+										better.</p>
+									</cell>
+									<cell><p>〇</p></cell> <cell><p>〇</p></cell> <cell><p>〇</p></cell> <cell><p>〇</p></cell> <cell><p>〇</p></cell>
+								</row>
+								<row>
+									<cell>
+										I retain concepts better using the interactive textbook.
+									</cell>
+									<cell><p>〇</p></cell> <cell><p>〇</p></cell> <cell><p>〇</p></cell> <cell><p>〇</p></cell> <cell><p>〇</p></cell>
+								</row>
+								<row>
+									<cell>
+										The textbook helps me apply concepts to problem solving.
+									</cell>
+									<cell><p>〇</p></cell> <cell><p>〇</p></cell> <cell><p>〇</p></cell> <cell><p>〇</p></cell> <cell><p>〇</p></cell>
+								</row>
+								<row>
+									<cell>
+										The interactive features make abstract concepts more concrete.
+									</cell>
+									<cell><p>〇</p></cell> <cell><p>〇</p></cell> <cell><p>〇</p></cell> <cell><p>〇</p></cell> <cell><p>〇</p></cell>
+								</row>
+								<row>
+									<cell>
+										The interactive questions help me identify what I do not
+										understand.
+									</cell>
+									<cell><p>〇</p></cell> <cell><p>〇</p></cell> <cell><p>〇</p></cell> <cell><p>〇</p></cell> <cell><p>〇</p></cell>
+								</row>
+								<row>
+									<cell>
+										The interactive features sometimes distract me from the main
+										ideas.
+									</cell>
+									<cell><p>〇</p></cell> <cell><p>〇</p></cell> <cell><p>〇</p></cell> <cell><p>〇</p></cell> <cell><p>〇</p></cell>
+								</row>
+								<row>
+									<cell>
+										The interactive textbook encourages me to persist when I get an
+										answer wrong.
+									</cell>
+									<cell><p>〇</p></cell> <cell><p>〇</p></cell> <cell><p>〇</p></cell> <cell><p>〇</p></cell> <cell><p>〇</p></cell>
+								</row>
+								<row>
+									<cell>
+										The textbook is accessible and works well with my device or screen
+										reader.
+									</cell>
+									<cell><p>〇</p></cell> <cell><p>〇</p></cell> <cell><p>〇</p></cell> <cell><p>〇</p></cell> <cell><p>〇</p></cell>
+								</row>
+							</tabular>
+						</p>
+					</statement>
+
+
+				</exercise>
+			</exercises>
+
+			<exercises>
+				<title>Comparison and Perception</title>
+
+				<exercise>
+					<title>Compared to a traditional textbook, how would you rate this interactive textbook on the following aspects?</title>
+					<statement>
+						<p>
+							<tabular valign="top" top="minor" bottom="minor" left="minor">
+								<col width="10%" halign="left"/>
+								<col halign="center"/>
+								<col halign="center"/>
+								<col halign="center"/>
+								<col halign="center"/>
+								<col halign="center" right="minor"/>
+								<row>
+									<cell/>
+									<cell colspan="2"><p>Traditional Better</p></cell>
+									<cell><p>Neutral</p></cell>
+									<cell colspan="2"><p>Interactive Better</p></cell>
+								</row>
+								<row>
+									<cell>Overall learning experience</cell>
+									<cell><p>〇</p></cell> <cell><p>〇</p></cell> <cell><p>〇</p></cell> <cell><p>〇</p></cell> <cell><p>〇</p></cell>
+								</row>
+								<row>
+									<cell>Concept understanding</cell>
+									<cell><p>〇</p></cell> <cell><p>〇</p></cell> <cell><p>〇</p></cell> <cell><p>〇</p></cell> <cell><p>〇</p></cell>
+								</row>
+								<row>
+									<cell>Problem-solving support</cell>
+									<cell><p>〇</p></cell> <cell><p>〇</p></cell> <cell><p>〇</p></cell> <cell><p>〇</p></cell> <cell><p>〇</p></cell>
+								</row>
+								<row>
+									<cell>Motivation to learn</cell>
+									<cell><p>〇</p></cell> <cell><p>〇</p></cell> <cell><p>〇</p></cell> <cell><p>〇</p></cell> <cell><p>〇</p></cell>
+								</row>
+							</tabular>
+						</p>
+					</statement>
+
+
+				</exercise>
+
+				<exercise>
+					<title>How likely are you to recommend this interactive textbook to another student learning differential equations?</title>
+					<statement>
+						<p>
+							Please respond on a scale from zero (not at all likely) to ten
+							(extremely likely).
+						</p>
+					</statement>
+				</exercise>
+			</exercises>
+
+			<exercises>
+				<title>Open-Ended Reflection</title>
+
+				<exercise>
+					<title>Describe one moment when an interactive reading question helped a concept click for you</title>
+					<statement>
+						<p>
+							
+						</p>
+					</statement>
+					<response/>
+				</exercise>
+
+				<exercise>
+					<title>If you could improve one aspect of the interactive textbook (content, visuals, navigation, or feedback), what would it be and why?</title>
+					<statement>
+						<p>
+							
+						</p>
+					</statement>
+					<response/>
+				</exercise>
+			</exercises>
+
+		</section>
+
+		<!-- <section>
+			<title>Your First Build</title>
+
+			<p>
+				Now that you've explored the workspace, it's time to build your first <pretext /> document.
+				The template repository already includes a complete working example, so you can test the build process immediately.
+			</p>
+
+			<assemblage>
+				<title>Building the Web Version</title>
+				<p>
+					<ol>
+						<li>In your Codespace, open the integrated terminal (at the bottom of the editor).</li>
+						<li>
+							Type the following command and press <kbd>Enter</kbd>:
+							<codeblock>pretext build web</codeblock>
+						</li>
+						<li>
+							<p>
+								The build process will begin. You'll see messages as <pretext /> processes your source files, applies templates,
+								and generates HTML in the <c>output/web</c> folder.
+							</p>
+						</li>
+						<li>
+							When the build completes, you'll see a message indicating success.
+							The generated files can be previewed directly in the browser.
+						</li>
+					</ol>
+				</p>
+
+				<p>
+					This command produces a full-featured, navigable website with automatic numbering, cross-references, and MathJax-rendered equations.
+				</p>
+			</assemblage>
+
+			<assemblage>
+				<title>Previewing Your Output</title>
+				<p>
+					<ol>
+						<li>In the Codespace file explorer, expand the <c>output</c> folder.</li>
+						<li>Open the <c>web</c> subfolder, then right-click on <c>index.html</c>.</li>
+						<li>Choose <q>Preview</q> → <q>Preview in Editor</q> to view it directly inside your Codespace tab, or select <q>Open in Browser</q> for a full window view.</li>
+					</ol>
+				</p>
+
+				<p>
+					You should now see a professional, interactive web page version of your document complete with a table of contents, equations, and styled sections.
+				</p>
+			</assemblage>
+
+			<assemblage>
+				<title>Building a PDF (Optional)</title>
+				<p>
+					<ol>
+						<li>To generate a PDF version, use the following command:</li>
+						<codeblock>pretext build pdf</codeblock>
+						<li>
+							<p>
+								This will run a LaTeX-based build to produce a typeset PDF.
+								The result will appear in <c>output/pdf/</c>.
+							</p>
+						</li>
+					</ol>
+				</p>
+
+				<p>
+					The PDF build may take a bit longer, especially the first time it downloads LaTeX packages.
+				</p>
+			</assemblage>
+
+			<assemblage>
+				<title>What's Happening Behind the Scenes</title>
+				<p>
+					When you run a build, <pretext /> uses your <c>publication.ptx</c> file to decide:
+					<ul>
+						<li>Which outputs to generate (HTML, PDF, EPUB, etc.)</li>
+						<li>How to apply templates, styling, and metadata</li>
+						<li>Where to place the results (usually in <c>output/&lt;format&gt;/</c>)</li>
+					</ul>
+				</p>
+
+				<p>
+					Because everything is defined structurally rather than visually, your math, examples, and exercises automatically appear with consistent numbering and styling across all outputs.
+				</p>
+			</assemblage>
+
+			<assemblage>
+				<title>Quick Recap</title>
+				<ul>
+					<li><code>pretext build web</code> — generates a navigable HTML version of your document.</li>
+					<li><code>pretext build pdf</code> — creates a typeset print version (optional).</li>
+					<li>Outputs appear inside the <c>output/</c> folder — no manual file management required.</li>
+					<li>All formatting, numbering, and linking are handled automatically by <pretext />.</li>
+				</ul>
+
+				<p>
+					You now have a working build process and a functional document. 
+					In the next section, we'll explore how to edit content and customize your project.
+				</p>
+			</assemblage>
+		</section> -->
+
+	</article>
+
+</pretext>

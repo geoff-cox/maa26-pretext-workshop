@@ -1,0 +1,7 @@
+/.cache
+/.error_schema.log
+/.vscode
+/generated-assets
+/logs
+/output
+/pretext-venv

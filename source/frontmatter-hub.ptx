@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<frontmatter>
+	<bibinfo>
+		<author>
+			<personname>HUB: <url href="https://geoff-cox.github.io/debook-talk/hub/">geoff-cox.github.io/debook-talk/hub/</url></personname>
+			<department>Applied Mathematics @ </department>
+			<institution>Virginia Military Institute</institution>
+		</author>
+		<date><today/></date>
+	</bibinfo>
+	
+	<titlepage>
+		<titlepage-items/>
+	</titlepage>
+
+	<abstract>
+		<p>
+			Ordinary differential equations (ODEs) form a gateway course for many STEM majors, yet students often encounter steep conceptual and technical barriers when transitioning from calculus to differential equations. This talk presents a case study in rethinking ODE pedagogy through the development of an open-access textbook that blends student-centered narrative, scaffolded checkpoints, interactive technology, and structured workflows.
+		</p>
+
+		<p>
+			The project's guiding question is: How can textbook design itself function as an innovation in teaching and learning? Each chapter is built around conversational explanations, step-by-step workflow and reading checkpoints that emphasize concepts and procedure. Interactive visualizations add a dynamic perspective to simulate a classroom experience.
+		</p>
+
+		<p>
+			By framing the textbook not only as a resource but as a pedagogical experiment, this work highlights the role of curriculum design in shaping student experiences of ODEs and opens space for dialogue about how innovative resources can transform undergraduate mathematics education.
+		</p>
+	</abstract>
+
+</frontmatter>

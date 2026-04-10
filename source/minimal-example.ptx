@@ -1,0 +1,142 @@
+<section>
+	<title>
+		<line>Part II:</line>
+		<line>"Hello World"</line>
+	</title>
+
+	<slide>
+		<title>Goal for this Demo</title>
+
+		<p>
+			In this part, we'll see how little it takes to create a working PreTeXt document.
+			The idea is to demystify the process: it's just structured text that builds into professional output.
+		</p>
+
+		<ul>
+			<li>Create a minimal <code>Hello World</code> PreTeXt file.</li>
+			<li>Build the web version.</li>
+			<li>Add one or two simple features — math, an example, an exercise.</li>
+			<li>Show how everything is automatically formatted and linked.</li>
+		</ul>
+
+		<p>
+			Think of it like writing a short program that compiles into a book.
+		</p>
+	</slide>
+
+	<slide>
+		<title>Start with a Minimal Source File</title>
+
+		<p>
+			Here's the smallest complete PreTeXt document — just a few lines of XML.
+		</p>
+
+		<program language="xml">
+			<code>
+&lt;pretext&gt;
+  &lt;title&gt;Hello, World!&lt;/title&gt;
+
+  &lt;section&gt;
+    &lt;title&gt;My First Section&lt;/title&gt;
+    &lt;p&gt;This is my first paragraph written in PreTeXt.&lt;/p&gt;
+  &lt;/section&gt;
+&lt;/pretext&gt;
+			</code>
+		</program>
+
+		<p>
+			That's it! Save it as <pf>hello-world.ptx</pf> and run:
+		</p>
+
+		<program language="xml">
+			<code>
+pretext build web
+			</code>
+		</program>
+	</slide>
+
+	<slide>
+		<title>See the Output</title>
+
+		<p>
+			When you build, PreTeXt automatically generates a complete HTML page with navigation, styling, and math rendering.
+		</p>
+
+		<ul>
+			<li>The title and section headings are formatted automatically.</li>
+			<li>Navigation links, numbering, and metadata are added for you.</li>
+			<li>Math and special elements are handled by MathJax — no setup needed.</li>
+		</ul>
+
+		<p>
+			At this point, you already have a clean, web-ready document.
+		</p>
+	</slide>
+
+	<slide>
+		<title>Add Some Mathematics</title>
+
+		<p>
+			Let's make it feel like a math document by adding a displayed equation.
+		</p>
+
+		<program language="xml">
+			<code>
+				&lt;section&gt;
+				&lt;title&gt;A Little Math&lt;/title&gt;
+				&lt;p&gt;Here's a simple differential equation:&lt;/p&gt;
+				&lt;me&gt;y' + 2y = 0&lt;/me&gt;
+				&lt;p&gt;And its solution is &lt;m&gt;y = C e^{-2x}&lt;/m&gt;.&lt;/p&gt;
+				&lt;/section&gt;
+			</code>
+		</program>
+
+		<p>
+			You don't need extra packages or dollar signs — PreTeXt handles math cleanly in both HTML and PDF outputs.
+		</p>
+	</slide>
+
+	<slide>
+		<title>Add an Example or Exercise</title>
+
+		<p>
+			Now let's see how structural elements work automatically.
+		</p>
+
+		<program language="xml">
+			<code>
+&lt;example&gt;
+  &lt;title&gt;A Tiny Example&lt;/title&gt;
+  &lt;statement&gt;
+    Solve the differential equation &lt;m&gt;y' = 3y&lt;/m&gt;.
+  &lt;/statement&gt;
+  &lt;solution&gt;
+    The general solution is &lt;m&gt;y = C e^{3x}&lt;/m&gt;.
+  &lt;/solution&gt;
+&lt;/example&gt;
+			</code>
+		</program>
+
+		<p>
+			PreTeXt automatically numbers and formats the example.
+			Add an <c>&lt;exercise&gt;</c> block and you'll get numbered problems with consistent styling.
+		</p>
+	</slide>
+
+	<slide>
+		<title>Summary of the Demo</title>
+
+		<ul>
+			<li>PreTeXt source is simple, readable, and modular.</li>
+			<li>Structure — not formatting — drives everything.</li>
+			<li>Building to web or PDF is a single command.</li>
+			<li>You can scale this up from a short note to an entire textbook.</li>
+		</ul>
+
+		<p>
+			Next, we'll look at how these same ideas scale up in the
+			<c>Differential Equations: An Interactive Introduction</c> textbook.
+		</p>
+	</slide>
+
+</section>

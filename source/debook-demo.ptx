@@ -1,0 +1,167 @@
+<section>
+	<title>
+		<line>Part III:</line>
+		<line>Use Cases</line>
+	</title>
+
+	<slide>
+		<title>Introducing the Project</title>
+
+		<p>
+			This part of the talk is about how all the ideas from the “Hello World” demo scale up into a complete, interactive textbook: 
+			<c>Differential Equations: An Interactive Introduction</c>.
+		</p>
+
+		<ul>
+			<li>Built entirely in PreTeXt — one source for web and print.</li>
+			<li>Designed for accessibility, openness, and modern pedagogy.</li>
+			<li>Hosted online, free to use, and easy to update as the material evolves.</li>
+		</ul>
+
+		<p>
+			I'll walk through the design philosophy, features, and a short live demo of the text in action.
+		</p>
+	</slide>
+
+	<slide>
+		<title>Why Write a New Book?</title>
+
+		<p>
+			Every instructor teaching differential equations faces the same challenge:
+			finding a text that balances clarity, rigor, and accessibility.
+		</p>
+
+		<ul>
+			<li>Many commercial texts are expensive and overly formal.</li>
+			<li>Free online notes exist, but often lack structure or interactivity.</li>
+			<li>I wanted something approachable — conversational, visually clear, and ready for digital classrooms.</li>
+		</ul>
+
+		<p>
+			So I decided to write the book I always wanted to teach from.
+		</p>
+	</slide>
+
+	<slide>
+		<title>Design Philosophy</title>
+
+		<ul>
+			<li><strong>Student-facing tone:</strong> clear explanations, minimal jargon, and helpful transitions.</li>
+			<li><strong>Scaffolded learning:</strong> checkpoint questions, summaries, and “quick reference” sections in every chapter.</li>
+			<li><strong>Interactive thinking:</strong> figures, slope fields, and numerical explorations are integrated into the narrative.</li>
+			<li><strong>Pedagogical consistency:</strong> each method follows a labeled, step-by-step structure for easy comparison.</li>
+		</ul>
+
+		<p>
+			The goal: make the text feel like a guided conversation, not a lecture transcript.
+		</p>
+	</slide>
+
+	<slide>
+		<title>How PreTeXt Made It Possible</title>
+
+		<p>
+			PreTeXt handled all the organization, structure, and rendering —
+			allowing me to focus entirely on teaching, not typesetting.
+		</p>
+
+		<ul>
+			<li>Automatic numbering for examples, definitions, and equations.</li>
+			<li>Cross-references and links update themselves.</li>
+			<li>Consistent formatting for exercises, solutions, and asides.</li>
+			<li>Built-in accessibility features ensure all students can navigate the content.</li>
+			<li>Web output includes interactivity and mobile-friendly design.</li>
+		</ul>
+
+		<p>
+			In short: PreTeXt made a solo-authored, full-scale interactive textbook realistic.
+		</p>
+	</slide>
+
+	<slide>
+		<title>Book Structure Overview</title>
+
+		<p>
+			The textbook currently spans eleven chapters, moving from the basics of first-order equations to Laplace transforms and systems.
+		</p>
+
+		<ul>
+			<li><strong>Ch. 1–3:</strong> Foundations — What is a DE? What is a solution? Separation of Variables.</li>
+			<li><strong>Ch. 4–6:</strong> Linear Methods, Slope Fields, and Numerical Solutions.</li>
+			<li><strong>Ch. 7–8:</strong> Constant Coefficient Equations and Undetermined Coefficients.</li>
+			<li><strong>Ch. 9–11:</strong> Laplace Transforms and Piecewise Forcing Functions.</li>
+		</ul>
+
+		<p>
+			Each chapter ends with a summary, quick reference sheet, and conceptual checkpoint questions.
+		</p>
+	</slide>
+
+	<slide>
+		<title>Interactive &amp; Computational Features</title>
+
+		<p>
+			One of the major advantages of authoring in PreTeXt is how easily interactive components integrate into the flow of the book.
+		</p>
+
+		<ul>
+			<li>Embedded exercises with automatic feedback (via Runestone or WeBWorK).</li>
+			<li>Dynamic visualizations for slope fields, phase lines, and numerical approximations.</li>
+			<li>Expandable “check your understanding” questions built right into the narrative.</li>
+			<li>Flexible integration with Jupyter or Sage for symbolic computation examples.</li>
+		</ul>
+
+		<p>
+			Students can read, compute, and explore — all in one place.
+		</p>
+	</slide>
+
+	<slide>
+		<title>Challenges and Lessons Learned</title>
+
+		<ul>
+			<li>PreTeXt is powerful but very precise — small syntax errors matter!</li>
+			<li>Designing interactive pedagogy requires careful balance: not everything benefits from being “clickable.”</li>
+			<li>Version control (Git) quickly became essential for managing growth.</li>
+			<li>Community support was fantastic — documentation, mailing list, and examples made a big difference.</li>
+		</ul>
+
+		<p>
+			The main takeaway: the learning curve is worth it. Once you build momentum, authoring feels natural and sustainable.
+		</p>
+	</slide>
+
+	<slide>
+		<title>Future Directions</title>
+
+		<ul>
+			<li>Adding more computational tools — numerical solvers and phase-plane interactives.</li>
+			<li>Integrating with institutional LMS systems for smoother assignment workflows.</li>
+			<li>Exploring audio narration and accessibility extensions for broader reach.</li>
+			<li>Sharing the source publicly so others can adapt or remix sections for their own courses.</li>
+		</ul>
+
+		<p>
+			The broader goal is to make this book a model for how open, interactive materials can evolve within a department.
+		</p>
+	</slide>
+
+	<slide>
+		<title>Closing Thoughts</title>
+
+		<p>
+			PreTeXt isn't just a way to write textbooks — it's a way to think about teaching computationally.
+			It allows instructors to create structured, interactive, and sustainable materials that grow over time.
+		</p>
+
+		<p>
+			<c>Differential Equations: An Interactive Introduction</c> is one example,
+			but the same approach can work for any course — math, computing, or beyond.
+		</p>
+
+		<p>
+			Thank you! I'd love to hear your ideas for how our department might use PreTeXt in other projects.
+		</p>
+	</slide>
+
+</section>

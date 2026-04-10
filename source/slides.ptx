@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude">
+
+	<docinfo/>
+
+	<slideshow>
+		<title>Designing a Student-Centered Open Textbook</title>
+		<subtitle>JMM 2026, Washington DC</subtitle>
+
+		<xi:include href="./frontmatter-slides.ptx" />
+
+		<slide label="opening">
+			<title>Why Rethink the Differential Equations Textbook?</title>
+
+			<p>
+				Differential equations is a gateway course for many STEM majors, yet the materials we use are often
+				expensive, static, and mismatched to how students actually learn today.
+			</p>
+
+			<ul pause="no">
+				<li>Commercial texts are polished but rigid.</li>
+				<li>Free notes exist, but often lack structure and support.</li>
+				<li>Students increasingly expect interactive, accessible, and digital-first resources.</li>
+			</ul>
+
+			<p>
+				This talk describes the design of a student-centered, interactive textbook and the tools that made it sustainable.
+			</p>
+		</slide>
+
+		<slide label="overview">
+			<title>Overview</title>
+
+			<dl pause="no">
+				<li>
+					<title>Part I: Authoring Tool</title>
+					<p>How open-source tooling enables sustainable, interactive textbooks.</p>
+				</li>
+				<li>
+					<title>Part II: Textbook Design</title>
+					<p>Design philosophy, features, and a brief demonstration.</p>
+				</li>
+				<li>
+					<title>Part III: Pedagogical Evaluation</title>
+					<p>Questions, methods and why it matters.</p>
+				</li>
+			</dl>
+		</slide>
+
+		<slide label="p1-pretext-what-is-it">
+			<title>Part I: Authoring Tool</title>
+
+			<p>
+				PreTeXt is an open-source authoring system for writing structured, accessible, and interactive educational materials.
+			</p>
+
+			<dl pause="no">
+				<li>
+					<title>Write once, publish everywhere</title>
+					<p>Web, PDF, ePub, large print, and Braille from a single source.</p>
+				</li>
+				<li>
+					<title>Pedagogy-aware structure</title>
+					<p>Examples, exercises, definitions, and loads of interactive features.</p>
+				</li>
+				<li>
+					<title>Accessibility by design</title>
+					<p>Screen-reader friendly, responsive layouts, and dark/light modes.</p>
+				</li>
+			</dl>
+
+			<p>
+				Whether you want an interactive textbook, a research hub, or lecture notes, PreTeXt is ready for most workflows.
+			</p>
+		</slide>
+
+		<slide label="p1-pretext-getting-started">
+			<title>Getting Started with PreTeXt</title>
+
+			<dl pause="no">
+				<li>
+					<title>Authoring Environment</title>
+					<p>
+						<ul pause="no">
+							<li>GitHub + Codespaces (recommended for beginners)</li>
+							<li>Local setup (code editor, python, latex, etc.)</li>
+						</ul>
+					</p>
+				</li>
+				<li>
+					<title>What You Need to Learn</title>
+					<p>
+						<ul pause="no">
+							<li>Basic Git workflow</li>
+							<li>XML-style markup (closer to HTML than LaTeX)</li>
+							<li>Minimal command-line usage</li>
+						</ul>
+					</p>
+				</li>
+			</dl>
+
+			<p>
+				The learning curve is real, but front-loaded, and well-supported by the community.
+			</p>
+		</slide>
+
+		<slide label="p1-pretext-features">
+			<title>Interactive Capabilities</title>
+
+			<dl pause="no">
+				<li>
+					<title>Third-Party Integration</title>
+					<p>GeoGebra, Desmos, Google maps, etc..</p>
+				</li>
+				<li>
+					<title>Interactive Exercises</title>
+					<p>Low-stakes reading questions, formative checks, and auto- and immediate-feedback.</p>
+				</li>
+				<li>
+					<title>Advanced Integration</title>
+					<p>Python, Sage, and JavaScript for advanced workflows.</p>
+				</li>
+			</dl>
+
+			<p>
+				Interactivity is optional, but when used intentionally, it changes how students read.
+			</p>
+
+			<p>
+				<url href="https://geoff-cox.github.io/debook-talk/hub/talk-demo-interactive-features.html">Interactive Samples Gallery</url>.
+			</p>
+		</slide>
+
+		<slide label="p2-transition">
+			<title>From Tool to Design</title>
+
+			<p>
+				Textbooks are typically written, reviewed, and evaluated by experts in the field.
+				As a result, they often prioritize disciplinary completeness over how students
+				actually experience the material.
+			</p>
+
+			<p>
+				That tension led to our guiding design question:
+			</p>
+
+			<p>
+				<em>What would a differential equations textbook look like if it were written entirely for students?</em>
+			</p>
+
+		</slide>
+
+		<slide label="p2-design">
+			<title>Part II: Textbook Design</title>
+
+			<p>
+				The answer was not a longer or more feature-rich textbook,
+				but one intentionally designed around how students read,
+				reflect, and build understanding.
+			</p>
+
+			<p>
+				This led to a set of student-centered design principles:
+			</p>
+
+			<p>
+				<line>🔸A conversational, instructor-like tone</line>
+				<line>🔸Short, focused narrative blocks instead of long exposition</line>
+				<line>🔸Low-stakes checkpoint questions to guide attention</line>
+				<line>🔸Dynamic visualizations for conceptual clarity</line>
+				<line>🔸Audio narration to support accessibility and review</line>
+			</p>
+
+			<p>
+				No book will ever replace in-class, face-to-face instruction.
+				The goal here was to bring as much of that instructional experience
+				into the book as possible.
+			</p>
+
+			<line>
+				👉 <url href="https://runestone.academy/ns/books/published/debookrs/frontmatter.html">
+				Differential Equations Textbook
+				</url>
+			</line>
+		</slide>
+
+		<slide label="p3-transition">
+			<title>From Design to Evaluation</title>
+
+			<p>
+				The interactive features in this textbook were not added for novelty,
+				but to address persistent challenges in how students learn differential equations.
+			</p>
+
+			<p>
+				To move beyond anecdote, we will be conducting a formal study to examine 
+				how students actually engage with these features and what they perceive
+				as beneficial or challenging.
+			</p>
+
+			<p>
+				This work is framed as a small mixed-methods pedagogical study and will be implemented this spring.
+			</p>
+		</slide>
+
+		<slide label="p3-research-focus">
+			<title>Part III: Pedagogical Evaluation</title>
+
+			<p>
+				The plan for the guiding research question is:
+			</p>
+
+			<p>
+				<em>
+					In what ways do interactive textbooks enhance students’ understanding
+					of differential equations concepts?
+				</em>
+			</p>
+
+			<p>
+				Data will be collected through a student survey, and will be
+				supplemented by open-ended and reflective focus groups.
+			</p>
+
+			<p>
+				The emphasis will be on student engagement, conceptual understanding,
+				persistence, and accessibility.
+			</p>
+		</slide>
+
+		<slide label="p3-what-we-measure">
+			<title>What We Are Measuring</title>
+
+			<p>
+				Rather than testing isolated skills, the study will examine how students
+				<em>use</em> the textbook while learning.
+
+				<ul pause="no">
+					<li>How students engage with low-stakes reading questions</li>
+					<li>Whether feedback prompts reflection and persistence</li>
+					<li>Which interactive elements support or hinder learning</li>
+					<li>How students rate the experience to traditional books</li>
+				</ul>
+			</p>
+
+			<p>
+				These measures are designed to connect textbook features directly
+				to learning behaviors.
+			</p>
+		</slide>
+
+		<slide label="p3-why-it-matters">
+			<title>Why This Matters</title>
+
+			<p>
+				Differential equations is conceptually challenging because it asks students
+				to reason about dynamic systems using static representations.
+			</p>
+
+			<p>
+				Interactive textbooks have the potential to:
+			</p>
+
+			<ul pause="no">
+				<li>Make abstract behavior more concrete and visual</li>
+				<li>Encourage struggle through immediate feedback</li>
+				<li>Support persistence when students answer incorrectly</li>
+				<li>Improve accessibility through multimodal engagement</li>
+			</ul>
+
+			<p>
+				This study will help evaluate whether those potential benefits are realized in practice.
+			</p>
+		</slide>
+
+		<slide label="closing">
+			<title>Closing Thoughts</title>
+
+			<p>
+				Open textbooks are not just about cost, they are about control, adaptability, and pedagogy.
+			</p>
+
+			<p>
+				PreTeXt made it possible to build something ambitious and to keep improving it over time.
+			</p>
+
+			<p>
+				If you ever thought about writing a book you wish existed, the tools are ready.
+			</p>
+		</slide>
+
+		<slide label="thanks-questions">
+			<title>Thank You</title>
+
+			<p>
+				Thank you for your time. I am happy to answer questions or discuss collaboration.
+			</p>
+
+			<p>
+				Questions?
+			</p>
+		</slide>
+
+	</slideshow>
+</pretext>

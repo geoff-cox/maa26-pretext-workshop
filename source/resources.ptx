@@ -1,0 +1,106 @@
+<section>
+	<title>Resources &amp; Links</title>
+
+	<slide>
+		<title>PreTeXt Resources</title>
+
+		<ul>
+			<li>
+				<strong>PreTeXt Project Website:</strong>
+				<url href="https://pretextbook.org">https://pretextbook.org</url>
+			</li>
+			<li>
+				<strong>Documentation &amp; Tutorials:</strong>
+				<url href="https://pretextbook.org/doc/guide/html/">Author's Guide</url>
+			</li>
+			<li>
+				<strong>Community Forum:</strong>
+				<url href="https://pretextbook.org/community.html">Discussion &amp; Support</url>
+			</li>
+			<li>
+				<strong>GitHub Repository:</strong>
+				<url href="https://github.com/PreTeXtBook/pretext">https://github.com/PreTeXtBook/pretext</url>
+			</li>
+		</ul>
+
+		<p>
+			The PreTeXt community is active and supportive — a great place to ask questions, share progress, and learn from others.
+		</p>
+	</slide>
+
+	<slide>
+		<title>My Differential Equations Textbook</title>
+
+		<p>
+			<strong>Title:</strong> <c>Differential Equations: An Interactive Introduction</c>
+		</p>
+
+		<ul>
+			<li>
+				<strong>Web version:</strong>
+				<url href="YOUR_BOOK_URL_HERE">YOUR_BOOK_URL_HERE</url>
+			</li>
+			<li>
+				<strong>GitHub repository (if public):</strong>
+				<url href="YOUR_REPO_URL_HERE">YOUR_REPO_URL_HERE</url>
+			</li>
+			<li>
+				Free to read, open to adapt — feedback and collaboration welcome!
+			</li>
+		</ul>
+
+		<p>
+			This project demonstrates how PreTeXt can support modern, open, and computationally aware textbook design.
+		</p>
+	</slide>
+
+	<slide>
+		<title>Additional Inspiration</title>
+
+		<ul>
+			<li>
+				<strong>Runestone Interactive:</strong>
+				<url href="https://runestone.academy/">https://runestone.academy</url>
+				– free platform for hosting interactive PreTeXt books.
+			</li>
+			<li>
+				<strong>Open Math Books:</strong>
+				<url href="https://aimath.org/textbooks/approved-textbooks/">AIM Open Textbook Initiative</url>
+				– examples of successful PreTeXt publications.
+			</li>
+			<li>
+				<strong>WeBWorK:</strong>
+				<url href="https://webwork.maa.org/">https://webwork.maa.org</url>
+				– integrates well with PreTeXt for online problem sets.
+			</li>
+		</ul>
+
+		<p>
+			PreTeXt connects seamlessly with the open-source mathematical ecosystem —
+			it's part of a broader movement toward reproducible and accessible educational materials.
+		</p>
+	</slide>
+
+	<slide>
+		<title>Thank You!</title>
+
+		<p>
+			Thanks for coming! I hope this gave you a sense of how fun and empowering it can be to write in PreTeXt.
+		</p>
+
+		<p>
+			If you'd like to explore more or collaborate, feel free to reach out:
+		</p>
+
+		<ul>
+			<li><strong>Email:</strong> YOUR_EMAIL_HERE</li>
+			<li><strong>Department:</strong> YOUR_DEPARTMENT_NAME</li>
+			<li><strong>Institution:</strong> YOUR_INSTITUTION_NAME</li>
+		</ul>
+
+		<p>
+			Let's keep building great computational resources together.
+		</p>
+	</slide>
+
+</section>
