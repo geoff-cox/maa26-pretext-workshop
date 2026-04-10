@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>PreTeXt Setup Guide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "textmacros",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[tex]/textmacros",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="article">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.13.3';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.b76b8eace4405b9e.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.bbf2283c5c1d4f99.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-numbers/prism-line-numbers.min.js" integrity="sha512-dubtf8xMHSQlExGRQ5R7toxHLgSDZ0K7AunqPWHXmJQ8XyVIG19S1T95gBxlAeGOK02P4Da2RTnQz0Za0H0ebQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-highlight/prism-line-highlight.min.js" integrity="sha512-93uCmm0q+qO5Lb1huDqr7tywS8A2TFA+1/WHvyiWaK6/pvsFl6USnILagntBx8JnVbQH5s3n0vQZY6xNthNfKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext article ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="root-1-2.html"><span class="title">Designing a Student-Centered Open Textbook - JMM 2026</span></a></h1>
+<p class="byline">HUB: <a class="external" href="https://geoff-cox.github.io/debook-talk/hub/" target="_blank">geoff-cox.github.io/debook-talk/hub/</a></p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="embed-button" class="embed-button button" title="Embed this page"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe86f;</span><span class="name">Embed</span></button><div class="embed-popup hidden" id="embed-popup">
+<p>Copy the code below to embed this page in your own website or LMS page.</p>
+<div class="embed-code-container">
+<textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
+</div>
+</div>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="textbook-highlights.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="root-1-2.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="root-1-2-7.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth3 focused" data-preexpanded-levels="0" data-max-levels="3"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="root-1-2-2.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-abstract"><div class="toc-title-box"><a href="root-1-2-2.html#root-1-2-2-3" class="internal"><span class="title">Abstract</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="resources-links.html" class="internal"><span class="title">Resources &amp; Links</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="talk-demo-interactive-features.html" class="internal"><span class="title">Interactive Features</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="talk-demo-interactive-features.html#talk-demo-third-party-apps" class="internal"><span class="title">Third-Party Apps</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="talk-demo-interactive-features.html#talk-demo-geogebra" class="internal"><span class="title">GeoGebra</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="talk-demo-interactive-features.html#talk-demo-desmos" class="internal"><span class="title">Desmos</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="talk-demo-interactive-features.html#talk-demo-google-maps" class="internal"><span class="title">Google Maps</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="talk-demo-interactive-features.html#talk-demo-reading-questions" class="internal"><span class="title">Reading Questions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="talk-demo-interactive-features.html#talk-demo-reading-questions-2" class="internal"><span class="title">✔ True/False</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="talk-demo-interactive-features.html#talk-demo-reading-questions-3" class="internal"><span class="title">✔ Multiple-Choice</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="talk-demo-interactive-features.html#talk-demo-reading-questions-4" class="internal"><span class="title">✔ Matching</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="talk-demo-interactive-features.html#talk-demo-reading-questions-5" class="internal"><span class="title">✔ Clickable-Area</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="talk-demo-interactive-features.html#talk-demo-reading-questions-6" class="internal"><span class="title">✔ Fill-in-the-Blank</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="talk-demo-interactive-features.html#talk-demo-reading-questions-7" class="internal"><span class="title">✔ Interactive Coding</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="talk-demo-interactive-features.html#talk-demo-authored-interactives" class="internal"><span class="title">Authored (Advanced)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="talk-demo-interactive-features.html#talk-demo-authored-interactives-2" class="internal"><span class="title">DoenetML</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="talk-demo-interactive-features.html#talk-demo-authored-interactives-3" class="internal"><span class="title">JSXGraph</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="textbook-highlights.html" class="internal"><span class="title">Textbook Highlights</span></a></div></li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="getting-started-w-pretext.html" class="internal"><span class="title">PreTeXt Setup Guide</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="getting-started-w-pretext.html#workspace-setup" class="internal"><span class="title">Workspace Setup</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="getting-started-w-pretext.html#minimal-project" class="internal"><span class="title">A Minimal Project</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="getting-started-w-pretext.html#minimal-project-3" class="internal"><span class="title">Creating a New Book</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="getting-started-w-pretext.html#minimal-project-4" class="internal"><span class="title">Your First Build</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="getting-started-w-pretext.html#minimal-project-5" class="internal"><span class="title">Viewing the Output</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="getting-started-w-pretext.html#having-a-look-around" class="internal"><span class="title">Having A Look Around</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="root-1-2-7.html" class="internal"><span class="title">Student Feedback Survey</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="root-1-2-7.html#root-1-2-7-2" class="internal"><span class="title">Purpose and Consent</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="root-1-2-7.html#root-1-2-7-3" class="internal"><span class="title">Background Information</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="root-1-2-7.html#root-1-2-7-4" class="internal"><span class="title">Engagement and Usage</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="root-1-2-7.html#root-1-2-7-5" class="internal"><span class="title">Learning Experience</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="root-1-2-7.html#root-1-2-7-6" class="internal"><span class="title">Comparison and Perception</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="root-1-2-7.html#root-1-2-7-7" class="internal"><span class="title">Open-Ended Reflection</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="getting-started-w-pretext"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">PreTeXt Setup Guide</span>
+</h2>
+<section class="subsection" id="workspace-setup"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Workspace Setup</span>
+</h3>
+<div class="para" id="workspace-setup-2">The quickest and easiest way to get started with PreTeXt is through GitHub. Using a GitHub Codespace means you don’t need to install anything locally — everything runs in your browser with all dependencies preconfigured. Here’s how to set it up:<div class="autopermalink" data-description="Paragraph"><a href="#workspace-setup-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="workspace-setup-3">
+<dl class="description-list">
+<dt id="workspace-setup-3-1-1">Create a GitHub Account<div class="autopermalink" data-description="Item: Create a GitHub Account"><a href="#workspace-setup-3-1-1" title="Copy heading and permalink for Item: Create a GitHub Account" aria-label="Copy heading and permalink for Item: Create a GitHub Account">🔗</a></div>
+</dt>
+<dd><div class="para logical" id="workspace-setup-3-1-1-2">
+<ol class="decimal" id="workspace-setup-3-1-1-2-1">
+<li id="workspace-setup-3-1-1-2-1-1">
+<div class="para" id="p-derived-workspace-setup-3-1-1-2-1-1">Go to <a class="external" href="https://github.com" target="_blank">GitHub</a>.</div>
+<div class="autopermalink" data-description="Item"><a href="#workspace-setup-3-1-1-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="workspace-setup-3-1-1-2-1-2">
+<div class="para" id="p-derived-workspace-setup-3-1-1-2-1-2">Create an account (it’s free for individual users).</div>
+<div class="autopermalink" data-description="Item"><a href="#workspace-setup-3-1-1-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#workspace-setup-3-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+<dt id="workspace-setup-3-1-2">Import the PreTeXt Codespace Template<div class="autopermalink" data-description="Item: Import the PreTeXt Codespace Template"><a href="#workspace-setup-3-1-2" title="Copy heading and permalink for Item: Import the PreTeXt Codespace Template" aria-label="Copy heading and permalink for Item: Import the PreTeXt Codespace Template">🔗</a></div>
+</dt>
+<dd><div class="para logical" id="workspace-setup-3-1-2-2">
+<ol class="decimal" id="workspace-setup-3-1-2-2-1">
+<li id="workspace-setup-3-1-2-2-1-1">
+<div class="para" id="p-derived-workspace-setup-3-1-2-2-1-1">Visit the official <a class="external" href="https://github.com/PreTeXtBook/pretext-codespace" target="_blank">PreTeXt Codespace</a> repository on GitHub.</div>
+<div class="autopermalink" data-description="Item"><a href="#workspace-setup-3-1-2-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="workspace-setup-3-1-2-2-1-2">
+<div class="para" id="workspace-setup-3-1-2-2-1-2-1">
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:12% 38% 2% 24% 24%;column-gap:0%;">
+<div class="sbspanel sbspanel--top top" style=""><div class="para" id="workspace-setup-3-1-2-2-1-2-1-1-1">Click<div class="autopermalink" data-description="Paragraph"><a href="#workspace-setup-3-1-2-2-1-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<div class="sbspanel sbspanel--top top" style=""><div class="para" id="workspace-setup-3-1-2-2-1-2-1-1-2">
+<div class="image-box"><img src="external/use-this-template.png" class="contained"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#workspace-setup-3-1-2-2-1-2-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<div class="sbspanel sbspanel--top top" style=""><div class="para" id="workspace-setup-3-1-2-2-1-2-1-1-3"><div class="autopermalink" data-description="Paragraph"><a href="#workspace-setup-3-1-2-2-1-2-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div></div>
+<div class="sbspanel sbspanel--top top" style=""><div class="para" id="workspace-setup-3-1-2-2-1-2-1-1-4">and choose<div class="autopermalink" data-description="Paragraph"><a href="#workspace-setup-3-1-2-2-1-2-1-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<div class="sbspanel sbspanel--top top" style=""><div class="para" id="workspace-setup-3-1-2-2-1-2-1-1-5"><div class="autopermalink" data-description="Paragraph"><a href="#workspace-setup-3-1-2-2-1-2-1-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div></div>
+</div></div> “Create a New Repository”.<div class="autopermalink" data-description="Paragraph"><a href="#workspace-setup-3-1-2-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#workspace-setup-3-1-2-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="workspace-setup-3-1-2-2-1-3">
+<div class="para logical" id="workspace-setup-3-1-2-2-1-3-1">
+<div class="para">In the new window, fill in:</div>
+<ul class="disc" id="workspace-setup-3-1-2-2-1-3-1-1">
+<li id="workspace-setup-3-1-2-2-1-3-1-1-1">
+<div class="para" id="p-derived-workspace-setup-3-1-2-2-1-3-1-1-1"><code class="code-inline tex2jax_ignore">Repository name</code></div>
+<div class="autopermalink" data-description="Item"><a href="#workspace-setup-3-1-2-2-1-3-1-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="workspace-setup-3-1-2-2-1-3-1-1-2">
+<div class="para" id="p-derived-workspace-setup-3-1-2-2-1-3-1-1-2">
+<code class="code-inline tex2jax_ignore">Description</code> — optional.</div>
+<div class="autopermalink" data-description="Item"><a href="#workspace-setup-3-1-2-2-1-3-1-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="workspace-setup-3-1-2-2-1-3-1-1-3">
+<div class="para" id="p-derived-workspace-setup-3-1-2-2-1-3-1-1-3">
+<code class="code-inline tex2jax_ignore">Visibility</code> — choose “Public” or “Private”.</div>
+<div class="autopermalink" data-description="Item"><a href="#workspace-setup-3-1-2-2-1-3-1-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para">Then click “Create repository”. GitHub will copy the official PreTeXt codespace into your account as a new repo.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#workspace-setup-3-1-2-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#workspace-setup-3-1-2-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#workspace-setup-3-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+<dt id="workspace-setup-3-1-3">Start Your Codespace<div class="autopermalink" data-description="Item: Start Your Codespace"><a href="#workspace-setup-3-1-3" title="Copy heading and permalink for Item: Start Your Codespace" aria-label="Copy heading and permalink for Item: Start Your Codespace">🔗</a></div>
+</dt>
+<dd><div class="para logical" id="workspace-setup-3-1-3-2">
+<ol class="decimal" id="workspace-setup-3-1-3-2-1">
+<li id="workspace-setup-3-1-3-2-1-1">
+<div class="para" id="p-derived-workspace-setup-3-1-3-2-1-1">If you weren’t automatically redirected, go to your GitHub account and open the new repository you just created.</div>
+<div class="autopermalink" data-description="Item"><a href="#workspace-setup-3-1-3-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="workspace-setup-3-1-3-2-1-2">
+<div class="para" id="workspace-setup-3-1-3-2-1-2-1">
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:12% 18% 2% 68% 0%;column-gap:0%;">
+<div class="sbspanel sbspanel--top top" style=""><div class="para" id="workspace-setup-3-1-3-2-1-2-1-1-1">Click<div class="autopermalink" data-description="Paragraph"><a href="#workspace-setup-3-1-3-2-1-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<div class="sbspanel sbspanel--top top" style=""><div class="para" id="workspace-setup-3-1-3-2-1-2-1-1-2">
+<div class="image-box"><img src="external/code-button.png" class="contained"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#workspace-setup-3-1-3-2-1-2-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<div class="sbspanel sbspanel--top top" style=""><div class="para" id="workspace-setup-3-1-3-2-1-2-1-1-3"><div class="autopermalink" data-description="Paragraph"><a href="#workspace-setup-3-1-3-2-1-2-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div></div>
+<div class="sbspanel sbspanel--top top" style=""><div class="para" id="workspace-setup-3-1-3-2-1-2-1-1-4">and open the “Codespaces” tab.<div class="autopermalink" data-description="Paragraph"><a href="#workspace-setup-3-1-3-2-1-2-1-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<div class="sbspanel sbspanel--top top" style=""><div class="para" id="workspace-setup-3-1-3-2-1-2-1-1-5"><div class="autopermalink" data-description="Paragraph"><a href="#workspace-setup-3-1-3-2-1-2-1-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div></div>
+</div></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#workspace-setup-3-1-3-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#workspace-setup-3-1-3-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="workspace-setup-3-1-3-2-1-3">
+<div class="para" id="workspace-setup-3-1-3-2-1-3-1">
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:35% 48% 17%;column-gap:0%;">
+<div class="sbspanel sbspanel--top top" style=""><div class="para" id="workspace-setup-3-1-3-2-1-3-1-1-1">In this tab, click<div class="autopermalink" data-description="Paragraph"><a href="#workspace-setup-3-1-3-2-1-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<div class="sbspanel sbspanel--top top" style=""><div class="para" id="workspace-setup-3-1-3-2-1-3-1-1-2">
+<div class="image-box"><img src="external/create-codespace.png" class="contained"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#workspace-setup-3-1-3-2-1-3-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<div class="sbspanel sbspanel--top top" style=""><div class="para" id="workspace-setup-3-1-3-2-1-3-1-1-3"><div class="autopermalink" data-description="Paragraph"><a href="#workspace-setup-3-1-3-2-1-3-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div></div>
+</div></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#workspace-setup-3-1-3-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#workspace-setup-3-1-3-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="workspace-setup-3-1-3-2-1-4">
+<div class="para" id="p-derived-workspace-setup-3-1-3-2-1-4">The Codespace will begin setting up. This may take a few minutes the first time. When complete, you’ll have a fully functional PreTeXt workspace running in your browser.</div>
+<div class="autopermalink" data-description="Item"><a href="#workspace-setup-3-1-3-2-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#workspace-setup-3-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+</dl>
+<div class="autopermalink" data-description="Paragraph"><a href="#workspace-setup-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Workspace Setup"><a href="#workspace-setup" title="Copy heading and permalink for Subsection: Workspace Setup" aria-label="Copy heading and permalink for Subsection: Workspace Setup">🔗</a></div></section><section class="subsection" id="minimal-project"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">A Minimal Project</span>
+</h3>
+<section class="introduction" id="minimal-project-2"><div class="para" id="minimal-project-2-1">Once your Codespace loads, it’ll will look like so:<div class="autopermalink" data-description="Paragraph"><a href="#minimal-project-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/fresh-codespace.png" class="contained"></div>
+<div class="para" id="minimal-project-2-3">It’s ready for PreTeXt, but it needs a few files first. If you click on the <code class="code-inline tex2jax_ignore">README.md</code> and scroll down to “Creating a New Project”, you’ll find some directions for initiating a PreTeXt project.<div class="autopermalink" data-description="Paragraph"><a href="#minimal-project-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><section class="subsection" id="minimal-project-3"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Creating a New Book</span>
+</h4>
+<div class="para logical" id="minimal-project-3-2">
+<dl class="description-list">
+<dt id="minimal-project-3-2-1-1">Creating a New PreTeXt Project<div class="autopermalink" data-description="Item: Creating a New PreTeXt Project"><a href="#minimal-project-3-2-1-1" title="Copy heading and permalink for Item: Creating a New PreTeXt Project" aria-label="Copy heading and permalink for Item: Creating a New PreTeXt Project">🔗</a></div>
+</dt>
+<dd><div class="para logical" id="minimal-project-3-2-1-1-2">
+<ol class="decimal" id="minimal-project-3-2-1-1-2-1">
+<li id="minimal-project-3-2-1-1-2-1-1">
+<div class="para" id="p-derived-minimal-project-3-2-1-1-2-1-1">Hit <code class="code-inline tex2jax_ignore">F1</code> to open the command palette.</div>
+<div class="autopermalink" data-description="Item"><a href="#minimal-project-3-2-1-1-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="minimal-project-3-2-1-1-2-1-2">
+<div class="para" id="p-derived-minimal-project-3-2-1-1-2-1-2">Type “pretext”.</div>
+<div class="autopermalink" data-description="Item"><a href="#minimal-project-3-2-1-1-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="minimal-project-3-2-1-1-2-1-3">
+<div class="para" id="p-derived-minimal-project-3-2-1-1-2-1-3">Scroll down and select “PreTeXt: New Project”.</div>
+<div class="autopermalink" data-description="Item"><a href="#minimal-project-3-2-1-1-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="minimal-project-3-2-1-1-2-1-4">
+<div class="para" id="p-derived-minimal-project-3-2-1-1-2-1-4">Select the type of document you want to create. For this demo, we’ll choose <code class="code-inline tex2jax_ignore">book</code>.</div>
+<div class="autopermalink" data-description="Item"><a href="#minimal-project-3-2-1-1-2-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="minimal-project-3-2-1-1-2-1-5">
+<div class="para" id="p-derived-minimal-project-3-2-1-1-2-1-5">Select the location of your project, but the default should be the one you want.</div>
+<div class="autopermalink" data-description="Item"><a href="#minimal-project-3-2-1-1-2-1-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#minimal-project-3-2-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+</dl>
+<div class="autopermalink" data-description="Paragraph"><a href="#minimal-project-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="minimal-project-3-3">Completing these steps will populate your codespace with all the files you need to author in PreTeXt. In fact, it also provides a template that build right-away.<div class="autopermalink" data-description="Paragraph"><a href="#minimal-project-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/new-book.png" class="contained"></div>
+<div class="autopermalink" data-description="Subsection: Creating a New Book"><a href="#minimal-project-3" title="Copy heading and permalink for Subsection: Creating a New Book" aria-label="Copy heading and permalink for Subsection: Creating a New Book">🔗</a></div></section><section class="subsection" id="minimal-project-4"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Your First Build</span>
+</h4>
+<div class="para logical" id="minimal-project-4-2">
+<dl class="description-list">
+<dt id="minimal-project-4-2-1-1">Building A PreTeXt Book<div class="autopermalink" data-description="Item: Building A PreTeXt Book"><a href="#minimal-project-4-2-1-1" title="Copy heading and permalink for Item: Building A PreTeXt Book" aria-label="Copy heading and permalink for Item: Building A PreTeXt Book">🔗</a></div>
+</dt>
+<dd><div class="para logical" id="minimal-project-4-2-1-1-2">
+<ol class="decimal" id="minimal-project-4-2-1-1-2-1">
+<li id="minimal-project-4-2-1-1-2-1-1">
+<div class="para" id="minimal-project-4-2-1-1-2-1-1-1">Locate the <code class="code-inline tex2jax_ignore">▷ PreTeXt</code> button on the bottom tool bar. <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:100%;column-gap:0%;"><div class="sbspanel sbspanel--top top" style=""><div class="para" id="minimal-project-4-2-1-1-2-1-1-1-2-1">
+<div class="image-box"><img src="external/pretext-button.png" class="contained"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#minimal-project-4-2-1-1-2-1-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div></div></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#minimal-project-4-2-1-1-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#minimal-project-4-2-1-1-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="minimal-project-4-2-1-1-2-1-2">
+<div class="para" id="p-derived-minimal-project-4-2-1-1-2-1-2">To build the book, select “Build default target”.</div>
+<div class="autopermalink" data-description="Item"><a href="#minimal-project-4-2-1-1-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="minimal-project-4-2-1-1-2-1-3">
+<div class="para" id="p-derived-minimal-project-4-2-1-1-2-1-3">The default is the <code class="code-inline tex2jax_ignore">html</code> version of the book. Let’s also build a <code class="code-inline tex2jax_ignore">pdf</code> version of the book as well.</div>
+<div class="autopermalink" data-description="Item"><a href="#minimal-project-4-2-1-1-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="minimal-project-4-2-1-1-2-1-4">
+<div class="para" id="p-derived-minimal-project-4-2-1-1-2-1-4">Click on the <code class="code-inline tex2jax_ignore">▷ PreTeXt</code> button and select “Build Another Target” followed by the “print” option.</div>
+<div class="autopermalink" data-description="Item"><a href="#minimal-project-4-2-1-1-2-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="minimal-project-4-2-1-1-2-1-5">
+<div class="para" id="p-derived-minimal-project-4-2-1-1-2-1-5">The results of both of these builds should now be in the <code class="code-inline tex2jax_ignore">output</code> folder.</div>
+<div class="autopermalink" data-description="Item"><a href="#minimal-project-4-2-1-1-2-1-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#minimal-project-4-2-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+</dl>
+<div class="autopermalink" data-description="Paragraph"><a href="#minimal-project-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Your First Build"><a href="#minimal-project-4" title="Copy heading and permalink for Subsection: Your First Build" aria-label="Copy heading and permalink for Subsection: Your First Build">🔗</a></div></section><section class="subsection" id="minimal-project-5"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Viewing the Output</span>
+</h4>
+<div class="para logical" id="minimal-project-5-2">
+<dl class="description-list">
+<dt id="minimal-project-5-2-1-1">Viewing A PreTeXt Book<div class="autopermalink" data-description="Item: Viewing A PreTeXt Book"><a href="#minimal-project-5-2-1-1" title="Copy heading and permalink for Item: Viewing A PreTeXt Book" aria-label="Copy heading and permalink for Item: Viewing A PreTeXt Book">🔗</a></div>
+</dt>
+<dd><div class="para logical" id="minimal-project-5-2-1-1-2">
+<ol class="decimal" id="minimal-project-5-2-1-1-2-1">
+<li id="minimal-project-5-2-1-1-2-1-1">
+<div class="para" id="p-derived-minimal-project-5-2-1-1-2-1-1">Now, we can view both the <code class="code-inline tex2jax_ignore">html</code> and <code class="code-inline tex2jax_ignore">pdf</code> version of the template book.</div>
+<div class="autopermalink" data-description="Item"><a href="#minimal-project-5-2-1-1-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="minimal-project-5-2-1-1-2-1-2">
+<div class="para" id="p-derived-minimal-project-5-2-1-1-2-1-2">To view them, click on the <code class="code-inline tex2jax_ignore">▷ PreTeXt</code> button again and select “View Full Document” then choose either the “web” or “print” option.</div>
+<div class="autopermalink" data-description="Item"><a href="#minimal-project-5-2-1-1-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="minimal-project-5-2-1-1-2-1-3">
+<div class="para" id="p-derived-minimal-project-5-2-1-1-2-1-3">In either case, a new broswer window should open. If the <code class="code-inline tex2jax_ignore">html</code> doesn’t display in the broswer, try refreshing the page.</div>
+<div class="autopermalink" data-description="Item"><a href="#minimal-project-5-2-1-1-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#minimal-project-5-2-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+</dl>
+<div class="autopermalink" data-description="Paragraph"><a href="#minimal-project-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Viewing the Output"><a href="#minimal-project-5" title="Copy heading and permalink for Subsection: Viewing the Output" aria-label="Copy heading and permalink for Subsection: Viewing the Output">🔗</a></div></section><div class="autopermalink" data-description="Subsection: A Minimal Project"><a href="#minimal-project" title="Copy heading and permalink for Subsection: A Minimal Project" aria-label="Copy heading and permalink for Subsection: A Minimal Project">🔗</a></div></section><section class="subsection" id="having-a-look-around"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Having A Look Around</span>
+</h3>
+<div class="para" id="having-a-look-around-2">Once your Codespace loads, you’ll see a ready-to-use PreTeXt project folder. You could begin writing immediately, but before doing so it’s helpful to understand the structure and purpose of the key folders and files.<div class="autopermalink" data-description="Paragraph"><a href="#having-a-look-around-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="assemblage assemblage-like" id="having-a-look-around-3"><h4 class="heading"><span class="title">Notable Folders &amp; Files.</span></h4>
+<div class="para logical" id="having-a-look-around-3-2">
+<dl class="description-list">
+<dt id="having-a-look-around-3-2-1-1">
+<code class="code-inline tex2jax_ignore">source</code><div class="autopermalink" data-description="Item: source"><a href="#having-a-look-around-3-2-1-1" title="Copy heading and permalink for Item: source" aria-label="Copy heading and permalink for Item: source">🔗</a></div>
+</dt>
+<dd><div class="para" id="having-a-look-around-3-2-1-1-2">This folder contains your PreTeXt document files. Typically separated by chapter or section, plus a <code class="code-inline tex2jax_ignore">main.ptx</code> file, which pulls them together.<div class="autopermalink" data-description="Paragraph"><a href="#having-a-look-around-3-2-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+<dt id="having-a-look-around-3-2-1-2">
+<code class="code-inline tex2jax_ignore">output</code><div class="autopermalink" data-description="Item: output"><a href="#having-a-look-around-3-2-1-2" title="Copy heading and permalink for Item: output" aria-label="Copy heading and permalink for Item: output">🔗</a></div>
+</dt>
+<dd><div class="para" id="having-a-look-around-3-2-1-2-2">The <code class="code-inline tex2jax_ignore">output</code> folder is automatically generated when you build your project and contains the final product, ready to view or publish. You don’t edit anything here.<div class="autopermalink" data-description="Paragraph"><a href="#having-a-look-around-3-2-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+<dt id="having-a-look-around-3-2-1-3">
+<code class="code-inline tex2jax_ignore">assets</code><div class="autopermalink" data-description="Item: assets"><a href="#having-a-look-around-3-2-1-3" title="Copy heading and permalink for Item: assets" aria-label="Copy heading and permalink for Item: assets">🔗</a></div>
+</dt>
+<dd><div class="para" id="having-a-look-around-3-2-1-3-2">A general-purpose folder for supporting materials like images, data files, videos, etc. When you reference these in your source, PreTeXt includes them automatically.<div class="autopermalink" data-description="Paragraph"><a href="#having-a-look-around-3-2-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+</dl>
+<div class="autopermalink" data-description="Paragraph"><a href="#having-a-look-around-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="having-a-look-around-3-3">
+<dl class="description-list">
+<dt id="having-a-look-around-3-3-1-1">
+<code class="code-inline tex2jax_ignore">project.ptx</code><div class="autopermalink" data-description="Item: project.ptx"><a href="#having-a-look-around-3-3-1-1" title="Copy heading and permalink for Item: project.ptx" aria-label="Copy heading and permalink for Item: project.ptx">🔗</a></div>
+</dt>
+<dd><div class="para" id="having-a-look-around-3-3-1-1-2">The central configuration file that describes your entire project. This is where you specify the formats you want to generate and what files are needed to build them.<div class="autopermalink" data-description="Paragraph"><a href="#having-a-look-around-3-3-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+<dt id="having-a-look-around-3-3-1-2">
+<code class="code-inline tex2jax_ignore">main.ptx</code><div class="autopermalink" data-description="Item: main.ptx"><a href="#having-a-look-around-3-3-1-2" title="Copy heading and permalink for Item: main.ptx" aria-label="Copy heading and permalink for Item: main.ptx">🔗</a></div>
+</dt>
+<dd><div class="para" id="having-a-look-around-3-3-1-2-2">The entry point of your PreTeXt document that ties together all chapters or sections. It’s like the “table of contents” of your project.<div class="autopermalink" data-description="Paragraph"><a href="#having-a-look-around-3-3-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+<dt id="having-a-look-around-3-3-1-3">
+<code class="code-inline tex2jax_ignore">publication.ptx</code><div class="autopermalink" data-description="Item: publication.ptx"><a href="#having-a-look-around-3-3-1-3" title="Copy heading and permalink for Item: publication.ptx" aria-label="Copy heading and permalink for Item: publication.ptx">🔗</a></div>
+</dt>
+<dd><div class="para" id="having-a-look-around-3-3-1-3-2">This settings file that contains all the visual knobs for customizing the output of your documents.<div class="autopermalink" data-description="Paragraph"><a href="#having-a-look-around-3-3-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+</dl>
+<div class="autopermalink" data-description="Paragraph"><a href="#having-a-look-around-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Assemblage: Notable Folders &amp; Files"><a href="#having-a-look-around-3" title="Copy heading and permalink for Assemblage: Notable Folders &amp; Files" aria-label="Copy heading and permalink for Assemblage: Notable Folders &amp; Files">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Having A Look Around"><a href="#having-a-look-around" title="Copy heading and permalink for Subsection: Having A Look Around" aria-label="Copy heading and permalink for Subsection: Having A Look Around">🔗</a></div></section><div class="autopermalink" data-description="Section: PreTeXt Setup Guide"><a href="#getting-started-w-pretext" title="Copy heading and permalink for Section: PreTeXt Setup Guide" aria-label="Copy heading and permalink for Section: PreTeXt Setup Guide">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="textbook-highlights.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="root-1-2-7.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>
