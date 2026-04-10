@@ -16,7 +16,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Resources &amp; Links",
-  "body": " Resources & Links     Contact   ▷ Geoff: coxgeoff@vmi.edu     Presentation   ▷ Slides  ▷ Course Homepage  ▷ Textbook (viewable - HTML)  ▷ Textbook (source - GitHub)     PreTeXt  ▷ Homepage  ▷ PreTeXt Guide  ▷ Help Forums    Runestone Academy  ▷ Homepage  ▷ Users Guide  ▷ Videos    Student Survey  ▷ Questions      "
+  "body": " Resources & Links     Contact   ▷ Geoff: coxgeoff@vmi.edu     Presentation   ▷ Slides  ▷ Textbook (viewable - HTML)  ▷ Textbook (source - GitHub)     PreTeXt  ▷ Homepage  ▷ PreTeXt Guide  ▷ Help Forums    Runestone Academy  ▷ Homepage  ▷ Users Guide  ▷ Videos     "
 },
 {
   "id": "talk-demo-interactive-features",
