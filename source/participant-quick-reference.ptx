@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude">
+
+	<docinfo/>
+
+	<article xml:id="workshop-quick-reference">
+		<title>PreTeXt Workshop — Quick Reference</title>
+
+		<introduction>
+			<p>
+				<em>Everything you need during today's session. Keep this page open in a tab.</em>
+			</p>
+
+			<assemblage>
+				<title>Before You Start</title>
+				<p>
+					Make sure you are signed in to <c>github.com</c> in your browser.
+					Then open the workshop template repository at:
+				</p>
+				<p>
+					<url href="https://github.com/PreTeXtBook/pretext-codespace">
+						<c>github.com/PreTeXtBook/pretext-codespace</c>
+					</url>
+				</p>
+			</assemblage>
+		</introduction>
+
+		<!-- ================================================= -->
+		<!-- Section 1: Launch Codespace first                  -->
+		<!-- ================================================= -->
+		<section xml:id="launch-codespace">
+			<title>1. Launch Your Codespace First</title>
+
+			<p>
+				<em>Important: we start your Codespace now and then leave it alone for about half an hour.
+				First-time setup takes 5–10 minutes, so while it boots in the background we will practice
+				PreTeXt in a sandbox. Do not close the Codespace tab.</em>
+			</p>
+
+			<ol>
+				<li>
+					<p>
+						On the <c>pretext-codespace</c> page, click the green
+						<term>Use this template</term> button (top right), then choose
+						<term>Create a new repository</term>.
+					</p>
+				</li>
+				<li>
+					<p>
+						Give your repository a name (for example, <c>my-pretext-workshop</c>),
+						leave it set to <term>Public</term>, and click
+						<term>Create repository from template</term>.
+					</p>
+				</li>
+				<li>
+					<p>
+						On your new repository page, click the green <c>&lt; &gt; Code</c> button,
+						switch to the <term>Codespaces</term> tab, and click
+						<term>Create codespace on main</term>.
+					</p>
+				</li>
+				<li>
+					<p>
+						A new tab opens and begins building your workspace.
+						<em>Leave this tab open. Do not touch it.</em>
+						It will finish on its own while you work in the sandbox.
+					</p>
+				</li>
+				<li>
+					<p>
+						Open a <em>new browser tab</em> and go to
+						<url href="https://pretext.plus/tryit"><c>pretext.plus/tryit</c></url>.
+						Keep both tabs open for the rest of the workshop.
+					</p>
+				</li>
+			</ol>
+
+			<assemblage>
+				<title>✓ You know step 1 worked when…</title>
+				<p>
+					<ul>
+						<li>Your Codespace tab is visibly loading or says <q>Setting up your codespace.</q></li>
+						<li>You can see the <c>pretext.plus/tryit</c> editor in a different tab.</li>
+						<li>You are not tempted to click around in the Codespace tab.</li>
+					</ul>
+				</p>
+			</assemblage>
+		</section>
+
+		<!-- ================================================= -->
+		<!-- Section 2: Sandbox exercises                       -->
+		<!-- ================================================= -->
+		<section xml:id="sandbox-exercises">
+			<title>2. While You Wait — Practice in the Sandbox</title>
+
+			<p>
+				<em><c>pretext.plus/tryit</c> is a throwaway sandbox. You type PreTeXt source on
+				the left, click <term>Rebuild</term>, and see the result on the right. Nothing you
+				do here is saved — that is fine. Every exercise below is in this handout, so you
+				can always paste it again.</em>
+			</p>
+
+			<p>
+				<alert>How to work each exercise:</alert> find the closing <c>&lt;/section&gt;</c>
+				tag near the bottom of the sandbox, and paste the snippet on a new line
+				<em>just above it</em>. Then click <term>Rebuild</term> and look at the preview.
+			</p>
+
+			<subsection xml:id="exercise-1">
+				<title>Exercise 1 — A paragraph with inline math</title>
+				<p>
+					<em>Paste this inside the section and rebuild. Notice how inline math
+					flows with the text.</em>
+				</p>
+				<program language="xml">
+					<code>
+<![CDATA[<p>The Pythagorean theorem states that <m>a^2 + b^2 = c^2</m>,
+where <m>c</m> is the length of the hypotenuse.</p>]]>
+					</code>
+				</program>
+			</subsection>
+
+			<subsection xml:id="exercise-2">
+				<title>Exercise 2 — A definition</title>
+				<p>
+					<em>Add a formal definition. The <c>xml:id</c> is a label we will use in Exercise 5.</em>
+				</p>
+				<program language="xml">
+					<code>
+<![CDATA[<definition xml:id="def-right-triangle">
+  <statement>
+    <p>A <term>right triangle</term> is a triangle
+    with one angle measuring exactly 90 degrees.</p>
+  </statement>
+</definition>]]>
+					</code>
+				</program>
+			</subsection>
+
+			<subsection xml:id="exercise-3">
+				<title>Exercise 3 — An example</title>
+				<p>
+					<em>Examples get numbered automatically. Try changing the title after you rebuild.</em>
+				</p>
+				<program language="xml">
+					<code>
+<![CDATA[<example>
+  <title>A 3-4-5 triangle</title>
+  <statement>
+    <p>Show that a triangle with sides 3, 4, and 5
+    is a right triangle.</p>
+  </statement>
+  <solution>
+    <p>Check: <m>3^2 + 4^2 = 9 + 16 = 25 = 5^2</m>.</p>
+  </solution>
+</example>]]>
+					</code>
+				</program>
+			</subsection>
+
+			<subsection xml:id="exercise-4">
+				<title>Exercise 4 — An exercise</title>
+				<p>
+					<em>Exercises are also numbered automatically, separately from examples.</em>
+				</p>
+				<program language="xml">
+					<code>
+<![CDATA[<exercise>
+  <statement>
+    <p>Find the length of the hypotenuse of a right
+    triangle with legs of length 5 and 12.</p>
+  </statement>
+</exercise>]]>
+					</code>
+				</program>
+			</subsection>
+
+			<subsection xml:id="exercise-5">
+				<title>Exercise 5 — A cross-reference</title>
+				<p>
+					<em>This is the magic moment. The <c>&lt;xref&gt;</c> points at the <c>xml:id</c>
+					you gave the definition in Exercise 2, and PreTeXt builds a working link for you.</em>
+				</p>
+				<program language="xml">
+					<code>
+<![CDATA[<p>For a reminder of the terminology,
+see <xref ref="def-right-triangle"/>.</p>]]>
+					</code>
+				</program>
+			</subsection>
+
+			<assemblage>
+				<title>Finished early?</title>
+				<p>
+					Try changing the title of your example. Swap the numbers in the 3-4-5 example
+					for a 5-12-13 triangle. Try breaking something on purpose to see what an error
+					looks like. The sandbox is for playing.
+				</p>
+			</assemblage>
+		</section>
+
+		<!-- ================================================= -->
+		<!-- Section 3: Back to Codespace                       -->
+		<!-- ================================================= -->
+		<section xml:id="back-to-codespace">
+			<title>3. Back to Your Codespace</title>
+
+			<p>
+				<em>Your Codespace should be ready now. Switch to that tab — you should see a
+				file explorer on the left and a blue bar at the bottom of the window.</em>
+			</p>
+
+			<ol>
+				<li>
+					<p>
+						Press <kbd>F1</kbd> (or <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>) to
+						open the command palette. Type <c>pretext new</c> and select
+						<term>PreTeXt: New Project</term>.
+					</p>
+				</li>
+				<li>
+					<p>
+						When asked what kind of project, choose <term>book</term>. When asked where
+						to put it, press <kbd>Enter</kbd> to accept the default location.
+					</p>
+				</li>
+				<li>
+					<p>
+						The window reloads with a new project. Look for the <c>source</c> folder
+						on the left and click to expand it.
+					</p>
+				</li>
+				<li>
+					<p>
+						Find and open <c>main.ptx</c> (or the first chapter file in <c>source/</c>).
+						This is where your lesson will live.
+					</p>
+				</li>
+			</ol>
+
+			<assemblage>
+				<title>Codespace tab says it stopped or went to sleep?</title>
+				<p>
+					No problem — just click the button to resume it. Waking a sleeping Codespace takes
+					a few seconds, not the full 5–10 minutes. Your work is still there.
+				</p>
+			</assemblage>
+		</section>
+
+		<!-- ================================================= -->
+		<!-- Section 4: Starter lesson                          -->
+		<!-- ================================================= -->
+		<section xml:id="starter-lesson">
+			<title>4. Make It Yours — Your Starter Lesson</title>
+
+			<p>
+				Inside <c>main.ptx</c>, find the first <c>&lt;section&gt;</c> inside the first
+				<c>&lt;chapter&gt;</c>. Replace everything between the opening and closing
+				<c>&lt;section&gt;</c> tags with the block below. Save the file
+				(<kbd>Ctrl</kbd>+<kbd>S</kbd>).
+			</p>
+
+			<program language="xml">
+				<code>
+<![CDATA[<title>Right Triangles</title>
+
+<p>This short lesson introduces right triangles and
+the Pythagorean theorem.</p>
+
+<definition xml:id="def-right-triangle">
+  <statement>
+    <p>A <term>right triangle</term> is a triangle
+    with one angle measuring exactly 90 degrees.</p>
+  </statement>
+</definition>
+
+<p>The Pythagorean theorem states that
+<m>a^2 + b^2 = c^2</m>, where <m>c</m> is the
+length of the hypotenuse.</p>
+
+<example>
+  <title>A 3-4-5 triangle</title>
+  <statement>
+    <p>Show that a triangle with sides 3, 4, and 5
+    is a right triangle.</p>
+  </statement>
+  <solution>
+    <p>Check: <m>3^2 + 4^2 = 9 + 16 = 25 = 5^2</m>.</p>
+  </solution>
+</example>
+
+<exercise>
+  <statement>
+    <p>Find the length of the hypotenuse of a right
+    triangle with legs of length 5 and 12.</p>
+  </statement>
+</exercise>
+
+<p>For a reminder of the terminology,
+see <xref ref="def-right-triangle"/>.</p>]]>
+				</code>
+			</program>
+
+			<assemblage>
+				<title>Now make it yours</title>
+				<p>
+					Change the chapter title. Rename the section. Swap the topic for something you
+					actually teach — replace the definition with your own, rewrite the example,
+					change the exercise. The structure stays the same. The content is yours.
+				</p>
+			</assemblage>
+		</section>
+
+		<!-- ================================================= -->
+		<!-- Section 5: Build, View, Deploy                     -->
+		<!-- ================================================= -->
+		<section xml:id="build-view-deploy">
+			<title>5. Build, View, Deploy</title>
+
+			<p>
+				Find the <term>▷ PreTeXt</term> button in the blue bar at the very bottom of the
+				Codespace window. That button is your control panel.
+			</p>
+
+			<paragraphs>
+				<title>Build — turn your source into a webpage</title>
+				<p>
+					Click <term>▷ PreTeXt</term> → <term>Build default target</term>. Wait for the
+					terminal to finish. <em>You must Build again every time you change your source.</em>
+				</p>
+			</paragraphs>
+
+			<paragraphs>
+				<title>View — preview your webpage</title>
+				<p>
+					Click <term>▷ PreTeXt</term> → <term>View</term>. A preview tab opens. After every
+					edit, Build again and refresh the preview.
+				</p>
+			</paragraphs>
+
+			<paragraphs>
+				<title>Deploy — publish to a public URL</title>
+				<p>
+					Click <term>▷ PreTeXt</term> → <term>Deploy</term>. Watch the terminal for your
+					<c>github.io</c> link. It may take a few minutes after the command finishes before
+					the site is actually live.
+				</p>
+			</paragraphs>
+
+			<assemblage>
+				<title>✓ You're done when…</title>
+				<p>
+					<ul>
+						<li>You have a <c>github.io</c> URL in the terminal.</li>
+						<li>You can open that URL in a new tab and see your lesson.</li>
+						<li>You are ready to share the link with a colleague.</li>
+					</ul>
+				</p>
+			</assemblage>
+		</section>
+
+		<!-- ================================================= -->
+		<!-- Section 6: Troubleshooting                         -->
+		<!-- ================================================= -->
+		<section xml:id="troubleshooting">
+			<title>6. If You Get Stuck</title>
+
+			<assemblage>
+				<title>Build failed with a red error</title>
+				<p>
+					Almost always a missing or mismatched tag. Look at the error message for a line
+					number, and check that every <c>&lt;tag&gt;</c> has a matching <c>&lt;/tag&gt;</c>.
+					When in doubt, paste the starter block again and edit more carefully.
+				</p>
+			</assemblage>
+
+			<assemblage>
+				<title>Preview tab is blank, stale, or won't load</title>
+				<p>
+					Build again first, then refresh the preview tab. The preview does not update
+					automatically. If that does not help, close the preview tab and run
+					<term>▷ PreTeXt</term> → <term>View</term> again.
+				</p>
+			</assemblage>
+
+			<assemblage>
+				<title>Codespace closed, timed out, or went to sleep</title>
+				<p>
+					Go back to your repository on <c>github.com</c>, click the <c>&lt; &gt; Code</c>
+					button, open the <term>Codespaces</term> tab, and click your existing codespace
+					to resume it. Your files are still there.
+				</p>
+			</assemblage>
+
+			<assemblage>
+				<title>Something else is wrong</title>
+				<p>
+					Raise your hand. We will come to you. You are almost certainly not the only one.
+				</p>
+			</assemblage>
+		</section>
+
+		<!-- ================================================= -->
+		<!-- Section 7: LaTeX bridge                            -->
+		<!-- ================================================= -->
+		<section xml:id="latex-bridge">
+			<title>7. LaTeX → PreTeXt Cheat Sheet</title>
+
+			<p>
+				<em>If you already write LaTeX, most of what you know transfers directly. The math
+				inside the tags is still LaTeX.</em>
+			</p>
+
+			<table>
+				<title>Common LaTeX patterns and their PreTeXt equivalents</title>
+				<tabular top="minor" bottom="minor" left="minor" halign="left">
+					<col right="minor"/>
+					<col right="minor"/>
+					<row header="yes" bottom="minor">
+						<cell><alert>LaTeX</alert></cell>
+						<cell><alert>PreTeXt</alert></cell>
+					</row>
+					<row>
+						<cell><c>\(x^2\)</c></cell>
+						<cell><c>&lt;m&gt;x^2&lt;/m&gt;</c></cell>
+					</row>
+					<row>
+						<cell><c>\[ \int f \]</c></cell>
+						<cell><c>&lt;me&gt;\int f&lt;/me&gt;</c></cell>
+					</row>
+					<row>
+						<cell><c>\section{Title}</c></cell>
+						<cell><c>&lt;section&gt;&lt;title&gt;Title&lt;/title&gt;</c></cell>
+					</row>
+					<row>
+						<cell><c>\begin{itemize}</c></cell>
+						<cell><c>&lt;ul&gt;</c></cell>
+					</row>
+					<row>
+						<cell><c>\item text</c></cell>
+						<cell><c>&lt;li&gt;&lt;p&gt;text&lt;/p&gt;&lt;/li&gt;</c></cell>
+					</row>
+					<row>
+						<cell><c>\begin{definition}</c></cell>
+						<cell><c>&lt;definition&gt;&lt;statement&gt;&lt;p&gt;</c></cell>
+					</row>
+					<row>
+						<cell><c>\emph{word}</c></cell>
+						<cell><c>&lt;em&gt;word&lt;/em&gt;</c></cell>
+					</row>
+					<row>
+						<cell><c>\textbf{word}</c></cell>
+						<cell><c>&lt;term&gt;word&lt;/term&gt;</c></cell>
+					</row>
+					<row>
+						<cell><c>\ref{label}</c></cell>
+						<cell><c>&lt;xref ref="label"/&gt;</c></cell>
+					</row>
+				</tabular>
+			</table>
+		</section>
+
+		<!-- ================================================= -->
+		<!-- Section 8: After the workshop                      -->
+		<!-- ================================================= -->
+		<section xml:id="after-workshop">
+			<title>8. After the Workshop</title>
+
+			<p>
+				<em>Three ways to keep going, depending on how you like to work.</em>
+			</p>
+
+			<paragraphs>
+				<title>Keep using Codespaces (recommended)</title>
+				<p>
+					Your repository is yours. Come back anytime, open the Codespace from the
+					<c>&lt; &gt; Code</c> button, and continue editing. Your lesson is already
+					deployed, so re-running <term>Deploy</term> updates the live site.
+				</p>
+			</paragraphs>
+
+			<paragraphs>
+				<title>Prefer not to use GitHub at all?</title>
+				<p>
+					PreTeXt.Plus offers a free tier at
+					<url href="https://pretext.plus"><c>pretext.plus</c></url> that lets you
+					create up to 10 projects with shareable links — no GitHub account required.
+					It is a great fit for quick drafts and one-off documents. The same PreTeXt
+					markup you learned today works there too.
+				</p>
+			</paragraphs>
+
+			<paragraphs>
+				<title>Already have a pile of LaTeX?</title>
+				<p>
+					PreTeXt.Plus includes a LaTeX-to-PreTeXt converter. Treat its output as a
+					<em>starting point</em> rather than a finished conversion — some things will
+					need cleanup — but for a first look at how your existing material would feel
+					in PreTeXt, it is a quick win.
+				</p>
+			</paragraphs>
+
+			<paragraphs>
+				<title>Install PreTeXt locally (long-term)</title>
+				<p>
+					Eventually you may want PreTeXt running on your own machine. The official
+					documentation at <url href="https://pretextbook.org"><c>pretextbook.org</c></url>
+					walks through the options. No rush — the Codespaces workflow will serve you
+					well for a long time.
+				</p>
+			</paragraphs>
+
+			<paragraphs>
+				<title>Community and help</title>
+				<p>
+					The PreTeXt community is active and welcoming. Start at
+					<url href="https://pretextbook.org/community.html"><c>pretextbook.org/community.html</c></url>
+					for forums, documentation, and the author's guide.
+				</p>
+			</paragraphs>
+
+			<p>
+				<em>PreTeXt workshop · your Codespace and your published site will still be there tomorrow.</em>
+			</p>
+		</section>
+
+	</article>
+</pretext>

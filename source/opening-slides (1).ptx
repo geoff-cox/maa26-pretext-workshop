@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude">
+
+	<docinfo/>
+
+	<slideshow>
+		<title>Getting Started with <pretext/></title>
+		<subtitle>Author, Build, and Publish in Two Hours</subtitle>
+
+		<slide label="welcome">
+			<title>Welcome</title>
+
+			<p>
+				Thanks for being here. Over the next two hours, you will
+				author, build, and publish a small lesson using <pretext/> —
+				entirely in your web browser.
+			</p>
+
+			<p>
+				No installs. No command line wizardry. No prior experience required.
+			</p>
+
+			<p>
+				If you can write a worksheet and you have seen <latex/> once,
+				you can write in <pretext/>.
+			</p>
+		</slide>
+
+		<slide label="who-this-is-for">
+			<title>Who This Workshop Is For</title>
+
+			<p pause="no">
+				This workshop assumes you are:
+			</p>
+
+			<ul pause="no">
+				<li>An instructor curious about authoring your own course materials</li>
+				<li>New to <pretext/> (and probably new to GitHub too)</li>
+				<li>Comfortable editing text and clicking around a browser</li>
+			</ul>
+
+			<p>
+				You do <em>not</em> need to know Git, XML, the command line,
+				or how to install software. We will treat all of that as a
+				black box today.
+			</p>
+		</slide>
+
+		<slide label="the-promise">
+			<title>What You Will Leave With</title>
+
+			<p>
+				By the end of this session, you will have:
+			</p>
+
+			<dl pause="no">
+				<li>
+					<title>A working authoring setup</title>
+					<p>Running in your browser, ready to use again tomorrow.</p>
+				</li>
+				<li>
+					<title>A small lesson you wrote yourself</title>
+					<p>Built from real <pretext/> source, using structures you will recognize.</p>
+				</li>
+				<li>
+					<title>A public web link</title>
+					<p>A real URL you can share with colleagues or students.</p>
+				</li>
+			</dl>
+
+			<p>
+				That is the whole goal. Everything else is a bonus.
+			</p>
+		</slide>
+
+		<slide label="what-is-pretext">
+			<title>What Is <pretext/>?</title>
+
+			<p>
+				<pretext/> is a free, open-source authoring system for
+				textbooks, lecture notes, worksheets, and articles.
+			</p>
+
+			<p>
+				The key idea: you describe <em>what your content is</em> —
+				a definition, an example, an exercise — and <pretext/>
+				decides how it should look.
+			</p>
+
+			<p>
+				One source file. Many polished outputs.
+			</p>
+		</slide>
+
+		<slide label="write-once">
+			<title>Write Once, Publish Everywhere</title>
+
+			<p pause="no">
+				From a single <pretext/> source, you can generate:
+			</p>
+
+			<ul pause="no">
+				<li>An interactive website</li>
+				<li>A print-ready PDF</li>
+				<li>An ePub for e-readers</li>
+				<li>Braille and large-print editions</li>
+			</ul>
+
+			<p>
+				You write your content once. When tomorrow's format comes along,
+				your source is ready for it.
+			</p>
+		</slide>
+
+		<slide label="why-care">
+			<title>Why Instructors Care</title>
+
+			<dl pause="no">
+				<li>
+					<title>Accessibility by default</title>
+					<p>Screen-reader friendly, keyboard navigable, and ready for students who need alternative formats — without extra work from you.</p>
+				</li>
+				<li>
+					<title>Your content, your control</title>
+					<p>Free, open, and yours to adapt, remix, and share.</p>
+				</li>
+				<li>
+					<title>Built for the long run</title>
+					<p>Structured source that will still be usable in ten years.</p>
+				</li>
+			</dl>
+		</slide>
+
+		<slide label="latex-bridge">
+			<title>If You Know <latex/>, You Have a Head Start</title>
+
+			<p>
+				Much of what you already know transfers directly.
+			</p>
+
+			<p>
+				<line>Inline math: <c>\(x^2\)</c> becomes <c>&lt;m&gt;x^2&lt;/m&gt;</c></line>
+				<line>Displayed math: <c>\[ \int f \]</c> becomes <c>&lt;me&gt;\int f&lt;/me&gt;</c></line>
+				<line>Sections, lists, examples, theorems: all familiar, just tagged differently</line>
+			</p>
+
+			<p>
+				The math inside the tags is still <latex/>. You are mostly
+				learning a new wrapper, not a new language.
+			</p>
+		</slide>
+
+		<slide label="today-plan">
+			<title>Today's Plan</title>
+
+			<dl pause="no">
+				<li>
+					<title>First: we get everyone set up</title>
+					<p>Launch a workspace in your browser. No installs.</p>
+				</li>
+				<li>
+					<title>Next: a quick tour</title>
+					<p>Where the source lives, how to build it, how to preview it.</p>
+				</li>
+				<li>
+					<title>Then: the main event</title>
+					<p>You write a small lesson using a handful of <pretext/> structures.</p>
+				</li>
+				<li>
+					<title>Finally: publish and share</title>
+					<p>Your lesson goes live on a public URL.</p>
+				</li>
+			</dl>
+		</slide>
+
+		<slide label="how-we-work">
+			<title>How We Will Work Together</title>
+
+			<ul pause="no">
+				<li>Follow along on your own laptop — this is hands-on, not a lecture</li>
+				<li>Use the printed quick reference when you need a reminder</li>
+				<li>Ask questions out loud; someone else probably has the same one</li>
+				<li>If you get stuck, raise a hand — we will come to you</li>
+				<li>If something breaks, that is normal; we have a backup plan</li>
+			</ul>
+
+			<p>
+				The goal is <em>finished</em>, not <em>perfect</em>.
+			</p>
+		</slide>
+
+		<slide label="ready">
+			<title>Ready?</title>
+
+			<p>
+				Open your laptop, open your browser, and make sure you are
+				signed in to GitHub.
+			</p>
+
+			<p>
+				On the next step, we will all launch our workspace together.
+			</p>
+
+			<p>
+				Let's build something.
+			</p>
+		</slide>
+
+	</slideshow>
+</pretext>
