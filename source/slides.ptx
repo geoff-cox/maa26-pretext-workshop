@@ -3,53 +3,88 @@
 <pretext xmlns:xi="http://www.w3.org/2001/XInclude">
 
 	<docinfo/>
-
+		
 	<slideshow>
-		<title>PreTeXt Onboarding Workshop</title>
-		<subtitle>MAA 2026, Washington DC</subtitle>
+		<title>Getting Started with <pretext/></title>
+		<subtitle>Author, Build, and Publish in Two Hours</subtitle>
 
 		<xi:include href="./frontmatter-slides.ptx" />
 
-		<slide label="opening">
-			<title>Why Rethink the Differential Equations Textbook?</title>
+		<slide label="welcome">
+			<title>Welcome</title>
 
 			<p>
-				Differential equations is a gateway course for many STEM majors, yet the materials we use are often
-				expensive, static, and mismatched to how students actually learn today.
+				Thanks for being here. Over the next two hours, you will
+				author, build, and publish a small lesson using <pretext/> —
+				entirely in your web browser.
+			</p>
+
+			<p>
+				No installs. No prior experience required.
+			</p>
+
+			<p pause="no">
+				This workshop assumes you are:
 			</p>
 
 			<ul pause="no">
-				<li>Commercial texts are polished but rigid.</li>
-				<li>Free notes exist, but often lack structure and support.</li>
-				<li>Students increasingly expect interactive, accessible, and digital-first resources.</li>
+				<li>An instructor curious about authoring your own course materials</li>
+				<li>New to <pretext/> (and probably new to GitHub too)</li>
+				<li>Comfortable editing text and clicking around a browser</li>
 			</ul>
 
 			<p>
-				This talk describes the design of a student-centered, interactive textbook and the tools that made it sustainable.
+				You do <em>not</em> need to know Git, XML, the command line,
+				or how to install software. We will treat all of that as a
+				black box today.
 			</p>
 		</slide>
 
-		<slide label="overview">
-			<title>Overview</title>
+		<slide label="the-promise">
+			<title>What You Will Leave With</title>
+
+			<p>
+				By the end of this session, you will have:
+			</p>
 
 			<dl pause="no">
 				<li>
-					<title>Part I: Authoring Tool</title>
-					<p>How open-source tooling enables sustainable, interactive textbooks.</p>
+					<title>A working authoring setup</title>
+					<p>Running in your browser, ready to use again tomorrow.</p>
 				</li>
 				<li>
-					<title>Part II: Textbook Design</title>
-					<p>Design philosophy, features, and a brief demonstration.</p>
+					<title>A small lesson you wrote yourself</title>
+					<p>Built from real <pretext/> source, using structures you will recognize.</p>
 				</li>
 				<li>
-					<title>Part III: Pedagogical Evaluation</title>
-					<p>Questions, methods and why it matters.</p>
+					<title>A public web link</title>
+					<p>A real URL you can share with colleagues or students.</p>
 				</li>
 			</dl>
+
+			<p>
+				That is the whole goal. Everything else is a bonus.
+			</p>
 		</slide>
 
-		<slide label="p1-pretext-what-is-it">
-			<title>Part I: Authoring Tool</title>
+		<slide label="what-is-pretext">
+			<title>What Is <pretext/>?</title>
+
+			<p>
+				<pretext/> is a free, open-source authoring system for
+				textbooks, lecture notes, worksheets, and articles.
+			</p>
+
+			<p>
+				The key idea: you describe <em>what your content is</em> —
+				a definition, an example, an exercise — and <pretext/>
+				decides how it should look.
+			</p>
+
+			<p>
+				One source file. Many polished outputs.
+			</p>
+
 
 			<p>
 				PreTeXt is an open-source authoring system for writing structured, accessible, and interactive educational materials.
@@ -57,15 +92,19 @@
 
 			<dl pause="no">
 				<li>
-					<title>Write once, publish everywhere</title>
-					<p>Web, PDF, ePub, large print, and Braille from a single source.</p>
+					<title><em>Write once, publish everywhere</em></title>
+					<p>
+						From one source you can produce web, PDF, ePub, and Braille versions.
+					</p>
 				</li>
 				<li>
-					<title>Pedagogy-aware structure</title>
-					<p>Examples, exercises, definitions, and loads of interactive features.</p>
+					<title><em>Built-in Interactive Components:</em></title>
+					<p>
+						Suppliment narrative with interactive reading questions, computational/programming tasks, or embedded visualization tools.
+					</p>
 				</li>
 				<li>
-					<title>Accessibility by design</title>
+					<title><em>Accessibility by design:</em></title>
 					<p>Screen-reader friendly, responsive layouts, and dark/light modes.</p>
 				</li>
 			</dl>
@@ -73,38 +112,51 @@
 			<p>
 				Whether you want an interactive textbook, a research hub, or lecture notes, PreTeXt is ready for most workflows.
 			</p>
+
 		</slide>
 
-		<slide label="p1-pretext-getting-started">
-			<title>Getting Started with PreTeXt</title>
+		<slide>
+			<title>How to Get Started?</title>
 
-			<dl pause="no">
-				<li>
-					<title>Authoring Environment</title>
+			<dl>
+				<li><title>Documention</title>
 					<p>
-						<ul pause="no">
-							<li>GitHub + Codespaces (recommended for beginners)</li>
-							<li>Local setup (code editor, python, latex, etc.)</li>
+						Visit <url href="https://pretextbook.org">pretextbook.org</url>.
+					</p>
+				</li>
+				<li><title>Working Environement Options</title>
+					<p>
+						<ul>
+							<li><p>PreTeXt.Plus</p></li>
+							<li><p>Github + Codespaces</p></li>
+							<li>
+								<p>Local Installation
+									<ul>
+										<li>VSCode</li>
+										<li>Python</li>
+										<li>Latex</li>
+										<li>A few more depending on your use case.</li>
+									</ul>
+								</p>
+							</li>
 						</ul>
 					</p>
 				</li>
-				<li>
-					<title>What You Need to Learn</title>
-					<p>
-						<ul pause="no">
-							<li>Basic Git workflow</li>
-							<li>XML-style markup (closer to HTML than LaTeX)</li>
-							<li>Minimal command-line usage</li>
+				<li><title>Learning/Getting Help</title>
+					<p>			
+						<ul>
+							<li>Start Simple, use published templates.</li>
+							<li>Join the active and helpful community via the <url href="https://pretextbook.org/community.html">PreTeXt community forums</url>.</li>
 						</ul>
 					</p>
 				</li>
 			</dl>
 
 			<p>
-				The learning curve is real, but front-loaded, and well-supported by the community.
+				Once you've built a “Hello World,” you can scale up chapter by chapter — just like writing modular code.
 			</p>
 		</slide>
-
+		
 		<slide label="p1-pretext-features">
 			<title>Interactive Capabilities</title>
 
@@ -132,730 +184,141 @@
 			</p>
 		</slide>
 
-		<slide label="p2-transition">
-			<title>From Tool to Design</title>
+		<slide label="write-once">
+			<title>Write Once, Publish Everywhere</title>
 
-			<p>
-				Textbooks are typically written, reviewed, and evaluated by experts in the field.
-				As a result, they often prioritize disciplinary completeness over how students
-				actually experience the material.
-			</p>
-
-			<p>
-				That tension led to our guiding design question:
-			</p>
-
-			<p>
-				<em>What would a differential equations textbook look like if it were written entirely for students?</em>
-			</p>
-
-		</slide>
-
-		<slide label="p2-design">
-			<title>Part II: Textbook Design</title>
-
-			<p>
-				The answer was not a longer or more feature-rich textbook,
-				but one intentionally designed around how students read,
-				reflect, and build understanding.
-			</p>
-
-			<p>
-				This led to a set of student-centered design principles:
-			</p>
-
-			<p>
-				<line>🔸A conversational, instructor-like tone</line>
-				<line>🔸Short, focused narrative blocks instead of long exposition</line>
-				<line>🔸Low-stakes checkpoint questions to guide attention</line>
-				<line>🔸Dynamic visualizations for conceptual clarity</line>
-				<line>🔸Audio narration to support accessibility and review</line>
-			</p>
-
-			<p>
-				No book will ever replace in-class, face-to-face instruction.
-				The goal here was to bring as much of that instructional experience
-				into the book as possible.
-			</p>
-
-			<line>
-				👉 <url href="https://runestone.academy/ns/books/published/debookrs/frontmatter.html">
-				Differential Equations Textbook
-				</url>
-			</line>
-		</slide>
-
-		<slide label="p3-transition">
-			<title>From Design to Evaluation</title>
-
-			<p>
-				The interactive features in this textbook were not added for novelty,
-				but to address persistent challenges in how students learn differential equations.
-			</p>
-
-			<p>
-				To move beyond anecdote, we will be conducting a formal study to examine 
-				how students actually engage with these features and what they perceive
-				as beneficial or challenging.
-			</p>
-
-			<p>
-				This work is framed as a small mixed-methods pedagogical study and will be implemented this spring.
-			</p>
-		</slide>
-
-		<slide label="p3-research-focus">
-			<title>Part III: Pedagogical Evaluation</title>
-
-			<p>
-				The plan for the guiding research question is:
-			</p>
-
-			<p>
-				<em>
-					In what ways do interactive textbooks enhance students’ understanding
-					of differential equations concepts?
-				</em>
-			</p>
-
-			<p>
-				Data will be collected through a student survey, and will be
-				supplemented by open-ended and reflective focus groups.
-			</p>
-
-			<p>
-				The emphasis will be on student engagement, conceptual understanding,
-				persistence, and accessibility.
-			</p>
-		</slide>
-
-		<slide label="p3-what-we-measure">
-			<title>What We Are Measuring</title>
-
-			<p>
-				Rather than testing isolated skills, the study will examine how students
-				<em>use</em> the textbook while learning.
-
-				<ul pause="no">
-					<li>How students engage with low-stakes reading questions</li>
-					<li>Whether feedback prompts reflection and persistence</li>
-					<li>Which interactive elements support or hinder learning</li>
-					<li>How students rate the experience to traditional books</li>
-				</ul>
-			</p>
-
-			<p>
-				These measures are designed to connect textbook features directly
-				to learning behaviors.
-			</p>
-		</slide>
-
-		<slide label="p3-why-it-matters">
-			<title>Why This Matters</title>
-
-			<p>
-				Differential equations is conceptually challenging because it asks students
-				to reason about dynamic systems using static representations.
-			</p>
-
-			<p>
-				Interactive textbooks have the potential to:
+			<p pause="no">
+				From a single <pretext/> source, you can generate:
 			</p>
 
 			<ul pause="no">
-				<li>Make abstract behavior more concrete and visual</li>
-				<li>Encourage struggle through immediate feedback</li>
-				<li>Support persistence when students answer incorrectly</li>
-				<li>Improve accessibility through multimodal engagement</li>
+				<li>An interactive website</li>
+				<li>A print-ready PDF</li>
+				<li>An ePub for e-readers</li>
+				<li>Braille and large-print editions</li>
 			</ul>
 
 			<p>
-				This study will help evaluate whether those potential benefits are realized in practice.
+				You write your content once. When tomorrow's format comes along,
+				your source is ready for it.
 			</p>
 		</slide>
 
-		<slide label="closing">
-			<title>Closing Thoughts</title>
+		<slide label="why-care">
+			<title>Why Instructors Care</title>
 
-			<p>
-				Open textbooks are not just about cost, they are about control, adaptability, and pedagogy.
-			</p>
-
-			<p>
-				PreTeXt made it possible to build something ambitious and to keep improving it over time.
-			</p>
-
-			<p>
-				If you ever thought about writing a book you wish existed, the tools are ready.
-			</p>
-		</slide>
-
-		<slide label="thanks-questions">
-			<title>Thank You</title>
-
-			<p>
-				Thank you for your time. I am happy to answer questions or discuss collaboration.
-			</p>
-
-			<p>
-				Questions?
-			</p>
-		</slide>
-
-
-		<slide xml:id="slide-01">
-			<title>What is <pretext />?</title>
-
-			<p>
-				<pretext /> is an open-source XML-based authoring language designed for writing textbooks, articles, lecture notes, and course materials.
-			</p>
-			<dl>
+			<dl pause="no">
 				<li>
-					<title><em>Write once, publish everywhere</em></title>
-					<p>
-						From one source you can produce web, PDF, ePub, and Braille versions.
-					</p>
+					<title>Accessibility by default</title>
+					<p>Screen-reader friendly, keyboard navigable, and ready for students who need alternative formats — without extra work from you.</p>
 				</li>
 				<li>
-					<title><em>Built-in Interactive Components:</em></title>
-					<p>
-						Suppliment narrative with interactive reading questions, computational/programming tasks, or embedded visualization tools.
-					</p>
+					<title>Your content, your control</title>
+					<p>Free, open, and yours to adapt, remix, and share.</p>
 				</li>
 				<li>
-					<title><em>Accessibility Out of the Box:</em></title>
-					<p>
-						<pretext /> is Screen-Reader Friendly and supports Braille, Large Print, and Dark/Light Mode.
-					</p>
+					<title>Built for the long run</title>
+					<p>Structured source that will still be usable in ten years.</p>
 				</li>
 			</dl>
-			<p>
-				Whether you want a polished textbook, an online &amp; interactive research hub, or just clean online lecture notes, <pretext /> is ready for just about any workflow.
-			</p>
 		</slide>
 
-		<slide>
-			<title>Why use <pretext />?</title>
-			<sbsgroup widths="8% 90%" margins="2% 0%">
-				<sidebyside>
-					<p>☑️</p><p>Built-in Accessibility.</p>
-				</sidebyside>
-				<sidebyside>
-					<p>☑️</p><p>Build interactive textbooks, lecture notes, or problem collections with a consistent professional look.</p>
-				</sidebyside>	
-				<sidebyside>
-					<p>☑️</p><p>Easy to share &amp; adapt content with colleagues.</p>
-				</sidebyside>
-			</sbsgroup>
+		<slide label="latex-bridge">
+			<title>If You Know <latex/>, You Have a Head Start</title>
+
 			<p>
-				
+				Much of what you already know transfers directly.
 			</p>
+
+			<tabular>
+				<row>
+					<cell>Inline math</cell><cell><pre>\(*\)</pre></cell><cell><pre>&lt;m&gt;*&lt;/m&gt;</pre></cell>
+				</row>
+				<row>
+					<cell>Displayed math</cell><cell><pre>\[*\]</pre></cell><cell><pre>&lt;md&gt;*&lt;/md&gt;</pre></cell>
+				</row>
+				<row>
+					<cell>Ordered Lists</cell>
+					<cell>
+						<pre>
+							\begin{enumerate}
+								\item *
+							\end{enumerate}
+						</pre>
+					</cell>
+					<cell>
+						<pre>
+							&lt;ol&gt;
+								&lt;li&gt;*&lt;/li&gt;
+							&lt;/ol&gt;
+						</pre>
+					</cell>
+				</row>
+			</tabular>
+
+			<p>
+				The math inside the tags is still <latex/>. You are mostly
+				learning a new wrapper, not a new language.
+			</p>
+
 		</slide>
 
-		<slide>
-			<title>How to Get Started?</title>
+		<slide label="today-plan">
+			<title>Today's Plan</title>
 
-			<dl>
-				<li><title>Documention</title>
-					<p>
-						Visit <url href="https://<pretext />book.org"><pretext />book.org</url>.
-					</p>
+			<dl pause="no">
+				<li>
+					<title>First: we get everyone set up</title>
+					<p>Launch a workspace in your browser. No installs.</p>
 				</li>
-				<li><title>Working Environement (IDE/GUI)</title>
-					<p>
-						<ul>
-							<li>
-								Option 1: Github + Codespaces
-							</li>
-							<li> 
-								<p>
-									Option 2: Local Installation
-									<ul>
-										<li>VSCode</li>
-										<li>Python</li>
-										<li>Latex</li>
-										<li>A few more depending on your use case.</li>
-									</ul>
-								</p>
-							</li>
-						</ul>
-					</p>
+				<li>
+					<title>Next: a quick tour</title>
+					<p>Where the source lives, how to build it, how to preview it.</p>
 				</li>
-				<li><title>Requirements</title>
-					<p>			
-						<ul>
-							<li>Some Command Line Use (Less w/ Option 1).</li>
-							<li>Motivation to Onboard into something new.</li>
-						</ul>
-					</p>
+				<li>
+					<title>Then: the main event</title>
+					<p>You write a small lesson using a handful of <pretext/> structures.</p>
 				</li>
-				<li><title>Learning/Getting Help</title>
-					<p>			
-						<ul>
-							<li>Start Simple, use published templates.</li>
-							<li>Join the active and helpful community via the <url href="https://<pretext />book.org/community.html"><pretext /> community forums</url>.</li>
-						</ul>
-					</p>
+				<li>
+					<title>Finally: publish and share</title>
+					<p>Your lesson goes live on a public URL.</p>
 				</li>
 			</dl>
+		</slide>
+
+		<slide label="how-we-work">
+			<title>How We Will Work Together</title>
+
+			<ul pause="no">
+				<li>Follow along on your own laptop — this is hands-on, not a lecture</li>
+				<li>Use the printed quick reference when you need a reminder</li>
+				<li>Ask questions out loud; someone else probably has the same one</li>
+				<li>If you get stuck, raise a hand — we will come to you</li>
+				<li>If something breaks, that is normal; we have a backup plan</li>
+			</ul>
 
 			<p>
-				Once you've built a “Hello World,” you can scale up chapter by chapter — just like writing modular code.
+				The goal is <em>finished</em>, not <em>perfect</em>.
 			</p>
 		</slide>
 
-<section>
-	<title>Resources &amp; Links</title>
+		<slide label="ready">
+			<title>Ready?</title>
+
+			<p>
+				Open your laptop, open your browser, and make sure you are
+				signed in to GitHub.
+			</p>
+
+			<p>
+				On the next step, we will all launch our workspace together.
+			</p>
+
+			<p>
+				Let's build something.
+			</p>
+		</slide>
 
-	<slide>
-		<title>PreTeXt Resources</title>
-
-		<ul>
-			<li>
-				<strong>PreTeXt Project Website:</strong>
-				<url href="https://pretextbook.org">https://pretextbook.org</url>
-			</li>
-			<li>
-				<strong>Documentation &amp; Tutorials:</strong>
-				<url href="https://pretextbook.org/doc/guide/html/">Author's Guide</url>
-			</li>
-			<li>
-				<strong>Community Forum:</strong>
-				<url href="https://pretextbook.org/community.html">Discussion &amp; Support</url>
-			</li>
-			<li>
-				<strong>GitHub Repository:</strong>
-				<url href="https://github.com/PreTeXtBook/pretext">https://github.com/PreTeXtBook/pretext</url>
-			</li>
-		</ul>
-
-		<p>
-			The PreTeXt community is active and supportive — a great place to ask questions, share progress, and learn from others.
-		</p>
-	</slide>
-
-	<slide>
-		<title>My Differential Equations Textbook</title>
-
-		<p>
-			<strong>Title:</strong> <c>Differential Equations: An Interactive Introduction</c>
-		</p>
-
-		<ul>
-			<li>
-				<strong>Web version:</strong>
-				<url href="YOUR_BOOK_URL_HERE">YOUR_BOOK_URL_HERE</url>
-			</li>
-			<li>
-				<strong>GitHub repository (if public):</strong>
-				<url href="YOUR_REPO_URL_HERE">YOUR_REPO_URL_HERE</url>
-			</li>
-			<li>
-				Free to read, open to adapt — feedback and collaboration welcome!
-			</li>
-		</ul>
-
-		<p>
-			This project demonstrates how PreTeXt can support modern, open, and computationally aware textbook design.
-		</p>
-	</slide>
-
-	<slide>
-		<title>Additional Inspiration</title>
-
-		<ul>
-			<li>
-				<strong>Runestone Interactive:</strong>
-				<url href="https://runestone.academy/">https://runestone.academy</url>
-				– free platform for hosting interactive PreTeXt books.
-			</li>
-			<li>
-				<strong>Open Math Books:</strong>
-				<url href="https://aimath.org/textbooks/approved-textbooks/">AIM Open Textbook Initiative</url>
-				– examples of successful PreTeXt publications.
-			</li>
-			<li>
-				<strong>WeBWorK:</strong>
-				<url href="https://webwork.maa.org/">https://webwork.maa.org</url>
-				– integrates well with PreTeXt for online problem sets.
-			</li>
-		</ul>
-
-		<p>
-			PreTeXt connects seamlessly with the open-source mathematical ecosystem —
-			it's part of a broader movement toward reproducible and accessible educational materials.
-		</p>
-	</slide>
-
-	<slide>
-		<title>Thank You!</title>
-
-		<p>
-			Thanks for coming! I hope this gave you a sense of how fun and empowering it can be to write in PreTeXt.
-		</p>
-
-		<p>
-			If you'd like to explore more or collaborate, feel free to reach out:
-		</p>
-
-		<ul>
-			<li><strong>Email:</strong> YOUR_EMAIL_HERE</li>
-			<li><strong>Department:</strong> YOUR_DEPARTMENT_NAME</li>
-			<li><strong>Institution:</strong> YOUR_INSTITUTION_NAME</li>
-		</ul>
-
-		<p>
-			Let's keep building great computational resources together.
-		</p>
-	</slide>
-
-</section>
-		<section>
-			<title>Lists</title>
-
-			<slide>
-				<title>Ordered Lists, All At Once</title>
-
-				<p><ol>
-					<li>Two conversions: print-on-demand, electronic <init>PDF</init></li>
-					<li>Extensive use of the <c>tcolorbox</c> package (CSS-like)</li>
-					<li>Evolving styling/themes (Andrew Rechnitzer, David Farmer)</li>
-				</ol></p>
-			</slide>
-
-			<slide>
-				<title>Ordered Lists, With Features</title>
-
-				<p>These are enumerated with capital letters.</p>
-
-				<p><ol marker="A">
-					<li>Two conversions: print-on-demand, electronic <init>PDF</init></li>
-					<li>Extensive use of the <c>tcolorbox</c> package (CSS-like)</li>
-					<li>Evolving styling/themes (Andrew Rechnitzer, David Farmer)</li>
-				</ol></p>
-
-				<p>These are inline</p>
-
-				<p><ol marker="i" cols="2">
-					<li>print-on-demand</li>
-					<li>electronic <init>PDF</init></li>
-				</ol></p>
-
-				<p>And these have pauses.</p>
-				<p><ol pause="yes">
-					<li>Two conversions: print-on-demand, electronic <init>PDF</init></li>
-					<li>Extensive use of the <c>tcolorbox</c> package (CSS-like)</li>
-					<li>Evolving styling/themes (Andrew Rechnitzer, David Farmer)</li>
-				</ol></p>
-			</slide>
-
-			<slide>
-				<title>Unordered Lists, All At Once</title>
-
-				<p><ul>
-					<li><p>XML syntax is a nested hierarchy (a tree)<ul>
-						<li><tag>foo</tag><ellipsis/><tag>/foo</tag></li>
-						<li><tage>bar</tage></li>
-						<li><c>&lt;baz qux="corge"&gt;</c></li>
-					</ul></p></li>
-					<li>Does not have to be <em>UGLY</em>!</li>
-					<li><pretext/> is <q>author-friendly</q> (Principle #2)</li>
-				</ul></p>
-			</slide>
-
-			<slide>
-				<title>Unordered Lists, With Pause</title>
-
-				<!-- Pauses in interior list only acts oddly -->
-				<p><ul pause="yes">
-					<li><p>XML syntax is a nested hierarchy (a tree)<ul pause="yes">
-						<li><tag>foo</tag><ellipsis/><tag>/foo</tag></li>
-						<li><tage>bar</tage></li>
-						<li><c>&lt;baz qux="corge"&gt;</c></li>
-					</ul></p></li>
-					<li>Does not have to be <em>UGLY</em>!</li>
-					<li><pretext/> is <q>author-friendly</q> (Principle #2)</li>
-				</ul></p>
-			</slide>
-
-			<slide>
-				<title>Description Lists, All At Once</title>
-
-				<p><dl>
-					<li>
-						<title>Central Processing Unit (CPU)</title>
-						<p>Controls most of the activities of the computer, performs the arithmetic and logical operations, and contains a small amount of very fast memory.</p>
-					</li>
-
-					<li>
-						<title>Memory</title>
-						<p>Provides storage for the instructions for the CPU and the data they manipulate.</p>
-					</li>
-
-					<li>
-						<title>Input/Output (I/O)</title>
-						<p>Communicates with the outside world and with mass storage devices (e.g., disks).</p>
-					</li>
-
-					<li>
-						<title>Bus!</title>
-						<p>A communication pathway with a protocol specifying exactly how the pathway is used. (The punctuation is just for testing.)</p>
-					</li>
-				</dl></p>
-			</slide>
-
-			<slide>
-				<title>Description Lists, With Pauses</title>
-
-				<p><dl pause="yes">
-					<li>
-						<title>Central Processing Unit (CPU)</title>
-						<p>Controls most of the activities of the computer, performs the arithmetic and logical operations, and contains a small amount of very fast memory.</p>
-					</li>
-
-					<li>
-						<title>Memory</title>
-						<p>Provides storage for the instructions for the CPU and the data they manipulate.</p>
-					</li>
-
-					<li>
-						<title>Input/Output (I/O)</title>
-						<p>Communicates with the outside world and with mass storage devices (e.g., disks).</p>
-					</li>
-
-					<li>
-						<title>Bus!</title>
-						<p>A communication pathway with a protocol specifying exactly how the pathway is used. (The punctuation is just for testing.)</p>
-					</li>
-				</dl></p>
-			</slide>
-
-			<slide>
-				<title>Blocks: <tag>definition</tag></title>
-
-				<definition xml:id="definition-indefinite-integral">
-					<idx>indefinite integral</idx><idx><h>integral</h><h>indefinite integral</h></idx>
-					<notation>
-						<usage><m>\int\,f(x)\,dx</m></usage>
-						<description>indefinite integral of <m>f(x)</m></description>
-					</notation>
-					<statement>
-						<p>Suppose that <m>\frac{d}{dx}F(x)=f(x)</m>.  Then the <term>indefinite integral</term> of <m>f(x)</m> is <m>F(x)</m> and is written as <me>\int\,f(x)\,dx=F(x)</me>.</p>
-					</statement>
-				</definition>
-			</slide>
-
-			<slide>
-				<title>Blocks: <tag>theorem</tag></title>
-
-				<p>This should also test other <q>theorem-like</q>, such as <tag>corollary</tag>.</p>
-
-				<theorem xml:id="theorem-FTC">
-					<title>The Fundamental Theorem of Calculus</title>
-					<idx><h>Fundamental Theorem of Calculus</h></idx>
-
-					<statement>
-						<p>If <m>f(x)</m> is continuous, and the derivative of <m>F(x)</m> is <m>f(x)</m>, then <me>\definiteintegral{a}{b}{f(x)}{x}=F(b)-F(a)</me><idx><h>test: buried in theorem/statement/p</h></idx></p>
-					</statement>
-					<proof>
-						<p>Left to the reader.</p>
-					</proof>
-				</theorem>
-			</slide>
-
-		</section>
-
-		<section>
-			<title>Sage Cell</title>
-
-			<slide>
-				<title>Ramanujan and Integration</title>
-
-				<p>This Sage Cell should execute properly, but some extra CSS is being applied.  It is also difficult to edit properly.  Perhaps the two are related.  You may need to zoom out your browser to see all the content, especially after running the cell.</p>
-
-				<p>We have some mathematics on the page, to look for Javascript interference with MathJax.  An identity due to Ramanujan:<me>\frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\ldots} } } }</me>.</p>
-
-				<sage>
-					<input>numerical_integral(sin(x)^2, (0, 2))</input>
-					<!-- need to use wildcard matching to make this doctestable -->
-					<output>(1.189200623826982, 1.320277913471315e-14)</output>
-				</sage>
-
-				<p>And some more mathematics.  An identity due to Ramanujan:<me>\frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\ldots} } } }</me>.</p>
-			</slide>
-		</section>
-
-		<section>
-			<title>Other features</title>
-
-			<slide>
-				<title>Pausing</title>
-
-				<p>Pausing doesn't always act how you expect from <latex />.  The first and third lines are always visible.</p>
-
-				<p pause="yes">But this one needs you to advance the slide.</p>
-
-				<p>(Visible from the outset.)</p>
-			</slide>
-
-			<slide>
-				<title>Subslides</title>
-
-				<p>Subslides are another way to achieve pausing without lists.</p>
-
-				<subslide>
-					<p>This is a subslide.  It always comes after a pause.</p>
-					<p><ul pause="yes">
-						<li>You can also pause within it.</li>
-						<li>Of course!</li>
-					</ul></p>
-				</subslide>
-
-				<p>But this is still visible from the outset.</p>
-			</slide>
-
-		</section>
-<section>
-	<title>
-		<line>Part II:</line>
-		<line>"Hello World"</line>
-	</title>
-
-	<slide>
-		<title>Goal for this Demo</title>
-
-		<p>
-			In this part, we'll see how little it takes to create a working PreTeXt document.
-			The idea is to demystify the process: it's just structured text that builds into professional output.
-		</p>
-
-		<ul>
-			<li>Create a minimal <code>Hello World</code> PreTeXt file.</li>
-			<li>Build the web version.</li>
-			<li>Add one or two simple features — math, an example, an exercise.</li>
-			<li>Show how everything is automatically formatted and linked.</li>
-		</ul>
-
-		<p>
-			Think of it like writing a short program that compiles into a book.
-		</p>
-	</slide>
-
-	<slide>
-		<title>Start with a Minimal Source File</title>
-
-		<p>
-			Here's the smallest complete PreTeXt document — just a few lines of XML.
-		</p>
-
-		<program language="xml">
-			<code>
-&lt;pretext&gt;
-  &lt;title&gt;Hello, World!&lt;/title&gt;
-
-  &lt;section&gt;
-    &lt;title&gt;My First Section&lt;/title&gt;
-    &lt;p&gt;This is my first paragraph written in PreTeXt.&lt;/p&gt;
-  &lt;/section&gt;
-&lt;/pretext&gt;
-			</code>
-		</program>
-
-		<p>
-			That's it! Save it as <pf>hello-world.ptx</pf> and run:
-		</p>
-
-		<program language="xml">
-			<code>
-pretext build web
-			</code>
-		</program>
-	</slide>
-
-	<slide>
-		<title>See the Output</title>
-
-		<p>
-			When you build, PreTeXt automatically generates a complete HTML page with navigation, styling, and math rendering.
-		</p>
-
-		<ul>
-			<li>The title and section headings are formatted automatically.</li>
-			<li>Navigation links, numbering, and metadata are added for you.</li>
-			<li>Math and special elements are handled by MathJax — no setup needed.</li>
-		</ul>
-
-		<p>
-			At this point, you already have a clean, web-ready document.
-		</p>
-	</slide>
-
-	<slide>
-		<title>Add Some Mathematics</title>
-
-		<p>
-			Let's make it feel like a math document by adding a displayed equation.
-		</p>
-
-		<program language="xml">
-			<code>
-				&lt;section&gt;
-				&lt;title&gt;A Little Math&lt;/title&gt;
-				&lt;p&gt;Here's a simple differential equation:&lt;/p&gt;
-				&lt;me&gt;y' + 2y = 0&lt;/me&gt;
-				&lt;p&gt;And its solution is &lt;m&gt;y = C e^{-2x}&lt;/m&gt;.&lt;/p&gt;
-				&lt;/section&gt;
-			</code>
-		</program>
-
-		<p>
-			You don't need extra packages or dollar signs — PreTeXt handles math cleanly in both HTML and PDF outputs.
-		</p>
-	</slide>
-
-	<slide>
-		<title>Add an Example or Exercise</title>
-
-		<p>
-			Now let's see how structural elements work automatically.
-		</p>
-
-		<program language="xml">
-			<code>
-&lt;example&gt;
-  &lt;title&gt;A Tiny Example&lt;/title&gt;
-  &lt;statement&gt;
-    Solve the differential equation &lt;m&gt;y' = 3y&lt;/m&gt;.
-  &lt;/statement&gt;
-  &lt;solution&gt;
-    The general solution is &lt;m&gt;y = C e^{3x}&lt;/m&gt;.
-  &lt;/solution&gt;
-&lt;/example&gt;
-			</code>
-		</program>
-
-		<p>
-			PreTeXt automatically numbers and formats the example.
-			Add an <c>&lt;exercise&gt;</c> block and you'll get numbered problems with consistent styling.
-		</p>
-	</slide>
-
-	<slide>
-		<title>Summary of the Demo</title>
-
-		<ul>
-			<li>PreTeXt source is simple, readable, and modular.</li>
-			<li>Structure — not formatting — drives everything.</li>
-			<li>Building to web or PDF is a single command.</li>
-			<li>You can scale this up from a short note to an entire textbook.</li>
-		</ul>
-
-		<p>
-			Next, we'll look at how these same ideas scale up in the
-			<c>Differential Equations: An Interactive Introduction</c> textbook.
-		</p>
-	</slide>
-
-</section>
 	</slideshow>
+
 </pretext>
