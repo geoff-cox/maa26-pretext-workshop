@@ -14,18 +14,47 @@
 		<titlepage-items/>
 	</titlepage>
 
-	<abstract>
-		<p>
-			Ordinary differential equations (ODEs) form a gateway course for many STEM majors, yet students often encounter steep conceptual and technical barriers when transitioning from calculus to differential equations. This talk presents a case study in rethinking ODE pedagogy through the development of an open-access textbook that blends student-centered narrative, scaffolded checkpoints, interactive technology, and structured workflows.
-		</p>
+	<preface label="preface">
 
-		<p>
-			The project's guiding question is: How can textbook design itself function as an innovation in teaching and learning? Each chapter is built around conversational explanations, step-by-step workflow and reading checkpoints that emphasize concepts and procedure. Interactive visualizations add a dynamic perspective to simulate a classroom experience.
-		</p>
+		<paragraphs>
+			<title>Resources &amp; Links</title>
 
-		<p>
-			By framing the textbook not only as a resource but as a pedagogical experiment, this work highlights the role of curriculum design in shaping student experiences of ODEs and opens space for dialogue about how innovative resources can transform undergraduate mathematics education.
-		</p>
-	</abstract>
+			<p>
+				<dl width="narrow">
+					<li>
+						<title>Contact</title>
+						<p>
+							<line>▷ <url href="mailto://coxgeoff@vmi.edu">Geoff: coxgeoff@vmi.edu</url></line>
+						</p>
+					</li>
+					
+					<li>
+						<title>Presentation</title>
+						<p>
+							<line>▷ <url href="https://geoff-cox.github.io/maa26-pretext-workshop/talk/slides.html">Slides</url></line>
+							<line>▷ <url href="https://runestone.academy/ns/books/published/debookrs/">Textbook (viewable - HTML)</url></line>
+							<line>▷ <url href="https://github.com/geoff-cox/debookrs">Textbook (source - GitHub)</url></line>
+						</p>
+					</li>
+
+					<li>
+						<title><pretext/></title>
+							<line>▷ <url href="https://pretextbook.org">Homepage</url></line>
+							<line>▷ <url href="https://runestone.academy/ns/books/published/debookrs/"><pretext/> Guide</url></line>
+							<line>▷ <url href="https://pretextbook.org/community.html">Help Forums</url></line>
+					</li>
+
+					<li>
+						<title>Runestone Academy</title>
+							<line>▷ <url href="https://runestone.academy/">Homepage</url></line>
+							<line>▷ <url href="https://guide.runestone.academy">Users Guide</url></line>
+							<line>▷ <url href="https://www.youtube.com/@RunestoneInteractive/playlists">Videos</url></line>
+					</li>
+
+				</dl>
+			</p>
+		</paragraphs>
+
+	</preface>
 
 </frontmatter>

@@ -1,0 +1,393 @@
+<chapter xml:id="chp-pretext-quickref">
+  <title>PreTeXt Workshop: Quick Reference</title>
+
+  <introduction>
+    <p>
+      <em>Everything you need during today's session.</em>
+    </p>
+
+    <assemblage>
+      <title>Before You Start</title>
+
+      <p>
+        Open <url href="https://pretext.plus"><c>pretext.plus</c></url> in your browser. You will create a free account in the first ten minutes of the workshop.
+      </p>
+    </assemblage>
+  </introduction>
+
+  <section xml:id="sec-create-account">
+    <title>1. Create Your Account and First Project</title>
+
+    <p>
+      <em>We'll do this together.</em>
+      <ol>
+        <li>
+          <p>
+            Go to <c>pretext.plus</c> and click <term>Sign up</term>. Use an email you can check right now.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            After confirming your email, click <term>Projects</term>, then the blue <term>New project</term> button.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Give your project a title (e.g. <c>My First Lesson</c>) and click <term>Create</term>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Click the gray <term>Edit</term> button. The editor opens with source on the left and a preview on the right.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </section>
+
+  <section xml:id="sec-learn-rebuild-rhythm">
+    <title>2. Learn the Rebuild Rhythm</title>
+
+    <p>
+      The preview does not update automatically. Click the green <term>Rebuild</term> button (top-right of the preview), or press <kbd>Ctrl</kbd>+<kbd>S</kbd>. This also saves your work.
+    </p>
+
+    <p>
+      <alert>Edit → Rebuild → look at the preview.</alert>
+    </p>
+  </section>
+
+  <section xml:id="sec-practice-exercises">
+    <title>3. Practice with Five Short Exercises</title>
+
+    <introduction>
+      <p>
+        For each exercise, find the closing <c>&lt;/section&gt;</c> tag and paste the snippet just above it. Then Rebuild.
+      </p>
+    </introduction>
+
+    <subsection>
+      <title>Exercise 1 — Paragraph with inline math</title>
+
+      <program language="xml">
+        <code><![CDATA[
+        <p>
+          The Pythagorean theorem states that <m>a^2 + b^2 = c^2</m>,
+          where <m>c</m> is the length of the hypotenuse.
+        </p>
+        ]]></code>
+      </program>
+    </subsection>
+
+    <subsection>
+      <title>Exercise 2 — A definition</title>
+
+      <program language="xml">
+        <code><![CDATA[
+        <definition xml:id="def-right-triangle">
+          <statement>
+            <p>
+              A <term>right triangle</term> is a triangle
+              with one angle measuring exactly 90 degrees.
+            </p>
+          </statement>
+        </definition>
+        ]]></code>
+      </program>
+    </subsection>
+
+    <subsection>
+      <title>Exercise 3 — An example</title>
+
+      <program language="xml">
+        <code><![CDATA[
+        <example>
+          <title>A 3-4-5 triangle</title>
+
+          <statement>
+            <p>
+              Show that a triangle with sides 3, 4, and 5
+              is a right triangle.
+            </p>
+          </statement>
+
+          <solution>
+            <p>
+              Check: <m>3^2 + 4^2 = 9 + 16 = 25 = 5^2</m>.
+            </p>
+          </solution>
+        </example>
+        ]]></code>
+      </program>
+    </subsection>
+
+    <subsection>
+      <title>Exercise 4 — An exercise</title>
+
+      <program language="xml">
+        <code><![CDATA[
+        <exercise>
+          <statement>
+            <p>
+              Find the hypotenuse of a right triangle with
+              legs of length 5 and 12.
+            </p>
+          </statement>
+        </exercise>
+        ]]></code>
+      </program>
+    </subsection>
+
+    <subsection>
+      <title>Exercise 5 — A cross-reference</title>
+
+      <program language="xml">
+        <code><![CDATA[
+        <p>
+          For a reminder of the terminology,
+          see <xref ref="def-right-triangle"/>.
+        </p>
+        ]]></code>
+      </program>
+    </subsection>
+  </section>
+
+  <!-- ================================================= -->
+  <!-- Section: Sandbox exercises                       -->
+  <!-- ================================================= -->
+  <section xml:id="sandbox-exercises">
+    <title>2. While You Wait — Practice in the Sandbox</title>
+
+    <introduction>
+      <p>
+        <em><c>pretext.plus/tryit</c> is a throwaway sandbox. You type PreTeXt source on
+        the left, click <term>Rebuild</term>, and see the result on the right. Nothing you
+        do here is saved — that is fine. Every exercise below is in this handout, so you
+        can always paste it again.</em>
+      </p>
+
+      <p>
+        <alert>How to work each exercise:</alert> find the closing <c>&lt;/section&gt;</c>
+        tag near the bottom of the sandbox, and paste the snippet on a new line
+        <em>just above it</em>. Then click <term>Rebuild</term> and look at the preview.
+      </p>
+    </introduction>
+
+    <subsection xml:id="exercise-1">
+      <title>Exercise 1 — A paragraph with inline math</title>
+      <p>
+        <em>Paste this inside the section and rebuild. Notice how inline math
+        flows with the text.</em>
+      </p>
+      <program language="xml">
+        <code>
+<![CDATA[<p>The Pythagorean theorem states that <m>a^2 + b^2 = c^2</m>,
+where <m>c</m> is the length of the hypotenuse.</p>]]>
+        </code>
+      </program>
+    </subsection>
+
+    <subsection xml:id="exercise-2">
+      <title>Exercise 2 — A definition</title>
+      <p>
+        <em>Add a formal definition. The <c>xml:id</c> is a label we will use in Exercise 5.</em>
+      </p>
+      <program language="xml">
+        <code>
+<![CDATA[<definition xml:id="def-right-triangle">
+<statement>
+  <p>A <term>right triangle</term> is a triangle
+  with one angle measuring exactly 90 degrees.</p>
+</statement>
+</definition>]]>
+        </code>
+      </program>
+    </subsection>
+
+    <subsection xml:id="exercise-3">
+      <title>Exercise 3 — An example</title>
+      <p>
+        <em>Examples get numbered automatically. Try changing the title after you rebuild.</em>
+      </p>
+      <program language="xml">
+        <code>
+<![CDATA[<example>
+<title>A 3-4-5 triangle</title>
+<statement>
+  <p>Show that a triangle with sides 3, 4, and 5
+  is a right triangle.</p>
+</statement>
+<solution>
+  <p>Check: <m>3^2 + 4^2 = 9 + 16 = 25 = 5^2</m>.</p>
+</solution>
+</example>]]>
+        </code>
+      </program>
+    </subsection>
+
+    <subsection xml:id="exercise-4">
+      <title>Exercise 4 — An exercise</title>
+      <p>
+        <em>Exercises are also numbered automatically, separately from examples.</em>
+      </p>
+      <program language="xml">
+        <code>
+<![CDATA[<exercise>
+<statement>
+  <p>Find the length of the hypotenuse of a right
+  triangle with legs of length 5 and 12.</p>
+</statement>
+</exercise>]]>
+        </code>
+      </program>
+    </subsection>
+
+    <subsection xml:id="exercise-5">
+      <title>Exercise 5 — A cross-reference</title>
+      <p>
+        <em>This is the magic moment. The <c>&lt;xref&gt;</c> points at the <c>xml:id</c>
+        you gave the definition in Exercise 2, and PreTeXt builds a working link for you.</em>
+      </p>
+      <program language="xml">
+        <code>
+<![CDATA[<p>For a reminder of the terminology,
+see <xref ref="def-right-triangle"/>.</p>]]>
+        </code>
+      </program>
+    </subsection>
+
+    <assemblage>
+      <title>Finished early?</title>
+      <p>
+        Try changing the title of your example. Swap the numbers in the 3-4-5 example
+        for a 5-12-13 triangle. Try breaking something on purpose to see what an error
+        looks like. The sandbox is for playing.
+      </p>
+    </assemblage>
+  </section>
+
+  <section xml:id="sec-your-target">
+    <title>4. Your Target — A Sample Lesson</title>
+
+    <p>
+      <em>After the break, build a short lesson on a topic you actually teach, shaped like the example below.</em>
+    </p>
+
+    <p>
+      <alert>Safety net:</alert> if stuck, paste the block below and change the topic.
+    </p>
+
+    <program language="xml">
+      <code><![CDATA[
+      <title>The Product and Quotient Rules</title>
+
+      <p>
+        When a function is built by multiplying or dividing
+        two simpler functions, we cannot just multiply or
+        divide their derivatives.
+      </p>
+
+      <definition xml:id="def-product-rule">
+        <statement>
+          <p>
+            The <term>product rule</term> states that if
+            <m>f</m> and <m>g</m> are differentiable, then
+            <me>
+              \frac{d}{dx}\bigl[f(x)\,g(x)\bigr]
+              = f'(x)\,g(x) + f(x)\,g'(x).
+            </me>
+          </p>
+        </statement>
+      </definition>
+
+      <example>
+        <title>Applying the product rule</title>
+
+        <statement>
+          <p>
+            Find the derivative of <m>h(x) = x^2 \sin(x)</m>.
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            Let <m>f(x) = x^2</m> and <m>g(x) = \sin(x)</m>.
+            Then
+            <me>
+              h'(x) = 2x \sin(x) + x^2 \cos(x).
+            </me>
+          </p>
+        </solution>
+      </example>
+
+      <exercise>
+        <statement>
+          <p>
+            Use the product rule
+            (see <xref ref="def-product-rule"/>) to find
+            the derivative of <m>p(x) = x^3 e^x</m>.
+          </p>
+        </statement>
+      </exercise>
+      ]]></code>
+    </program>
+  </section>
+
+  <section xml:id="sec-share-your-lesson">
+    <title>5. Share Your Lesson</title>
+
+    <p>
+      <ol>
+        <li>
+          <p>
+            Save (<kbd>Ctrl</kbd>+<kbd>S</kbd>) and click <term>Back to projects</term>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Click your project, then <term>Sharable link</term>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Copy the URL from your browser. Paste it in the shared document.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </section>
+
+  <section xml:id="sec-if-you-get-stuck">
+    <title>6. If You Get Stuck</title>
+
+    <p>
+      <alert>Red error:</alert> missing or mismatched tag. Check line numbers in the error.
+    </p>
+
+    <p>
+      <alert>Preview didn't update:</alert> click Rebuild or press <kbd>Ctrl</kbd>+<kbd>S</kbd>.
+    </p>
+
+    <p>
+      <alert>Lost your project:</alert> click Projects in the top nav.
+    </p>
+
+    <p>
+      <alert>Something else:</alert> raise your hand, or ask a neighbor first.
+    </p>
+  </section>
+
+  <section xml:id="sec-after-the-workshop">
+    <title>7. After the Workshop</title>
+
+    <p>
+      Free PreTeXt.Plus accounts give you 10 projects. For multi-file projects, images, or version control, ask for the take-home Codespaces guide. Community and documentation: <url href="https://pretextbook.org"><c>pretextbook.org</c></url>.
+    </p>
+  </section>
+
+</chapter>
