@@ -3,9 +3,10 @@
 <frontmatter>
 	<bibinfo>
 		<author>
-			<personname>HUB: <url href="https://geoff-cox.github.io/debook-talk/hub/">geoff-cox.github.io/debook-talk/hub/</url></personname>
-			<department>Applied Mathematics @ </department>
+			<personname>Geoff Cox</personname>
+			<department>Applied Mathematics</department>
 			<institution>Virginia Military Institute</institution>
+			<website><url href="https://geoff-cox.github.io/debook-talk/hub/">geoff-cox.github.io/debook-talk/hub/</url></website>
 		</author>
 		<date><today/></date>
 	</bibinfo>

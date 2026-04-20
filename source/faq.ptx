@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="chp-faq">
+  <title>Frequently Asked Questions</title>
+
+  <introduction>
+    <p>
+      This chapter collects questions that workshop participants commonly ask,
+      organized by theme. If a question arises during the session that isn't
+      here, it's a good candidate for the next revision of this document.
+    </p>
+  </introduction>
+
+  <!-- ================================================= -->
+  <!-- Section 1: Getting Started                        -->
+  <!-- ================================================= -->
+  <section xml:id="faq-getting-started">
+    <title>Getting Started</title>
+
+    <paragraphs xml:id="faq-what-is-pretext">
+      <title>What exactly is <pretext/>? Is it like <latex/> or like a CMS?</title>
+      <p>
+        <pretext/> is a semantic markup language written in XML. It is closer in
+        spirit to <latex/> — you write a plain text source file and a build tool
+        converts it to the output format you want — but the markup describes the
+        <em>structure</em> of the content (definition, theorem, exercise) rather
+        than its appearance. A CMS like WordPress or a word processor lets you
+        click buttons to make text bold; <pretext/> asks you to tag text as
+        <c>&lt;em&gt;</c> (emphasis) and then decides how to render that
+        emphasis in each output format.
+      </p>
+    </paragraphs>
+
+    <paragraphs xml:id="faq-need-latex">
+      <title>Do I need to know <latex/> to use <pretext/>?</title>
+      <p>
+        Not for prose, lists, definitions, examples, or exercises — those use
+        <pretext/>'s own tags and are easy to learn without any <latex/>
+        background. You <em>do</em> need <latex/> syntax for mathematics, because
+        <pretext/> uses <latex/> inside the <c>&lt;m&gt;</c> and <c>&lt;me&gt;</c>
+        tags. If you can write <c>x^2 + 1</c> or <c>\frac{a}{b}</c>, you have
+        enough. If you have never used <latex/> at all, a one-page cheat sheet
+        of common math commands is usually sufficient to get started.
+      </p>
+    </paragraphs>
+
+    <paragraphs xml:id="faq-need-xml">
+      <title>Do I need to know XML?</title>
+      <p>
+        You need to follow two rules: every tag that opens must close
+        (<c>&lt;p&gt;...&lt;/p&gt;</c>), and tags must nest properly. That's
+        the practical extent of what most authors need. You do not need to
+        understand XML schemas, namespaces, or DTDs to write or maintain a
+        <pretext/> document.
+      </p>
+    </paragraphs>
+
+    <paragraphs xml:id="faq-install">
+      <title>What do I need to install to use <pretext/>?</title>
+      <p>
+        For today's workshop, nothing. <url href="https://pretext.plus">PreTeXt.Plus</url>
+        runs entirely in your browser. For longer-term use, you can install the
+        <pretext/> command-line interface with <c>pip install pretext</c>
+        (Python 3.8+ required) or use a GitHub Codespace, which has everything
+        preconfigured. A local install gives you more control over custom assets
+        and multi-file projects.
+      </p>
+    </paragraphs>
+
+    <paragraphs xml:id="faq-cost">
+      <title>Is <pretext/> free?</title>
+      <p>
+        Yes. <pretext/> is open-source software released under the
+        <url href="https://www.gnu.org/licenses/gpl-3.0.html">GNU General Public
+        License</url>. There is no licensing cost for authoring, building, or
+        publishing. PreTeXt.Plus offers a free tier with up to ten projects;
+        hosting on GitHub Pages is also free. Runestone Academy charges for
+        institution-level features (gradebooks, LMS integration) but is free for
+        individual instructors and students.
+      </p>
+    </paragraphs>
+
+  </section>
+
+  <!-- ================================================= -->
+  <!-- Section 2: Writing and Authoring                  -->
+  <!-- ================================================= -->
+  <section xml:id="faq-authoring">
+    <title>Writing and Authoring</title>
+
+    <paragraphs xml:id="faq-convert-latex">
+      <title>Can I convert my existing <latex/> files to <pretext/>?</title>
+      <p>
+        There is a tool called <url href="https://github.com/bnmnetp/lxml2ptx">latexml</url>
+        and a project called <url href="https://github.com/daverosoff/tex4ebook">tex4ebook</url>,
+        but the most practical approach for most instructors is
+        <url href="https://pandoc.org">Pandoc</url>, which can convert
+        <c>.tex</c> to rough <pretext/> XML. The conversion will not be perfect —
+        custom macros, complex tables, and TikZ figures require manual cleanup —
+        but for a document that is mostly prose, definitions, and basic math, a
+        Pandoc conversion followed by hand-editing is often faster than starting
+        from scratch. The PreTeXt community discussion list has several threads on
+        migration strategies.
+      </p>
+    </paragraphs>
+
+    <paragraphs xml:id="faq-images">
+      <title>How do I include images?</title>
+      <p>
+        Place the image file (PNG, JPG, or SVG) in your <c>assets</c> folder and
+        reference it with <c>&lt;image source="filename.png"/&gt;</c>. For
+        accessibility, add a <c>&lt;shortdescription&gt;</c> child element. You
+        can also generate figures programmatically from <latex/> using TikZ or
+        PGFPlots, in which case <pretext/> compiles the <latex/> code and outputs
+        an SVG automatically — no external image file needed.
+      </p>
+    </paragraphs>
+
+    <paragraphs xml:id="faq-exercises-graded">
+      <title>Can exercises be auto-graded?</title>
+      <p>
+        Yes, when the document is hosted on Runestone Academy. True/false,
+        multiple-choice, fill-in-the-blank, matching (card-sort), and
+        clickable-area exercises are all auto-graded with per-answer feedback.
+        Interactive coding exercises in Python, JavaScript, Java, C++, and
+        several other languages also run in the browser and can have embedded
+        unit tests. If you host on GitHub Pages instead of Runestone, the
+        exercises are still displayed but are not graded or tracked.
+      </p>
+    </paragraphs>
+
+    <paragraphs xml:id="faq-coauthoring">
+      <title>Can multiple authors work on the same document?</title>
+      <p>
+        Yes. Because <pretext/> source files are plain text, they work
+        naturally with <c>git</c> version control. Two authors can work on
+        different chapters in separate files and merge their changes with the
+        same tools used for software development. This is one advantage over
+        word processors, where track-changes becomes unmanageable in large
+        documents.
+      </p>
+    </paragraphs>
+
+    <paragraphs xml:id="faq-numbering">
+      <title>What controls numbering? Can I override it?</title>
+      <p>
+        <pretext/> numbers definitions, theorems, examples, exercises, and
+        figures automatically in the order they appear in the source. The
+        <c>publication.ptx</c> file controls the depth at which numbering
+        resets (per chapter, per section, etc.). You can override an individual
+        number only in unusual circumstances and it is generally discouraged —
+        the strength of the system is that numbers are always consistent and
+        cross-references never need to be updated manually.
+      </p>
+    </paragraphs>
+
+  </section>
+
+  <!-- ================================================= -->
+  <!-- Section 3: Accessibility                          -->
+  <!-- ================================================= -->
+  <section xml:id="faq-accessibility">
+    <title>Accessibility</title>
+
+    <paragraphs xml:id="faq-a11y-screen-reader">
+      <title>Is the HTML output usable with a screen reader?</title>
+      <p>
+        Yes. The HTML generated by <pretext/> uses a proper heading hierarchy,
+        ARIA landmark roles, keyboard-accessible navigation, and MathJax to
+        provide MathML alongside every rendered equation. Screen readers that
+        support MathML — including JAWS with MathPlayer, NVDA with MathCAT, and
+        VoiceOver on recent macOS/iOS — can read and structurally navigate
+        equations. The output has been tested by the <pretext/> development team
+        with multiple screen reader and browser combinations.
+      </p>
+    </paragraphs>
+
+    <paragraphs xml:id="faq-a11y-wcag">
+      <title>Is <pretext/> WCAG compliant?</title>
+      <p>
+        The standard HTML output targets WCAG 2.1 Level AA compliance.
+        Structural features — headings, landmarks, keyboard focus, color
+        contrast — are handled automatically by the <pretext/> stylesheets.
+        Author-supplied content (images, video) also needs to meet the standard,
+        which means every informative image requires a
+        <c>&lt;shortdescription&gt;</c> and every video needs captions on the
+        hosting platform. A document that is structurally correct and has
+        complete image descriptions will meet AA. Perfect AAA compliance
+        requires additional effort for some criteria (extended audio descriptions,
+        sign language) and is not claimed by default.
+      </p>
+    </paragraphs>
+
+    <paragraphs xml:id="faq-a11y-braille">
+      <title>Can <pretext/> really produce Braille? How does that work?</title>
+      <p>
+        Yes. Running <c>pretext build braille</c> converts the source to a
+        <c>.brf</c> Braille Ready Format file using the
+        <url href="https://liblouis.io">liblouis</url> library for general text
+        and Nemeth Code for mathematics. The output can be sent directly to a
+        Braille embosser or opened in a Braille display emulator. This removes
+        the need for a human Braille transcriber for standard mathematical
+        content, which is often the biggest bottleneck in providing accessible
+        STEM materials through disability services. Non-standard notation or
+        highly complex diagrams may still require manual review.
+      </p>
+    </paragraphs>
+
+    <paragraphs xml:id="faq-a11y-interactive">
+      <title>What about GeoGebra and Desmos applets — are those accessible?</title>
+      <p>
+        GeoGebra and Desmos are visual tools and are not currently usable with a
+        screen reader. For students who cannot interact with an applet, the best
+        practice is to add a surrounding paragraph that describes what the applet
+        illustrates and what the student should observe. This way the conceptual
+        content is available in plain text even when the interactive is not. Some
+        GeoGebra applets do provide limited keyboard navigation; check the
+        specific applet. The <pretext/> native exercise types (true/false,
+        multiple-choice, etc.) <em>are</em> fully keyboard-accessible.
+      </p>
+    </paragraphs>
+
+    <paragraphs xml:id="faq-a11y-pdf">
+      <title>Is the PDF accessible too?</title>
+      <p>
+        The PDF output is produced via <latex/> and is a high-quality typeset
+        document, but PDF accessibility — tagged PDF with reading order, alt
+        text attached to images, MathML embedded in equations — lags behind the
+        HTML output. For screen reader users, the HTML version is strongly
+        preferred. If a student specifically needs a tagged PDF (for example, to
+        use with a PDF annotation tool), the <pretext/> team is working to improve
+        this, and the ePub format is a better intermediate option in the meantime.
+      </p>
+    </paragraphs>
+
+    <paragraphs xml:id="faq-a11y-dyslexia">
+      <title>Are there options for students with dyslexia or reading disabilities?</title>
+      <p>
+        The <c>publication.ptx</c> file supports a <c>dyslexic-font</c> LaTeX
+        style option for PDF output. For HTML, the CSS theming system allows
+        fonts, line spacing, and letter spacing to be customized. Students can
+        also use browser-level accessibility tools (font override, reader mode,
+        text-to-speech extensions) on any <pretext/> HTML page without special
+        configuration from the author.
+      </p>
+    </paragraphs>
+
+  </section>
+
+  <!-- ================================================= -->
+  <!-- Section 4: Publishing and Distribution            -->
+  <!-- ================================================= -->
+  <section xml:id="faq-publishing">
+    <title>Publishing and Distribution</title>
+
+    <paragraphs xml:id="faq-hosting">
+      <title>Where can I host a <pretext/> book?</title>
+      <p>
+        The most common options are:
+        <ul>
+          <li>
+            <p>
+              <term>GitHub Pages</term> — free, automatic deployment when you
+              push to GitHub, your book lives at a
+              <c>username.github.io/reponame</c> URL. No server to maintain.
+            </p>
+          </li>
+          <li>
+            <p>
+              <term>Runestone Academy</term> — free for instructors and students,
+              adds a gradebook, LMS integration (Canvas, Blackboard), and
+              student progress tracking. Requires a Runestone account for both
+              instructor and students.
+            </p>
+          </li>
+          <li>
+            <p>
+              <term>Your institution's web server</term> — upload the contents of
+              the <c>output/web</c> folder to any standard web host.
+            </p>
+          </li>
+          <li>
+            <p>
+              <term>PreTeXt.Plus</term> — built-in hosting with a shareable link,
+              no server required. Ideal for drafts and worksheets.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </paragraphs>
+
+    <paragraphs xml:id="faq-lms">
+      <title>Can I use <pretext/> materials inside my LMS (Canvas, Blackboard, etc.)?</title>
+      <p>
+        In two ways. First, you can link directly to the published HTML from your
+        LMS. Second, if you host on Runestone Academy, you can integrate
+        Runestone with your LMS via LTI, which allows grades from Runestone
+        exercises to flow back into your LMS gradebook automatically. Direct
+        embedding of <pretext/> HTML inside an LMS frame generally works but can
+        have layout limitations depending on the LMS.
+      </p>
+    </paragraphs>
+
+    <paragraphs xml:id="faq-copyright">
+      <title>Who owns the content I write in <pretext/>?</title>
+      <p>
+        You do. <pretext/> is a tool; it does not claim any rights over content
+        you produce with it. You can assign any license you like to your materials.
+        Many <pretext/> authors choose a Creative Commons license (typically
+        CC BY or CC BY-SA) to make their materials freely remixable, but this is
+        entirely your choice. If your institution has an open educational resources
+        policy, your IP office can advise on appropriate licensing.
+      </p>
+    </paragraphs>
+
+    <paragraphs xml:id="faq-updates">
+      <title>How do I update a published book?</title>
+      <p>
+        Edit the source, rebuild, and redeploy. On GitHub Pages, pushing a commit
+        triggers an automatic rebuild via GitHub Actions. There is no separate
+        CMS interface to log in to. Your published URL stays the same; readers
+        who return to the link get the updated version automatically.
+      </p>
+    </paragraphs>
+
+  </section>
+
+  <!-- ================================================= -->
+  <!-- Section 5: Adoption and Long-Term Use             -->
+  <!-- ================================================= -->
+  <section xml:id="faq-adoption">
+    <title>Adoption and Long-Term Use</title>
+
+    <paragraphs xml:id="faq-students-read">
+      <title>Do students need to know anything about <pretext/> to read a book?</title>
+      <p>
+        No. Students see a polished website, a PDF, or an ePub — they never
+        interact with the source XML. The reading experience is comparable to any
+        other professionally typeset open textbook.
+      </p>
+    </paragraphs>
+
+    <paragraphs xml:id="faq-longevity">
+      <title>Will my content still be usable in ten years?</title>
+      <p>
+        This is one of the strongest arguments for <pretext/>. Your source is
+        plain text XML, a format that will be readable by any text editor
+        indefinitely. The conversion tools that turn that XML into HTML or PDF
+        are open-source and maintained by an academic community with a long-term
+        commitment to the format. Contrast this with a proprietary word processor
+        format or a closed CMS, where format changes or discontinued products can
+        strand your content. Several <pretext/> books that were written over a
+        decade ago are still being maintained and updated today.
+      </p>
+    </paragraphs>
+
+    <paragraphs xml:id="faq-getting-help">
+      <title>Where do I go if I get stuck after the workshop?</title>
+      <p>
+        The best first stop is the
+        <url href="https://pretextbook.org/community.html"><pretext/> community
+        pages</url>, which link to the Google Groups discussion list and the
+        Discord server. Both are active and welcoming to newcomers. The
+        <url href="https://pretextbook.org/doc/guide/html/guide-toc.html"><pretext/>
+        Author's Guide</url> is comprehensive. For quick syntax reminders, the
+        cheatsheet in this hub covers the tags you'll reach for most often.
+      </p>
+    </paragraphs>
+
+    <paragraphs xml:id="faq-community">
+      <title>Is there a community of <pretext/> users at MAA and similar organizations?</title>
+      <p>
+        Yes. <pretext/> has strong adoption among mathematicians and was
+        originally developed by Rob Beezer at the University of Puget Sound for
+        exactly the kind of content that MAA members write. There are active users
+        at institutions of all sizes. The American Institute of Mathematics has
+        supported the project financially and continues to host community
+        infrastructure. At MAA meetings, <pretext/> sessions and minicourses
+        appear regularly — this workshop is one example.
+      </p>
+    </paragraphs>
+
+  </section>
+
+</chapter>
