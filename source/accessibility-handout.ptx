@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="chp-accessibility">
+  <title>Accessibility and <pretext/></title>
+
+  <introduction>
+    <p>
+      This handout is for workshop participants who are considering <pretext/>
+      because of its accessibility features, or who need to meet institutional
+      or legal accessibility requirements. It explains <em>how</em> <pretext/>
+      achieves accessibility, which design choices are responsible for those
+      gains, and what you, as an author, need to do to take full advantage of
+      them.
+    </p>
+    <p>
+      The short version: <pretext/> is built on semantic markup, which means
+      most accessibility features are automatic. A few require a small amount
+      of author effort — mainly writing short descriptions for images. The rest
+      takes care of itself.
+    </p>
+  </introduction>
+
+  <!-- ================================================= -->
+  <!-- Section 1: What Accessibility Means for Math      -->
+  <!-- ================================================= -->
+  <section xml:id="a11y-why-hard">
+    <title>Why Math Accessibility Is Unusually Hard</title>
+
+    <p>
+      Most web accessibility problems are solved by adding descriptive text to
+      visual content. Math is harder: a screen reader that reads
+      <q>x squared plus two x plus one equals zero</q> gives a sighted reader
+      everything, but it is almost impossible for a blind student to hold that
+      structure in working memory long enough to factor it.
+    </p>
+
+    <p>
+      The practical challenge for instructors is that standard accessible PDFs
+      and web pages handle prose well but fail at math, data tables, and
+      interactive figures — exactly the content that dominates STEM textbooks.
+      <pretext/> was designed from the ground up to address this gap.
+    </p>
+  </section>
+
+  <!-- ================================================= -->
+  <!-- Section 2: The Core Design Choice — Semantic Markup-->
+  <!-- ================================================= -->
+  <section xml:id="a11y-semantic">
+    <title>The Core Design Choice: Semantic Markup</title>
+
+    <p>
+      The single most important design decision in <pretext/> is that authors
+      describe <em>what content is</em>, not <em>how it should look</em>.
+      Instead of writing <q>bold, indented block with a number in the margin</q>,
+      you write <c>&lt;definition&gt;</c>. Instead of <q>centered italic line
+      followed by indented text</q>, you write
+      <c>&lt;theorem&gt;...&lt;proof&gt;</c>.
+    </p>
+
+    <p>
+      This separation of content from presentation is what makes every
+      accessibility gain described below possible. Because the system knows
+      <em>what</em> something is, it can render it appropriately for each
+      output format — screen reader, Braille embosser, large-print PDF, or
+      interactive HTML — without any additional work from you.
+    </p>
+
+    <assemblage xml:id="a11y-semantic-examples">
+      <title>What Semantic Markup Looks Like</title>
+      <p>
+        <dl>
+          <li>
+            <title><c>&lt;definition&gt;</c></title>
+            <p>
+              Rendered as a styled, numbered block in HTML and PDF.
+              Read aloud as <q>Definition N</q> by screen readers.
+              Included in the definitions index automatically.
+            </p>
+          </li>
+          <li>
+            <title><c>&lt;m&gt;...&lt;/m&gt;</c> and <c>&lt;me&gt;...&lt;/me&gt;</c></title>
+            <p>
+              Inline and display math. Rendered visually via MathJax in HTML.
+              The underlying MathML is exposed to screen readers, enabling
+              structural navigation of equations.
+            </p>
+          </li>
+          <li>
+            <title><c>&lt;image&gt;...&lt;shortdescription&gt;</c></title>
+            <p>
+              Images carry their own alternative-text metadata, making them
+              accessible wherever the image appears — HTML, PDF, and ePub.
+            </p>
+          </li>
+        </dl>
+      </p>
+    </assemblage>
+  </section>
+
+  <!-- ================================================= -->
+  <!-- Section 3: Math Accessibility via MathJax/MathML  -->
+  <!-- ================================================= -->
+  <section xml:id="a11y-math">
+    <title>Math Accessibility: MathJax and MathML</title>
+
+    <p>
+      <pretext/> stores all mathematics as <latex/> source in the
+      <c>&lt;m&gt;</c>, <c>&lt;me&gt;</c>, <c>&lt;men&gt;</c>, and
+      <c>&lt;md&gt;</c> tags. When building HTML output, it uses
+      <url href="https://www.mathjax.org">MathJax</url> to render equations
+      in the browser.
+    </p>
+
+    <p>
+      MathJax does more than draw pretty symbols. It simultaneously generates
+      <url href="https://www.w3.org/TR/MathML3/">MathML</url> — a structured,
+      machine-readable representation of the math — and attaches it to the
+      rendered output. Screen readers that support MathML (including JAWS with
+      MathPlayer, NVDA with MathCAT, and VoiceOver on recent macOS and iOS
+      systems) can then navigate equations structurally: moving from term to
+      term, zooming in on sub-expressions, and reading the equation at
+      whatever level of detail the reader needs.
+    </p>
+
+    <p>
+      MathJax also provides a right-click context menu on every equation that
+      lets any reader copy the source, change the rendering mode, or zoom the
+      equation — useful for students with low vision who do not use a screen
+      reader.
+    </p>
+
+    <assemblage xml:id="a11y-math-author-note">
+      <title>What You Need to Do</title>
+      <p>
+        Nothing. Every equation you write in a <c>&lt;m&gt;</c> tag is
+        automatically accessible in HTML output. The MathJax and MathML
+        infrastructure is part of the standard <pretext/> HTML build.
+      </p>
+    </assemblage>
+  </section>
+
+  <!-- ================================================= -->
+  <!-- Section 4: Alternative Output Formats             -->
+  <!-- ================================================= -->
+  <section xml:id="a11y-formats">
+    <title>Alternative Output Formats</title>
+
+    <p>
+      Because <pretext/> source is semantic, it can be converted to multiple
+      output formats from the same source file. Each format serves a different
+      population of students.
+    </p>
+
+    <tabular top="minor" bottom="minor" left="minor" right="minor">
+      <row header="yes">
+        <cell>Format</cell>
+        <cell>Who benefits</cell>
+        <cell>How to generate</cell>
+      </row>
+      <row>
+        <cell>Accessible HTML</cell>
+        <cell>Screen reader users, keyboard-only users, mobile users</cell>
+        <cell><c>pretext build web</c></cell>
+      </row>
+      <row>
+        <cell>Print-quality PDF</cell>
+        <cell>Students who prefer or require print; students with slow internet</cell>
+        <cell><c>pretext build pdf</c></cell>
+      </row>
+      <row>
+        <cell>ePub</cell>
+        <cell>Students using e-readers or read-aloud software on tablets</cell>
+        <cell><c>pretext build epub</c></cell>
+      </row>
+      <row>
+        <cell>Braille (BANA/Nemeth)</cell>
+        <cell>Blind students; students who prefer tactile reading for math</cell>
+        <cell><c>pretext build braille</c></cell>
+      </row>
+    </tabular>
+
+    <p>
+      The Braille output is particularly significant. Most math textbooks cannot
+      be converted to Braille without a specialist transcriber, which creates
+      long wait times and high costs for students who are blind. <pretext/>
+      uses the <url href="https://liblouis.io">liblouis</url> library and
+      Nemeth Code rules to generate Braille from the same source as the HTML and
+      PDF. An instructor who writes a <pretext/> textbook automatically provides
+      a format that disability services can send directly to a Braille embosser.
+    </p>
+  </section>
+
+  <!-- ================================================= -->
+  <!-- Section 5: HTML Structural Accessibility          -->
+  <!-- ================================================= -->
+  <section xml:id="a11y-html-structure">
+    <title>HTML Structural Accessibility</title>
+
+    <p>
+      The HTML that <pretext/> generates is structured to meet the
+      <url href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility
+      Guidelines (WCAG) 2.1</url> at the AA level. Key features include:
+    </p>
+
+    <dl>
+      <li>
+        <title>Heading hierarchy</title>
+        <p>
+          Chapters, sections, subsections, and named blocks each map to an
+          appropriate HTML heading level (<c>h1</c>–<c>h6</c>). Screen
+          reader users can navigate by heading, jumping directly to the
+          section they need without reading the whole page.
+        </p>
+      </li>
+      <li>
+        <title>Skip-navigation link</title>
+        <p>
+          Every page has a hidden <q>Skip to main content</q> link at the top
+          that becomes visible on keyboard focus, letting keyboard users bypass
+          the navigation sidebar.
+        </p>
+      </li>
+      <li>
+        <title>ARIA landmarks</title>
+        <p>
+          The page structure uses ARIA landmark roles
+          (<c>role="navigation"</c>, <c>role="main"</c>, <c>role="search"</c>,
+          etc.) so screen readers can provide a structural overview of the
+          page.
+        </p>
+      </li>
+      <li>
+        <title>Keyboard navigation</title>
+        <p>
+          The table of contents, knowl popups, and interactive exercises are
+          all reachable and operable with the keyboard alone. No mouse is
+          required.
+        </p>
+      </li>
+      <li>
+        <title>Color contrast</title>
+        <p>
+          The default themes ship with foreground/background color combinations
+          that meet the WCAG AA 4.5:1 contrast ratio for body text. Theming
+          options (including a high-contrast mode) are available in the
+          publication file.
+        </p>
+      </li>
+      <li>
+        <title>Responsive layout</title>
+        <p>
+          The HTML output reflows gracefully on small screens. Students using
+          screen magnification software or a mobile device do not lose
+          information when the viewport narrows.
+        </p>
+      </li>
+    </dl>
+  </section>
+
+  <!-- ================================================= -->
+  <!-- Section 6: What Authors Must Do                   -->
+  <!-- ================================================= -->
+  <section xml:id="a11y-author-responsibilities">
+    <title>What You, the Author, Must Do</title>
+
+    <p>
+      <pretext/> handles structural accessibility automatically. There are
+      two areas where author effort matters:
+    </p>
+
+    <subsection xml:id="a11y-images">
+      <title>Images</title>
+
+      <p>
+        Every image that carries information (as opposed to purely decorative
+        dividers) needs a <c>&lt;shortdescription&gt;</c>. This becomes the
+        <c>alt</c> attribute on the HTML <c>&lt;img&gt;</c> tag.
+      </p>
+
+      <program language="xml">
+        <code><![CDATA[<image source="graph.png" width="60%">
+  <shortdescription>
+    A graph of f(x) = x squared on the interval [-2, 2],
+    showing a parabola opening upward with vertex at the origin.
+  </shortdescription>
+</image>]]></code>
+      </program>
+
+      <p>
+        For images that carry significant information — a complex diagram,
+        a data table presented as an image, a geometric construction — add a
+        <c>&lt;description&gt;</c> element as well. This longer text appears
+        in the HTML as a separate expandable region that sighted readers can
+        ignore and screen reader users can access.
+      </p>
+
+      <program language="xml">
+        <code><![CDATA[<image source="venn.png" width="60%">
+  <shortdescription>Venn diagram of sets A, B, and A intersect B.</shortdescription>
+  <description>
+    <p>
+      Two overlapping circles. The left circle is labeled A and contains
+      the elements 1, 2, 3. The right circle is labeled B and contains
+      3, 4, 5. The overlapping region contains 3, representing A intersect B.
+    </p>
+  </description>
+</image>]]></code>
+      </program>
+
+      <p>
+        Figures generated by <pretext/> from <latex/> source (via TikZ or
+        PGFPlots) are automatically converted to SVG, which is natively
+        accessible and scales without blurring on high-resolution displays.
+      </p>
+    </subsection>
+
+    <subsection xml:id="a11y-video-audio">
+      <title>Video and Audio</title>
+
+      <p>
+        Embedded videos should include captions and, where possible, a
+        transcript. <pretext/> supports YouTube and Vimeo embeds; captions
+        must be provided on the hosting platform (YouTube's auto-captions are
+        a starting point but should be corrected before assigning to students).
+        When you embed a video with <c>&lt;video&gt;</c>, add a
+        <c>&lt;description&gt;</c> child element to provide context for users
+        who cannot play the video.
+      </p>
+    </subsection>
+
+    <subsection xml:id="a11y-interactive">
+      <title>Interactive Elements</title>
+
+      <p>
+        GeoGebra, Desmos, and JSXGraph applets are not inherently screen-reader
+        accessible because they are visual by design. When you use these in a
+        document you intend to be fully accessible, add a surrounding
+        <c>&lt;p&gt;</c> or <c>&lt;remark&gt;</c> that describes what the
+        interactive shows and what a student is supposed to observe from it.
+        This ensures that a student who cannot interact with the applet still
+        gets the mathematical content.
+      </p>
+
+      <p>
+        Auto-graded exercises (true/false, multiple-choice, fill-in-the-blank)
+        built with <pretext/>'s native exercise types <em>are</em>
+        keyboard-accessible and screen-reader friendly when the document is
+        hosted on Runestone Academy.
+      </p>
+    </subsection>
+  </section>
+
+  <!-- ================================================= -->
+  <!-- Section 7: Alignment with Guidelines              -->
+  <!-- ================================================= -->
+  <section xml:id="a11y-guidelines">
+    <title>How <pretext/> Aligns with Accessibility Guidelines</title>
+
+    <tabular top="minor" bottom="minor" left="minor" right="minor">
+      <row header="yes">
+        <cell>Guideline / Standard</cell>
+        <cell>How <pretext/> addresses it</cell>
+      </row>
+      <row>
+        <cell>WCAG 2.1 Level AA</cell>
+        <cell>
+          Generated HTML uses proper heading hierarchy, ARIA landmarks,
+          keyboard focus management, sufficient color contrast, and
+          skip-navigation links.
+        </cell>
+      </row>
+      <row>
+        <cell>Section 508 (US federal)</cell>
+        <cell>
+          HTML output, MathML equations, and structured alt text satisfy the
+          electronic content requirements of Section 508 Subpart B.
+        </cell>
+      </row>
+      <row>
+        <cell>EPUB Accessibility 1.1</cell>
+        <cell>
+          ePub output includes navigation landmarks, MathML, and metadata
+          conforming to the EPUB Accessibility specification.
+        </cell>
+      </row>
+      <row>
+        <cell>Nemeth Braille Code</cell>
+        <cell>
+          Braille output uses Nemeth Code for math expressions, the standard
+          required by most US disability services for STEM materials.
+        </cell>
+      </row>
+      <row>
+        <cell>Universal Design for Learning (UDL)</cell>
+        <cell>
+          Multiple output formats (HTML, PDF, ePub, Braille) and customizable
+          reading options (zoom, color theme, font size) support UDL's
+          principle of providing multiple means of representation.
+        </cell>
+      </row>
+    </tabular>
+  </section>
+
+  <!-- ================================================= -->
+  <!-- Section 8: Quick Reference for Accessible Authoring -->
+  <!-- ================================================= -->
+  <section xml:id="a11y-quick-ref">
+    <title>Quick Reference: Accessible Authoring Checklist</title>
+
+    <p>
+      Use this list when reviewing a <pretext/> document before publication.
+    </p>
+
+    <p>
+      <dl>
+        <li>
+          <title>Every informative image has a <c>&lt;shortdescription&gt;</c></title>
+          <p>Purely decorative images should carry an empty <c>&lt;shortdescription/&gt;</c>.</p>
+        </li>
+        <li>
+          <title>Complex images have a <c>&lt;description&gt;</c> element</title>
+          <p>Diagrams, graphs, and tables presented as images need a full textual description.</p>
+        </li>
+        <li>
+          <title>Interactive applets have a surrounding prose description</title>
+          <p>Students who cannot run the applet can still learn from the text around it.</p>
+        </li>
+        <li>
+          <title>Videos have captions on the hosting platform</title>
+          <p>YouTube and Vimeo both support caption uploads. Review auto-generated captions for accuracy.</p>
+        </li>
+        <li>
+          <title>Tables use the <c>header="yes"</c> attribute on header rows</title>
+          <p>This generates proper <c>&lt;th&gt;</c> elements that screen readers use to identify column headers.</p>
+        </li>
+        <li>
+          <title>All cross-references use <c>&lt;xref&gt;</c>, not bare URLs</title>
+          <p>Semantic cross-references produce meaningful link text (<q>Definition 3.2</q>) instead of raw URLs.</p>
+        </li>
+        <li>
+          <title>The document builds without errors</title>
+          <p>A document with structural errors may render correctly for sighted readers but produce broken ARIA or heading structure.</p>
+        </li>
+      </dl>
+    </p>
+  </section>
+
+</chapter>

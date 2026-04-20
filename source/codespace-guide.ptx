@@ -130,7 +130,7 @@
 
 			<introduction>
 				<p>
-					Once your Codespace loads, it'll will look like so: 
+					Once your Codespace loads, it will look like so:
 				</p>
 
 				<image source="fresh-codespace.png"/>
@@ -161,7 +161,7 @@
 				</p>
 
 				<p>
-					Completing these steps will populate your codespace with all the files you need to author in <pretext />. In fact, it also provides a template that build right-away.
+					Completing these steps will populate your codespace with all the files you need to author in <pretext />. In fact, it also provides a template that builds right away.
 				</p>
 
 				<image source="new-book.png"/>
@@ -204,7 +204,7 @@
 								<ol>
 									<li>Now, we can view both the <c>html</c> and <c>pdf</c> version of the template book.</li>
 									<li>To view them, click on the <c>▷ PreTeXt</c> button again and select <q>View Full Document</q> then choose either the <q>web</q> or <q>print</q> option.</li>
-									<li>In either case, a new broswer window should open. If the <c>html</c> doesn't display in the broswer, try refreshing the page.</li>
+									<li>In either case, a new browser window should open. If the <c>html</c> doesn't display in the browser, try refreshing the page.</li>
 								</ol>
 							</p>
 						</li>
@@ -278,7 +278,7 @@
 		</subsection>
 
 		<subsection xml:id="first-build">
-			<title>Your First Build</title>
+			<title>Building and Previewing</title>
 
 			<p>
 				Now that you've explored the workspace, it's time to build your first <pretext /> document.
@@ -292,7 +292,7 @@
 						<li>In your Codespace, open the integrated terminal (at the bottom of the editor).</li>
 						<li>
 							Type the following command and press <kbd>Enter</kbd>:
-							<codeblock>pretext build web</codeblock>
+							<cd>pretext build web</cd>
 						</li>
 						<li>
 							<p>
@@ -331,8 +331,9 @@
 				<title>Building a PDF (Optional)</title>
 				<p>
 					<ol>
-						<li>To generate a PDF version, use the following command:</li>
-						<codeblock>pretext build pdf</codeblock>
+						<li>To generate a PDF version, use the following command:
+						<cd>pretext build pdf</cd>
+					</li>
 						<li>
 							<p>
 								This will run a LaTeX-based build to produce a typeset PDF.
