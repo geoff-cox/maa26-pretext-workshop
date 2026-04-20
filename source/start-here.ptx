@@ -6,47 +6,44 @@
     <p>
       Here are some resources to help you learn more about <pretext /> and how to use it.
     </p>
-    <table>
-      <title></title>
-      <tabular top="minor" bottom="minor" left="minor" right="minor">
-        <row>
-          <cell><url href="https://pretextbook.org"><pretext /> Homepage</url></cell>
-          <cell>The <pretext /> homepage is a great place to start learning more about the project and its capabilities. It includes links to documentation, help forums, and more.</cell>
-        </row>
-        <row>
-          <cell><url href="https://runestone.academy/ns/books/published/debookrs/"><pretext /> Guide</url></cell>
-          <cell>The <pretext /> Guide is a comprehensive resource for learning how to use <pretext />. It includes detailed documentation, examples, and tutorials.</cell>
-        </row>
-        <row>
-          <cell><url href="https://pretextbook.org/community.html">Help Forums</url></cell>
-          <cell>The <pretext /> Help Forums are a great place to ask questions, share your work, and connect with other members of the <pretext /> community.</cell>
-        </row>
-        <row>
-          <cell><url href="https://groups.google.com/g/pretext-announce"><pretext /> announcements</url></cell>
-          <cell>Stay updated on the latest news and developments in the <pretext /> community.</cell>
-        </row>
-        <row>
-          <cell><url href="https://github.com/pretextbook/pretext/issues">GitHub Issues</url></cell>
-          <cell>Report bugs or request features on the <pretext /> GitHub repository.</cell>
-        </row>
-        <row>
-          <cell><url href="https://discord.gg/pretext">Discord Server</url></cell>
-          <cell>Join the <pretext /> Discord server for real-time discussions and support.</cell>
-        </row>
-        <row>
-          <cell><url href="https://mathtech.org">MathTech</url></cell>
-          <cell>Explore the MathTech website for additional resources and information about <pretext />.</cell>
-        </row>
-        <row>
-          <cell><url href="https://www.youtube.com/@MathTechOrg/videos">Videos</url></cell>
-          <cell>Watch tutorial videos and presentations about <pretext />.</cell>
-        </row>
-        <row>
-          <cell><url href="https://runestone.academy/">Runestone Academy</url></cell>
-          <cell>Runestone Academy is the platform that hosts interactive textbooks created with <pretext />. It provides a user-friendly interface for both authors and readers, making it easy to create, publish, and access interactive educational content.</cell>
-        </row>
-      </tabular>
-    </table>
+    <tabular top="minor" bottom="minor" left="minor" right="minor">
+      <row>
+        <cell><url href="https://pretextbook.org"><pretext /> Homepage</url></cell>
+        <cell>The <pretext /> homepage is a great place to start learning more about the project and its capabilities. It includes links to documentation, help forums, and more.</cell>
+      </row>
+      <row>
+        <cell><url href="https://runestone.academy/ns/books/published/debookrs/"><pretext /> Guide</url></cell>
+        <cell>The <pretext /> Guide is a comprehensive resource for learning how to use <pretext />. It includes detailed documentation, examples, and tutorials.</cell>
+      </row>
+      <row>
+        <cell><url href="https://pretextbook.org/community.html">Help Forums</url></cell>
+        <cell>The <pretext /> Help Forums are a great place to ask questions, share your work, and connect with other members of the <pretext /> community.</cell>
+      </row>
+      <row>
+        <cell><url href="https://groups.google.com/g/pretext-announce"><pretext /> announcements</url></cell>
+        <cell>Stay updated on the latest news and developments in the <pretext /> community.</cell>
+      </row>
+      <row>
+        <cell><url href="https://github.com/pretextbook/pretext/issues">GitHub Issues</url></cell>
+        <cell>Report bugs or request features on the <pretext /> GitHub repository.</cell>
+      </row>
+      <row>
+        <cell><url href="https://discord.gg/pretext">Discord Server</url></cell>
+        <cell>Join the <pretext /> Discord server for real-time discussions and support.</cell>
+      </row>
+      <row>
+        <cell><url href="https://mathtech.org">MathTech</url></cell>
+        <cell>Explore the MathTech website for additional resources and information about <pretext />.</cell>
+      </row>
+      <row>
+        <cell><url href="https://www.youtube.com/@MathTechOrg/videos">Videos</url></cell>
+        <cell>Watch tutorial videos and presentations about <pretext />.</cell>
+      </row>
+      <row>
+        <cell><url href="https://runestone.academy/">Runestone Academy</url></cell>
+        <cell>Runestone Academy is the platform that hosts interactive textbooks created with <pretext />. It provides a user-friendly interface for both authors and readers, making it easy to create, publish, and access interactive educational content.</cell>
+      </row>
+    </tabular>
   </section>
 
   <section xml:id="sec-cheatsheet">
@@ -70,263 +67,283 @@
       <title>Document structure and formatting</title>
 
       <worksheet>
-      <sbsgroup widths="15% 28% 15% 30%" margins="2% 2%">
-        <sidebyside>
-          <p><term>Section</term></p>
-          <program language="xml">
-            &lt;section&gt;
-              &lt;title&gt;T&lt;/title&gt;
-              ...
-            &lt;/section&gt;
-          </program>
-          <p><term>Subsection</term></p>
-          <program language="xml">
-            &lt;subsection&gt;
-              &lt;title&gt;T&lt;/title&gt;
-              ...
-            &lt;/subsection&gt;
-          </program>
-        </sidebyside>
-        <sidebyside>
-          <p><term>Paragraph</term></p>
-          <program language="xml">
-            &lt;p&gt;...&lt;/p&gt;
-          </program>
-          <p><term>Emphasis</term></p>
-          <program language="xml">
-            &lt;em&gt;...&lt;/em&gt;
-          </program>
-        </sidebyside>
-      </sbsgroup>
-    <p><em>Text formatting</em></p>
-    <dl>
-      <li>
-        <title>Emphasis</title>
-        <cd><![CDATA[<em>emphasized text</em>]]></cd>
-      </li>
-      <li>
-        <title>New term</title>
-        <cd><![CDATA[<term>right triangle</term>]]></cd>
-      </li>
-      <li>
-        <title>Inline code</title>
-        <cd><![CDATA[<c>pretext build</c>]]></cd>
-      </li>
-      <li>
-        <title>Quotation</title>
-        <cd><![CDATA[<q>quoted text</q>]]></cd>
-      </li>
-    </dl>
-    <p><em>Lists</em></p>
-    <dl>
-      <li>
-        <title>Bulleted list</title>
-        <cd><![CDATA[<ul>
-    <li><p>item</p></li>
-    <li><p>item</p></li>
-    </ul>]]></cd>
-      </li>
-      <li>
-        <title>Numbered list</title>
-        <cd><![CDATA[<ol>
-    <li><p>item</p></li>
-    <li><p>item</p></li>
-    </ol>]]></cd>
-      </li>
-      <li>
-        <title>Description list</title>
-        <cd><![CDATA[<dl>
-    <li>
-      <title>T</title>
-      <p>...</p>
-    </li>
-    </dl>]]></cd>
-      </li>
-    </dl>
-  </worksheet>
+        <sbsgroup widths="15% 28% 15% 30%" margins="2% 2%">
+          <sidebyside>
+            <p><term>Section</term></p>
+            <program language="xml">
+              &lt;section&gt;
+                &lt;title&gt;T&lt;/title&gt;
+                ...
+              &lt;/section&gt;
+            </program>
+            <p><term>Subsection</term></p>
+            <program language="xml">
+              &lt;subsection&gt;
+                &lt;title&gt;T&lt;/title&gt;
+                ...
+              &lt;/subsection&gt;
+            </program>
+          </sidebyside>
+          <sidebyside>
+            <p><term>Paragraph</term></p>
+            <program language="xml">
+              &lt;p&gt;...&lt;/p&gt;
+            </program>
+            <p><term>Emphasis</term></p>
+            <program language="xml">
+              &lt;em&gt;...&lt;/em&gt;
+            </program>
+          </sidebyside>
+        </sbsgroup>
+        <p>
+          <em>Text formatting</em>
+          <dl>
+            <li>
+              <title>Emphasis</title>
+              <cd><![CDATA[<em>emphasized text</em>]]></cd>
+            </li>
+            <li>
+              <title>New term</title>
+              <cd><![CDATA[<term>right triangle</term>]]></cd>
+            </li>
+            <li>
+              <title>Inline code</title>
+              <cd><![CDATA[<c>pretext build</c>]]></cd>
+            </li>
+            <li>
+              <title>Quotation</title>
+              <cd><![CDATA[<q>quoted text</q>]]></cd>
+            </li>
+          </dl>
+        </p>
+        <p>
+          <em>Lists</em>
+          <dl>
+            <li>
+              <title>Bulleted list</title>
+              <cd><![CDATA[<ul>
+          <li><p>item</p></li>
+          <li><p>item</p></li>
+          </ul>]]></cd>
+            </li>
+            <li>
+              <title>Numbered list</title>
+              <cd><![CDATA[<ol>
+          <li><p>item</p></li>
+          <li><p>item</p></li>
+          </ol>]]></cd>
+            </li>
+            <li>
+              <title>Description list</title>
+              <cd><![CDATA[<dl>
+          <li>
+            <title>T</title>
+            <p>...</p>
+          </li>
+          </dl>]]></cd>
+            </li>
+          </dl>
+        </p>
+      </worksheet>
     </subsection>
 
     <subsection xml:id="cheatsheet-math">
       <title>Math</title>
-    <p><em>Math</em></p>
-    <dl>
-      <li>
-        <title>Inline math</title>
-        <cd><![CDATA[<m>x^2 + 1</m>]]></cd>
-      </li>
-      <li>
-        <title>Display math</title>
-        <cd><![CDATA[<me>\int_0^1 f(x)\,dx</me>]]></cd>
-      </li>
-      <li>
-        <title>Numbered math</title>
-        <cd><![CDATA[<men>e^{i\pi} + 1 = 0</men>]]></cd>
-      </li>
-      <li>
-        <title>Multi-line display</title>
-        <cd><![CDATA[<md>
-    <mrow>a^2 + b^2 \amp = c^2</mrow>
-    <mrow>x^2 + y^2 \amp = z^2</mrow>
-    </md>]]></cd>
-      </li>
-    </dl>
-
+      <p>
+        <em>Math</em>
+        <dl>
+          <li>
+            <title>Inline math</title>
+            <cd><![CDATA[<m>x^2 + 1</m>]]></cd>
+          </li>
+          <li>
+            <title>Display math</title>
+            <cd><![CDATA[<me>\int_0^1 f(x)\,dx</me>]]></cd>
+          </li>
+          <li>
+            <title>Numbered math</title>
+            <cd><![CDATA[<men>e^{i\pi} + 1 = 0</men>]]></cd>
+          </li>
+          <li>
+            <title>Multi-line display</title>
+            <cd><![CDATA[<md>
+        <mrow>a^2 + b^2 \amp = c^2</mrow>
+        <mrow>x^2 + y^2 \amp = z^2</mrow>
+        </md>]]></cd>
+          </li>
+        </dl>
+      </p>
     </subsection>
 
     <subsection xml:id="cheatsheet-common-blocks">
       <title>Common blocks</title>
-    <p><em>Common blocks</em></p>
-    <dl>
-      <li>
-        <title>Definition</title>
-        <cd><![CDATA[<definition xml:id="def-x">
-    <statement><p>...</p></statement>
-    </definition>]]></cd>
-      </li>
-      <li>
-        <title>Theorem</title>
-        <cd><![CDATA[<theorem xml:id="thm-x">
-    <statement><p>...</p></statement>
-    <proof><p>...</p></proof>
-    </theorem>]]></cd>
-      </li>
-      <li>
-        <title>Example</title>
-        <cd><![CDATA[<example xml:id="ex-x">
-    <title>T</title>
-    <statement><p>...</p></statement>
-    <solution><p>...</p></solution>
-    </example>]]></cd>
-      </li>
-      <li>
-        <title>Remark</title>
-        <cd><![CDATA[<remark>
-    <p>...</p>
-    </remark>]]></cd>
-      </li>
-    </dl>
+      <p>
+        <em>Common blocks</em>
+        <dl>
+          <li>
+            <title>Definition</title>
+            <cd><![CDATA[<definition xml:id="def-x">
+        <statement><p>...</p></statement>
+        </definition>]]></cd>
+          </li>
+          <li>
+            <title>Theorem</title>
+            <cd><![CDATA[<theorem xml:id="thm-x">
+        <statement><p>...</p></statement>
+        <proof><p>...</p></proof>
+        </theorem>]]></cd>
+          </li>
+          <li>
+            <title>Example</title>
+            <cd><![CDATA[<example xml:id="ex-x">
+        <title>T</title>
+        <statement><p>...</p></statement>
+        <solution><p>...</p></solution>
+        </example>]]></cd>
+          </li>
+          <li>
+            <title>Remark</title>
+            <cd><![CDATA[<remark>
+        <p>...</p>
+        </remark>]]></cd>
+          </li>
+        </dl>
+      </p>
     </subsection>
 
     <subsection xml:id="cheatsheet-exercises">
       <title>Exercises</title>
-
-    <p><em>Exercises</em></p>
-    <dl>
-      <li>
-        <title>Simple exercise</title>
-        <cd><![CDATA[<exercise xml:id="exr-x">
-    <statement><p>...</p></statement>
-    </exercise>]]></cd>
-      </li>
-      <li>
-        <title>Exercise with hint and answer</title>
-        <cd><![CDATA[<exercise xml:id="exr-y">
-    <statement><p>...</p></statement>
-    <hint><p>...</p></hint>
-    <answer><p>...</p></answer>
-    </exercise>]]></cd>
-      </li>
-      <li>
-        <title>Exercise with solution</title>
-        <cd><![CDATA[<exercise xml:id="exr-z">
-    <statement><p>...</p></statement>
-    <solution><p>...</p></solution>
-    </exercise>]]></cd>
-      </li>
-    </dl>
+      <p>
+        <em>Exercises</em>
+        <dl>
+          <li>
+            <title>Simple exercise</title>
+            <cd><![CDATA[<exercise xml:id="exr-x">
+        <statement><p>...</p></statement>
+        </exercise>]]></cd>
+          </li>
+          <li>
+            <title>Exercise with hint and answer</title>
+            <cd><![CDATA[<exercise xml:id="exr-y">
+        <statement><p>...</p></statement>
+        <hint><p>...</p></hint>
+        <answer><p>...</p></answer>
+        </exercise>]]></cd>
+          </li>
+          <li>
+            <title>Exercise with solution</title>
+            <cd><![CDATA[<exercise xml:id="exr-z">
+        <statement><p>...</p></statement>
+        <solution><p>...</p></solution>
+        </exercise>]]></cd>
+          </li>
+        </dl>
+      </p>
     </subsection>
 
     <subsection xml:id="cheatsheet-links-refs">
       <title>Document structure and formatting</title>
-
-    <p><em>Links</em></p>
-    <dl>
-      <li>
-        <title>External URL</title>
-        <cd><![CDATA[<url href="https://example.com"/>]]></cd>
-      </li>
-      <li>
-        <title>Labeled link</title>
-        <cd><![CDATA[<url href="https://example.com">click here</url>]]></cd>
-      </li>
-    </dl>
-    <p><em>Cross-references</em></p>
-    
-    <dl>
-      <li>
-        <title>Link to an <c>xml:id</c></title>
-        <cd><![CDATA[<xref ref="def-x"/>]]></cd>
-      </li>
-      <li>
-        <title>Custom cross-reference text</title>
-        <cd><![CDATA[<xref ref="def-x" text="custom">our definition</xref>]]></cd>
-      </li>
-    </dl>
+      <p>
+        <em>Links</em>
+        <dl>
+          <li>
+            <title>External URL</title>
+            <cd><![CDATA[<url href="https://example.com"/>]]></cd>
+          </li>
+          <li>
+            <title>Labeled link</title>
+            <cd><![CDATA[<url href="https://example.com">click here</url>]]></cd>
+          </li>
+        </dl>
+      </p>
+      <p>
+        <em>Cross-references</em>
+        <dl>
+          <li>
+            <title>Link to an <c>xml:id</c></title>
+            <cd><![CDATA[<xref ref="def-x"/>]]></cd>
+          </li>
+          <li>
+            <title>Custom cross-reference text</title>
+            <cd><![CDATA[<xref ref="def-x" text="custom">our definition</xref>]]></cd>
+          </li>
+        </dl>
+      </p>
     </subsection>
 
     <subsection xml:id="cheatsheet-figures-images">
       <title>Figures and images</title>
-    <p><em>Figures and images</em></p>
-    <dl>
-      <li>
-        <title>Image</title>
-        <cd><![CDATA[<image source="path.png" width="50%">
-    <shortdescription>Brief alt text.</shortdescription>
-    </image>]]></cd>
-      </li>
-      <li>
-        <title>Image with long description</title>
-        <cd><![CDATA[<image source="path.png" width="50%">
-    <shortdescription>Brief alt text.</shortdescription>
-    <description>
-      <p>Longer description if the image carries substantial information.</p>
-    </description>
-    </image>]]></cd>
-      </li>
-      <li>
-        <title>Figure with caption</title>
-        <cd><![CDATA[<figure xml:id="fig-x">
-    <caption>My caption.</caption>
-    <image source="path.png" width="50%">
-      <shortdescription>Brief alt text.</shortdescription>
-    </image>
-    </figure>]]></cd>
-      </li>
-    </dl>
+      <p>
+        <em>Figures and images</em>
+        <dl>
+          <li>
+            <title>Image</title>
+            <p>
+              <cd><![CDATA[<image source="path.png" width="50%">
+          <shortdescription>Brief alt text.</shortdescription>
+          </image>]]></cd>
+            </p>
+          </li>
+          <li>
+            <title>Image with long description</title>
+            <p>
+              <cd><![CDATA[<image source="path.png" width="50%">
+          <shortdescription>Brief alt text.</shortdescription>
+          <description>
+            <p>Longer description if the image carries substantial information.</p>
+          </description>
+          </image>]]></cd>
+            </p>
+          </li>
+          <li>
+            <title>Figure with caption</title>
+            <p>
+              <cd><![CDATA[<figure xml:id="fig-x">
+          <caption>My caption.</caption>
+          <image source="path.png" width="50%">
+            <shortdescription>Brief alt text.</shortdescription>
+          </image>
+          </figure>]]></cd>
+            </p>
+          </li>
+        </dl>
+      </p>
     </subsection>
 
     <subsection xml:id="cheatsheet-common-mistakes">
       <title>Common mistakes</title>
-    <p><em>Common mistakes</em></p>
-    <ul>
-      <li>
-        <p>
-          Wrap list item text in paragraphs:
-          <c>&lt;li&gt;&lt;p&gt;text&lt;/p&gt;&lt;/li&gt;</c>.
-        </p>
-      </li>
-      <li>
-        <p>
-          Close every tag:
-          <c>&lt;/example&gt;</c>, not <c>&lt;/examp&gt;</c>.
-        </p>
-      </li>
-      <li>
-        <p>
-          Use <c>xml:id</c>, not <c>id</c>, when you want a stable target for an <c>&lt;xref/&gt;</c>.
-        </p>
-      </li>
-      <li>
-        <p>
-          In aligned math, use <c>\amp</c> for the alignment marker.
-        </p>
-      </li>
-      <li>
-        <p>
-          Save and rebuild or refresh your preview after changes.
-        </p>
-      </li>
-    </ul>
+      <p>
+        <em>Common mistakes</em>
+        <ul>
+          <li>
+            <p>
+              Wrap list item text in paragraphs:
+              <c>&lt;li&gt;&lt;p&gt;text&lt;/p&gt;&lt;/li&gt;</c>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Close every tag:
+              <c>&lt;/example&gt;</c>, not <c>&lt;/examp&gt;</c>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Use <c>xml:id</c>, not <c>id</c>, when you want a stable target for an <c>&lt;xref/&gt;</c>.
+            </p>
+          </li>
+          <li>
+            <p>
+              In aligned math, use <c>\amp</c> for the alignment marker.
+            </p>
+          </li>
+          <li>
+            <p>
+              Save and rebuild or refresh your preview after changes.
+            </p>
+          </li>
+        </ul>
+      </p>
     </subsection>
 
   </section>
