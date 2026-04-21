@@ -263,10 +263,12 @@
   <section xml:id="a11y-author-responsibilities">
     <title>What You, the Author, Must Do</title>
 
-    <p>
-      <pretext/> handles structural accessibility automatically. There are
-      two areas where author effort matters:
-    </p>
+    <introduction>
+      <p>
+        <pretext/> handles structural accessibility automatically. There are
+        two areas where author effort matters:
+      </p>
+    </introduction>
 
     <subsection xml:id="a11y-images">
       <title>Images</title>

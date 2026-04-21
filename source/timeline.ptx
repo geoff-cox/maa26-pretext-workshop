@@ -3,11 +3,11 @@
 
   <introduction>
     <p>
-      This chapter is the spine of the workshop. Each section below corresponds to one phase of the afternoon, in order. The action phases — <em>Guided Practice</em> and <em>Build a Lesson</em> — are self-contained: everything you need to follow along lives inside that section. The shorter talk and transition phases are lighter, and point you to the slides or to other chapters of this hub when useful.
+      This section provides a roadmap for each phase of the workshop. If you lose track of where we are in the workshop, the sections below will help you realign your bearings and get back on track. They contain everything you need to follow along lives inside that section.
     </p>
 
     <p>
-      If you fall behind or want to jump ahead, use the table of contents on the left. Nothing here depends on you having finished the previous phase perfectly.
+      You also welcome to jump ahead. Just click on the items in the table of contents on the left. Nothing here depends on you having finished the previous phase perfectly.
     </p>
   </introduction>
 
@@ -272,92 +272,14 @@
         </exercise>
       </subsubsection>
 
-      <subsubsection xml:id="talk-demo-coding">
-        <title>✔ Interactive Coding Questions</title>
-
-        <p>
-          Live Python (and several other languages) right inside the page. Students run and modify the code without leaving the textbook.
-        </p>
-
-        <program label="partial-program-two" interactive="activecode" language="python">
-          <code>
-            num = 569
-            nDigits = 0
-            print(f"How many digits are in the integer {num}")
-            temp = num
-            while temp > 1:
-              temp = temp/10
-              nDigits = nDigits + 1
-              print(f"  temp={temp}")
-
-            print(f"{num} has {nDigits} digits")
-          </code>
-        </program>
-
-        <p>
-          If your book is hosted on the Runestone server, you can also attach graded questions to the code. See <url href="https://runestone.academy/ns/books/published/PTXSB/code-lens.html#program-codelens-python-questions">CodeLens with questions</url> for an example.
-        </p>
-      </subsubsection>
-
-      <subsubsection xml:id="talk-demo-datasets">
-        <title>✔ Coding with Datasets</title>
-
-        <p>
-          You can import a dataset from a CSV or text file — or hardcode one into the source — and have students work with it inside the page.
-        </p>
-
-        <datafile label="file-global-climate-one" xml:id="file-global-climate-one" filename="ccdata1.txt" rows="18" cols="40" editable="yes" include-source="no">
-          <pre>
-          1850    -0.37     2.24E-7
-          1860    -0.34     3.94E-7
-          1870    -0.28     6.6E-7
-          1880    -0.24     1.10
-          1890    -0.42     1.72
-          1900    -0.20     2.38
-          1910    -0.49     3.34
-          1920    -0.25     4.01
-          1930    -0.14     4.53
-          1940    +0.01     5.50
-          1950    -0.17     6.63
-          1960    -0.05     10.5
-          1970    -0.03     16.0
-          1980    +0.09     20.3
-          1990    +0.30     22.6
-          2000    +0.29     24.9
-          2010    +0.56     32.7
-          2019    +0.74     33.3
-          </pre>
-        </datafile>
-
-        <p>
-          Below, the data above is loaded and filtered by a Python program that students can run and edit in place.
-        </p>
-
-        <program label="python-average-climate" xml:id="python-average-climate" interactive="activecode" language="python" include-source="no">
-          <code>
-            ccfile = open("ccdata1.txt", "r")
-
-            print("Years with increasing avg. temp")
-            print("YEAR  △ TEMP(°C)  CO2 (gigatons)")
-            for aline in ccfile:
-              values = aline.split()
-              if float(values[1]) > 0:
-                print(f"{values[0]}  {values[1]}        {values[2]}")
-
-            ccfile.close()
-          </code>
-        </program>
-      </subsubsection>
-
-      <subsubsection>
+      <subsubsection xml:id="talk-demo-doenetml">
         <title>DoenetML</title>
         <p>
           DoenetML is a newer platform designed specifically for interactive math documents. The example below lets students drag vectors to visualize a determinant identity — the kind of thing that is genuinely hard to show on paper.
         </p>
 
-        <p>
-          <interactive label="interactive-doenetml-example" platform="doenetml" width="100%">
-            <slate surface="doenetml">
+        <interactive label="interactive-doenetml-example" platform="doenetml" width="100%">
+          <slate surface="doenetml">
             &lt;p&gt; Adjust the vectors &lt;m&gt;\vec u&lt;/m&gt;, &lt;m&gt;\vec v&lt;/m&gt;, and &lt;m&gt;\vec w&lt;/m&gt; in the left graph to visualize the areas calculated by &lt;m&gt;\det[\vec u\hspace{0.5em}\vec w]&lt;/m&gt;, &lt;m&gt;\det[\vec v\hspace{0.5em}\vec w]&lt;/m&gt;, and &lt;m&gt;\det[\vec u+\vec v\hspace{0.5em}\vec w]&lt;/m&gt;. &lt;/p&gt;
             &lt;setup&gt;
             &lt;line through="(0,0) $v" name="vLine"/&gt;
@@ -420,12 +342,11 @@
             &lt;lineSegment endpoints="$w+$u $w+$uPlusV" styleNumber="6"/&gt;
             &lt;/graph&gt;
             &lt;/sideBySide&gt;
-            </slate>
-          </interactive>
-        </p>
+          </slate>
+        </interactive>
       </subsubsection>
 
-      <subsubsection>
+      <subsubsection xml:id="talk-demo-jsxgraph">
         <title>JSXGraph</title>
 
         <p>
@@ -442,26 +363,26 @@
           </interactive>
         </sidebyside>
 
-        <interactive xml:id="interactive-infinity" platform="jsxgraph" width="100%" source="code/infinity.js">
+        <interactive xml:id="interactive-infinity" platform="jsxgraph" width="60%" source="code/infinity.js">
           <slate xml:id="jsxgraph-infinity" surface="jsxboard" aspect="1:1"/>
         </interactive>
       </subsubsection>
 
     </subsection>
 
-    <subsection xml:id="textbook-gallery">
-      <title>Textbook Gallery</title>
+    <subsection xml:id="textbook-tour">
+      <title>Textbook Tour</title>
 
       <p>
         The features above are nice in isolation, but they're more convincing in context. The links below point at real textbook pages built with <pretext/>, each one showing off a different capability.
       </p>
 
-      <assemblage xml:id="assemblage-textbook-gallery">
-        <title>Things to try</title>
+      <assemblage xml:id="assemblage-textbook-tour">
+        <title>Sample Interactive Features</title>
         <p>
           <ul marker="">
             <li>▷ <url href="https://runestone.academy/ns/books/published/debookrs/connection-to-alg-calc.html">Audio</url> — embedded narration.</li>
-            <li>▷ <url href="https://runestone.academy/ns/books/published/debookrs/class-problems-main.html">Multi-part Questions</url> (see problem 2) — one exercise broken into scaffolded parts.</li>
+            <li>▷ <url href="https://runestone.academy/ns/books/published/debookrs/class-problems-main.html">Multi-part Questions</url> — one exercise broken into scaffolded parts.</li>
             <li>▷ <url href="https://runestone.academy/ns/books/published/debookrs/visualizing-solutions.html">Interactive Visualization</url>.</li>
             <li>▷ <url href="https://runestone.academy/ns/books/published/debookrs/autonomous-eqns.html">TikZ</url> — <latex/> graphics rendered as accessible SVG.</li>
             <li>▷ <url href="https://runestone.academy/ns/books/published/debookrs/chpt-laplace-transform-method.html">Slide Show</url> — a lecture deck built from the same source.</li>
@@ -591,15 +512,28 @@
       <title>Exercise 1 — A paragraph with inline math</title>
 
       <p>
-        Paste this inside the section and rebuild. Notice how inline math flows with the text, the same way <c>\(...\)</c> does in <latex/>.
+        Type the <pretext/> commands that create the following paragraph with inline math and rebuild.
       </p>
 
-      <program language="xml">
-        <code><![CDATA[<p>
-  The Pythagorean theorem states that <m>a^2 + b^2 = c^2</m>,
-  where <m>c</m> is the length of the hypotenuse.
-</p>]]></code>
-      </program>
+      <assemblage xml:id="guided-exercise-1">
+        <p>
+          The Pythagorean theorem states that <m>a^2 + b^2 = c^2</m>,
+          where <m>c</m> is the length of the hypotenuse.
+        </p>
+      </assemblage>
+
+      <solution>
+        <title>Try it yourself, then check your answer here</title>
+        <program language="xml">
+          <![CDATA[
+            <p>
+              The Pythagorean theorem states that <m>a^2 + b^2 = c^2</m>,
+              where <m>c</m> is the length of the hypotenuse.
+            </p>
+          ]]>
+        </program>
+      </solution>
+
     </subsection>
 
     <subsection xml:id="gp-exercise-2">
@@ -609,16 +543,30 @@
         Add a formal definition. The <c>xml:id</c> attribute is a label we'll use in Exercise 5 to link to this definition from elsewhere in the document.
       </p>
 
-      <program language="xml">
-        <code><![CDATA[<definition xml:id="def-right-triangle">
-  <statement>
-    <p>
-      A <term>right triangle</term> is a triangle
-      with one angle measuring exactly 90 degrees.
-    </p>
-  </statement>
-</definition>]]></code>
-      </program>
+      <definition xml:id="def-right-triangle">
+        <statement>
+          <p>
+            A <term>right triangle</term> is a triangle
+            with one angle measuring exactly 90 degrees.
+          </p>
+        </statement>
+      </definition>
+
+      <solution>
+        <title>Try it yourself, then check your answer here</title>
+        <program language="xml">
+          <![CDATA[
+            <definition xml:id="def-right-triangle">
+              <statement>
+                <p>
+                  A <term>right triangle</term> is a triangle
+                  with one angle measuring exactly 90 degrees.
+                </p>
+              </statement>
+            </definition>
+          ]]>
+        </program>
+      </solution>
 
       <p>
         Notice that <pretext/> numbered the definition automatically and styled it as a named block. You didn't have to ask.
@@ -632,22 +580,43 @@
         Examples get numbered automatically too, in their own sequence. Try changing the title after you rebuild to see what happens.
       </p>
 
-      <program language="xml">
-        <code><![CDATA[<example>
-  <title>A 3-4-5 triangle</title>
-  <statement>
-    <p>
-      Show that a triangle with sides 3, 4, and 5
-      is a right triangle.
-    </p>
-  </statement>
-  <solution>
-    <p>
-      Check: <m>3^2 + 4^2 = 9 + 16 = 25 = 5^2</m>.
-    </p>
-  </solution>
-</example>]]></code>
-      </program>
+      <example>
+        <title>A 3-4-5 triangle</title>
+        <statement>
+          <p>
+            Show that a triangle with sides 3, 4, and 5
+            is a right triangle.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Check: <m>3^2 + 4^2 = 9 + 16 = 25 = 5^2</m>.
+          </p>
+        </solution>
+      </example>
+
+      <solution>
+        <title>Try it yourself, then check your answer here</title>
+        <program language="xml">
+          <![CDATA[
+            <example>
+              <title>A 3-4-5 triangle</title>
+              <statement>
+                <p>
+                  Show that a triangle with sides 3, 4, and 5
+                  is a right triangle.
+                </p>
+              </statement>
+              <solution>
+                <p>
+                  Check: <m>3^2 + 4^2 = 9 + 16 = 25 = 5^2</m>.
+                </p>
+              </solution>
+            </example>
+          ]]>
+        </program>
+      </solution>
+
     </subsection>
 
     <subsection xml:id="gp-exercise-4">
@@ -657,16 +626,31 @@
         Exercises are numbered separately from examples — you can see the two sequences in your preview.
       </p>
 
-      <program language="xml">
-        <code><![CDATA[<exercise>
-  <statement>
-    <p>
-      Find the length of the hypotenuse of a right
-      triangle with legs of length 5 and 12.
-    </p>
-  </statement>
-</exercise>]]></code>
-      </program>
+      <exercise>
+        <statement>
+          <p>
+            Find the length of the hypotenuse of a right
+            triangle with legs of length 5 and 12.
+          </p>
+        </statement>
+      </exercise>
+
+      <solution>
+        <title>Try it yourself, then check your answer here</title>
+        <program language="xml">
+          <![CDATA[
+            <exercise>
+              <statement>
+                <p>
+                  Find the length of the hypotenuse of a right
+                  triangle with legs of length 5 and 12.
+                </p>
+              </statement>
+            </exercise>
+          ]]>
+        </program>
+      </solution>
+
     </subsection>
 
     <subsection xml:id="gp-exercise-5">
@@ -676,12 +660,23 @@
         This is the payoff. The <c>&lt;xref&gt;</c> tag below points at the <c>xml:id</c> you gave the definition in Exercise 2, and <pretext/> builds a working link for you — with the right number, the right wording, and the right target. Change the definition's position in the document and the link still works.
       </p>
 
-      <program language="xml">
-        <code><![CDATA[<p>
-  For a reminder of the terminology,
-  see <xref ref="def-right-triangle"/>.
-</p>]]></code>
-      </program>
+      <p>
+        For a reminder of the terminology,
+        see <xref ref="def-right-triangle"/>.
+      </p>
+
+      <solution>
+        <title>Try it yourself, then check your answer here</title>
+        <program language="xml">
+          <![CDATA[
+            <p>
+              For a reminder of the terminology,
+              see <xref ref="def-right-triangle"/>.
+            </p>
+          ]]>
+        </program>
+      </solution>
+
     </subsection>
 
     <subsection xml:id="gp-finished-early">
@@ -774,61 +769,117 @@
     <subsection xml:id="bl-starter-triangles">
       <title>Starter option 1 — Right triangles</title>
 
-      <p>
-        A geometry lesson with a definition, a named example, and an exercise that references the definition by cross-reference.
-      </p>
+      <introduction>
+        <p>
+          A geometry lesson with a definition, a named example, and an exercise that references the definition by cross-reference.
+        </p>
+      </introduction>
+
+      <subsubsection xml:id="assemblage-right-triangles">
+        <title>Right Triangles</title>
+          <p>
+            This short lesson introduces right triangles and
+            the Pythagorean theorem.
+          </p>
+
+          <definition xml:id="defn-right-triangle">
+            <statement>
+              <p>
+                A <term>right triangle</term> is a triangle
+                with one angle measuring exactly 90 degrees.
+              </p>
+            </statement>
+          </definition>
+
+          <p>
+            The Pythagorean theorem states that
+            <m>a^2 + b^2 = c^2</m>, where <m>c</m> is the
+            length of the hypotenuse.
+          </p>
+
+          <example>
+            <title>A 3-4-5 triangle</title>
+            <statement>
+              <p>
+                Show that a triangle with sides 3, 4, and 5
+                is a right triangle.
+              </p>
+            </statement>
+            <solution>
+              <p>
+                Check: <m>3^2 + 4^2 = 9 + 16 = 25 = 5^2</m>.
+              </p>
+            </solution>
+          </example>
+
+          <exercise>
+            <statement>
+              <p>
+                Find the length of the hypotenuse of a right
+                triangle with legs of length 5 and 12.
+              </p>
+            </statement>
+          </exercise>
+
+          <p>
+            For a reminder of the terminology,
+            see <xref ref="defn-right-triangle"/>.
+          </p>
+      </subsubsection>
 
       <program language="xml">
-        <code><![CDATA[<title>Right Triangles</title>
+        <![CDATA[
+          <title>Right Triangles</title>
 
-<p>
-  This short lesson introduces right triangles and
-  the Pythagorean theorem.
-</p>
+          <p>
+            This short lesson introduces right triangles and
+            the Pythagorean theorem.
+          </p>
 
-<definition xml:id="def-right-triangle">
-  <statement>
-    <p>
-      A <term>right triangle</term> is a triangle
-      with one angle measuring exactly 90 degrees.
-    </p>
-  </statement>
-</definition>
+          <definition xml:id="def-right-triangle">
+            <statement>
+              <p>
+                A <term>right triangle</term> is a triangle
+                with one angle measuring exactly 90 degrees.
+              </p>
+            </statement>
+          </definition>
 
-<p>
-  The Pythagorean theorem states that
-  <m>a^2 + b^2 = c^2</m>, where <m>c</m> is the
-  length of the hypotenuse.
-</p>
+          <p>
+            The Pythagorean theorem states that
+            <m>a^2 + b^2 = c^2</m>, where <m>c</m> is the
+            length of the hypotenuse.
+          </p>
 
-<example>
-  <title>A 3-4-5 triangle</title>
-  <statement>
-    <p>
-      Show that a triangle with sides 3, 4, and 5
-      is a right triangle.
-    </p>
-  </statement>
-  <solution>
-    <p>
-      Check: <m>3^2 + 4^2 = 9 + 16 = 25 = 5^2</m>.
-    </p>
-  </solution>
-</example>
+          <example>
+            <title>A 3-4-5 triangle</title>
+            <statement>
+              <p>
+                Show that a triangle with sides 3, 4, and 5
+                is a right triangle.
+              </p>
+            </statement>
+            <solution>
+              <p>
+                Check: <m>3^2 + 4^2 = 9 + 16 = 25 = 5^2</m>.
+              </p>
+            </solution>
+          </example>
 
-<exercise>
-  <statement>
-    <p>
-      Find the length of the hypotenuse of a right
-      triangle with legs of length 5 and 12.
-    </p>
-  </statement>
-</exercise>
+          <exercise>
+            <statement>
+              <p>
+                Find the length of the hypotenuse of a right
+                triangle with legs of length 5 and 12.
+              </p>
+            </statement>
+          </exercise>
 
-<p>
-  For a reminder of the terminology,
-  see <xref ref="def-right-triangle"/>.
-</p>]]></code>
+          <p>
+            For a reminder of the terminology,
+            see <xref ref="def-right-triangle"/>.
+          </p>
+        ]]>
       </program>
     </subsection>
 

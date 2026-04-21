@@ -12,20 +12,20 @@
 <publication>
   <common>
     <!-- Level at which are html files generated (chapter/section/etc): -->
-      <chunking level="2" />
+    <chunking level="4" />
 
     <!-- Depth for table of contents.  0 means no TOC -->
-      <tableofcontents level="2" />
+    <tableofcontents level="4" />
 
     <!-- Visibility of exercise components where they first appear.          -->
     <!-- There are four components (statement/hint/answer/solution) for each -->
     <!-- of five exercise types (inline/divisional/worksheet/reading/        -->
     <!-- project).                                                           -->
-      <!--<exercise-inline statement="yes" hint="yes" answer="no" solution="no" />-->
-      <!--<exercise-divisional statement="yes" hint="yes" answer="no" solution="yes" />-->
-      <!--<exercise-worksheet statement="yes" hint="yes" answer="no" solution="no" />-->
-      <!--<exercise-reading statement="yes" hint="yes" answer="no" solution="no" />-->
-      <!--<exercise-project statement="yes" hint="yes" answer="yes" solution="yes" />-->
+    <exercise-inline statement="yes" hint="yes" answer="yes" solution="yes" />
+    <exercise-divisional statement="yes" hint="yes" answer="no" solution="yes" />
+    <exercise-worksheet statement="yes" hint="yes" answer="no" solution="no" />
+    <exercise-reading statement="yes" hint="yes" answer="no" solution="no" />
+    <exercise-project statement="yes" hint="yes" answer="yes" solution="yes" />
 
     <!-- Style of fill-in-the-blanks: -->
       <!--<fillin textstyle="underline" mathstyle="shade" />-->
@@ -118,13 +118,13 @@
     <!-- Whether to knowl a particular elements is set here    -->
     <!-- Lots of elements have this possibility; see the guide -->
       <knowl
-        theorem="yes"
+        theorem="no"
         proof="yes"
-        definition="yes"
-        example="yes"
+        definition="no"
+        example="no"
         example-solution="yes"
         project="yes"
-        task="yes"
+        task="no"
         remark="yes"
         objectives="yes"
         outcomes="yes"
@@ -134,7 +134,7 @@
         listing="no"
         list="no"
         exercise-inline="no"
-        exercise-divisional="yes"
+        exercise-divisional="no"
         exercise-worksheet="no"
         exercise-readingquestion="no"
       />
@@ -181,7 +181,7 @@
       />-->
 
     <!-- Use the tabbed viewer for tasks in exercises. "project" and "reading" can be added to the list of types in the @tabbed-tasks attribute (but not worksheet). -->
-      <!--<exercises tabbed-tasks="inline divisional"/>-->
+      <exercises tabbed-tasks="inline divisional"/>
 
     <!-- Video privacy: the default value of "yes" disables certain tracking cookies for embedded videos. -->
       <!--<video privacy="yes"/>-->

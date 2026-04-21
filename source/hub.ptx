@@ -11,6 +11,7 @@
 		<xi:include href="./timeline.ptx" />
 		<xi:include href="./codespace-guide.ptx" />
 		<xi:include href="./accessibility-handout.ptx" />
+		<xi:include href="./accessibility-faq.ptx" />
 		<xi:include href="./faq.ptx" />
 	</book>
 	
