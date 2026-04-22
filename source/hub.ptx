@@ -3,7 +3,7 @@
 <pretext xmlns:xi="http://www.w3.org/2001/XInclude">
 
 	<book>
-		<title><pretext/> Onboarding Workshop — MAA 2026</title>
+		<title>Getting Started with <pretext/> Workshop — MAA 2026</title>
 
 		<xi:include href="./frontmatter-hub.ptx" />
 
