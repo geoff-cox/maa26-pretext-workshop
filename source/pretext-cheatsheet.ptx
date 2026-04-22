@@ -1,0 +1,481 @@
+<section xml:id="sec-cheatsheet">
+  <title><pretext /> Cheatsheet</title>
+
+  <p>
+    The tags you will reach for most often. Copy, paste, adapt. See 
+    <url href="https://pretextbook.org">pretextbook.org</url> for the 
+    official documentation.
+  </p>
+
+  <!-- =============================================================== -->
+  <!-- Document structure                                              -->
+  <!-- =============================================================== -->
+  <assemblage xml:id="cheatsheet-structure">
+    <title>Document Structure</title>
+
+    <sbsgroup widths="49.5% 49.5%" margins="0% 0%">
+      <sidebyside valign="top">
+        <stack>
+          <p>Divisional levels</p>
+          <program language="xml">
+            <![CDATA[
+            <part>                  <!-- 0 -->
+              <chapter>             <!-- 1 -->
+                <section>           <!-- 2 -->
+                  <subsection>      <!-- 3 -->
+                    <subsubsection> <!-- 4 -->
+                    </subsubsection>
+                  </subsection>
+                </section>
+              </chapter>
+            </part>
+            ]]>
+          </program>
+        </stack>
+        <stack>
+          <p>A section, front to back</p>
+          <program language="xml">
+            <![CDATA[
+            <section>
+              <title>Section Title</title>
+              <introduction>...</introduction>
+
+              <subsection>...</subsection>
+              <subsection>...</subsection>
+
+              <conclusion>...</conclusion>
+              <exercises>...</exercises>
+            </section>
+            ]]>
+          </program>
+        </stack>
+      </sidebyside>
+    </sbsgroup>
+  </assemblage>
+
+  <!-- =============================================================== -->
+  <!-- Text, paragraphs                                                -->
+  <!-- =============================================================== -->
+  <assemblage xml:id="cheatsheet-paragraphs">
+    <title>Paragraphs</title>
+
+    <sbsgroup widths="47% 52%" margins="0% 0%">
+      <sidebyside valign="top">
+        <stack>
+          <p>Paragraph</p>
+          <program language="xml">
+            <![CDATA[
+              <p>
+                Most prose lives inside a 
+                paragraph.
+              </p>
+            ]]>
+          </program>
+        </stack>
+        <stack>
+          <p>Paragraphs (grouped with title)</p>
+          <program language="xml">
+             <![CDATA[
+                <paragraphs>
+                  <title>Group Title</title>
+                  <p>paragraph 1</p>
+                  <p>paragraph 2</p>
+                </paragraphs>
+              ]]>
+          </program>
+        </stack>
+      </sidebyside>
+    </sbsgroup>
+  </assemblage>
+
+  <!-- =============================================================== -->
+  <!-- Text, inline formatting                                         -->
+  <!-- =============================================================== -->
+  <assemblage xml:id="cheatsheet-inline-formatting">
+    <title>Inline Formatting</title>
+
+    <sbsgroup widths="50% 40%" margins="0% 0%" valign="middle">
+      <sidebyside>
+        <stack>
+        <program language="xml">
+          <![CDATA[ <em>emphasis</em> ]]>
+        </program>
+        <program language="xml">
+          <![CDATA[ <term>new term (bold)</term>  ]]>
+        </program>
+        <program language="xml">
+          <![CDATA[ <c>inline code</c> ]]>
+        </program>
+        </stack>
+        <stack>
+        <p><em>emphasis</em></p>
+        <p><term>new term (bold)</term><m>\displaystyle\vphantom{|^|_|}</m></p>
+        <p><c>inline code</c></p>
+        </stack>
+      </sidebyside>
+    </sbsgroup>
+
+  </assemblage>
+
+  <!-- =============================================================== -->
+  <!-- Lists                                                           -->
+  <!-- =============================================================== -->
+  <assemblage xml:id="cheatsheet-lists">
+    <title>Lists</title>
+
+    <sbsgroup widths="49.5% 49.5%" margins="0% 0%">
+      <sidebyside valign="top">
+        <stack>
+          <p>Unordered List</p>
+          <program language="xml">
+            <![CDATA[
+              <ul>
+                <li>item</li>
+                <li>item</li>
+              </ul>
+            ]]>
+          </program>
+          <p>Ordered List</p>
+          <program language="xml">
+            <![CDATA[
+              <ol>
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
+              </ol>
+            ]]>
+          </program>
+        </stack>
+        <stack>
+          <p>Description list</p>
+          <program language="xml">
+            <![CDATA[
+              <dl>
+                <li>
+                  <title>Term</title>
+                  <p>Description.</p>
+                </li>
+                <li>
+                  <title>Term</title>
+                  <p>Description.</p>
+                </li>
+              </dl>
+            ]]>
+          </program>
+        </stack>
+      </sidebyside>
+    </sbsgroup>
+  </assemblage>
+
+  <!-- =============================================================== -->
+  <!-- Math                                                            -->
+  <!-- =============================================================== -->
+  <assemblage xml:id="cheatsheet-math">
+    <title>Math</title>
+
+    <sbsgroup widths="43.5% 55.5%" margins="0% 0%">
+      <sidebyside valign="top">
+        <stack>
+          <p>Inline</p>
+          <program language="xml">
+            <![CDATA[ <m>x^2 + 1</m> ]]>
+          </program>
+          <p>Display</p>
+          <program language="xml">
+            <![CDATA[
+              <me>\int_0^1 f(x) dx</me>
+              <md>\sum_{i=1}^n x_i^2</md>
+            ]]>
+          </program>
+          <p>Numbered display</p>
+          <program language="xml">
+            <![CDATA[ <men>e^{i\pi} + 1 = 0</men> ]]>
+          </program>
+        </stack>
+        <stack>
+          <p>Aligned, multi-line</p>
+          <program language="xml">
+            <![CDATA[
+              <md>
+                <mrow>a^2 + b^2 \amp = c^2</mrow>
+                <mrow>y \amp = mx + b</mrow>
+                <mrow>m \amp = \frac{y-b}{x}</mrow>
+                <mrow>  \amp = \frac{14}{3}</mrow>
+              </md>
+            ]]>
+          </program>
+          <p>Note: <pf>\amp</pf> is the alignment anchor</p>
+        </stack>
+      </sidebyside>
+    </sbsgroup>
+  </assemblage>
+
+  <!-- =============================================================== -->
+  <!-- Teaching blocks                                                 -->
+  <!-- =============================================================== -->
+  <assemblage xml:id="cheatsheet-blocks">
+    <title>Definitions, Theorems, Examples</title>
+
+    <sbsgroup widths="46.5% 52.5%" margins="0% 0%">
+      <sidebyside valign="top">
+        <stack>
+          <p>Definition</p>
+          <program language="xml">
+            <![CDATA[
+              <definition>
+                <statement>
+                  <p>...</p>
+                </statement>
+              </definition>
+            ]]>
+          </program>
+        </stack>
+        <stack>
+          <p>Theorem with proof</p>
+          <program language="xml">
+            <![CDATA[
+              <theorem>
+                <statement><p>...</p></statement>
+                <proof><p>...</p></proof>
+              </theorem>
+            ]]>
+          </program>
+        </stack>
+      </sidebyside>
+
+      <sidebyside valign="top">
+        <stack>
+          <p>Remark</p>
+          <program language="xml">
+              <![CDATA[
+                <remark>
+                  <p>A note.</p>
+                </remark>
+              ]]>
+          </program>
+          <p>Aside</p>
+          <program language="xml">
+            <![CDATA[
+              <aside>
+                <p>A short aside.</p>
+              </aside>
+            ]]>
+          </program>
+        </stack>
+        <stack>
+          <p>Example with Reference ID</p>
+          <program language="xml">
+            <![CDATA[
+              <example xml:id="ex-x">
+                <title>T</title>
+              <statement>
+                <p>...</p>
+              </statement>
+              <solution><
+                p>...</p>
+              </solution>
+            </example>
+            ]]>
+          </program>
+        </stack>
+      </sidebyside>
+    </sbsgroup>
+  </assemblage>
+
+  <!-- =============================================================== -->
+  <!-- Exercises                                                       -->
+  <!-- =============================================================== -->
+  <assemblage xml:id="cheatsheet-exercises">
+    <title>Exercises</title>
+
+    <sbsgroup widths="49.5% 49.5%" margins="0% 0%">
+      <sidebyside valign="top">
+        <stack>
+          <p>Simple exercise</p>
+          <program language="xml">
+              <![CDATA[
+                <exercise>
+                  <statement>
+                    <p>...</p>
+                  </statement>
+                </exercise>
+              ]]>
+          </program>
+          <p>Exercise with tasks</p>
+          <program language="xml">
+            <![CDATA[
+              <exercise xml:id="exr-x">
+                <introduction>...</introduction>
+                <task>...
+                  <statement>...</statement>
+                </task>
+                <task>
+                  <statement>...</statement>
+                </task>
+              </exercise>
+            ]]>
+          </program>
+        </stack>
+        <stack>
+          <p>With hint, answer, solution</p>
+          <program language="xml">
+            <![CDATA[
+              <exercise xml:id="exr-y">
+                <statement>
+                  <p>...</p>
+                </statement>
+                <hint>
+                  <p>...</p>
+                </hint>
+                <answer>
+                  <p>...</p>
+                </answer>
+                <solution>
+                  <p>...</p>
+                </solution>
+              </exercise>
+            ]]>
+          </program>
+        </stack>
+      </sidebyside>
+    </sbsgroup>
+  </assemblage>
+
+  <!-- =============================================================== -->
+  <!-- Links, xrefs                                                    -->
+  <!-- =============================================================== -->
+  <assemblage xml:id="cheatsheet-links">
+    <title>Links &amp; Cross-references</title>
+
+    <sbsgroup widths="49.5% 49.5%" margins="0% 0%">
+      <sidebyside valign="top">
+        <stack>
+          <p>External:</p>
+          <program language="xml">
+            <![CDATA[
+              <url href="https://abc.com">
+                click here
+              </url>
+            ]]>
+          </program>
+        </stack>
+        <stack>
+          <p>Internal (via <pf>xml:id</pf>):</p>
+          <program language="xml">
+            <![CDATA[
+              <xref ref="defx"/>
+              <xref ref="defx" text="title"/>
+            ]]>
+          </program>
+        </stack>
+      </sidebyside>
+    </sbsgroup>
+  </assemblage>
+
+  <!-- =============================================================== -->
+  <!-- Figures                                                         -->
+  <!-- =============================================================== -->
+  <assemblage xml:id="cheatsheet-figures">
+    <title>Figures</title>
+
+    <sbsgroup widths="99.0%" margins="0% 0%">
+      <sidebyside valign="top">
+        <stack>
+          <program language="xml">
+            <![CDATA[
+              <figure xml:id="fig-x">
+                <caption>My caption.</caption>
+                <image source="path.png">
+                  <shortdescription>
+                    Brief alt text.
+                  </shortdescription>
+                </image>
+              </figure>
+            ]]>
+          </program>
+        </stack>
+      </sidebyside>
+    </sbsgroup>
+  </assemblage>
+
+  <!-- =============================================================== -->
+  <!-- Tables                                                          -->
+  <!-- =============================================================== -->
+  <assemblage xml:id="cheatsheet-tables">
+    <title>Tables</title>
+
+    <sbsgroup widths="47% 52%" margins="0% 0%">
+      <sidebyside valign="top">
+        <stack>
+          <p>Minimal table</p>
+          <program language="xml">
+            <![CDATA[
+<tabular>
+  <row>
+    <cell>A</cell>
+    <cell>B</cell>
+  </row>
+  <row>
+    <cell>C</cell>
+    <cell>D</cell>
+  </row>
+</tabular>
+            ]]>
+          </program>
+          <p>With a header row</p>
+          <program language="xml">
+            <![CDATA[
+<tabular>
+  <row header="yes">
+    <cell>Name</cell>
+    <cell>Value</cell>
+  </row>
+  <row>
+    <cell>...</cell>
+    <cell>...</cell>
+  </row>
+</tabular>
+            ]]>
+          </program>
+        </stack>
+        <stack>
+          <p>With borders and column widths</p>
+          <program language="xml">
+            <![CDATA[
+<tabular top="minor" bottom="minor"
+         left="minor" right="minor">
+  <col width="30%" halign="center"/>
+  <col width="70%"/>
+  <row header="yes">
+    <cell>Name</cell>
+    <cell>Description</cell>
+  </row>
+  <row>
+    <cell>...</cell>
+    <cell>...</cell>
+  </row>
+</tabular>
+            ]]>
+          </program>
+          <p>Border options: <pf>none</pf>, <pf>minor</pf>, <pf>medium</pf>, <pf>major</pf></p>
+          <p>Alignment options: <pf>left</pf>, <pf>center</pf>, <pf>right</pf></p>
+        </stack>
+      </sidebyside>
+    </sbsgroup>
+  </assemblage>
+
+  <!-- =============================================================== -->
+  <!-- Gotchas                                                         -->
+  <!-- =============================================================== -->
+  <assemblage xml:id="cheatsheet-gotchas">
+    <title>Four Things That Trip Everyone Up</title>
+    <p>
+      <ul>
+        <li><p>Every open tag needs a close tag. Mismatched tags are the <em>most common</em> build error.</p></li>
+        <li><p>Use <c>xml:id</c> (not <c>id</c>) for anything an <c><![CDATA[ xref ]]></c> will point to.</p></li>
+        <li><p>Save <em>and</em> rebuild after edits. The preview does not refresh on its own.</p></li>
+      </ul>
+    </p>
+  </assemblage>
+
+</section>

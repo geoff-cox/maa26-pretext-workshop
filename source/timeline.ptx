@@ -12,7 +12,7 @@
   </introduction>
 
   <!-- ================================================= -->
-  <!-- 4:00-4:10 Welcome                                  -->
+  <!-- 4:00-4:10 Welcome                                 -->
   <!-- ================================================= -->
   <section xml:id="sec-welcome">
     <title>4:00-4:10 Welcome</title>
@@ -49,7 +49,7 @@
   </section>
 
   <!-- ================================================= -->
-  <!-- 4:10-4:20 What Can PreTeXt Do?                     -->
+  <!-- 4:10-4:20 What Can PreTeXt Do?                    -->
   <!-- ================================================= -->
   <section xml:id="sec-book-tour">
     <title>4:10-4:20 What Can <pretext/> Do?</title>
@@ -394,7 +394,7 @@
   </section>
 
   <!-- ================================================= -->
-  <!-- 4:20-4:35 PreTeXt.Plus                             -->
+  <!-- 4:20-4:35 PreTeXt.Plus                            -->
   <!-- ================================================= -->
   <section xml:id="sec-pretextplus-tour">
     <title>4:20-4:35 PreTeXt.Plus</title>
@@ -489,212 +489,618 @@
   </section>
 
   <!-- ================================================= -->
-  <!-- 4:35-5:00 Guided Practice                          -->
+  <!-- 4:35-5:00 Create a Syllabus                       -->
   <!-- ================================================= -->
   <section xml:id="sec-guided-practice">
-    <title>4:35-5:00 Guided Practice</title>
+    <title>4:35-5:00 Create a Syllabus</title>
 
     <introduction>
       <p>
-        Five short exercises. Each one shows you a single <pretext/> structure, you paste it into your project, rebuild, and see the result. By the end, you'll recognize most of the building blocks a typical lesson uses.
+        We're going to build a real syllabus together, four sections at a time. A finished version lives at <url href="https://pretext.plus/projects/978d07a7-8c73-4539-ab36-c334c8923f1b/share">this link</url>; if you want to peek at where we're headed, open it in a separate tab now.
       </p>
 
       <p>
-        <alert>How to work each exercise:</alert> find the closing <c>&lt;/section&gt;</c> tag near the bottom of your source and paste the snippet on a new line <em>just above it</em>. Then rebuild.
-      </p>
-
-      <p>
-        <em>Already know <latex/>?</em> Most of the math inside the tags is still <latex/> — you're mostly learning a new wrapper, not a new language.
+        Where you see placeholders like <c>==YourName==</c>, feel free to replace them with your own information. Or leave them for now and swap them in later. Whichever helps you focus on the tags.
       </p>
     </introduction>
 
-    <subsection xml:id="gp-exercise-1">
-      <title>Exercise 1 — A paragraph with inline math</title>
+    <!-- ============================================ -->
+    <!-- Part 1: Course Info                          -->
+    <!-- ============================================ -->
+    <subsection xml:id="gp-part-1">
+      <title>Part 1. Course and Instructor Information</title>
 
-      <p>
-        Type the <pretext/> commands that create the following paragraph with inline math and rebuild.
-      </p>
+      <exercise xml:id="exr-course-info">
+        <title>Course Information</title>
 
-      <assemblage xml:id="guided-exercise-1">
-        <p>
-          The Pythagorean theorem states that <m>a^2 + b^2 = c^2</m>,
-          where <m>c</m> is the length of the hypotenuse.
-        </p>
-      </assemblage>
+        <introduction>
+          <p>
+            Complete the following tasks to build the course information section.
+          </p>
+        </introduction>
 
-      <solution>
-        <title>Try it yourself, then check your answer here</title>
-        <program language="xml">
-          <![CDATA[
+        <task xml:id="task-course-info-paste">
+          <statement>
             <p>
-              The Pythagorean theorem states that <m>a^2 + b^2 = c^2</m>,
-              where <m>c</m> is the length of the hypotenuse.
+              Paste this block into your PreTeXt.Plus project just above the closing <c>&lt;/section&gt;</c> tag, then rebuild. You'll see seven lines run together as a single paragraph.
             </p>
-          ]]>
-        </program>
-      </solution>
-
-    </subsection>
-
-    <subsection xml:id="gp-exercise-2">
-      <title>Exercise 2 — A definition</title>
-
-      <p>
-        Add a formal definition. The <c>xml:id</c> attribute is a label we'll use in Exercise 5 to link to this definition from elsewhere in the document.
-      </p>
-
-      <definition xml:id="def-right-triangle">
-        <statement>
-          <p>
-            A <term>right triangle</term> is a triangle
-            with one angle measuring exactly 90 degrees.
-          </p>
-        </statement>
-      </definition>
-
-      <solution>
-        <title>Try it yourself, then check your answer here</title>
-        <program language="xml">
-          <![CDATA[
-            <definition xml:id="def-right-triangle">
-              <statement>
+            <program language="xml">
+              <![CDATA[
                 <p>
-                  A <term>right triangle</term> is a triangle
-                  with one angle measuring exactly 90 degrees.
+                  Course: ==CourseName==, ==Term==
+                  Instructor: ==YourName==
+                  Email: ==yourname@example.edu==
+                  Office: ==OfficeLocation==
+                  Office Hours: ==OfficeHours==, or by appointment
+                  Lecture: ==MeetingTime==, ==Room==
+                  Course Website: ==CanvasURL==
                 </p>
-              </statement>
-            </definition>
-          ]]>
-        </program>
-      </solution>
+              ]]>
+            </program>
+            <p>
+              After you rebuild, you should see something like:
+            </p>
+            <image source="guided-screen-1.png">
+              <shortdescription>The seven contact lines rendered as a single run-on paragraph.</shortdescription>
+            </image>
+          </statement>
+        </task>
 
-      <p>
-        Notice that <pretext/> numbered the definition automatically and styled it as a named block. You didn't have to ask.
-      </p>
-    </subsection>
-
-    <subsection xml:id="gp-exercise-3">
-      <title>Exercise 3 — An example</title>
-
-      <p>
-        Examples get numbered automatically too, in their own sequence. Try changing the title after you rebuild to see what happens.
-      </p>
-
-      <example>
-        <title>A 3-4-5 triangle</title>
-        <statement>
-          <p>
-            Show that a triangle with sides 3, 4, and 5
-            is a right triangle.
-          </p>
-        </statement>
-        <solution>
-          <p>
-            Check: <m>3^2 + 4^2 = 9 + 16 = 25 = 5^2</m>.
-          </p>
-        </solution>
-      </example>
-
-      <solution>
-        <title>Try it yourself, then check your answer here</title>
-        <program language="xml">
-          <![CDATA[
-            <example>
-              <title>A 3-4-5 triangle</title>
-              <statement>
+        <task xml:id="task-course-info-tags">
+          <statement>
+            <p>
+              Now convert this into a formatted bulleted (unordered) list using:
+              <ul>
+                <li>
+                  <xref ref="cheatsheet-lists" text="custom"><pf>&lt;ul&gt;</pf>, <pf>&lt;li&gt;</pf></xref> to turn each line into a list item
+                </li>
+                <li>
+                  <xref ref="cheatsheet-inline-formatting" text="custom"><pf>&lt;c&gt;</pf></xref> around the email address
+                </li>
+                <li>
+                  <xref ref="cheatsheet-links" text="custom"><pf>&lt;url&gt;</pf></xref> for the course website
+                </li>
+              </ul>
+              Rebuild to see the transformation and verify that it resembles the <url href="https://pretext.plus/projects/978d07a7-8c73-4539-ab36-c334c8923f1b/share">target syllabus</url>.
+            </p>
+          </statement>
+          <solution>
+            <title>If you get stuck...</title>
+            <program language="xml">
+              <![CDATA[
                 <p>
-                  Show that a triangle with sides 3, 4, and 5
-                  is a right triangle.
+                  <ul>
+                    <li>Course: ==CourseName==, ==Term==</li>
+                    <li>Instructor: ==YourName==</li>
+                    <li>Email: <c>==yourname@example.edu==</c></li>
+                    <li>Office: ==OfficeLocation==</li>
+                    <li>Office Hours: ==OfficeHours==, or by appointment</li>
+                    <li>Lecture: ==MeetingTime==, ==Room==</li>
+                    <li>Course Website: <url href="==URL==">Canvas</url></li>
+                  </ul>
                 </p>
-              </statement>
-              <solution>
-                <p>
-                  Check: <m>3^2 + 4^2 = 9 + 16 = 25 = 5^2</m>.
-                </p>
-              </solution>
-            </example>
-          ]]>
-        </program>
-      </solution>
+              ]]>
+            </program>
+          </solution>
+        </task>
 
-    </subsection>
-
-    <subsection xml:id="gp-exercise-4">
-      <title>Exercise 4 — An exercise</title>
-
-      <p>
-        Exercises are numbered separately from examples — you can see the two sequences in your preview.
-      </p>
-
-      <exercise>
-        <statement>
-          <p>
-            Find the length of the hypotenuse of a right
-            triangle with legs of length 5 and 12.
-          </p>
-        </statement>
       </exercise>
-
-      <solution>
-        <title>Try it yourself, then check your answer here</title>
-        <program language="xml">
-          <![CDATA[
-            <exercise>
-              <statement>
-                <p>
-                  Find the length of the hypotenuse of a right
-                  triangle with legs of length 5 and 12.
-                </p>
-              </statement>
-            </exercise>
-          ]]>
-        </program>
-      </solution>
-
     </subsection>
 
-    <subsection xml:id="gp-exercise-5">
-      <title>Exercise 5 — A cross-reference</title>
+    <!-- ============================================ -->
+    <!-- Part 2: Course Description                   -->
+    <!-- ============================================ -->
+    <subsection xml:id="gp-part-2">
+      <title>Part 2. Course Description</title>
 
-      <p>
-        This is the payoff. The <c>&lt;xref&gt;</c> tag below points at the <c>xml:id</c> you gave the definition in Exercise 2, and <pretext/> builds a working link for you — with the right number, the right wording, and the right target. Change the definition's position in the document and the link still works.
-      </p>
+      <exercise xml:id="exr-description">
+        <title>Course Description</title>
 
-      <p>
-        For a reminder of the terminology,
-        see <xref ref="def-right-triangle"/>.
-      </p>
+        <introduction>
+          <p>
+            Complete the following tasks to build the course description section.
+          </p>
+        </introduction>
 
-      <solution>
-        <title>Try it yourself, then check your answer here</title>
-        <program language="xml">
-          <![CDATA[
+        <task xml:id="task-description-paste">
+          <statement>
             <p>
-              For a reminder of the terminology,
-              see <xref ref="def-right-triangle"/>.
+              Paste this block into your project below what you just built, then rebuild. Three chunks of prose will collapse into one undivided wall of text, with math expressions appearing as plain characters.
             </p>
-          ]]>
-        </program>
-      </solution>
+            <program language="xml">
+              <![CDATA[
+                <p>
+                  Calculus I is a first course in differential calculus.
+                  We develop the concept of the limit from scratch, use it to 
+                  give a precise definition of the derivative, and spend most 
+                  of the semester learning to compute and apply derivatives. 
+                  The course closes with an introduction to integration and the 
+                  Fundamental Theorem of Calculus, which connects the two main 
+                  ideas of the subject.
 
+                  By the end of the course, a successful student will be able to
+                  differentiate polynomials like p(x) = x^3 - 2x + 1, exponentials 
+                  like e^x, logarithms like ln(x), and trigonometric functions like 
+                  sin(x) and cos(x). They will also evaluate limits, apply the 
+                  derivative to problems involving rates of change and optimization, 
+                  and interpret the definite integral as a signed area.
+
+                  Prerequisites: a grade of C or better in Precalculus, or a passing
+                  score on the mathematics placement exam. Students unsure whether 
+                  they are adequately prepared should speak with me during the first 
+                  week.
+                </p>
+              ]]>
+            </program>
+            <p>
+              After you rebuild, you should see something like:
+            </p>
+            <image source="guided-screen-3.png">
+              <shortdescription>Three paragraphs collapsed into one unstyled block with raw math characters visible.</shortdescription>
+            </image>
+          </statement>
+        </task>
+
+        <task xml:id="task-description-tags">
+          <statement>
+            <p>
+              Give this text proper structure and rendered math using:
+              <ul>
+                <li>
+                  <xref ref="cheatsheet-paragraphs" text="custom"><pf>&lt;p&gt;</pf></xref> split into three separate paragraphs
+                </li>
+                <li>
+                  <xref ref="cheatsheet-math" text="custom"><pf>&lt;m&gt;</pf></xref> around each math expression
+                </li>
+                <li>
+                  <xref ref="cheatsheet-inline-formatting" text="custom"><pf>&lt;em&gt;</pf></xref> on the word <q>Prerequisites</q>
+                </li>
+              </ul>
+              Try rebuilding after each change to watch the math snap into place one expression at a time.
+            </p>
+            <p>
+              After the last rebuild, verify that it resembles the <url href="https://pretext.plus/projects/978d07a7-8c73-4539-ab36-c334c8923f1b/share">target syllabus</url>.
+            </p>
+          </statement>
+          <solution>
+            <title>If you get stuck...</title>
+            <program language="xml">
+              <![CDATA[
+                <p>
+                  Calculus I is a first course in differential calculus.
+                  We develop the concept of the limit from scratch, use it to 
+                  give a precise definition of the derivative, and spend most 
+                  of the semester learning to compute and apply derivatives. 
+                  The course closes with an introduction to integration and the 
+                  Fundamental Theorem of Calculus, which connects the two main 
+                  ideas of the subject.
+                </p>
+
+                <p>
+                  By the end of the course, a successful student will be able to
+                  differentiate polynomials like <m>p(x) = x^3 - 2x + 1</m>, 
+                  exponentials like <m>e^x</m>, logarithms like <m>\ln(x)</m>, 
+                  and trigonometric functions like <m>\sin(x)</m> and 
+                  <m>\cos(x)</m>. They will also evaluate limits, apply the 
+                  derivative to problems involving rates of change and 
+                  optimization, and interpret the definite integral as a signed 
+                  area.
+                </p>
+
+                <p>
+                  <em>Prerequisites:</em> a grade of C or better in Precalculus, 
+                  or a passing score on the mathematics placement exam. 
+                  Students unsure whether they are adequately prepared should 
+                  speak with me during the first week.
+                </p>
+              ]]>
+            </program>
+          </solution>
+        </task>
+
+      </exercise>
     </subsection>
 
-    <subsection xml:id="gp-finished-early">
-      <title>Finished early?</title>
+    <!-- ============================================ -->
+    <!-- Part 3: Graded Work                          -->
+    <!-- ============================================ -->
+    <subsection xml:id="gp-part-3">
+      <title>Part 3. Graded Work</title>
 
-      <p>
-        <ul>
-          <li>Change the title of your example.</li>
-          <li>Swap the 3-4-5 example for a 5-12-13 triangle.</li>
-          <li>Break something on purpose — forget a closing tag, misspell <c>statement</c> — and see what the error looks like. You'll recognize it faster next time.</li>
-          <li>Add a second <c>&lt;xref&gt;</c> pointing to your example, using the same pattern.</li>
-        </ul>
-      </p>
+      <exercise xml:id="exr-graded-work">
+        <title>Graded Work</title>
+
+        <introduction>
+          <p>
+            Complete the following tasks to build the graded work section. This one has two transformations: a description list for the policies, and a small table for the grade weights.
+          </p>
+        </introduction>
+
+        <task xml:id="task-graded-paste">
+          <statement>
+            <p>
+              Paste this block into your project below what you just built, then rebuild. Six grading components will appear as one undivided block of prose.
+            </p>
+            <program language="xml">
+              <![CDATA[
+                <p>
+                  Homework: 20 percent. Due Sundays at 11:59 pm on Canvas.
+                  Collaborate freely, but write solutions in your own words.
+                  Late work accepted up to 48 hours late at a 20 percent penalty;
+                  lowest two scores dropped.
+
+                  Quizzes: 10 percent. Short biweekly quizzes covering the recent
+                  material.
+
+                  Midterm 1: 20 percent. Held in class during Week 5.
+                  Closed book, closed notes, one handwritten reference sheet
+                  permitted.
+
+                  Midterm 2: 20 percent. Held in class during Week 10.
+                  Same format as Midterm 1.
+
+                  Final exam: 30 percent. Cumulative.
+                  Time and room set by the registrar.
+
+                  Grade cutoffs: at most A at 90 percent, B at 80, C at 70, D at 60.
+                  Cutoffs may be lowered at the end of the term but will never be 
+                  raised.
+                </p>
+              ]]>
+            </program>
+          </statement>
+        </task>
+
+        <task xml:id="task-graded-dl">
+          <statement>
+            <p>
+              Turn the six components into a labeled description list using:
+              <ul>
+                <li>
+                  <xref ref="cheatsheet-lists" text="custom"><pf>&lt;dl&gt;</pf> with <pf>&lt;title&gt;</pf> inside each <pf>&lt;li&gt;</pf></xref>
+                </li>
+              </ul>
+              Each component name goes in the <pf>&lt;title&gt;</pf>; the description goes in a <pf>&lt;p&gt;</pf>. Rebuild.
+            </p>
+          </statement>
+          <solution>
+            <title>If you get stuck...</title>
+            <program language="xml">
+              <![CDATA[
+                <p>
+                  <dl>
+                    <li>
+                      <title>Homework (20%)</title>
+                      <p>
+                        Due Sundays at 11:59 pm on Canvas. Collaborate freely,
+                        but write solutions in your own words. Late work
+                        accepted up to 48 hours late at a 20 percent penalty;
+                        lowest two scores dropped.
+                      </p>
+                    </li>
+                    <li>
+                      <title>Quizzes (10%)</title>
+                      <p>Short biweekly quizzes covering the recent material.</p>
+                    </li>
+                    <li>
+                      <title>Midterm 1 (20%)</title>
+                      <p>
+                        Held in class during Week 5. Closed book, closed notes, 
+                        one handwritten reference sheet permitted.
+                      </p>
+                    </li>
+                    <li>
+                      <title>Midterm 2 (20%)</title>
+                      <p>
+                        Held in class during Week 10. Same format as 
+                        Midterm 1.
+                      </p>
+                    </li>
+                    <li>
+                      <title>Final Exam (30%)</title>
+                      <p>Cumulative. Time and room set by the registrar.</p>
+                    </li>
+                    <li>
+                      <title>Grade Cutoffs</title>
+                      <p>
+                        At most A at 90 percent, B at 80, C at 70, D at 60.
+                        Cutoffs may be lowered at the end of the term but 
+                        will never be raised.
+                      </p>
+                    </li>
+                  </dl>
+                </p>
+              ]]>
+            </program>
+          </solution>
+        </task>
+
+        <task xml:id="task-graded-table">
+          <statement>
+            <p>
+              Pull the grade weights out of the list and display them as a compact two-column table. Add a <pf>&lt;tabular&gt;</pf> directly above the <pf>&lt;dl&gt;</pf> using:
+              <ul>
+                <li><pf>&lt;tabular&gt;</pf> as the container</li>
+                <li><pf>&lt;row&gt;</pf> for each component</li>
+                <li><pf>&lt;cell&gt;</pf> for the name and the percentage</li>
+              </ul>
+              Rebuild.
+            </p>
+            <p>
+              After the last rebuild, verify that it resembles the <url href="https://pretext.plus/projects/978d07a7-8c73-4539-ab36-c334c8923f1b/share">target syllabus</url>.
+            </p>
+          </statement>
+          <solution>
+            <title>If you get stuck...</title>
+            <program language="xml">
+              <![CDATA[
+                <tabular>
+                  <row><cell>Homework</cell><cell>20%</cell></row>
+                  <row><cell>Quizzes</cell><cell>10%</cell></row>
+                  <row><cell>Midterm 1</cell><cell>20%</cell></row>
+                  <row><cell>Midterm 2</cell><cell>20%</cell></row>
+                  <row><cell>Final Exam</cell><cell>30%</cell></row>
+                </tabular>
+              ]]>
+            </program>
+          </solution>
+        </task>
+
+      </exercise>
     </subsection>
+
+    <!-- ============================================ -->
+    <!-- Part 4: Schedule                             -->
+    <!-- ============================================ -->
+    <subsection xml:id="gp-part-4">
+      <title>Part 4. Course Schedule</title>
+
+      <exercise xml:id="exr-schedule">
+        <title>Course Schedule</title>
+
+        <introduction>
+          <p>
+            The last section, and the most dramatic transformation of the day: sixteen paragraphs become a structured table. There's also an optional third task to add formatting and inline highlights.
+          </p>
+        </introduction>
+
+        <task xml:id="task-schedule-paste">
+          <statement>
+            <p>
+              Paste this block into your project below the graded work section, then rebuild. Each week appears as its own short paragraph. It's readable, but not really a schedule yet.
+            </p>
+            <program language="xml">
+              <![CDATA[
+                <tabular>
+                  <row>
+                    <cell><p>Week</p></cell><cell><p>Dates</p></cell>
+                    <cell><p>Topics</p></cell>
+                    <cell><p>Reading</p></cell>
+                  </row>
+                  <row>
+                    <cell>1</cell><cell>Aug 25-Aug 29</cell>
+                    <cell>Introduction; average/instantaneous velocity</cell>
+                    <cell>1.1</cell>
+                  </row>
+                  <row>
+                    <cell>2</cell><cell>Sep 1-Sep 5</cell>
+                    <cell>The limit of a function; limit laws</cell>
+                    <cell>1.2</cell>
+                  </row>
+                  <row>
+                    <cell>3</cell><cell>Sep 8-Sep 12</cell>
+                    <cell>Continuity; limits at infinity</cell>
+                    <cell>1.3, 1.4</cell>
+                  </row>
+                  <row>
+                    <cell>4</cell><cell>Sep 15-Sep 19</cell>
+                    <cell>Definition of the derivative</cell>
+                    <cell>2.1, 2.2</cell>
+                  </row>
+                  <row>
+                    <cell>5</cell><cell>Sep 22-Sep 26</cell>
+                    <cell>Midterm 1</cell>
+                    <cell></cell>
+                  </row>
+                  <row>
+                    <cell>6</cell><cell>Sep 29-Oct 3</cell>
+                    <cell>Product/quotient rules</cell>
+                    <cell>2.4, 2.5</cell>
+                  </row>
+                  <row>
+                    <cell>7</cell><cell>Oct 6-Oct 10</cell>
+                    <cell>The chain rule</cell>
+                    <cell>2.6</cell>
+                  </row>
+                  <row>
+                    <cell>8</cell><cell>Oct 13-Oct 17</cell>
+                    <cell>Implicit differentiation; inverse functions</cell>
+                    <cell>2.7, 2.8</cell>
+                  </row>
+                  <row>
+                    <cell>9</cell><cell>Oct 20-Oct 24</cell>
+                    <cell>Related rates; linear approximation</cell>
+                    <cell>3.1, 3.2</cell>
+                  </row>
+                  <row>
+                    <cell>10</cell><cell>Oct 27-Oct 31</cell>
+                    <cell>Midterm 2</cell>
+                    <cell></cell>
+                  </row>
+                  <row>
+                    <cell>11</cell><cell>Nov 3-Nov 7</cell>
+                    <cell>Increasing/decreasing; Concavity</cell>
+                    <cell>3.4, 3.5</cell>
+                  </row>
+                  <row>
+                    <cell>12</cell><cell>Nov 10-Nov 14</cell>
+                    <cell>Optimization</cell>
+                    <cell>3.6</cell>
+                  </row>
+                  <row>
+                    <cell>13</cell><cell>Nov 17-Nov 21</cell>
+                    <cell>L'Hopital's rule; antiderivatives</cell>
+                    <cell>3.7, 4.1</cell>
+                  </row>
+                  <row>
+                    <cell>14</cell><cell>Dec 1-Dec 5</cell>
+                    <cell>The definite integral; Riemann sums</cell>
+                    <cell>4.2, 4.3</cell>
+                  </row>
+                  <row>
+                    <cell>15</cell><cell>Dec 8-Dec 12</cell>
+                    <cell>Fundamental Theorem of Calculus; review</cell>
+                    <cell>4.4</cell>
+                  </row>
+                  <row>
+                    <cell>16</cell><cell>Dec 16</cell>
+                    <cell>Final Exam, 8:00-10:00 am</cell>
+                    <cell>Cumulative</cell>
+                  </row>
+                </tabular>
+              ]]>
+            </program>
+          </statement>
+        </task>
+
+        <task xml:id="task-schedule-table">
+          <statement>
+            <p>
+              Replace the sixteen week paragraphs with a <pf>&lt;tabular&gt;</pf>. Leave the introductory sentence and the Thanksgiving note as <pf>&lt;p&gt;</pf> tags above and below the table.
+            </p>
+            <p>
+              Each week becomes one <pf>&lt;row&gt;</pf> with four <pf>&lt;cell&gt;</pf> entries: week number, dates, topics, reading. Add a header <pf>&lt;row&gt;</pf> at the top. Rebuild.
+            </p>
+            <p>
+              <em>If there's time:</em> add borders, column widths, and inline markup using:
+              <ul>
+                <li>
+                  <pf>top="minor"</pf>, <pf>bottom="minor"</pf>, <pf>left="minor"</pf>, <pf>right="minor"</pf> on the <pf>&lt;tabular&gt;</pf> tag
+                </li>
+                <li>
+                  <pf>&lt;col width="..." halign="..."/&gt;</pf> elements before the first <pf>&lt;row&gt;</pf>
+                </li>
+                <li>
+                  <xref ref="cheatsheet-inline-formatting" text="custom"><pf>&lt;alert&gt;</pf></xref> on the two exam cells
+                </li>
+                <li>
+                  <xref ref="cheatsheet-inline-formatting" text="custom"><pf>&lt;term&gt;</pf></xref> on key mathematical terms in the Topics column
+                </li>
+              </ul>
+              Rebuild and compare your table to the published reference.
+            </p>
+            <p>
+              After the last rebuild, verify that it resembles the <url href="https://pretext.plus/projects/978d07a7-8c73-4539-ab36-c334c8923f1b/share">target syllabus</url>.
+            </p>
+          </statement>
+          <solution>
+            <title>If you get stuck...</title>
+            <program language="xml">
+              <![CDATA[
+                <tabular top="minor" bottom="minor" left="minor" right="minor">
+                  <col width="9%" halign="center"/>
+                  <col width="40%" halign="center"/>
+                  <col width="36%"/>
+                  <col width="15%"/>
+                  <row header="yes">
+                    <cell><p>Week</p></cell><cell><p>Dates</p></cell>
+                    <cell><p>Topics</p></cell>
+                    <cell><p>Reading</p></cell>
+                  </row>
+                  <row>
+                    <cell>1</cell><cell>Aug 25-Aug 29</cell>
+                    <cell>Introduction; average/instantaneous velocity</cell>
+                    <cell>1.1</cell>
+                  </row>
+                  <row>
+                    <cell>2</cell><cell>Sep 1-Sep 5</cell>
+                    <cell>The limit of a function; limit laws</cell>
+                    <cell>1.2</cell>
+                  </row>
+                  <row>
+                    <cell>3</cell><cell>Sep 8-Sep 12</cell>
+                    <cell>Continuity; limits at infinity</cell>
+                    <cell>1.3, 1.4</cell>
+                  </row>
+                  <row>
+                    <cell>4</cell><cell>Sep 15-Sep 19</cell>
+                    <cell>Definition of the derivative</cell>
+                    <cell>2.1, 2.2</cell>
+                  </row>
+                  <row>
+                    <cell>5</cell><cell>Sep 22-Sep 26</cell>
+                    <cell><alert>Midterm 1</alert></cell>
+                    <cell></cell>
+                  </row>
+                  <row>
+                    <cell>6</cell><cell>Sep 29-Oct 3</cell>
+                    <cell>Product/quotient rules</cell>
+                    <cell>2.4, 2.5</cell>
+                  </row>
+                  <row>
+                    <cell>7</cell><cell>Oct 6-Oct 10</cell>
+                    <cell>The chain rule</cell>
+                    <cell>2.6</cell>
+                  </row>
+                  <row>
+                    <cell>8</cell><cell>Oct 13-Oct 17</cell>
+                    <cell>Implicit differentiation; inverse functions</cell>
+                    <cell>2.7, 2.8</cell>
+                  </row>
+                  <row>
+                    <cell>9</cell><cell>Oct 20-Oct 24</cell>
+                    <cell>Related rates; linear approximation</cell>
+                    <cell>3.1, 3.2</cell>
+                  </row>
+                  <row>
+                    <cell>10</cell><cell>Oct 27-Oct 31</cell>
+                    <cell><alert>Midterm 2</alert></cell>
+                    <cell></cell>
+                  </row>
+                  <row>
+                    <cell>11</cell><cell>Nov 3-Nov 7</cell>
+                    <cell>Increasing/decreasing; Concavity</cell>
+                    <cell>3.4, 3.5</cell>
+                  </row>
+                  <row>
+                    <cell>12</cell><cell>Nov 10-Nov 14</cell>
+                    <cell>Optimization</cell>
+                    <cell>3.6</cell>
+                  </row>
+                  <row>
+                    <cell>13</cell><cell>Nov 17-Nov 21</cell>
+                    <cell>L'Hopital's rule; antiderivatives</cell>
+                    <cell>3.7, 4.1</cell>
+                  </row>
+                  <row>
+                    <cell>14</cell><cell>Dec 1-Dec 5</cell>
+                    <cell>The definite integral; Riemann sums</cell>
+                    <cell>4.2, 4.3</cell>
+                  </row>
+                  <row>
+                    <cell>15</cell><cell>Dec 8-Dec 12</cell>
+                    <cell>Fundamental Theorem of Calculus; review</cell>
+                    <cell>4.4</cell>
+                  </row>
+                  <row>
+                    <cell>16</cell><cell>Dec 16</cell>
+                    <cell><alert>Final Exam, 8:00-10:00 am</alert></cell>
+                    <cell>Cumulative</cell>
+                  </row>
+                </tabular>
+              ]]>
+            </program>
+          </solution>
+        </task>
+
+      </exercise>
+    </subsection>
+
   </section>
 
+
   <!-- ================================================= -->
-  <!-- 5:00-5:05 What's Next?                             -->
+  <!-- 5:00-5:05 What's Next?                            -->
   <!-- ================================================= -->
   <section xml:id="sec-whats-next">
     <title>5:00-5:05 What's Next?</title>
@@ -713,7 +1119,7 @@
   </section>
 
   <!-- ================================================= -->
-  <!-- 5:05-5:10 Break                                    -->
+  <!-- 5:05-5:10 Break                                   -->
   <!-- ================================================= -->
   <section xml:id="sec-break">
     <title>5:05-5:10 Break</title>
@@ -724,7 +1130,7 @@
   </section>
 
   <!-- ================================================= -->
-  <!-- 5:10-5:35 Build a Lesson                           -->
+  <!-- 5:10-5:35 Build a Lesson                          -->
   <!-- ================================================= -->
   <section xml:id="sec-build-lesson">
     <title>5:10-5:35 Build a Lesson</title>
@@ -766,181 +1172,181 @@
       </p>
     </subsection>
 
-    <subsection xml:id="bl-starter-triangles">
-      <title>Starter option 1 — Right triangles</title>
+<subsection xml:id="bl-starter-triangles">
+  <title>Starter option 1 — Right triangles</title>
 
-      <introduction>
-        <p>
-          A geometry lesson with a definition, a named example, and an exercise that references the definition by cross-reference.
-        </p>
-      </introduction>
+  <introduction>
+    <p>
+      A geometry lesson with a definition, a named example, and an exercise that references the definition by cross-reference.
+    </p>
+  </introduction>
 
-      <subsubsection xml:id="assemblage-right-triangles">
-        <title>Right Triangles</title>
-          <p>
-            This short lesson introduces right triangles and
-            the Pythagorean theorem.
-          </p>
-
-          <definition xml:id="defn-right-triangle">
-            <statement>
-              <p>
-                A <term>right triangle</term> is a triangle
-                with one angle measuring exactly 90 degrees.
-              </p>
-            </statement>
-          </definition>
-
-          <p>
-            The Pythagorean theorem states that
-            <m>a^2 + b^2 = c^2</m>, where <m>c</m> is the
-            length of the hypotenuse.
-          </p>
-
-          <example>
-            <title>A 3-4-5 triangle</title>
-            <statement>
-              <p>
-                Show that a triangle with sides 3, 4, and 5
-                is a right triangle.
-              </p>
-            </statement>
-            <solution>
-              <p>
-                Check: <m>3^2 + 4^2 = 9 + 16 = 25 = 5^2</m>.
-              </p>
-            </solution>
-          </example>
-
-          <exercise>
-            <statement>
-              <p>
-                Find the length of the hypotenuse of a right
-                triangle with legs of length 5 and 12.
-              </p>
-            </statement>
-          </exercise>
-
-          <p>
-            For a reminder of the terminology,
-            see <xref ref="defn-right-triangle"/>.
-          </p>
-      </subsubsection>
-
-      <program language="xml">
-        <![CDATA[
-          <title>Right Triangles</title>
-
-          <p>
-            This short lesson introduces right triangles and
-            the Pythagorean theorem.
-          </p>
-
-          <definition xml:id="def-right-triangle">
-            <statement>
-              <p>
-                A <term>right triangle</term> is a triangle
-                with one angle measuring exactly 90 degrees.
-              </p>
-            </statement>
-          </definition>
-
-          <p>
-            The Pythagorean theorem states that
-            <m>a^2 + b^2 = c^2</m>, where <m>c</m> is the
-            length of the hypotenuse.
-          </p>
-
-          <example>
-            <title>A 3-4-5 triangle</title>
-            <statement>
-              <p>
-                Show that a triangle with sides 3, 4, and 5
-                is a right triangle.
-              </p>
-            </statement>
-            <solution>
-              <p>
-                Check: <m>3^2 + 4^2 = 9 + 16 = 25 = 5^2</m>.
-              </p>
-            </solution>
-          </example>
-
-          <exercise>
-            <statement>
-              <p>
-                Find the length of the hypotenuse of a right
-                triangle with legs of length 5 and 12.
-              </p>
-            </statement>
-          </exercise>
-
-          <p>
-            For a reminder of the terminology,
-            see <xref ref="def-right-triangle"/>.
-          </p>
-        ]]>
-      </program>
-    </subsection>
-
-    <subsection xml:id="bl-starter-product-rule">
-      <title>Starter option 2 — The product rule</title>
-
+  <subsubsection xml:id="assemblage-right-triangles">
+    <title>Right Triangles</title>
       <p>
-        A calculus lesson with a display-math definition, a worked example that uses the definition, and an exercise that sends students back to the definition via cross-reference.
+        This short lesson introduces right triangles and
+        the Pythagorean theorem.
       </p>
 
-      <program language="xml">
-        <code><![CDATA[<title>The Product and Quotient Rules</title>
+      <definition xml:id="defn-right-triangle">
+        <statement>
+          <p>
+            A <term>right triangle</term> is a triangle
+            with one angle measuring exactly 90 degrees.
+          </p>
+        </statement>
+      </definition>
+
+      <p>
+        The Pythagorean theorem states that
+        <m>a^2 + b^2 = c^2</m>, where <m>c</m> is the
+        length of the hypotenuse.
+      </p>
+
+      <example>
+        <title>A 3-4-5 triangle</title>
+        <statement>
+          <p>
+            Show that a triangle with sides 3, 4, and 5
+            is a right triangle.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Check: <m>3^2 + 4^2 = 9 + 16 = 25 = 5^2</m>.
+          </p>
+        </solution>
+      </example>
+
+      <exercise>
+        <statement>
+          <p>
+            Find the length of the hypotenuse of a right
+            triangle with legs of length 5 and 12.
+          </p>
+        </statement>
+      </exercise>
+
+      <p>
+        For a reminder of the terminology,
+        see <xref ref="defn-right-triangle"/>.
+      </p>
+  </subsubsection>
+
+  <program language="xml">
+    <![CDATA[
+      <title>Right Triangles</title>
+
+      <p>
+        This short lesson introduces right triangles and
+        the Pythagorean theorem.
+      </p>
+
+      <definition xml:id="def-right-triangle">
+        <statement>
+          <p>
+            A <term>right triangle</term> is a triangle
+            with one angle measuring exactly 90 degrees.
+          </p>
+        </statement>
+      </definition>
+
+      <p>
+        The Pythagorean theorem states that
+        <m>a^2 + b^2 = c^2</m>, where <m>c</m> is the
+        length of the hypotenuse.
+      </p>
+
+      <example>
+        <title>A 3-4-5 triangle</title>
+        <statement>
+          <p>
+            Show that a triangle with sides 3, 4, and 5
+            is a right triangle.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Check: <m>3^2 + 4^2 = 9 + 16 = 25 = 5^2</m>.
+          </p>
+        </solution>
+      </example>
+
+      <exercise>
+        <statement>
+          <p>
+            Find the length of the hypotenuse of a right
+            triangle with legs of length 5 and 12.
+          </p>
+        </statement>
+      </exercise>
+
+      <p>
+        For a reminder of the terminology,
+        see <xref ref="def-right-triangle"/>.
+      </p>
+    ]]>
+  </program>
+</subsection>
+
+<subsection xml:id="bl-starter-product-rule">
+  <title>Starter option 2 — The product rule</title>
+
+  <p>
+    A calculus lesson with a display-math definition, a worked example that uses the definition, and an exercise that sends students back to the definition via cross-reference.
+  </p>
+
+  <program language="xml">
+    <code><![CDATA[<title>The Product and Quotient Rules</title>
 
 <p>
-  When a function is built by multiplying or dividing
-  two simpler functions, we cannot just multiply or
-  divide their derivatives.
+When a function is built by multiplying or dividing
+two simpler functions, we cannot just multiply or
+divide their derivatives.
 </p>
 
 <definition xml:id="def-product-rule">
-  <statement>
-    <p>
-      The <term>product rule</term> states that if
-      <m>f</m> and <m>g</m> are differentiable, then
-      <me>
-        \frac{d}{dx}\bigl[f(x)\,g(x)\bigr]
-        = f'(x)\,g(x) + f(x)\,g'(x).
-      </me>
-    </p>
-  </statement>
+<statement>
+<p>
+  The <term>product rule</term> states that if
+  <m>f</m> and <m>g</m> are differentiable, then
+  <me>
+    \frac{d}{dx}\bigl[f(x)\,g(x)\bigr]
+    = f'(x)\,g(x) + f(x)\,g'(x).
+  </me>
+</p>
+</statement>
 </definition>
 
 <example>
-  <title>Applying the product rule</title>
-  <statement>
-    <p>
-      Find the derivative of <m>h(x) = x^2 \sin(x)</m>.
-    </p>
-  </statement>
-  <solution>
-    <p>
-      Let <m>f(x) = x^2</m> and <m>g(x) = \sin(x)</m>.
-      Then
-      <me>
-        h'(x) = 2x \sin(x) + x^2 \cos(x).
-      </me>
-    </p>
-  </solution>
+<title>Applying the product rule</title>
+<statement>
+<p>
+  Find the derivative of <m>h(x) = x^2 \sin(x)</m>.
+</p>
+</statement>
+<solution>
+<p>
+  Let <m>f(x) = x^2</m> and <m>g(x) = \sin(x)</m>.
+  Then
+  <me>
+    h'(x) = 2x \sin(x) + x^2 \cos(x).
+  </me>
+</p>
+</solution>
 </example>
 
 <exercise>
-  <statement>
-    <p>
-      Use the product rule
-      (see <xref ref="def-product-rule"/>) to find
-      the derivative of <m>p(x) = x^3 e^x</m>.
-    </p>
-  </statement>
+<statement>
+<p>
+  Use the product rule
+  (see <xref ref="def-product-rule"/>) to find
+  the derivative of <m>p(x) = x^3 e^x</m>.
+</p>
+</statement>
 </exercise>]]></code>
-      </program>
-    </subsection>
+  </program>
+</subsection>
 
     <subsection xml:id="bl-milestones">
       <title>Milestones</title>
@@ -1019,7 +1425,7 @@
   </section>
 
   <!-- ================================================= -->
-  <!-- 5:35-5:40 Share with a Neighbor                    -->
+  <!-- 5:35-5:40 Share with a Neighbor                   -->
   <!-- ================================================= -->
   <section xml:id="sec-share-lesson">
     <title>5:35-5:40 Share with a Neighbor</title>
@@ -1067,7 +1473,7 @@
   </section>
 
   <!-- ================================================= -->
-  <!-- 5:40-5:50 Show and Tell                            -->
+  <!-- 5:40-5:50 Show and Tell                           -->
   <!-- ================================================= -->
   <section xml:id="sec-show-tell">
     <title>5:40-5:50 Show and Tell</title>
@@ -1082,7 +1488,7 @@
   </section>
 
   <!-- ================================================= -->
-  <!-- 5:50-6:00 Next Steps and Q & A                     -->
+  <!-- 5:50-6:00 Next Steps and Q & A                    -->
   <!-- ================================================= -->
   <section xml:id="sec-next-steps">
     <title>5:50-6:00 Next Steps and Q &amp; A</title>
@@ -1128,7 +1534,7 @@
   </section>
 
   <!-- ================================================= -->
-  <!-- Appendix: Fallback plan                            -->
+  <!-- Appendix: Fallback plan                           -->
   <!-- ================================================= -->
   <section xml:id="sec-fallback-plan">
     <title>Appendix — Fallback Plan</title>

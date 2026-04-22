@@ -7,12 +7,14 @@
 
 		<xi:include href="./frontmatter-hub.ptx" />
 
-		<xi:include href="./start-here.ptx" />
+		<xi:include href="./resource-links.ptx" />
+		<xi:include href="./pretext-cheatsheet.ptx" />
 		<xi:include href="./timeline.ptx" />
-		<xi:include href="./codespace-guide.ptx" />
-		<xi:include href="./accessibility-handout.ptx" />
-		<xi:include href="./accessibility-faq.ptx" />
+		<xi:include href="./accessibility-information.ptx" />
 		<xi:include href="./faq.ptx" />
+		<xi:include href="./codespace-guide.ptx" />
+		<xi:include href="./syllabus-calc1.ptx" />
+
 	</book>
 	
 </pretext>

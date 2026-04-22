@@ -3,7 +3,7 @@
 <frontmatter>
 	<bibinfo>
 		<author>
-			<personname>Geoff Cox</personname>
+			<personname>Geoff Cox, Ph.D.</personname>
 			<department>Applied Mathematics</department>
 			<institution>Virginia Military Institute</institution>
 		</author>
@@ -14,48 +14,5 @@
 	<titlepage>
 		<titlepage-items/>
 	</titlepage>
-
-	<preface label="preface">
-
-		<paragraphs>
-			<title>Resources &amp; Links</title>
-
-			<p>
-				<dl width="narrow">
-					<li>
-						<title>Contact</title>
-						<p>
-							<line>▷ <url href="mailto://coxgeoff@vmi.edu">Geoff: coxgeoff@vmi.edu</url></line>
-						</p>
-					</li>
-					
-					<li>
-						<title>Presentation</title>
-						<p>
-							<line>▷ <url href="https://geoff-cox.github.io/maa26-pretext-workshop/talk/slides.html">Slides</url></line>
-							<line>▷ <url href="https://runestone.academy/ns/books/published/debookrs/">Textbook (viewable - HTML)</url></line>
-							<line>▷ <url href="https://github.com/geoff-cox/debookrs">Textbook (source - GitHub)</url></line>
-						</p>
-					</li>
-
-					<li>
-						<title><pretext/></title>
-							<line>▷ <url href="https://pretextbook.org">Homepage</url></line>
-							<line>▷ <url href="https://runestone.academy/ns/books/published/debookrs/"><pretext/> Guide</url></line>
-							<line>▷ <url href="https://pretextbook.org/community.html">Help Forums</url></line>
-					</li>
-
-					<li>
-						<title>Runestone Academy</title>
-							<line>▷ <url href="https://runestone.academy/">Homepage</url></line>
-							<line>▷ <url href="https://guide.runestone.academy">Users Guide</url></line>
-							<line>▷ <url href="https://www.youtube.com/@RunestoneInteractive/playlists">Videos</url></line>
-					</li>
-
-				</dl>
-			</p>
-		</paragraphs>
-
-	</preface>
 
 </frontmatter>
