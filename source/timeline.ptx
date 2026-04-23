@@ -1098,7 +1098,6 @@
 
   </section>
 
-
   <!-- ================================================= -->
   <!-- 5:00-5:05 What's Next?                            -->
   <!-- ================================================= -->
@@ -1106,15 +1105,16 @@
     <title>5:00-5:05 What's Next?</title>
 
     <p>
-      Quick pause to set up the back half of the workshop. After the break you'll leave these small exercises behind and build a lesson of your own — still in the same <c>pretext.plus</c> project, just filling it in with your own material.
+      Quick pause to set up the back half of the workshop. After the 
+      break you'll leave these small exercises behind and build a 
+      worksheet lesson of your own.
     </p>
 
     <p>
-      You'll have about twenty-five minutes to write, five minutes to share with a neighbor, and then we'll look at a handful of lessons together before closing out with Q&amp;A and a quick look at what's next if you want to keep going after today.
-    </p>
-
-    <p>
-      Before you stand up, <em>save your project</em> (<kbd>Ctrl</kbd>+<kbd>S</kbd>). Everything lives in your account — you can close the tab and come back.
+      You'll have about twenty-five minutes to write, five minutes to 
+      share with a neighbor, and then we'll look at a handful of 
+      lessons together before closing out with Q&amp;A and a quick 
+      look at what's next if you want to keep going after today.
     </p>
   </section>
 
@@ -1125,15 +1125,16 @@
     <title>5:05-5:10 Break</title>
 
     <p>
-      Take five. Stretch, refill water, say hi to a neighbor. We'll start again at 5:10 sharp.
+      Take five. Stretch, refill water, say hi to a neighbor. We'll 
+      start again at 5:10.
     </p>
   </section>
 
   <!-- ================================================= -->
-  <!-- 5:10-5:35 Build a Lesson                          -->
+  <!-- 5:10-5:35 Build a Worksheet Lesson                -->
   <!-- ================================================= -->
   <section xml:id="sec-build-lesson">
-    <title>5:10-5:35 Build a Lesson</title>
+    <title>5:10-5:35 Worksheet Lesson</title>
 
     <introduction>
       <p>
@@ -1142,7 +1143,7 @@
     </introduction>
 
     <subsection xml:id="bl-choose-your-path">
-      <title>Choose your path</title>
+      <title>Choose your Own Adventure</title>
 
       <p>
         <dl>
