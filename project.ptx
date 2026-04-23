@@ -3,8 +3,7 @@
 <project ptx-version="2">
   <targets>
     <target name="slides"     source="slides.ptx"     format="revealjs" output-filename="slides.html"     deploy-dir="talk"/>
-    <target name="quickref"   source="quickref.ptx"   format="html"     publication="publication-hub.ptx" deploy-dir="quickref"/>
-    <target name="cheatsheet" source="cheatsheet.ptx" format="html"     publication="publication-hub.ptx" deploy-dir="cheatsheet"/>
     <target name="hub"        source="hub.ptx"        format="html"     publication="publication-hub.ptx" deploy-dir="hub"/>
+    <target name="pre"        source="hub.ptx"        format="html"     publication="publication-pre.ptx" deploy-dir="pre"/>
   </targets>
 </project>

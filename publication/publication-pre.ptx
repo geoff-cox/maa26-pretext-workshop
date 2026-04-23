@@ -11,11 +11,6 @@
 
 <publication>
 
-  <source>
-		<directories external="../assets" generated="../generated-assets" />
-		<version include="timeline" />
-	</source>
-
   <common>
     <!-- Level at which are html files generated (chapter/section/etc): -->
     <chunking level="2" />

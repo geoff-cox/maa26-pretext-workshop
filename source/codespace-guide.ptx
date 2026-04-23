@@ -16,22 +16,7 @@
       You'll work in baby steps. At each stop there's a little check that tells you whether things are working before you move on, and a troubleshooting aside for the thing that most commonly goes sideways. By the end you'll have an editable project, a live preview, a saved version on GitHub, and a public web page you can share.
     </p>
 
-    <objectives>
-      <introduction>
-        <p>By the end of this tutorial you will have:</p>
-      </introduction>
-      <ul>
-        <li><p>Created a free GitHub account.</p></li>
-        <li><p>Used the <pretext/> template to create your own GitHub repository.</p></li>
-        <li><p>Launched a Codespace and initialized a <pretext/> project in the browser.</p></li>
-        <li><p>Edited a small lesson, built both HTML and PDF, and previewed both.</p></li>
-        <li><p>Saved your work back to GitHub.</p></li>
-        <li><p>Deployed your HTML as a public web page on GitHub Pages.</p></li>
-        <li><p>Learned several ways to share the finished lesson with colleagues or students.</p></li>
-      </ul>
-    </objectives>
-
-    <paragraphs xml:id="codespace-time-warning">
+    <!-- <paragraphs xml:id="codespace-time-warning">
       <title>One thing to know up front</title>
       <p>
         The first time you launch a Codespace, it can take 5 to 10 minutes to set itself up. Every subsequent launch is much faster. Plan for that first session to include a quiet stretch where the screen looks like it isn't doing much. It is doing plenty.
@@ -47,13 +32,25 @@
           <li><p>About 45 minutes of uninterrupted time for your first run.</p></li>
         </ul>
       </p>
-    </paragraphs>
+    </paragraphs> -->
   </introduction>
+
+    <objectives>
+      <ul>
+        <li><p>Created a free GitHub account.</p></li>
+        <li><p>Used the <pretext/> template to create your own GitHub repository.</p></li>
+        <li><p>Launched a Codespace and initialized a <pretext/> project in the browser.</p></li>
+        <li><p>Edited a small lesson, built both HTML and PDF, and previewed both.</p></li>
+        <li><p>Saved your work back to GitHub.</p></li>
+        <li><p>Deployed your HTML as a public web page on GitHub Pages.</p></li>
+        <li><p>Learned several ways to share the finished lesson with colleagues or students.</p></li>
+      </ul>
+    </objectives>
 
   <!-- ================================================= -->
   <!-- Part 1: Create a GitHub account                   -->
   <!-- ================================================= -->
-  <section xml:id="codespace-github-account">
+  <section xml:id="codespace-github-account" component="timeline">
     <title>Part 1. Create a GitHub Account</title>
 
     <p>
@@ -103,7 +100,7 @@
   <!-- ================================================= -->
   <!-- Part 2: Create a repository from the template     -->
   <!-- ================================================= -->
-  <section xml:id="codespace-repo">
+  <section xml:id="codespace-repo" component="timeline">
     <title>Part 2. Create Your Repository from the <pretext/> Template</title>
 
     <p>
@@ -174,7 +171,7 @@
   <!-- ================================================= -->
   <!-- Part 3: Launch your Codespace                     -->
   <!-- ================================================= -->
-  <section xml:id="codespace-launch">
+  <section xml:id="codespace-launch" component="timeline">
     <title>Part 3. Launch Your Codespace</title>
 
     <p>
@@ -246,7 +243,7 @@
   <!-- ================================================= -->
   <!-- Part 4: Initialize a PreTeXt project              -->
   <!-- ================================================= -->
-  <section xml:id="codespace-new-project">
+  <section xml:id="codespace-new-project" component="timeline">
     <title>Part 4. Initialize Your <pretext/> Project</title>
 
     <p>
@@ -338,7 +335,7 @@
   <!-- ================================================= -->
   <!-- Part 5: Add a starter lesson                       -->
   <!-- ================================================= -->
-  <section xml:id="codespace-starter">
+  <section xml:id="codespace-starter" component="timeline">
     <title>Part 5. Add a Small Starter Lesson</title>
 
     <p>
@@ -419,7 +416,7 @@
   <!-- ================================================= -->
   <!-- Part 6: Build and preview                          -->
   <!-- ================================================= -->
-  <section xml:id="codespace-build">
+  <section xml:id="codespace-build" component="timeline">
     <title>Part 6. Build and Preview</title>
 
     <p>
@@ -549,7 +546,7 @@
   <!-- ================================================= -->
   <!-- Part 7: Save your work                             -->
   <!-- ================================================= -->
-  <section xml:id="codespace-save">
+  <section xml:id="codespace-save" component="timeline">
     <title>Part 7. Save Your Work to GitHub</title>
 
     <p>
@@ -612,7 +609,7 @@
   <!-- ================================================= -->
   <!-- Part 8: Deploy to GitHub Pages                     -->
   <!-- ================================================= -->
-  <section xml:id="codespace-deploy">
+  <section xml:id="codespace-deploy" component="timeline">
     <title>Part 8. Deploy to a Public Web Page</title>
 
     <p>
@@ -716,7 +713,7 @@
   <!-- ================================================= -->
   <!-- Part 9: Share your work                            -->
   <!-- ================================================= -->
-  <section xml:id="codespace-share">
+  <section xml:id="codespace-share" component="timeline">
     <title>Part 9. Share Your Work</title>
 
     <p>
@@ -770,7 +767,7 @@
   <!-- ================================================= -->
   <!-- Part 10: Coming back later                         -->
   <!-- ================================================= -->
-  <section xml:id="codespace-returning">
+  <section xml:id="codespace-returning" component="timeline">
     <title>Part 10. Coming Back Later</title>
 
     <p>
@@ -813,7 +810,7 @@
   <!-- ================================================= -->
   <!-- Leveling up again: local install                   -->
   <!-- ================================================= -->
-  <section xml:id="codespace-next-level">
+  <section xml:id="codespace-next-level" component="timeline">
     <title>The Next Level: Installing <pretext/> Locally</title>
 
     <p>
@@ -864,7 +861,7 @@
   <!-- ================================================= -->
   <!-- LaTeX bridge                                       -->
   <!-- ================================================= -->
-  <section xml:id="codespace-latex-bridge">
+  <section xml:id="codespace-latex-bridge" component="timeline">
     <title>Bonus: <latex/> to <pretext/> Quick Reference</title>
 
     <p>
@@ -923,7 +920,7 @@
   <!-- ================================================= -->
   <!-- Troubleshooting appendix                           -->
   <!-- ================================================= -->
-  <section xml:id="codespace-troubleshooting">
+  <section xml:id="codespace-troubleshooting" component="timeline">
     <title>Troubleshooting Quick Reference</title>
 
     <p>
@@ -993,5 +990,11 @@
       </p>
     </assemblage>
   </section>
+
+  <conclusion>
+    <p>
+      Work-in-progress. More documentation is on the way.
+    </p>
+  </conclusion>
 
 </chapter>

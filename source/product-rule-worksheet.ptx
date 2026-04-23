@@ -1,4 +1,4 @@
-<worksheet xml:id="ws-product-rule">
+<worksheet xml:id="ws-product-rule" component="timeline">
   <title>The Product Rule</title>
 
   <objectives>

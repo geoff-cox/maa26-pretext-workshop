@@ -1,4 +1,4 @@
-<chapter xml:id="chp-workshop-timeline">
+<chapter xml:id="chp-workshop-timeline" component="timeline">
   <title>Workshop Timeline</title>
 
   <introduction>
