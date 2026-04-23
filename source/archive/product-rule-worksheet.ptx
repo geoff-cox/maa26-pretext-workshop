@@ -25,6 +25,10 @@
 
   <page>
     <p>
+      <xref ref="block-objectives" text="custom">📋 <term><![CDATA[<objectives>]]> Block</term></xref>
+    </p>
+  
+    <p>
       When a function is built by multiplying two simpler functions, we cannot just multiply their derivatives. The <term>product rule</term> tells us what to do instead.
     </p>
 
@@ -39,6 +43,10 @@
         </p>
       </statement>
     </definition>
+
+    <p>
+      <xref ref="block-definition" text="custom">📋 <term><![CDATA[<definition>]]> Block</term></xref>
+    </p>
 
     <exercise workspace="1.5in">
       <title>Why we need it</title>
@@ -65,13 +73,13 @@
       <task>
         <statement>
           <p>
-            Simplify <m>f(x)\,g(x)</m> first, then differentiate the result to find
+            Simplify <m>f(x)\,g(x)</m> first, then differentiate the result to find 
             <md>\frac{d}{dx}\bigl[f(x)\,g(x)\bigr]</md>.
           </p>
         </statement>
         <answer>
           <p>
-            <m>f(x)\,g(x) = x^5</m>, so
+            <m>f(x)\,g(x) = x^5</m>, so 
             <md>\frac{d}{dx}\bigl[f(x)\,g(x)\bigr] = 5x^4</md>.
           </p>
         </answer>

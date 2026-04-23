@@ -42,25 +42,23 @@
       </statement>
 
       <answer>
-        <p>
-          <sidebyside widths="30% 30%">
-            <p>
-              <md>
-                <mrow> x_1+2x_2+3x_3 \amp = 4 </mrow>
-                <mrow>2x_1-x_2+3x_3 \amp =0 </mrow>
-                <mrow>3x_1+x_2+5x_3 \amp =3</mrow>
-              </md>
-            </p>
+        <sidebyside widths="30% 30%">
+          <p>
+            <md>
+              <mrow> x_1+2x_2+3x_3 \amp = 4 </mrow>
+              <mrow>2x_1-x_2+3x_3 \amp =0 </mrow>
+              <mrow>3x_1+x_2+5x_3 \amp =3</mrow>
+            </md>
+          </p>
 
-            <p>
-              <md>
-                <mrow> x_1\amp = 4 </mrow>
-                <mrow>x_2 \amp =0 </mrow>
-                <mrow>x_3 \amp =3</mrow>
-              </md>
-            </p>
-          </sidebyside>
-        </p>
+          <p>
+            <md>
+              <mrow> x_1\amp = 4 </mrow>
+              <mrow>x_2 \amp =0 </mrow>
+              <mrow>x_3 \amp =3</mrow>
+            </md>
+          </p>
+        </sidebyside>
       </answer>
     </exercise>
 
@@ -73,7 +71,7 @@
         </p>
 
         <p>
-          <ol cols="3" valign="middle">
+          <ol cols="3">
             <li>
               <p>
                 <md>

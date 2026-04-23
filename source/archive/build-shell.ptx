@@ -1,0 +1,143 @@
+<!-- ============================================================ -->
+<!-- Product Rule Worksheet — starter shell                       -->
+<!-- The structure is here. The math, the prose, and the          -->
+<!-- choices are not. You'll fill those in as you go.             -->
+<!-- ============================================================ -->
+
+<worksheet xml:id="ws-product-rule">
+  <title>The Product Rule</title>
+
+  <objectives>
+    <ul>
+      <li><p><!-- objective 1 --></p></li>
+      <li><p><!-- objective 2 --></p></li>
+      <li><p><!-- objective 3 --></p></li>
+    </ul>
+  </objectives>
+
+  <!-- ============================== Page 1 ====================== -->
+  <page>
+
+    <p>
+      <!-- Lead-in paragraph for the lesson -->
+    </p>
+
+    <definition xml:id="def-product-rule">
+      <statement>
+        <p>
+          <!-- Statement of the product rule. Math goes here. -->
+        </p>
+      </statement>
+    </definition>
+
+    <exercise workspace="1.5in">
+      <title><!-- exercise title --></title>
+
+      <introduction>
+        <p>
+          <!-- Setup for the three-part discovery exercise -->
+        </p>
+      </introduction>
+
+      <task>
+        <statement>
+          <p><!-- prompt for part (a) --></p>
+        </statement>
+        <answer>
+          <p><!-- answer for part (a) --></p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p><!-- prompt for part (b) --></p>
+        </statement>
+        <answer>
+          <p><!-- answer for part (b) --></p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p><!-- prompt for part (c) --></p>
+        </statement>
+        <answer>
+          <p><!-- answer for part (c) --></p>
+        </answer>
+      </task>
+    </exercise>
+
+    <example xml:id="ex-applying-product-rule">
+      <title><!-- example title --></title>
+
+      <statement>
+        <p><!-- prompt: find the derivative of h(x) --></p>
+      </statement>
+
+      <solution>
+        <p><!-- worked solution; cross-reference the definition with <xref ref="def-product-rule"/> --></p>
+      </solution>
+    </example>
+  </page>
+
+  <!-- ============================== Page 2 ====================== -->
+  <page>
+
+    <exercise workspace="2.5in">
+      <title><!-- exercise title --></title>
+
+      <introduction>
+        <p>
+          <!-- Instructions for the four practice problems -->
+        </p>
+      </introduction>
+
+      <task>
+        <statement><p><!-- p(x) --></p></statement>
+        <answer><p><!-- p'(x) --></p></answer>
+      </task>
+      <task>
+        <statement><p><!-- q(x) --></p></statement>
+        <answer><p><!-- q'(x) --></p></answer>
+      </task>
+      <task>
+        <statement><p><!-- r(x) --></p></statement>
+        <answer><p><!-- r'(x) --></p></answer>
+      </task>
+      <task>
+        <statement><p><!-- s(x) --></p></statement>
+        <answer><p><!-- s'(x) --></p></answer>
+      </task>
+    </exercise>
+
+    <exercise xml:id="ex-product-rule-mc">
+      <title><!-- exercise title --></title>
+
+      <statement>
+        <p><!-- prompt: which of the following is the derivative of h(x)? --></p>
+      </statement>
+
+      <choices randomize="yes">
+        <choice>
+          <statement><p><!-- distractor A --></p></statement>
+          <feedback><p><!-- feedback for A --></p></feedback>
+        </choice>
+
+        <choice correct="yes">
+          <statement><p><!-- correct answer --></p></statement>
+          <feedback><p><!-- feedback for correct answer --></p></feedback>
+        </choice>
+
+        <choice>
+          <statement><p><!-- distractor C --></p></statement>
+          <feedback><p><!-- feedback for C --></p></feedback>
+        </choice>
+
+        <choice>
+          <statement><p><!-- distractor D --></p></statement>
+          <feedback><p><!-- feedback for D --></p></feedback>
+        </choice>
+      </choices>
+    </exercise>
+  </page>
+</worksheet>

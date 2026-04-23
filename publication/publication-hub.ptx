@@ -12,7 +12,7 @@
 <publication>
   <common>
     <!-- Level at which are html files generated (chapter/section/etc): -->
-    <chunking level="2" />
+    <chunking level="3" />
 
     <!-- Depth for table of contents.  0 means no TOC -->
     <tableofcontents level="2" />
@@ -126,7 +126,7 @@
         project="yes"
         task="no"
         remark="yes"
-        objectives="yes"
+        objectives="no"
         outcomes="yes"
         assemblage="yes"
         figure="no"
@@ -143,11 +143,11 @@
     <!-- override defaults.  Ex:<css theme="denver"/>          -->
     <!-- See also                                              -->
     <!-- https://pretextbook.org/doc/guide/html/publication-file-online.html#online-style-options -->
-    <!-- <css
-        theme="greeley"
+    <css
+        theme="denver"
         primary-color="#386F94"
         primary-color-dark="#5192BD"
-    /> -->
+    />
 
     <!-- Search can be default or none, or you can use a Google-cx number to use google's search
     feature (but then variant should be set to none to avoid conflict) -->

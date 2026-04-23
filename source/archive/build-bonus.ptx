@@ -1,0 +1,39 @@
+<!-- ============================================================ -->
+<!-- Bonus: Add a true/false question                             -->
+<!-- ============================================================ -->
+<!--                                                              -->
+<!-- If you've reached the end with time to spare, add a          -->
+<!-- true/false question to the second page of your worksheet.    -->
+<!-- True/false uses the same <exercise> tag you've already seen, -->
+<!-- with two small twists:                                       -->
+<!--                                                              -->
+<!--   * the correct="yes" or correct="no" attribute moves        -->
+<!--     onto the <statement> itself                              -->
+<!--   * there is no <choices> block; just a <feedback>           -->
+<!--                                                              -->
+<!-- Drop this snippet into your second <page>, just above the    -->
+<!-- closing </page> tag, and rebuild.                            -->
+<!--                                                              -->
+<!-- ============================================================ -->
+
+<exercise xml:id="ex-product-rule-tf">
+  <title>True or false?</title>
+
+  <statement correct="no">
+    <p>
+      If <m>f</m> and <m>g</m> are differentiable, then
+      <me>
+        \frac{d}{dx}\bigl[f(x)\,g(x)\bigr] = f'(x)\,g'(x).
+      </me>
+    </p>
+  </statement>
+
+  <feedback>
+    <p>
+      This is the most common mistake with products. The correct
+      statement is <m>(fg)' = f'g + fg'</m>; see
+      <xref ref="def-product-rule"/>. The discovery exercise on
+      page 1 of this worksheet shows why.
+    </p>
+  </feedback>
+</exercise>

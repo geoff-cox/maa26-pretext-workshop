@@ -1,0 +1,231 @@
+<!-- =================================================================
+     OPTION A — INLINE, CONTEXTUAL
+     Drop-down cheatsheet links appear next to the prose that
+     describes each structure, as they come up in the tour.
+     ================================================================= -->
+
+  <!-- ================================================= -->
+  <!-- 5:10-5:35 Build a Worksheet Lesson                -->
+  <!-- ================================================= -->
+  <section xml:id="sec-build-lesson">
+    <title>5:10-5:35 Worksheet Lesson</title>
+
+    <introduction>
+      <p>
+        This is the main event. The goal: replicate a short product-rule worksheet in your own project, using the structures you met in Guided Practice plus a handful of new ones we will point out along the way.
+      </p>
+    </introduction>
+
+    <subsection xml:id="bl-tour">
+      <title>Tour the target</title>
+
+      <p>
+        Open the rendered worksheet (projected at the front, or the link on the slide) and work through it the way a student would. Try the first exercise. Expand an answer knowl. Click a multiple-choice option. Get a feel for what you are about to build.
+      </p>
+
+      <p>
+        As you read, notice the pieces:
+      </p>
+
+      <p>
+        <ul>
+          <li>
+            <p>
+              The whole page is a <xref ref="block-worksheet" text="custom"><c>&lt;worksheet&gt;</c></xref>, split into two <xref ref="block-worksheet" text="custom"><c>&lt;page&gt;</c></xref> blocks so it paginates nicely in print.
+            </p>
+          </li>
+          <li>
+            <p>
+              The bulleted list at the top is an <xref ref="block-objectives" text="custom"><c>&lt;objectives&gt;</c></xref> block — a special structure for stating what the worksheet teaches.
+            </p>
+          </li>
+          <li>
+            <p>
+              The boxed formula is a <xref ref="block-definition" text="custom"><c>&lt;definition&gt;</c></xref> with an <c>xml:id</c>, which lets the later exercises link back to it.
+            </p>
+          </li>
+          <li>
+            <p>
+              <q>Why we need it</q> is an <xref ref="block-exercise-tasks" text="custom"><c>&lt;exercise&gt;</c> with <c>&lt;task&gt;</c></xref> parts — one exercise, three sub-parts, each with its own answer knowl.
+            </p>
+          </li>
+          <li>
+            <p>
+              The worked <xref ref="block-example" text="custom"><c>&lt;example&gt;</c></xref> uses an <xref ref="block-xref" text="custom"><c>&lt;xref&gt;</c></xref> to point back to the definition.
+            </p>
+          </li>
+          <li>
+            <p>
+              <q>Spot the derivative</q> is a <xref ref="block-mc" text="custom">multiple-choice</xref> exercise — each option has its own feedback knowl.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </subsection>
+
+    <subsection xml:id="bl-build">
+      <title>Build it</title>
+
+      <p>
+        Open a fresh file in your project and replicate the worksheet. To spare you the tedium of retyping long prose, everything you need is below. The <em>math</em> is left as <c>???</c> placeholders — read the rendered worksheet (or copy directly from it by right-clicking a math expression and choosing <c>Copy to Clipboard ▸ TeX Commands</c>) and fill each one in as you go.
+      </p>
+
+      <p>
+        The cheatsheet entries linked above open in place — click any link to see the template, then switch back to your editor. No new tabs needed.
+      </p>
+
+      <program language="text">
+        <![CDATA[
+<!-- ---------------- Objectives ---------------- -->
+
+State the product rule for differentiating a product of two functions.
+
+Apply the product rule to compute derivatives of products involving
+polynomials, trigonometric, and exponential functions.
+
+Recognize when the product rule is needed, and when it is not.
+
+
+<!-- --------------- Lead-in paragraph ---------- -->
+
+When a function is built by multiplying two simpler functions, we
+cannot just multiply their derivatives. The <term>product rule</term>
+tells us what to do instead.
+
+
+<!-- ----------------- Definition --------------- -->
+
+If <m>f</m> and <m>g</m> are differentiable functions, then
+<me>
+  ???
+</me>
+
+
+<!-- ------------ Discovery exercise ------------ -->
+
+Title:  Why we need it
+
+Introduction:  Let <m>???</m> and <m>???</m>.
+
+(a) Prompt:  Compute <m>???</m>.
+    Answer:   <m>???</m>.
+
+(b) Prompt:  Simplify <m>???</m> first, then differentiate the result
+             to find <md>???</md>.
+    Answer:   <m>???</m>, so <md>???</md>.
+
+(c) Prompt:  Compare your two answers. Is <m>???</m>?
+    Answer:   The answers do not match, so <m>???</m>. We need a
+              different rule.
+
+
+<!-- --------------- Worked example ------------- -->
+
+Title:  Applying the product rule
+
+Statement:  Find the derivative of <m>???</m>.
+
+Solution:   Let <m>???</m> and <m>???</m>, so <m>???</m> and <m>???</m>.
+            By <xref ref="def-product-rule"/>,
+            <me>
+              ???
+            </me>
+
+
+<!-- ------------ Practice exercise ------------- -->
+
+Title:  Practice
+
+Introduction:  Use the product rule (see <xref ref="def-product-rule"/>)
+               to find the derivative of each function.
+
+(a) Prompt: <m>???</m>     Answer: <m>???</m>.
+(b) Prompt: <m>???</m>     Answer: <m>???</m>.
+(c) Prompt: <m>???</m>     Answer: <m>???</m>.
+(d) Prompt: <m>???</m>     Answer: <m>???</m>.
+
+
+<!-- ------------ Multiple-choice --------------- -->
+
+Title:  Spot the derivative
+
+Statement:  Which of the following is the derivative of <m>???</m>?
+
+A.  Statement: <m>???</m>
+    Feedback:  It is tempting to take the derivative directly like this,
+               but the correct approach is <md>(fg)' = f'g + fg'</md>.
+
+Correct. Statement: <m>???</m>
+    Feedback:  With <m>???</m> and <m>???</m>, the product rule gives
+               <md>???</md>.
+
+C.  Statement: <m>???</m>
+    Feedback:  Close, but the product rule adds the two terms, not
+               subtracts them.
+
+D.  Statement: <m>???</m>
+    Feedback:  This differentiates only the <m>\sin(x)</m> factor and
+               leaves <m>x^2</m> alone. The product rule requires
+               differentiating each factor in turn: <m>f'g + fg'</m>.
+        ]]>
+      </program>
+    </subsection>
+
+    <subsection xml:id="bl-bonus">
+      <title>If you have time — add a true/false question</title>
+
+      <p>
+        Add the question below to the second page of your worksheet. It uses the same <xref ref="block-tf" text="custom">true/false</xref> pattern as the multiple-choice exercise you just built, with two small differences: the <c>correct</c> attribute moves onto the <c>&lt;statement&gt;</c> itself, and there is no <c>&lt;choices&gt;</c> block — just a single <c>&lt;feedback&gt;</c>.
+      </p>
+
+      <exercise xml:id="ex-product-rule-tf-demo">
+        <title>True or false?</title>
+        <statement correct="no">
+          <p>
+            If <m>f</m> and <m>g</m> are differentiable, then
+            <me>
+              \frac{d}{dx}\bigl[f(x)\,g(x)\bigr] = f'(x)\,g'(x).
+            </me>
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            The correct statement is <m>(fg)' = f'g + fg'</m>. The discovery exercise on page 1 shows why: for <m>f(x) = x^2</m> and <m>g(x) = x^3</m>, the product <m>f'g'</m> gives <m>6x^3</m>, but <m>(fg)'</m> gives <m>5x^4</m>.
+          </p>
+        </feedback>
+      </exercise>
+    </subsection>
+
+    <subsection xml:id="bl-if-stuck">
+      <title>If you get stuck</title>
+
+      <p>
+        <dl>
+          <li>
+            <title>Red error in the preview</title>
+            <p>
+              Almost always a missing or mismatched tag. The error message usually has a line number. If you can't find it, paste the chunk again and re-edit more carefully.
+            </p>
+          </li>
+          <li>
+            <title>Preview didn't update</title>
+            <p>
+              Click <term>Rebuild</term> or press <kbd>Ctrl</kbd>+<kbd>S</kbd>. The preview doesn't refresh on its own.
+            </p>
+          </li>
+          <li>
+            <title>Lost your work</title>
+            <p>
+              Click <term>Projects</term> in the top nav. It's saved.
+            </p>
+          </li>
+          <li>
+            <title>Something weirder</title>
+            <p>
+              Raise your hand. Or ask the person next to you first — chances are they've just hit the same thing.
+            </p>
+          </li>
+        </dl>
+      </p>
+    </subsection>
+  </section>
