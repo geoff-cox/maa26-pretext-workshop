@@ -1,0 +1,154 @@
+<!-- ================================================= -->
+<!-- Appendix: Fallback plan                           -->
+<!-- ================================================= -->
+<appendix xml:id="sec-fallback-plan">
+  <title>Fallback Plan</title>
+
+  <introduction>
+    <p>
+      <em>Facilitator reference.</em> The timeline above assumes the workshop runs as designed — everyone gets online, everyone's <c>pretext.plus</c> account works, and the editor behaves. This appendix is what to do if that isn't true.
+    </p>
+
+    <p>
+      The goal of the fallback is not to replicate the full hands-on experience. It's to preserve the <em>core takeaway</em>: participants leave understanding what <pretext/> authoring looks and feels like, and with a concrete sense of what they'd write if they tried it themselves.
+    </p>
+  </introduction>
+
+  <subsection xml:id="fb-triggers">
+    <title>When to switch to fallback mode</title>
+
+    <p>
+      Switch — fully or partially — if any of these happen:
+    </p>
+
+    <p>
+      <ul>
+        <li>The venue Wi-Fi is down or throttled badly enough that <c>pretext.plus</c> won't load for most of the room.</li>
+        <li>The <c>pretext.plus</c> service is slow, broken, or rejecting sign-ups.</li>
+        <li>An institutional firewall is blocking account confirmation emails.</li>
+        <li>More than about a quarter of the room can't get their editor working after ten minutes of troubleshooting.</li>
+      </ul>
+    </p>
+
+    <p>
+      Don't switch the whole room if only two or three people are stuck — pair them with neighbors who are working and keep going. Switch the whole room if the pattern is clearly environmental.
+    </p>
+  </subsection>
+
+  <subsection xml:id="fb-levels">
+    <title>Graceful degradation — three levels</title>
+
+    <p>
+      <dl>
+        <li>
+          <title>Level 1 — Pair up</title>
+          <p>
+            <em>Use when:</em> a minority of the room is offline or account-blocked.
+          </p>
+          <p>
+            Ask each stuck participant to pair with a neighbor who has a working editor. The partner drives; the stuck participant reads aloud the snippet to paste and decides what to customize. Everyone still sees the Edit → Rebuild rhythm and leaves with a finished lesson associated with at least one of them.
+          </p>
+        </li>
+        <li>
+          <title>Level 2 — Instructor-driven demo with paper exercises</title>
+          <p>
+            <em>Use when:</em> most of the room cannot edit, but the projector still works.
+          </p>
+          <p>
+            The facilitator drives a single <c>pretext.plus</c> project on the projector. Work through the five Guided Practice exercises live, one at a time, with the room calling out small edits. Distribute the printed participant handout so people can annotate each snippet by hand, writing in the changes they'd make. For <em>Build a Lesson</em>, hand out the two starter options on paper and ask participants to mark them up with their own topic — title changes, example swaps, reworded exercises. Collect a few at the end and project them as the Show and Tell.
+          </p>
+          <p>
+            This level still preserves the core: participants see source, see preview, see a cross-reference resolve, and produce something concrete.
+          </p>
+        </li>
+        <li>
+          <title>Level 3 — Fully offline read-and-compare</title>
+          <p>
+            <em>Use when:</em> nothing online is usable, not even for the facilitator.
+          </p>
+          <p>
+            Distribute the prebuilt offline packet (see the next subsection). Walk through the <q>source on the left, output on the right</q> comparison sheets, then have participants edit a printed starter lesson in pencil and share with a neighbor. The session still ends on time and participants leave with a realistic mental model of the workflow.
+          </p>
+        </li>
+      </dl>
+    </p>
+  </subsection>
+
+  <subsection xml:id="fb-offline-packet">
+    <title>Offline packet to have on hand</title>
+
+    <p>
+      Bring the following in printed form (or on a local USB drive) before the session starts. This is cheap insurance.
+    </p>
+
+    <p>
+      <ol>
+        <li>
+          <p>
+            <em>Screenshots of the editor.</em> The <c>pretext.plus</c> landing page, an empty project, a project with source on the left and preview on the right, and the <term>Sharable link</term> dialog. Enough for someone who has never seen the tool to recognize what's happening.
+          </p>
+        </li>
+        <li>
+          <p>
+            <em>Side-by-side <q>source vs. output</q> sheets</em> for each of the five Guided Practice exercises. Left column: the <pretext/> snippet. Right column: a screenshot of the rendered result.
+          </p>
+        </li>
+        <li>
+          <p>
+            <em>Printed starter lessons.</em> Both Build-a-Lesson starters, printed with generous margins so participants can annotate in pencil.
+          </p>
+        </li>
+        <li>
+          <p>
+            <em>A prebuilt sample HTML output</em> on a USB drive or local file that the facilitator can open without internet, so there's always something real to show on the projector.
+          </p>
+        </li>
+        <li>
+          <p>
+            <em>This hub document as a PDF</em>, so participants can follow the timeline even without network access.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </subsection>
+
+  <subsection xml:id="fb-completion-path">
+    <title>A non-deployment completion path</title>
+
+    <p>
+      The default <q>done</q> signal is a sharable link. If sharing is broken, substitute any of these:
+    </p>
+
+    <p>
+      <ul>
+        <li>A screenshot of the participant's preview panel, sent to the facilitator or a neighbor.</li>
+        <li>A printed marked-up starter lesson handed in at the end.</li>
+        <li>A read-aloud of one thing they'd add if they had another hour — a lightweight oral <q>Show and Tell.</q></li>
+      </ul>
+    </p>
+
+    <p>
+      Whatever form it takes, each participant should leave having produced <em>something concrete</em> they could point at and say <q>I made that.</q> That's the contract.
+    </p>
+  </subsection>
+
+  <subsection xml:id="fb-pacing">
+    <title>Pacing adjustments</title>
+
+    <p>
+      If you've switched to Level 2 or 3, the timeline still holds roughly, but cut the following first:
+    </p>
+
+    <p>
+      <ul>
+        <li><em>Interactive Feature Gallery (4:10-4:20)</em> — compress to three favorites, shown on projector from the prebuilt HTML.</li>
+        <li><em>Finished-early prompts in Guided Practice</em> — drop entirely.</li>
+        <li><em>Show and Tell (5:40-5:50)</em> — shorten to one lesson or one collected paper starter, and give the extra minutes back to Build-a-Lesson.</li>
+      </ul>
+    </p>
+
+    <p>
+      Protect the Build-a-Lesson phase. That's where the core learning happens, and it's the last thing to cut.
+    </p>
+  </subsection>
+</appendix>

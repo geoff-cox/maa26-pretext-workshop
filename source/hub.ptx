@@ -19,10 +19,7 @@
 		<xi:include href="./codespace-guide.ptx" />
 		<xi:include href="./syllabus-calc1.ptx" />
 		<xi:include href="./product-rule-worksheet.ptx" />
-		<!-- <xi:include href="./build-shell.ptx" /> -->
-		<!-- <xi:include href="./build-chunks.ptx" /> -->
-		<!-- <xi:include href="./build-bonus.ptx" /> -->
-
+		<xi:include href="./fallback-plan.ptx" />
 
 	</book>
 	

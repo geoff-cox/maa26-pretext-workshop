@@ -1138,7 +1138,7 @@
 
     <introduction>
       <p>
-        In this phase of the workshop, you'll be given an HTML-rendered worksheet and your goal will be to replicate it using the structures you met while creating the syllabus, plus a handful of new ones we will point out along the way.
+        in this phase of the workshop, you'll be given an HTML rendered worksheet and your goal will be to replicate it using the structures you met while creating the syllabus plus a handful of new ones we will point out along the way.
       </p>
     </introduction>
 
@@ -1146,7 +1146,7 @@
       <title>Tour the target</title>
 
       <p>
-        Open the rendered worksheet <url href="https://pretext.plus/projects/57d11227-7627-4760-810a-ba11c188afe7/share">Product Rule Lesson Worksheet</url>. We'll walk through it together and come back here to get you started building it.
+        Open the rendered worksheet <url href="https://pretext.plus/projects/57d11227-7627-4760-810a-ba11c188afe7/share">Product Rule Lesson Worksheet</url>. We'll walk through it together and come back here to get you started building it. 
       </p>
 
     </subsection>
@@ -1159,7 +1159,7 @@
           <li>
             <title>New Project</title>
             <p>
-              In PreTeXt.Plus:
+              In pretextPlus:
               <ol>
                 <li>Click <term>Projects</term> on the top navigation bar.</li>
                 <li>Click the <term>+ New Project</term> button.</li>
@@ -1184,64 +1184,86 @@
               The <tag>worksheet</tag> tag will span your entire <pretext/> document. Paste the <xref ref="block-worksheet" text="custom">📋 worksheet template</xref> over the default <tag>section</tag> currently in your project.
             </p>
           </li>
-
           <li>
             <title>Title</title>
             <p>
               Fill the <tag>title</tag> tag with <q><term>The Product Rule</term></q>.
             </p>
           </li>
-
           <li>
             <title>Objectives</title>
             <p>
-              Replace the <tag>objectives</tag> placeholder with the <xref ref="block-objectives" text="custom">📋 objectives template</xref>, then copy and paste each objective from the target worksheet.
+              Fill the <tag>objectives</tag> tag with the learning objectives. You can copy and paste them from the target worksheet.
             </p>
           </li>
-
           <li>
-            <title>Page 1 — structure</title>
+            <title>Page</title>
             <p>
-              Inside the first <tag>page</tag>, paste the following blocks in order:
+              Inside the first <tag>page</tag>, paste the following:
               <ul marker="square">
-                <li><xref ref="block-p" text="custom">📋 paragraph</xref></li>
-                <li><xref ref="block-definition" text="custom">📋 definition</xref></li>
-                <li><xref ref="block-p" text="custom">📋 paragraph</xref></li>
-                <li><xref ref="block-example" text="custom">📋 example</xref></li>
-                <li><xref ref="block-exercise-tasks" text="custom">📋 exercise with tasks</xref></li>
+                <li>
+                  <xref ref="block-p" text="custom">📋 paragraph</xref>
+                </li>
+                <li>
+                  <xref ref="block-definition" text="custom">📋 definition</xref>
+                </li>
+                <li>
+                  <xref ref="block-p" text="custom">📋 paragraph</xref>
+                </li>
+                <li>
+                  <xref ref="block-exercise-tasks" text="custom">📋 exercise with tasks</xref>
+                </li>
+                <li>
+                  <xref ref="block-example" text="custom">📋 example</xref>
+                </li>
+                <li>
+                  <xref ref="block-exercise" text="custom">📋 exercise</xref>
+                </li>
               </ul>
             </p>
           </li>
-
           <li>
             <title>Paragraphs</title>
             <p>
-              Copy the two short paragraphs from the target worksheet — the lead-in sentence and the bridge sentence before the example — into your two <tag>p</tag> tags.
+              Copy the content from the two paragraphs of the target worksheet into the two <tag>p</tag> tags.
             </p>
           </li>
-
           <li>
             <title>Definition</title>
             <p>
-              Add <c>xml:id="def-product-rule"</c> to the <tag>definition</tag> tag so you can cross-reference it later. Then copy the definition text from the target worksheet into the <tag>p</tag> inside <tag>statement</tag>. For the math, right-click any expression in the rendered worksheet and choose <term>Copy to Clipboard</term> ▸ <term>TeX Commands</term>.
+              Copy the content from the definition into the <tag>p</tag> tags of the <tag>statement</tag>. The <latex/> for the mathematical expressions can also be copied by right-clicking an expression and choosing:
             </p>
-          </li>
-
-          <li>
-            <title>Example</title>
             <p>
-              Add <c>xml:id="ex-applying-product-rule"</c> and set the <tag>title</tag> to <q>Applying the product rule</q>. Copy the problem statement and solution text from the target worksheet. In the solution, link back to the definition using <tag>xref ref="def-product-rule"</tag>.
-            </p>
-          </li>
-
-          <li>
-            <title>Practice exercise</title>
-            <p>
-              Give the exercise a <tag>title</tag> of <q>Practice</q> and a <tag>workspace</tag> of <c>2.5in</c>. Add an <tag>introduction</tag> that references <tag>xref ref="def-product-rule"</tag>. Then add two <tag>task</tag> elements — one for each function in the target worksheet — each with a <tag>statement</tag> and an <tag>answer</tag>.
+              <term>Copy to Clipboard</term> ▸ <term>TeX Commands</term>.
             </p>
           </li>
         </dl>
       </p>
+    </subsection>
+
+    <subsection xml:id="bl-bonus">
+      <title>If you have time — add a true/false question</title>
+
+      <p>
+        Add the question below to the second page of your worksheet. It uses the same <xref ref="block-tf" text="custom">true/false</xref> pattern as the multiple-choice exercise you just built, with two small differences: the <c>correct</c> attribute moves onto the <c>&lt;statement&gt;</c> itself, and there is no <c>&lt;choices&gt;</c> block — just a single <c>&lt;feedback&gt;</c>.
+      </p>
+
+      <exercise xml:id="ex-product-rule-tf-demo">
+        <title>True or false?</title>
+        <statement correct="no">
+          <p>
+            If <m>f</m> and <m>g</m> are differentiable, then
+            <me>
+              \frac{d}{dx}\bigl[f(x)\,g(x)\bigr] = f'(x)\,g'(x).
+            </me>
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            The correct statement is <m>(fg)' = f'g + fg'</m>. The discovery exercise on page 1 shows why: for <m>f(x) = x^2</m> and <m>g(x) = x^3</m>, the product <m>f'g'</m> gives <m>6x^3</m>, but <m>(fg)'</m> gives <m>5x^4</m>.
+          </p>
+        </feedback>
+      </exercise>
     </subsection>
 
     <subsection xml:id="bl-if-stuck">
@@ -1252,7 +1274,7 @@
           <li>
             <title>Red error in the preview</title>
             <p>
-              Almost always a missing or mismatched tag. The error message usually has a line number. If you can't find it, paste the relevant template again and re-edit more carefully.
+              Almost always a missing or mismatched tag. The error message usually has a line number. If you can't find it, paste the chunk again and re-edit more carefully.
             </p>
           </li>
           <li>
@@ -1268,9 +1290,9 @@
             </p>
           </li>
           <li>
-            <title>Something Else</title>
+            <title>Something weirder</title>
             <p>
-              Raise your hand. Or ask the person next to you.
+              Raise your hand. Or ask the person next to you first — chances are they've just hit the same thing.
             </p>
           </li>
         </dl>
@@ -1280,56 +1302,10 @@
   </section>
 
   <!-- ================================================= -->
-  <!-- 5:35-5:45 Interactive Questions                   -->
-  <!-- ================================================= -->
-  <section xml:id="sec-interactive-questions">
-    <title>5:35-5:45 Interactive Questions</title>
-    <subsection xml:id="bl-bonus">
-      <title>If you have time — add a true/false question</title>
-
-      <p>
-        <dl>
-          <li>
-            <title>Page 2 — multiple-choice question</title>
-            <p>
-              Inside the second <tag>page</tag>, paste a <xref ref="block-mc" text="custom">📋 multiple-choice template</xref>. Give it the <c>xml:id</c> <q>ex-product-rule-mc</q> and the title <q>Spot the derivative</q>. Add four <tag>choice</tag> elements — mark one <c>correct="yes"</c> — and copy the statement and feedback text for each from the target worksheet.
-            </p>
-          </li>
-        </dl>
-      </p>
-
-      <p>
-        There is one more interactive exercise type in the cheatsheet that we haven't used yet: <xref ref="block-tf" text="custom">📋 true/false</xref>. It works like the multiple-choice question you just built, with two differences: the <c>correct</c> attribute moves onto the <tag>statement</tag> itself, and there is no <tag>choices</tag> block — just a single <tag>feedback</tag>.
-      </p>
-
-      <p>
-        Try replicating the question below. Drop it onto the second page of your worksheet, just above the closing <tag>/page</tag> tag, and rebuild.
-      </p>
-
-      <exercise xml:id="ex-product-rule-tf-demo">
-        <title>True or false?</title>
-        <statement correct="no">
-          <p>
-            If <m>f</m> and <m>g</m> are differentiable, then
-            <me>
-              \frac{d}{dx}\bigl[f(x)\,g(x)\bigr] = f'(x)\,g'(x).
-            </me>
-          </p>
-        </statement>
-        <feedback>
-          <p>
-            The correct statement is <m>(fg)' = f'g + fg'</m>; see <xref ref="def-product-rule"/>. Multiplying derivatives gives <m>f'(x)\,g'(x) = (2x)(\cos x)</m> for the example on page 1, but the actual derivative of <m>h(x) = x^2\sin(x)</m> is <m>2x\sin(x) + x^2\cos(x)</m> — two terms, not one.
-          </p>
-        </feedback>
-      </exercise>
-    </subsection>
-  </section>
-
-  <!-- ================================================= -->
-  <!-- 5:45-5:50 Sharing Your Lesson                     -->
+  <!-- 5:35-5:40 Share with a Neighbor                   -->
   <!-- ================================================= -->
   <section xml:id="sec-share-lesson">
-    <title>5:45-5:50 Share Your Lesson</title>
+    <title>5:35-5:40 Share with a Neighbor</title>
 
     <p>
       Before we regroup, trade lessons with the person next to you. Five minutes, two minutes each way.
@@ -1371,6 +1347,21 @@
         That's it. This is a chance to see someone else's work, not a code review.
       </p>
     </paragraphs>
+  </section>
+
+  <!-- ================================================= -->
+  <!-- 5:40-5:50 Show and Tell                           -->
+  <!-- ================================================= -->
+  <section xml:id="sec-show-tell">
+    <title>5:40-5:50 Show and Tell</title>
+
+    <p>
+      We'll look at two or three lessons together on the projector. If you'd like yours shown, let the facilitator know. If you'd rather not, that's fine — there's no pressure.
+    </p>
+
+    <p>
+      For each one, we'll do the same quick tour: what's the topic, what <pretext/> structures did it use, and what's one thing that was harder than expected.
+    </p>
   </section>
 
   <!-- ================================================= -->
@@ -1417,6 +1408,161 @@
         Whatever's on your mind — about today, about where to go next, or about whether <pretext/> fits a specific thing you teach. The floor is yours.
       </p>
     </paragraphs>
+  </section>
+
+  <!-- ================================================= -->
+  <!-- Appendix: Fallback plan                           -->
+  <!-- ================================================= -->
+  <section xml:id="sec-fallback-plan">
+    <title>Appendix — Fallback Plan</title>
+
+    <introduction>
+      <p>
+        <em>Facilitator reference.</em> The timeline above assumes the workshop runs as designed — everyone gets online, everyone's <c>pretext.plus</c> account works, and the editor behaves. This appendix is what to do if that isn't true.
+      </p>
+
+      <p>
+        The goal of the fallback is not to replicate the full hands-on experience. It's to preserve the <em>core takeaway</em>: participants leave understanding what <pretext/> authoring looks and feels like, and with a concrete sense of what they'd write if they tried it themselves.
+      </p>
+    </introduction>
+
+    <subsection xml:id="fb-triggers">
+      <title>When to switch to fallback mode</title>
+
+      <p>
+        Switch — fully or partially — if any of these happen:
+      </p>
+
+      <p>
+        <ul>
+          <li>The venue Wi-Fi is down or throttled badly enough that <c>pretext.plus</c> won't load for most of the room.</li>
+          <li>The <c>pretext.plus</c> service is slow, broken, or rejecting sign-ups.</li>
+          <li>An institutional firewall is blocking account confirmation emails.</li>
+          <li>More than about a quarter of the room can't get their editor working after ten minutes of troubleshooting.</li>
+        </ul>
+      </p>
+
+      <p>
+        Don't switch the whole room if only two or three people are stuck — pair them with neighbors who are working and keep going. Switch the whole room if the pattern is clearly environmental.
+      </p>
+    </subsection>
+
+    <subsection xml:id="fb-levels">
+      <title>Graceful degradation — three levels</title>
+
+      <p>
+        <dl>
+          <li>
+            <title>Level 1 — Pair up</title>
+            <p>
+              <em>Use when:</em> a minority of the room is offline or account-blocked.
+            </p>
+            <p>
+              Ask each stuck participant to pair with a neighbor who has a working editor. The partner drives; the stuck participant reads aloud the snippet to paste and decides what to customize. Everyone still sees the Edit → Rebuild rhythm and leaves with a finished lesson associated with at least one of them.
+            </p>
+          </li>
+          <li>
+            <title>Level 2 — Instructor-driven demo with paper exercises</title>
+            <p>
+              <em>Use when:</em> most of the room cannot edit, but the projector still works.
+            </p>
+            <p>
+              The facilitator drives a single <c>pretext.plus</c> project on the projector. Work through the five Guided Practice exercises live, one at a time, with the room calling out small edits. Distribute the printed participant handout so people can annotate each snippet by hand, writing in the changes they'd make. For <em>Build a Lesson</em>, hand out the two starter options on paper and ask participants to mark them up with their own topic — title changes, example swaps, reworded exercises. Collect a few at the end and project them as the Show and Tell.
+            </p>
+            <p>
+              This level still preserves the core: participants see source, see preview, see a cross-reference resolve, and produce something concrete.
+            </p>
+          </li>
+          <li>
+            <title>Level 3 — Fully offline read-and-compare</title>
+            <p>
+              <em>Use when:</em> nothing online is usable, not even for the facilitator.
+            </p>
+            <p>
+              Distribute the prebuilt offline packet (see the next subsection). Walk through the <q>source on the left, output on the right</q> comparison sheets, then have participants edit a printed starter lesson in pencil and share with a neighbor. The session still ends on time and participants leave with a realistic mental model of the workflow.
+            </p>
+          </li>
+        </dl>
+      </p>
+    </subsection>
+
+    <subsection xml:id="fb-offline-packet">
+      <title>Offline packet to have on hand</title>
+
+      <p>
+        Bring the following in printed form (or on a local USB drive) before the session starts. This is cheap insurance.
+      </p>
+
+      <p>
+        <ol>
+          <li>
+            <p>
+              <em>Screenshots of the editor.</em> The <c>pretext.plus</c> landing page, an empty project, a project with source on the left and preview on the right, and the <term>Sharable link</term> dialog. Enough for someone who has never seen the tool to recognize what's happening.
+            </p>
+          </li>
+          <li>
+            <p>
+              <em>Side-by-side <q>source vs. output</q> sheets</em> for each of the five Guided Practice exercises. Left column: the <pretext/> snippet. Right column: a screenshot of the rendered result.
+            </p>
+          </li>
+          <li>
+            <p>
+              <em>Printed starter lessons.</em> Both Build-a-Lesson starters, printed with generous margins so participants can annotate in pencil.
+            </p>
+          </li>
+          <li>
+            <p>
+              <em>A prebuilt sample HTML output</em> on a USB drive or local file that the facilitator can open without internet, so there's always something real to show on the projector.
+            </p>
+          </li>
+          <li>
+            <p>
+              <em>This hub document as a PDF</em>, so participants can follow the timeline even without network access.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </subsection>
+
+    <subsection xml:id="fb-completion-path">
+      <title>A non-deployment completion path</title>
+
+      <p>
+        The default <q>done</q> signal is a sharable link. If sharing is broken, substitute any of these:
+      </p>
+
+      <p>
+        <ul>
+          <li>A screenshot of the participant's preview panel, sent to the facilitator or a neighbor.</li>
+          <li>A printed marked-up starter lesson handed in at the end.</li>
+          <li>A read-aloud of one thing they'd add if they had another hour — a lightweight oral <q>Show and Tell.</q></li>
+        </ul>
+      </p>
+
+      <p>
+        Whatever form it takes, each participant should leave having produced <em>something concrete</em> they could point at and say <q>I made that.</q> That's the contract.
+      </p>
+    </subsection>
+
+    <subsection xml:id="fb-pacing">
+      <title>Pacing adjustments</title>
+
+      <p>
+        If you've switched to Level 2 or 3, the timeline still holds roughly, but cut the following first:
+      </p>
+
+      <p>
+        <ul>
+          <li><em>Interactive Feature Gallery (4:10-4:20)</em> — compress to three favorites, shown on projector from the prebuilt HTML.</li>
+          <li><em>Finished-early prompts in Guided Practice</em> — drop entirely.</li>
+          <li><em>Show and Tell (5:40-5:50)</em> — shorten to one lesson or one collected paper starter, and give the extra minutes back to Build-a-Lesson.</li>
+        </ul>
+      </p>
+
+      <p>
+        Protect the Build-a-Lesson phase. That's where the core learning happens, and it's the last thing to cut.
+      </p>
+    </subsection>
   </section>
 
 </chapter>

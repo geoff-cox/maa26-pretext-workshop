@@ -1,0 +1,184 @@
+  <!-- ================================================= -->
+  <!-- 5:10-5:35 Build a Worksheet Lesson                -->
+  <!-- ================================================= -->
+  <section xml:id="sec-build-lesson">
+    <title>5:10-5:35 Worksheet Lesson</title>
+
+    <introduction>
+      <p>
+        In this phase of the workshop, you'll be given an HTML-rendered worksheet and your goal will be to replicate it using the structures you met while creating the syllabus, plus a handful of new ones we will point out along the way.
+      </p>
+    </introduction>
+
+    <subsection xml:id="bl-tour">
+      <title>Tour the target</title>
+
+      <p>
+        Open the rendered worksheet <url href="https://pretext.plus/projects/57d11227-7627-4760-810a-ba11c188afe7/share">Product Rule Lesson Worksheet</url>. We'll walk through it together and come back here to get you started building it.
+      </p>
+
+    </subsection>
+
+    <subsection xml:id="bl-build">
+      <title>Build it in <pretext/></title>
+
+      <p>
+        <dl width="narrow">
+          <li>
+            <title>New Project</title>
+            <p>
+              In PreTeXt.Plus:
+              <ol>
+                <li>Click <term>Projects</term> on the top navigation bar.</li>
+                <li>Click the <term>+ New Project</term> button.</li>
+                <li>Choose <term><pretext /></term> for the <term>Source format</term>.</li>
+                <li>Name your project <term>"Product Rule Worksheet"</term>.</li>
+                <li>Click <term>Create Project</term>.</li>
+              </ol>
+            </p>
+          </li>
+        </dl>
+      </p>
+
+      <p>
+        As you work through the steps below, click <term>Rebuild</term> or press <kbd>Ctrl</kbd>+<kbd>S</kbd> after each one to see your progress in the preview pane.
+      </p>
+
+      <p>
+        <dl width="medium">
+          <li>
+            <title>Worksheet</title>
+            <p>
+              The <tag>worksheet</tag> tag will span your entire <pretext/> document. Paste the <xref ref="block-worksheet" text="custom">📋 worksheet template</xref> over the default <tag>section</tag> currently in your project.
+            </p>
+          </li>
+
+          <li>
+            <title>Title</title>
+            <p>
+              Fill the <tag>title</tag> tag with <q><term>The Product Rule</term></q>.
+            </p>
+          </li>
+
+          <li>
+            <title>Objectives</title>
+            <p>
+              Replace the <tag>objectives</tag> placeholder with the <xref ref="block-objectives" text="custom">📋 objectives template</xref>, then copy and paste each objective from the target worksheet.
+            </p>
+          </li>
+
+          <li>
+            <title>Page 1 — structure</title>
+            <p>
+              Inside the first <tag>page</tag>, paste the following blocks in order:
+              <ul marker="square">
+                <li><xref ref="block-p" text="custom">📋 paragraph</xref></li>
+                <li><xref ref="block-definition" text="custom">📋 definition</xref></li>
+                <li><xref ref="block-p" text="custom">📋 paragraph</xref></li>
+                <li><xref ref="block-example" text="custom">📋 example</xref></li>
+                <li><xref ref="block-exercise-tasks" text="custom">📋 exercise with tasks</xref></li>
+              </ul>
+            </p>
+          </li>
+
+          <li>
+            <title>Paragraphs</title>
+            <p>
+              Copy the two short paragraphs from the target worksheet — the lead-in sentence and the bridge sentence before the example — into your two <tag>p</tag> tags.
+            </p>
+          </li>
+
+          <li>
+            <title>Definition</title>
+            <p>
+              Add <c>xml:id="def-product-rule"</c> to the <tag>definition</tag> tag so you can cross-reference it later. Then copy the definition text from the target worksheet into the <tag>p</tag> inside <tag>statement</tag>. For the math, right-click any expression in the rendered worksheet and choose <term>Copy to Clipboard</term> ▸ <term>TeX Commands</term>.
+            </p>
+          </li>
+
+          <li>
+            <title>Example</title>
+            <p>
+              Add <c>xml:id="ex-applying-product-rule"</c> and set the <tag>title</tag> to <q>Applying the product rule</q>. Copy the problem statement and solution text from the target worksheet. In the solution, link back to the definition using <tag>xref ref="def-product-rule"</tag>.
+            </p>
+          </li>
+
+          <li>
+            <title>Practice exercise</title>
+            <p>
+              Give the exercise a <tag>title</tag> of <q>Practice</q> and a <tag>workspace</tag> of <c>2.5in</c>. Add an <tag>introduction</tag> that references <tag>xref ref="def-product-rule"</tag>. Then add two <tag>task</tag> elements — one for each function in the target worksheet — each with a <tag>statement</tag> and an <tag>answer</tag>.
+            </p>
+          </li>
+
+          <li>
+            <title>Page 2 — multiple-choice question</title>
+            <p>
+              Inside the second <tag>page</tag>, paste a <xref ref="block-mc" text="custom">📋 multiple-choice template</xref>. Give it the <c>xml:id</c> <q>ex-product-rule-mc</q> and the title <q>Spot the derivative</q>. Add four <tag>choice</tag> elements — mark one <c>correct="yes"</c> — and copy the statement and feedback text for each from the target worksheet.
+            </p>
+          </li>
+        </dl>
+      </p>
+    </subsection>
+
+    <subsection xml:id="bl-bonus">
+      <title>If you have time — add a true/false question</title>
+
+      <p>
+        There is one more interactive exercise type in the cheatsheet that we haven't used yet: <xref ref="block-tf" text="custom">📋 true/false</xref>. It works like the multiple-choice question you just built, with two differences: the <c>correct</c> attribute moves onto the <tag>statement</tag> itself, and there is no <tag>choices</tag> block — just a single <tag>feedback</tag>.
+      </p>
+
+      <p>
+        Try replicating the question below. Drop it onto the second page of your worksheet, just above the closing <tag>/page</tag> tag, and rebuild.
+      </p>
+
+      <exercise xml:id="ex-product-rule-tf-demo">
+        <title>True or false?</title>
+        <statement correct="no">
+          <p>
+            If <m>f</m> and <m>g</m> are differentiable, then
+            <me>
+              \frac{d}{dx}\bigl[f(x)\,g(x)\bigr] = f'(x)\,g'(x).
+            </me>
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            The correct statement is <m>(fg)' = f'g + fg'</m>; see <xref ref="def-product-rule"/>. Multiplying derivatives gives <m>f'(x)\,g'(x) = (2x)(\cos x)</m> for the example on page 1, but the actual derivative of <m>h(x) = x^2\sin(x)</m> is <m>2x\sin(x) + x^2\cos(x)</m> — two terms, not one.
+          </p>
+        </feedback>
+      </exercise>
+    </subsection>
+
+    <subsection xml:id="bl-if-stuck">
+      <title>If you get stuck</title>
+
+      <p>
+        <dl>
+          <li>
+            <title>Red error in the preview</title>
+            <p>
+              Almost always a missing or mismatched tag. The error message usually has a line number. If you can't find it, paste the relevant template again and re-edit more carefully.
+            </p>
+          </li>
+          <li>
+            <title>Preview didn't update</title>
+            <p>
+              Click <term>Rebuild</term> or press <kbd>Ctrl</kbd>+<kbd>S</kbd>. The preview doesn't refresh on its own.
+            </p>
+          </li>
+          <li>
+            <title>Lost your work</title>
+            <p>
+              Click <term>Projects</term> in the top nav. It's saved.
+            </p>
+          </li>
+          <li>
+            <title>Something weirder</title>
+            <p>
+              Raise your hand. Or ask the person next to you first — chances are they've just hit the same thing.
+            </p>
+          </li>
+        </dl>
+      </p>
+    </subsection>
+
+  </section>
