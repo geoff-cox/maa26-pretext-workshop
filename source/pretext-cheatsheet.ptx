@@ -438,49 +438,110 @@
 
     <p>
       <dl width="narrow">
+
+        <li xml:id="block-tf">
+          <title>True / False</title>
+          <program language="xml">
+            <![CDATA[
+              <exercise xml:id="ex-tf">
+                <title> Exercise Title </title>
+                <statement correct="no">
+                  <p> A statement that might be true or false. </p>
+                </statement>
+                <feedback>
+                  <p> Why the statement is true or false. </p>
+                </feedback>
+              </exercise>
+            ]]>
+          </program>
+          <p>The true and false indicators are <c>correct="yes"</c> and <c>correct="no"</c>, respectively goes directly inside the <tag>statement</tag> tag. </p>
+        </li>
+
         <li xml:id="block-mc">
-          <title>Multiple choice</title>
+          <title>Multiple-Choice &amp; Multiple-Answer</title>
           <program language="xml">
             <![CDATA[
               <exercise xml:id="ex-mc">
-                <title>Exercise Title</title>
-                <statement>...</statement>
+                <title> Exercise Title </title>
+                <statement> Problem Statement </statement>
                 <choices randomize="yes">
                   <choice>
-                    <statement><p>Distractor.</p></statement>
-                    <feedback><p>Why this is wrong.</p></feedback>
+                    <statement> Distractor. </statement>
+                    <feedback> Why this is wrong. </feedback>
                   </choice>
                   <choice correct="yes">
-                    <statement><p>Correct answer.</p></statement>
-                    <feedback><p>Why this is right.</p></feedback>
+                    <statement> Correct answer. </statement>
+                    <feedback> Why this is right. </feedback>
                   </choice>
                   <choice>
-                    <statement><p>Distractor.</p></statement>
-                    <feedback><p>Why this is wrong.</p></feedback>
+                    <statement> Distractor. </statement>
+                    <feedback> Why this is wrong. </feedback>
                   </choice>
                 </choices>
               </exercise>
             ]]>
           </program>
-          <p>At least one <tag>choice</tag> must have <c>correct="yes"</c>. Optional <c>randomize="yes"</c> on <tag>choices</tag> shuffles the order.</p>
+          <p>When exactly one <tag>choice</tag> has <c>correct="yes"</c>, it is a multiple-choice question. When more than one <tag>choice</tag> has <c>correct="yes"</c>, it is a multiple-answer question. Optional <c>randomize="yes"</c> on <tag>choices</tag> shuffles the order.</p>
         </li>
 
-        <li xml:id="block-tf">
-          <title>True / false</title>
+        <li xml:id="block-cardsort">
+          <title>Cardsort-Matching</title>
           <program language="xml">
             <![CDATA[
-              <exercise xml:id="ex-tf">
-                <title>Exercise Title</title>
-                <statement correct="no">
-                  <p>A statement that might be true or false.</p>
-                </statement>
-                <feedback>
-                  <p>Why the statement is true or false.</p>
-                </feedback>
+              <exercise label="chkpt-matching">
+                <title> Exercise Title </title>
+                <statement> Problem Statement </statement>
+                <feedback> General Feedback </feedback>
+                <cardsort>
+                  <match>
+                    <premise> Item 1 </premise>
+                    <response> Target 1 </response>
+                  </match>
+                  <match>
+                    <premise> Item 2 </premise>
+                    <response> Target 2 </response>
+                  </match>
+                  <match>
+                    <premise> Item 3a </premise>
+                    <premise> Item 3b </premise>
+                    <premise> Item 3c </premise>
+                    <response> Target 3 </response>
+                  </match>
+                  <match>
+                    <premise> Distractor Item </premise>
+                  </match>
+                  <match>
+                    <response> Distractor Target </response>
+                  </match>
+                </cardsort>
               </exercise>
             ]]>
           </program>
-          <p>The <c>correct="yes"</c> or <c>correct="no"</c> attribute goes on the <tag>statement</tag> itself. No <tag>choices</tag> block.</p>
+          <p></p>
+        </li>
+
+        <li xml:id="block-clickable-area">
+          <title>Clickable Area</title>
+          <program language="xml">
+            <![CDATA[
+              <exercise label="chkpt-fill-in-the-blank">
+                <title> Exercise Title </title>
+                <statement> Problem Statement </statement>
+                <areas>
+                  <p>
+                    Non-Clickable Text *
+                    <area> Correct Clickable Item 1 </area> *
+                    <area> Correct Clickable Item 2 </area> *
+                    <area correct="no"> Incorrect Clickable </area> *
+                    <area> Correct Clickable Item 3 </area> *
+                    <area correct="no"> Incorrect Clickable </area> *
+                  </p>
+                </areas>
+                <feedback> General Feedback </feedback>
+              </exercise>
+            ]]>
+          </program>
+          <p></p>
         </li>
       </dl>
     </p>
