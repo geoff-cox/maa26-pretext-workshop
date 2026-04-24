@@ -6,7 +6,7 @@
 
   <introduction>
     <p>
-      <em>Facilitator reference.</em> The timeline above assumes the workshop runs as designed — everyone gets online, everyone's <c>pretext.plus</c> account works, and the editor behaves. This appendix is what to do if that isn't true.
+      <em>Facilitator reference.</em> The timeline above assumes the workshop runs as designed; everyone gets online, everyone's <c>pretext.plus</c> account works, and the editor behaves. This appendix is what to do if that isn't true.
     </p>
 
     <p>
@@ -18,7 +18,7 @@
     <title>When to switch to fallback mode</title>
 
     <p>
-      Switch — fully or partially — if any of these happen:
+      Switch; fully or partially; if any of these happen:
     </p>
 
     <p>
@@ -31,17 +31,17 @@
     </p>
 
     <p>
-      Don't switch the whole room if only two or three people are stuck — pair them with neighbors who are working and keep going. Switch the whole room if the pattern is clearly environmental.
+      Don't switch the whole room if only two or three people are stuck; pair them with neighbors who are working and keep going. Switch the whole room if the pattern is clearly environmental.
     </p>
   </subsection>
 
   <subsection xml:id="fb-levels">
-    <title>Graceful degradation — three levels</title>
+    <title>Graceful degradation; three levels</title>
 
     <p>
       <dl>
         <li>
-          <title>Level 1 — Pair up</title>
+          <title>Level 1; Pair up</title>
           <p>
             <em>Use when:</em> a minority of the room is offline or account-blocked.
           </p>
@@ -50,19 +50,19 @@
           </p>
         </li>
         <li>
-          <title>Level 2 — Instructor-driven demo with paper exercises</title>
+          <title>Level 2; Instructor-driven demo with paper exercises</title>
           <p>
             <em>Use when:</em> most of the room cannot edit, but the projector still works.
           </p>
           <p>
-            The facilitator drives a single <c>pretext.plus</c> project on the projector. Work through the five Guided Practice exercises live, one at a time, with the room calling out small edits. Distribute the printed participant handout so people can annotate each snippet by hand, writing in the changes they'd make. For <em>Build a Lesson</em>, hand out the two starter options on paper and ask participants to mark them up with their own topic — title changes, example swaps, reworded exercises. Collect a few at the end and project them as the Show and Tell.
+            The facilitator drives a single <c>pretext.plus</c> project on the projector. Work through the five Guided Practice exercises live, one at a time, with the room calling out small edits. Distribute the printed participant handout so people can annotate each snippet by hand, writing in the changes they'd make. For <em>Build a Lesson</em>, hand out the two starter options on paper and ask participants to mark them up with their own topic; title changes, example swaps, reworded exercises. Collect a few at the end and project them as the Show and Tell.
           </p>
           <p>
             This level still preserves the core: participants see source, see preview, see a cross-reference resolve, and produce something concrete.
           </p>
         </li>
         <li>
-          <title>Level 3 — Fully offline read-and-compare</title>
+          <title>Level 3; Fully offline read-and-compare</title>
           <p>
             <em>Use when:</em> nothing online is usable, not even for the facilitator.
           </p>
@@ -123,7 +123,7 @@
       <ul>
         <li>A screenshot of the participant's preview panel, sent to the facilitator or a neighbor.</li>
         <li>A printed marked-up starter lesson handed in at the end.</li>
-        <li>A read-aloud of one thing they'd add if they had another hour — a lightweight oral <q>Show and Tell.</q></li>
+        <li>A read-aloud of one thing they'd add if they had another hour; a lightweight oral <q>Show and Tell.</q></li>
       </ul>
     </p>
 
@@ -141,9 +141,9 @@
 
     <p>
       <ul>
-        <li><em>Interactive Feature Gallery (4:10-4:20)</em> — compress to three favorites, shown on projector from the prebuilt HTML.</li>
-        <li><em>Finished-early prompts in Guided Practice</em> — drop entirely.</li>
-        <li><em>Show and Tell (5:40-5:50)</em> — shorten to one lesson or one collected paper starter, and give the extra minutes back to Build-a-Lesson.</li>
+        <li><em>Interactive Feature Gallery (4:10-4:20)</em>; compress to three favorites, shown on projector from the prebuilt HTML.</li>
+        <li><em>Finished-early prompts in Guided Practice</em>; drop entirely.</li>
+        <li><em>Show and Tell (5:40-5:50)</em>; shorten to one lesson or one collected paper starter, and give the extra minutes back to Build-a-Lesson.</li>
       </ul>
     </p>
 

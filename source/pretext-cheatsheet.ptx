@@ -19,11 +19,11 @@
           <title>Divisional levels</title>
           <program language="xml">
             <![CDATA[
-              <part>                  <!-- 0 -->
-                <chapter>             <!-- 1 -->
-                  <section>           <!-- 2 -->
-                    <subsection>      <!-- 3 -->
-                      <subsubsection> <!-- 4 -->
+              <part>                  <!-- Level 0 -->
+                <chapter>             <!-- Level 1 -->
+                  <section>           <!-- Level 2 -->
+                    <subsection>      <!-- Level 3 -->
+                      <subsubsection> <!-- Level 4 -->
                       </subsubsection>
                     </subsection>
                   </section>
@@ -67,7 +67,7 @@
           <program language="xml">
             <![CDATA[
               <p>
-                Most prose lives inside a paragraph.
+                Text in a paragraph.
               </p>
             ]]>
           </program>
@@ -118,7 +118,7 @@
           <program language="xml">
             <![CDATA[ <c>inline code</c> ]]>
           </program>
-          <p>Renders as: <c>inline code</c>. Use for filenames, commands, short code, and tag names in prose.</p>
+          <p>Renders as: <c>inline code</c>. Use for filenames, code, etc.</p>
         </li>
 
         <li xml:id="block-alert">
@@ -145,8 +145,8 @@
           <program language="xml">
             <![CDATA[
               <ul>
-                <li>item</li>
-                <li>item</li>
+                <li><p>item</p></li>
+                <li><p>item</p></li>
               </ul>
             ]]>
           </program>
@@ -183,7 +183,7 @@
               </dl>
             ]]>
           </program>
-          <p>Optional attribute: <c>width="narrow"</c> keeps the term column compact.</p>
+          <p>Optional attribute: <c>width="narrow|medium|wide"</c> to adjust title vs. description width.</p>
         </li>
       </dl>
     </p>
@@ -220,7 +220,7 @@
           <program language="xml">
             <![CDATA[ <men>e^{i\pi} + 1 = 0</men> ]]>
           </program>
-          <p>Give the equation an <c>xml:id</c> to reference it later with <tag>xref</tag>.</p>
+          <p>Give the equation an <c>xml:id</c> to reference it with <tag>xref</tag>.</p>
         </li>
 
         <li xml:id="block-md-aligned">
@@ -235,7 +235,7 @@
               </md>
             ]]>
           </program>
-          <p>The <c>\amp</c> character is the alignment anchor — lines align at whatever sits just after it.</p>
+          <p>The <c>\amp</c> character is the alignment anchor (<c>&amp;</c> in <latex/>).</p>
         </li>
       </dl>
     </p>
@@ -254,9 +254,7 @@
           <program language="xml">
             <![CDATA[
               <definition xml:id="def-x">
-                <statement>
-                  <p>...</p>
-                </statement>
+                <statement>...</statement>
               </definition>
             ]]>
           </program>
@@ -268,8 +266,8 @@
           <program language="xml">
             <![CDATA[
               <theorem>
-                <statement><p>...</p></statement>
-                <proof><p>...</p></proof>
+                <statement>...</statement>
+                <proof>...</proof>
               </theorem>
             ]]>
           </program>
@@ -280,13 +278,9 @@
           <program language="xml">
             <![CDATA[
               <example xml:id="ex-x">
-                <title>Title</title>
-                <statement>
-                  <p>...</p>
-                </statement>
-                <solution>
-                  <p>...</p>
-                </solution>
+                <title>...</title>
+                <statement>...</statement>
+                <solution>...</solution>
               </example>
             ]]>
           </program>
@@ -332,9 +326,7 @@
           <program language="xml">
             <![CDATA[
               <exercise>
-                <statement>
-                  <p>...</p>
-                </statement>
+                <statement>...</statement>
               </exercise>
             ]]>
           </program>
@@ -345,16 +337,14 @@
           <program language="xml">
             <![CDATA[
               <exercise xml:id="exr-x">
-                <introduction>
-                  <p>...</p>
-                </introduction>
+                <introduction>...</introduction>
                 <task>
-                  <statement><p>...</p></statement>
-                  <answer><p>...</p></answer>
+                  <statement>...</statement>
+                  <answer>...</answer>
                 </task>
                 <task>
-                  <statement><p>...</p></statement>
-                  <answer><p>...</p></answer>
+                  <statement>...</statement>
+                  <answer>...</answer>
                 </task>
               </exercise>
             ]]>
@@ -367,18 +357,10 @@
           <program language="xml">
             <![CDATA[
               <exercise xml:id="exr-y">
-                <statement>
-                  <p>...</p>
-                </statement>
-                <hint>
-                  <p>...</p>
-                </hint>
-                <answer>
-                  <p>...</p>
-                </answer>
-                <solution>
-                  <p>...</p>
-                </solution>
+                <statement>...</statement>
+                <hint>...</hint>
+                <answer>...</answer>
+                <solution>...</solution>
               </exercise>
             ]]>
           </program>
@@ -401,7 +383,7 @@
           <program language="xml">
             <![CDATA[
               <worksheet xml:id="ws-x">
-                <title>Worksheet Title</title>
+                <title>...</title>
                 <objectives>...</objectives>
 
                 <page>...</page>
@@ -423,14 +405,14 @@
             <![CDATA[
               <objectives>
                 <ul>
-                  <li><p>...</p></li>
-                  <li><p>...</p></li>
-                  <li><p>...</p></li>
+                  <li>...</li>
+                  <li>...</li>
+                  <li>...</li>
                 </ul>
               </objectives>
             ]]>
           </program>
-          <p>Place at the top of a worksheet or chapter. The <tag>p</tag> tags inside <tag>li</tag> are optional when the item is a single paragraph.</p>
+          <p>Place at the top of a worksheet or chapter.</p>
         </li>
 
         <li xml:id="block-workspace">
@@ -438,9 +420,7 @@
           <program language="xml">
             <![CDATA[
               <exercise workspace="2.5in">
-                <statement>
-                  <p>...</p>
-                </statement>
+                <statement>...</statement>
               </exercise>
             ]]>
           </program>
@@ -464,9 +444,7 @@
             <![CDATA[
               <exercise xml:id="ex-mc">
                 <title>Exercise Title</title>
-                <statement>
-                  <p>Prompt.</p>
-                </statement>
+                <statement>...</statement>
                 <choices randomize="yes">
                   <choice>
                     <statement><p>Distractor.</p></statement>
@@ -564,7 +542,7 @@
               </figure>
             ]]>
           </program>
-          <p>Every image needs a <tag>shortdescription</tag> for screen readers. Keep it brief and literal — what the image shows, not what it means.</p>
+          <p>Every image needs a <tag>shortdescription</tag> for screen readers. Keep it brief and literal. Describe what the image shows, not what it means.</p>
         </li>
       </dl>
     </p>
@@ -636,20 +614,6 @@
           <p>Border options: <c>none</c>, <c>minor</c>, <c>medium</c>, <c>major</c>. Alignment options: <c>left</c>, <c>center</c>, <c>right</c>.</p>
         </li>
       </dl>
-    </p>
-  </assemblage>
-
-  <!-- =============================================================== -->
-  <!-- Gotchas                                                         -->
-  <!-- =============================================================== -->
-  <assemblage xml:id="cheatsheet-gotchas">
-    <title>Things That Trip Everyone Up</title>
-    <p>
-      <ul>
-        <li><p>Every open tag needs a close tag. Mismatched tags are the <em>most common</em> build error.</p></li>
-        <li><p>Use <c>xml:id</c> (not <c>id</c>) for anything an <tag>xref</tag> will point to.</p></li>
-        <li><p>Save <em>and</em> rebuild after edits. The preview does not refresh on its own.</p></li>
-      </ul>
     </p>
   </assemblage>
 
