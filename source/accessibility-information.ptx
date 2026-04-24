@@ -317,7 +317,7 @@
         <li>
           <title>Does <pretext/> really produce Braille?</title>
           <p>
-            Yes, from the same source file. Formulas are rendered in Nemeth Braille,
+            Yes, from the same source file. Formulas are rendered in Nemeth Code,
             and tactile diagrams can be generated automatically from structured
             figures. The approach has been validated on full-length textbooks in
             abstract algebra and calculus, with quality checked by a certified
