@@ -56,7 +56,7 @@
 
     <introduction>
       <p>
-        Before you write any <pretext/> yourself, it helps to see where this is going. The key idea is that you describe <em>what your content is</em>: a definition, an example, an exercise, or an interactive. Then <pretext/> decides how it should look on the page, in a PDF, on a phone, or through a screen reader.
+        Before you write any <pretext/> yourself, it helps to see where this is going. The key idea is that you describe <em>what your content is</em>. It might be a definition, an example, an exercise, or an interactive. Then <pretext/> decides how it should look on the page, in a PDF, on a phone, or through a screen reader.
       </p>
 
       <p>
@@ -1448,7 +1448,7 @@
     <paragraphs>
       <title>Questions</title>
       <p>
-        Whatever's on your mind, whether it's about today, about where to go next, or about whether <pretext/> fits a specific thing you teach. The floor is yours.
+        Ask whatever's on your mind, whether it's about today, about where to go next, or about whether <pretext/> fits a specific thing you teach. The floor is yours.
       </p>
     </paragraphs>
   </section>
