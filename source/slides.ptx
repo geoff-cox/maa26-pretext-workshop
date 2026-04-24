@@ -31,32 +31,32 @@
 
 		</slide>
 
-		<slide label="the-promise">
-			<title>What You Will Leave With</title>
+        <slide label="the-promise">
+            <title>What You Will Leave With</title>
 
-			<p>
-				By the end of this session, you will have:
-			</p>
+            <p>
+                By the end of this session, you will have:
+            </p>
 
-			<dl pause="no">
-				<li>
-					<title>A working authoring setup</title>
-					<p>Running in your browser, ready to use again tomorrow.</p>
-				</li>
-				<li>
-					<title>A small lesson you wrote yourself</title>
-					<p>Built from real <pretext/> source, using structures you will recognize.</p>
-				</li>
-				<li>
-					<title>A public web link</title>
-					<p>A real URL you can share with colleagues or students.</p>
-				</li>
-			</dl>
+            <dl pause="no">
+                <li>
+                    <title>A working authoring setup</title>
+                    <p>Running in your browser, ready to use again tomorrow.</p>
+                </li>
+                <li>
+                    <title>A small lesson you wrote yourself</title>
+                    <p>Built from real <pretext/> source, on a topic you actually teach.</p>
+                </li>
+                <li>
+                    <title>A shareable link</title>
+                    <p>A public URL you can send to a colleague or a student.</p>
+                </li>
+            </dl>
 
-			<p>
-				That is the whole goal. Everything else is a bonus.
-			</p>
-		</slide>
+            <p>
+                That's the whole goal. Everything else is a bonus.
+            </p>
+        </slide>
 
 		<slide label="what-is-pretext">
 			<title>What Is <pretext/>?</title>
@@ -77,25 +77,25 @@
 			</p>
 		</slide>
 
-		<slide label="write-once">
-			<title>Write Once, Publish Everywhere</title>
+        <slide label="write-once">
+            <title>Write Once, Publish Everywhere</title>
 
-			<p pause="no">
-				From a single <pretext/> source, you can generate:
-			</p>
+            <p pause="no">
+                From a single <pretext/> source, you can generate:
+            </p>
 
-			<ul pause="no">
-				<li>An interactive website</li>
-				<li>A print-ready PDF</li>
-				<li>An ePub for e-readers</li>
-				<li>Braille and large-print editions</li>
-			</ul>
+            <ul pause="no">
+                <li>An interactive website</li>
+                <li>A print-ready PDF</li>
+                <li>An ePub for e-readers</li>
+                <li>Accessible alternative formats when students need them</li>
+            </ul>
 
-			<p>
-				You write your content once. When tomorrow's format comes along,
-				your source is ready for it.
-			</p>
-		</slide>
+            <p>
+                You write your content once. When tomorrow's format comes
+                along, your source is ready for it.
+            </p>
+        </slide>
 
 		<slide label="why-care">
 			<title>Why Instructors Care</title>
@@ -156,44 +156,44 @@
 
 		</slide>
 
-		<slide label="today-plan">
-			<title>Today's Plan</title>
+        <slide label="today-plan">
+            <title>Today's Plan</title>
 
-			<dl pause="no">
-				<li>
-					<title>First: everyone gets an account</title>
-					<p>A free PreTeXt.Plus account in a browser tab. About ten minutes.</p>
-				</li>
-				<li>
-					<title>Next: five short exercises</title>
-					<p>You paste a snippet, click Rebuild, and see PreTeXt do its thing.</p>
-				</li>
-				<li>
-					<title>Then: the main event</title>
-					<p>You build a short lesson on a topic you actually teach.</p>
-				</li>
-				<li>
-					<title>Finally: publish and share</title>
-					<p>Your lesson goes live on a public URL, and we look at each other's work.</p>
-				</li>
-			</dl>
-		</slide>
+            <dl pause="no">
+                <li>
+                    <title>First: everyone gets an account</title>
+                    <p>A free PreTeXt.Plus account in a browser tab.</p>
+                </li>
+                <li>
+                    <title>Warm-up: build a syllabus together</title>
+                    <p>Four short parts. Paste, rebuild, transform.</p>
+                </li>
+                <li>
+                    <title>Main event: build a worksheet lesson</title>
+                    <p>A product-rule worksheet you can adapt for your own class.</p>
+                </li>
+                <li>
+                    <title>Close: share, see each other's work, what's next</title>
+                    <p>Your lesson goes live on a public URL.</p>
+                </li>
+            </dl>
+        </slide>
 
-		<slide label="how-we-work">
-			<title>How We Will Work Together</title>
+        <slide label="how-we-work">
+            <title>How We Will Work Together</title>
 
-			<ul pause="no">
-				<li>Follow along on your own laptop because this is hands-on, not a lecture</li>
-				<li>Use the printed quick reference when you need a reminder</li>
-				<li>Ask your neighbor first; ask me second</li>
-				<li>Ask questions out loud when it makes sense; someone else probably has the same one</li>
-				<li>If something breaks, that is normal</li>
-			</ul>
+            <ul pause="no">
+                <li>Follow along on your own laptop; this is hands-on, not a lecture</li>
+                <li>Keep the workshop hub open in a second tab for the cheatsheet and timeline</li>
+                <li>Ask your neighbor first; ask me second</li>
+                <li>Ask questions out loud when it makes sense; someone else probably has the same one</li>
+                <li>If something breaks, that's normal</li>
+            </ul>
 
-			<p>
-				The goal is <em>finished</em>, not <em>perfect</em>.
-			</p>
-		</slide>
+            <p>
+                The goal is <em>finished</em>, not <em>perfect</em>.
+            </p>
+        </slide>
 
 		<slide label="ready">
 			<title>Ready?</title>

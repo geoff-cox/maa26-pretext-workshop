@@ -6,7 +6,7 @@
 
   <introduction>
     <p>
-      <em>Facilitator reference.</em> The timeline above assumes the workshop runs as designed; everyone gets online, everyone's <c>pretext.plus</c> account works, and the editor behaves. This appendix is what to do if that isn't true.
+      <em>Facilitator reference.</em> The timeline above assumes the workshop runs as designed: everyone gets online, everyone's <c>pretext.plus</c> account works, and the editor behaves. This appendix is what to do if that isn't true.
     </p>
 
     <p>
@@ -18,7 +18,7 @@
     <title>When to switch to fallback mode</title>
 
     <p>
-      Switch; fully or partially; if any of these happen:
+      Switch, fully or partially, if any of these happen:
     </p>
 
     <p>
@@ -36,38 +36,41 @@
   </subsection>
 
   <subsection xml:id="fb-levels">
-    <title>Graceful degradation; three levels</title>
+    <title>Graceful degradation: three levels</title>
 
     <p>
       <dl>
         <li>
-          <title>Level 1; Pair up</title>
+          <title>Level 1: Pair up</title>
           <p>
             <em>Use when:</em> a minority of the room is offline or account-blocked.
           </p>
           <p>
-            Ask each stuck participant to pair with a neighbor who has a working editor. The partner drives; the stuck participant reads aloud the snippet to paste and decides what to customize. Everyone still sees the Edit → Rebuild rhythm and leaves with a finished lesson associated with at least one of them.
+            Ask each stuck participant to pair with a neighbor who has a working editor. The partner drives; the stuck participant reads aloud the snippet to paste and decides what to customize. Both phases still work this way: the syllabus-building exercises are naturally collaborative, and the worksheet lesson gives the stuck participant something concrete to annotate on paper while watching.
           </p>
         </li>
         <li>
-          <title>Level 2; Instructor-driven demo with paper exercises</title>
+          <title>Level 2: Instructor-driven demo with paper exercises</title>
           <p>
             <em>Use when:</em> most of the room cannot edit, but the projector still works.
           </p>
           <p>
-            The facilitator drives a single <c>pretext.plus</c> project on the projector. Work through the five Guided Practice exercises live, one at a time, with the room calling out small edits. Distribute the printed participant handout so people can annotate each snippet by hand, writing in the changes they'd make. For <em>Build a Lesson</em>, hand out the two starter options on paper and ask participants to mark them up with their own topic; title changes, example swaps, reworded exercises. Collect a few at the end and project them as the Show and Tell.
+            The facilitator drives a single <c>pretext.plus</c> project on the projector. Work through the syllabus-building exercises (<xref ref="sec-guided-practice" text="title"/>) live, one part at a time, with the room calling out the tags to use and the content to fill in. Distribute the printed participant handout so people can annotate each snippet by hand.
           </p>
           <p>
-            This level still preserves the core: participants see source, see preview, see a cross-reference resolve, and produce something concrete.
+            For the <em>Worksheet Lesson</em> phase (<xref ref="sec-build-lesson" text="title"/>), distribute the printed product rule worksheet and ask participants to mark it up with the <pretext/> tags they'd use, referencing the cheatsheet. Work through the build on the projector while participants follow along on paper.
+          </p>
+          <p>
+            This level still preserves the core: participants see source, see preview, observe the Edit → Rebuild rhythm, and leave with a realistic mental model of the workflow.
           </p>
         </li>
         <li>
-          <title>Level 3; Fully offline read-and-compare</title>
+          <title>Level 3: Fully offline read-and-compare</title>
           <p>
             <em>Use when:</em> nothing online is usable, not even for the facilitator.
           </p>
           <p>
-            Distribute the prebuilt offline packet (see the next subsection). Walk through the <q>source on the left, output on the right</q> comparison sheets, then have participants edit a printed starter lesson in pencil and share with a neighbor. The session still ends on time and participants leave with a realistic mental model of the workflow.
+            Distribute the prebuilt offline packet (see the next subsection). Walk through the <q>source on the left, output on the right</q> comparison sheets for the syllabus exercises, then hand out the printed product rule worksheet and ask participants to annotate the source in pencil and share with a neighbor. The session still ends on time and participants leave with a realistic mental model of the workflow.
           </p>
         </li>
       </dl>
@@ -90,12 +93,12 @@
         </li>
         <li>
           <p>
-            <em>Side-by-side <q>source vs. output</q> sheets</em> for each of the five Guided Practice exercises. Left column: the <pretext/> snippet. Right column: a screenshot of the rendered result.
+            <em>Side-by-side <q>source vs. output</q> sheets</em> for each of the four syllabus-building exercises in the Guided Practice phase. Left column: the before-and-after <pretext/> snippets. Right column: a screenshot of the rendered result.
           </p>
         </li>
         <li>
           <p>
-            <em>Printed starter lessons.</em> Both Build-a-Lesson starters, printed with generous margins so participants can annotate in pencil.
+            <em>Printed product rule worksheet.</em> The rendered HTML output and the <pretext/> source side by side, printed with generous margins so participants can annotate in pencil.
           </p>
         </li>
         <li>
@@ -116,14 +119,14 @@
     <title>A non-deployment completion path</title>
 
     <p>
-      The default <q>done</q> signal is a sharable link. If sharing is broken, substitute any of these:
+      The default <q>done</q> signal is a sharable link generated from the worksheet lesson. If sharing is broken, substitute any of these:
     </p>
 
     <p>
       <ul>
         <li>A screenshot of the participant's preview panel, sent to the facilitator or a neighbor.</li>
-        <li>A printed marked-up starter lesson handed in at the end.</li>
-        <li>A read-aloud of one thing they'd add if they had another hour; a lightweight oral <q>Show and Tell.</q></li>
+        <li>A printed and annotated copy of the product rule worksheet source, handed in at the end.</li>
+        <li>A read-aloud of one tag or structure they'd add if they had another hour: a lightweight oral <q>share.</q></li>
       </ul>
     </p>
 
@@ -141,14 +144,16 @@
 
     <p>
       <ul>
-        <li><em>Interactive Feature Gallery (4:10-4:20)</em>; compress to three favorites, shown on projector from the prebuilt HTML.</li>
-        <li><em>Finished-early prompts in Guided Practice</em>; drop entirely.</li>
-        <li><em>Show and Tell (5:40-5:50)</em>; shorten to one lesson or one collected paper starter, and give the extra minutes back to Build-a-Lesson.</li>
+        <li><em>Interactive Feature Gallery (4:10-4:20)</em>: compress to three favorites shown from the prebuilt HTML. Skip the textbook tour links if they won't load.</li>
+        <li><em>PreTeXt.Plus orientation (4:20-4:35)</em>: narrate the account and project setup steps from screenshots rather than live demo. Spend five minutes max.</li>
+        <li><em>Syllabus exercises (4:35-5:00)</em>: cover Parts 1 and 2 (contact info and course description) on the projector. Parts 3 and 4 can be skimmed or left as take-home if time is tight.</li>
+        <li><em>Templates section (5:35-5:45)</em>: skip or treat as take-home reference. The cheatsheet already covers the same ground.</li>
+        <li><em>Peer review (5:45-5:50)</em>: shorten to one volunteer sharing their annotated paper, or skip entirely and give the minutes back to the worksheet phase.</li>
       </ul>
     </p>
 
     <p>
-      Protect the Build-a-Lesson phase. That's where the core learning happens, and it's the last thing to cut.
+      Protect the Worksheet Lesson phase (<xref ref="sec-build-lesson" text="title"/>). That's where the core learning happens, and it's the last thing to cut.
     </p>
   </subsection>
 </appendix>
