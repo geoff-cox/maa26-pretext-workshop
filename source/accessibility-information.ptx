@@ -10,8 +10,8 @@
       for you, and what you as an author need to do to take advantage of it.
     </p>
     <p>
-      <em>The short version.</em> <pretext/> takes care of the infrastructure
-      — semantic structure, screen-reader-ready math, multiple output
+      <em>The short version.</em> <pretext/> takes care of the infrastructure:
+      semantic structure, screen-reader-ready math, and multiple output
       formats. Your remaining job is focused and small: mainly, write good
       alt text for your images and design figures that don't depend on
       color. The structural markup you're already learning in this workshop
@@ -82,14 +82,14 @@
       <p>
         Every equation you write inside an <c>&lt;m&gt;</c> or
         <c>&lt;me&gt;</c> tag is rendered with MathJax, which simultaneously
-        produces MathML — a structured, machine-readable form of the math.
+        produces MathML, a structured, machine-readable form of the math.
         Screen readers that support MathML (JAWS with MathPlayer, NVDA with
         MathCAT, VoiceOver on recent macOS and iOS) can navigate equations
         structurally: term by term, into numerators and exponents,
         at whatever level of detail the reader needs.
       </p>
       <p>
-        Any reader — including sighted readers with low vision — can also
+        Any reader, including sighted readers with low vision, can also
         right-click any equation to zoom, copy the source, or change the
         rendering mode.
       </p>
@@ -108,7 +108,7 @@
       <title>Multiple Output Formats, One Source</title>
       <p>
         A student who needs a specific format is not getting a second-class
-        version of your text — every format is generated from the same
+        version of your text; every format is generated from the same
         semantic source.
       </p>
 
@@ -126,7 +126,7 @@
           <cell>Students who prefer or require print</cell>
         </row>
         <row>
-          <cell>ePub</cell>
+          <cell>EPUB</cell>
           <cell>Students using e-readers or read-aloud on tablets</cell>
         </row>
         <row>
@@ -166,7 +166,7 @@
       <p>
         Every informative image needs a <c>&lt;shortdescription&gt;</c>.
         This becomes the <c>alt</c> attribute in HTML and the described
-        content in ePub and Braille.
+        content in EPUB and Braille.
       </p>
 
       <program language="xml">
@@ -179,8 +179,8 @@
       </program>
 
       <p>
-        For images that carry substantial information — complex diagrams,
-        data tables presented as images, geometric constructions — add a
+        For images that carry substantial information (complex diagrams,
+        data tables presented as images, and geometric constructions), add a
         longer <c>&lt;description&gt;</c> element as well. It appears in the
         HTML as an expandable region that sighted readers can ignore and
         screen-reader users can access.
@@ -228,8 +228,8 @@
       </p>
 
       <p>
-        <pretext/>'s native exercise types — multiple choice, true/false,
-        fill-in-the-blank, matching — <em>are</em> keyboard-accessible and
+        <pretext/>'s native exercise types (multiple choice, true/false,
+        fill-in-the-blank, and matching) <em>are</em> keyboard-accessible and
         screen-reader friendly.
       </p>
     </subsection>
@@ -315,9 +315,9 @@
         </li>
 
         <li>
-          <title>Does <pretext /> really produce braille?</title>
+          <title>Does <pretext/> really produce Braille?</title>
           <p>
-            Yes, from the same source file. Formulas are rendered in Nemeth braille,
+            Yes, from the same source file. Formulas are rendered in Nemeth Code,
             and tactile diagrams can be generated automatically from structured
             figures. The approach has been validated on full-length textbooks in
             abstract algebra and calculus, with quality checked by a certified
@@ -350,7 +350,7 @@
             Ultimately your institution and your students. <pretext/> gives you
             a document that is accessible by default and easy to improve where
             it matters most. For specific student accommodations, work with your
-            campus disability services. The HTML, ePub, and Braille outputs
+            campus disability services. The HTML, EPUB, and Braille outputs
             will cover most common needs out of the box.
           </p>
         </li>
@@ -364,7 +364,7 @@
         </li>
 
         <li>
-          <title>How do I write alt text in <pretext />?</title>
+          <title>How do I write alt text in <pretext/>?</title>
           <p>
             Every non-decorative image needs a <c>&lt;shortdescription&gt;</c>: plain
             text, no markup, no quotation marks, under about 125 characters. Complex
@@ -374,7 +374,7 @@
         </li>
 
         <li>
-          <title>Why can't <pretext /> generate alt text automatically?</title>
+          <title>Why can't <pretext/> generate alt text automatically?</title>
           <p>
             Because image descriptions depend on author intent and context. The same
             graph might be described one way in a section about asymptotes and another
@@ -393,9 +393,9 @@
         </li>
 
         <li>
-          <title>Can I produce braille with PreTeXt.Plus?</title>
+          <title>Can I produce Braille with PreTeXt.Plus?</title>
           <p>
-            No. Producing braille involves additional tools beyond the setup 
+            No. Producing Braille involves additional tools beyond the setup 
             we're using. The capability exists and the HTML you build today is 
             already screen-reader accessible. Braille is a next step for 
             instructors who need it.
@@ -403,11 +403,11 @@
         </li>
 
         <li>
-          <title>Does <pretext /> align with the recent accessibility requirements?</title>
+          <title>Does <pretext/> align with the recent accessibility requirements?</title>
           <p>
             Yes. Many US institutions are now required to ensure accessibility of all
             online materials, including content posted in an LMS like Canvas or
-            Blackboard. <pretext /> is well-positioned for this: you can deploy the
+            Blackboard. <pretext/> is well-positioned for this: you can deploy the
             HTML publicly, or export a single portable HTML file that uploads
             directly to an LMS.
           </p>
@@ -424,7 +424,7 @@
         <li>
           <title>Are interactive elements accessible?</title>
           <p>
-            Native <pretext /> exercise types (multiple choice, true/false, fill-in) are generally accessible. Embedded third-party interactives
+            Native <pretext/> exercise types (multiple choice, true/false, fill-in) are generally accessible. Embedded third-party interactives
             (GeoGebra, Desmos, DoenetML) inherit the accessibility of those 
             platforms, which varies. For critical content, consider including an 
             image or text description as a fallback.
