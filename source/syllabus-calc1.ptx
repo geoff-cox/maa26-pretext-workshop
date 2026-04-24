@@ -9,13 +9,13 @@
 
     <p>
       <ul>
-        <li><p>Course: MATH 1510, Fall 2026</p></li>
-        <li><p>Instructor: Dr. Morgan Ellis</p></li>
-        <li><p>Email: <c>m.ellis@stateuniversity.edu</c></p></li>
-        <li><p>Office: Halsted Hall 214</p></li>
-        <li><p>Office Hours: Monday and Wednesday 2:00 to 3:30 pm, or by appointment</p></li>
-        <li><p>Lecture: MWF 10:00 to 10:50 am, Burnham Hall 105</p></li>
-        <li><p>Course Website: <url href="https://canvas.stateuniversity.edu/courses/math1510-f26">Canvas</url></p></li>
+        <li>Course: ==CourseName==, ==Term==</li>
+        <li>Instructor: ==YourName==</li>
+        <li>Email: <c>==yourname@example.edu==</c></li>
+        <li>Office: ==OfficeLocation==</li>
+        <li>Office Hours: ==OfficeHours==, or by appointment</li>
+        <li>Lecture: ==MeetingTime==, ==Room==</li>
+        <li>Course Website: <url href="==URL==">Canvas</url></li>
       </ul>
     </p>
 
@@ -29,18 +29,27 @@
   <!-- ============================================================ -->
   <subsection xml:id="sec-description">
     <title>Course Description</title>
-
     <p>
-      Calculus I is a first course in differential calculus. We develop the concept of the limit from scratch, use it to give a precise definition of the derivative, and spend most of the semester learning to compute and apply derivatives. The course closes with an introduction to integration and the Fundamental Theorem of Calculus, which connects the two main ideas of the subject.
+      Calculus I is a first course in differential calculus.
+      We develop the concept of the limit from scratch, use it 
+      to give a precise definition of the derivative, and spend 
+      most of the semester learning to compute and apply 
+      derivatives. The course closes with an introduction to 
+      integration and the Fundamental Theorem of Calculus, which 
+      connects the two main ideas of the subject.
     </p>
 
     <p>
-      By the end of the course, a successful student will be able to differentiate polynomials like <m>p(x) = x^3 - 2x + 1</m>, exponentials like <m>e^x</m>, logarithms like <m>\ln(x)</m>, and trigonometric functions like <m>\sin(x)</m> and <m>\cos(x)</m>. They will also be able to evaluate limits, apply the derivative to problems involving rates of change and optimization, and interpret the definite integral as a signed area.
+      By the end of the course, a successful student will be 
+      able to differentiate polynomials like 
+      p(x) = x^3 - 2x + 1, exponentials like e^x, logarithms 
+      like ln(x), and trigonometric functions like sin(x) and 
+      cos(x). They will also evaluate limits, apply the 
+      derivative to problems involving rates of change and 
+      optimization, and interpret the definite integral as a 
+      signed area.
     </p>
 
-    <p>
-      <em>Prerequisites:</em> a grade of C or better in Precalculus, or a passing score on the mathematics placement exam. Students unsure whether they are adequately prepared should speak with me during the first week.
-    </p>
   </subsection>
 
   <!-- ============================================================ -->
@@ -76,26 +85,50 @@
       <dl>
         <li>
           <title>Homework</title>
-          <p>Due Sundays at 11:59 pm on Canvas. Collaborate freely, but write solutions in your own words. Late work accepted up to 48 hours late at a 20 percent penalty; lowest two scores dropped.</p>
+          <p>
+            Due Sundays at 11:59 pm on Canvas. Collaborate 
+            freely, but write solutions in your own words. 
+            Late work accepted up to 48 hours late at a 20 
+            percent penalty; lowest two scores dropped.
+          </p>
         </li>
         <li>
           <title>Quizzes</title>
-          <p>Short biweekly quizzes covering the recent material.</p>
+          <p>
+            Short biweekly quizzes covering the recent 
+            material.
+          </p>
         </li>
         <li>
           <title>Midterm 1</title>
-          <p>Held in class during Week 5. Closed book, closed notes, one handwritten reference sheet permitted.</p>
+          <p>
+            Closed book, closed notes, one handwritten 
+            reference sheet permitted.
+          </p>
         </li>
         <li>
           <title>Midterm 2</title>
-          <p>Held in class during Week 10. Same format as Midterm 1.</p>
+          <p>
+            Same format as Midterm 1.
+          </p>
         </li>
         <li>
           <title>Final Exam</title>
-          <p>Cumulative. Time and room set by the registrar.</p>
+          <p>
+            Cumulative. Time and room set by the registrar.
+          </p>
+        </li>
+        <li>
+          <title>Grade Cutoffs</title>
+          <p>
+            At most A at 90 percent, B at 80, C at 70, D at 60.
+            Cutoffs may be lowered at the end of the term but 
+            will never be raised.
+          </p>
         </li>
       </dl>
     </p>
+
   </subsection>
 
   <!-- ============================================================ -->

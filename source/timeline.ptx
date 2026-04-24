@@ -79,7 +79,7 @@
         <p>
           Anything with an embed code will work, not just math tools. Here is a Google Map embedded the same way.
         </p>
-        <interactive iframe="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3692.286430663061!2d-77.02612656602201!3d38.90499299644047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b7ed3715b137%3A0x32771de147fa5350!2sWalter%20E.%20Washington%20Convention%20Center!5e0!3m2!1sen!2sus!4v1766949594608!5m2!1sen!2sus" width="95%" aspect="2:1"/>
+        <interactive iframe="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3080.7815262305144!2d-77.42059292456655!3d39.451669713810965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c9da7cef609a05%3A0x331d7b831459b0df!2sFrederick%20Community%20College!5e0!3m2!1sen!2sus!4v1777048796596!5m2!1sen!2sus" width="95%" aspect="2:1"/>
       </subsubsection>
 
       <subsubsection xml:id="talk-demo-true-false">
@@ -225,40 +225,40 @@
         </p>
 
         <exercise label="ex-demo-jscmp-primes">
-        <title>Fill-In, Prime less then 20</title>
-        <statement>
-          <p>
-            What is an example of a prime number less than 20?
-            <fillin width="5" answer="13"/>
-          </p>
-        </statement>
-        <evaluation>
-          <evaluate>
-            <test correct="yes">
-              <jscmp><!-- test if number is in a list -->
-                [2, 3, 5, 7, 11, 13, 17, 19].includes(Number(ans))
-              </jscmp>
-              <feedback>
-                <p>
-                  Any number from the list <m>\{2, 3, 5, 7, 11, 13, 17, 19\}</m> is a prime number less than 20.
-                </p>
-              </feedback>
-            </test>
-            <test>
-              <jscmp><!-- find why it fails to be in list -->
-                function(){
-                  const val=Number(ans);
-                  if (val &lt;= 0) { return "You need to give a positive integer." }
-                  if (val &gt;= 20) { return "The integer must be less than 20." }
-                  for (let i=2; i&lt;=3; i++) {
-                  if (val % i == 0) { return `Your answer is composite since it is divisible by ${i}.` }
-                }
-                return false;
-                }()
-              </jscmp>
-            </test>
-          </evaluate>
-        </evaluation>
+          <title>Fill-In, Prime less then 20</title>
+          <statement>
+            <p>
+              What is an example of a prime number less than 20?
+              <fillin width="5" answer="13"/>
+            </p>
+          </statement>
+          <evaluation>
+            <evaluate>
+              <test correct="yes">
+                <jscmp><!-- test if number is in a list -->
+                  [2, 3, 5, 7, 11, 13, 17, 19].includes(Number(ans))
+                </jscmp>
+                <feedback>
+                  <p>
+                    Any number from the list <m>\{2, 3, 5, 7, 11, 13, 17, 19\}</m> is a prime number less than 20.
+                  </p>
+                </feedback>
+              </test>
+              <test>
+                <jscmp><!-- find why it fails to be in list -->
+                  function(){
+                    const val=Number(ans);
+                    if (val &lt;= 0) { return "You need to give a positive integer." }
+                    if (val &gt;= 20) { return "The integer must be less than 20." }
+                    for (let i=2; i&lt;=3; i++) {
+                    if (val % i == 0) { return `Your answer is composite since it is divisible by ${i}.` }
+                  }
+                  return false;
+                  }()
+                </jscmp>
+              </test>
+            </evaluate>
+          </evaluation>
         </exercise>
       </subsubsection>
 
@@ -485,7 +485,7 @@
       <p>
         We're going to build a real syllabus together in four parts. A
         finished version lives at
-        <url href="https://pretext.plus/projects/978d07a7-8c73-4539-ab36-c334c8923f1b/share">this
+        <url href="https://pretext.plus/projects/2c047925-0bf6-47db-a999-ac563af1763b/share">this
         target link</url>. Open it in a separate tab now so you can
         compare as you go.
       </p>
@@ -520,7 +520,7 @@
         <task xml:id="task-course-info-paste">
           <statement>
             <p>
-              Paste this block into your PreTeXt.Plus project just above the closing <c>&lt;/section&gt;</c> tag, then rebuild. You'll see seven lines run together as a single paragraph.
+              Paste this block into your PreTeXt.Plus project just above the closing <tag>/section</tag> tag.
             </p>
             <program language="xml">
               <![CDATA[
@@ -529,18 +529,15 @@
                   Instructor: ==YourName==
                   Email: ==yourname@example.edu==
                   Office: ==OfficeLocation==
-                  Office Hours: ==OfficeHours==, or by appointment
+                  Office Hours: ==OfficeHours==
                   Lecture: ==MeetingTime==, ==Room==
                   Course Website: ==CanvasURL==
                 </p>
               ]]>
             </program>
             <p>
-              After you rebuild, you should see something like:
+              Rebuild, you should see all the lines run together as a single paragraph.
             </p>
-            <image source="guided-screen-1.png">
-              <shortdescription>The seven contact lines rendered as a single run-on paragraph.</shortdescription>
-            </image>
           </statement>
         </task>
 
@@ -550,16 +547,16 @@
               Now convert this into a formatted bulleted (unordered) list using:
               <ul>
                 <li>
-                  <xref ref="cheatsheet-lists" text="custom"><pf>&lt;ul&gt;</pf>, <pf>&lt;li&gt;</pf></xref> to turn each line into a list item
+                  <xref ref="cheatsheet-lists" text="custom"><tag>ul</tag>, <tag>li</tag></xref> to turn each line into a list item
                 </li>
                 <li>
-                  <xref ref="cheatsheet-inline-formatting" text="custom"><pf>&lt;c&gt;</pf></xref> around the email address
+                  <xref ref="cheatsheet-inline-formatting" text="custom"><tag>c</tag></xref> around the email address
                 </li>
                 <li>
-                  <xref ref="cheatsheet-links" text="custom"><pf>&lt;url&gt;</pf></xref> for the course website
+                  <xref ref="cheatsheet-links" text="custom"><tag>url</tag></xref> for the course website
                 </li>
               </ul>
-              Rebuild to see the transformation and verify that it resembles the <url href="https://pretext.plus/projects/978d07a7-8c73-4539-ab36-c334c8923f1b/share">target syllabus</url>.
+              Rebuild to see the transformation and verify that it resembles the <url href="https://pretext.plus/projects/2c047925-0bf6-47db-a999-ac563af1763b/share">target syllabus</url>.
             </p>
           </statement>
           <solution>
@@ -572,7 +569,7 @@
                     <li>Instructor: ==YourName==</li>
                     <li>Email: <c>==yourname@example.edu==</c></li>
                     <li>Office: ==OfficeLocation==</li>
-                    <li>Office Hours: ==OfficeHours==, or by appointment</li>
+                    <li>Office Hours: ==OfficeHours==</li>
                     <li>Lecture: ==MeetingTime==, ==Room==</li>
                     <li>Course Website: <url href="==URL==">Canvas</url></li>
                   </ul>
@@ -603,39 +600,30 @@
         <task xml:id="task-description-paste">
           <statement>
             <p>
-              Paste this block into your project below what you just built, then rebuild. Three chunks of prose will collapse into one undivided wall of text, with math expressions appearing as plain characters.
+              Paste this block into your project below what you just built, then rebuild. Two chunks of prose will collapse into one undivided wall of text, with math expressions appearing as plain characters.
             </p>
             <program language="xml">
               <![CDATA[
                 <p>
                   Calculus I is a first course in differential calculus.
-                  We develop the concept of the limit from scratch, use it to 
-                  give a precise definition of the derivative, and spend most 
-                  of the semester learning to compute and apply derivatives. 
-                  The course closes with an introduction to integration and the 
-                  Fundamental Theorem of Calculus, which connects the two main 
-                  ideas of the subject.
+                  We develop the concept of the limit from scratch, use it  
+                  to give a precise definition of the derivative, and spend 
+                  most of the semester learning to compute and apply 
+                  derivatives. The course closes with an introduction to 
+                  integration and the Fundamental Theorem of Calculus, which 
+                  connects the two main ideas of the subject.
 
-                  By the end of the course, a successful student will be able to
-                  differentiate polynomials like p(x) = x^3 - 2x + 1, exponentials 
-                  like e^x, logarithms like ln(x), and trigonometric functions like 
-                  sin(x) and cos(x). They will also evaluate limits, apply the 
-                  derivative to problems involving rates of change and optimization, 
-                  and interpret the definite integral as a signed area.
-
-                  Prerequisites: a grade of C or better in Precalculus, or a passing
-                  score on the mathematics placement exam. Students unsure whether 
-                  they are adequately prepared should speak with me during the first 
-                  week.
+                  By the end of the course, a successful student will be 
+                  able to differentiate polynomials like 
+                  p(x) = x^3 - 2x + 1, exponentials like e^x, logarithms 
+                  like ln(x), and trigonometric functions like sin(x) and 
+                  cos(x). They will also evaluate limits, apply the 
+                  derivative to problems involving rates of change and 
+                  optimization, and interpret the definite integral as a 
+                  signed area.
                 </p>
               ]]>
             </program>
-            <p>
-              After you rebuild, you should see something like:
-            </p>
-            <image source="guided-screen-3.png">
-              <shortdescription>Three paragraphs collapsed into one unstyled block with raw math characters visible.</shortdescription>
-            </image>
           </statement>
         </task>
 
@@ -645,19 +633,19 @@
               Give this text proper structure and rendered math using:
               <ul>
                 <li>
-                  <xref ref="cheatsheet-paragraphs" text="custom"><pf>&lt;p&gt;</pf></xref> split into three separate paragraphs
+                  <xref ref="cheatsheet-paragraphs" text="custom"><tag>p</tag></xref> split into two separate paragraphs
                 </li>
                 <li>
-                  <xref ref="cheatsheet-math" text="custom"><pf>&lt;m&gt;</pf></xref> around each math expression
+                  <xref ref="cheatsheet-math" text="custom"><tag>m</tag></xref> around each math expression
                 </li>
                 <li>
-                  <xref ref="cheatsheet-inline-formatting" text="custom"><pf>&lt;em&gt;</pf></xref> on the word <q>Prerequisites</q>
+                  <xref ref="cheatsheet-inline-formatting" text="custom"><tag>em</tag></xref> on the word <q>Prerequisites</q>
                 </li>
               </ul>
               Try rebuilding after each change to watch the math snap into place one expression at a time.
             </p>
             <p>
-              After the last rebuild, verify that it resembles the <url href="https://pretext.plus/projects/978d07a7-8c73-4539-ab36-c334c8923f1b/share">target syllabus</url>.
+              After the last rebuild, verify that it resembles the <url href="https://pretext.plus/projects/2c047925-0bf6-47db-a999-ac563af1763b/share">target syllabus</url>.
             </p>
           </statement>
           <solution>
@@ -666,30 +654,23 @@
               <![CDATA[
                 <p>
                   Calculus I is a first course in differential calculus.
-                  We develop the concept of the limit from scratch, use it to 
-                  give a precise definition of the derivative, and spend most 
-                  of the semester learning to compute and apply derivatives. 
-                  The course closes with an introduction to integration and the 
-                  Fundamental Theorem of Calculus, which connects the two main 
-                  ideas of the subject.
+                  We develop the concept of the limit from scratch, use it 
+                  to give a precise definition of the derivative, and spend 
+                  most of the semester learning to compute and apply 
+                  derivatives. The course closes with an introduction to 
+                  integration and the Fundamental Theorem of Calculus, which 
+                  connects the two main ideas of the subject.
                 </p>
 
                 <p>
-                  By the end of the course, a successful student will be able to
-                  differentiate polynomials like <m>p(x) = x^3 - 2x + 1</m>, 
-                  exponentials like <m>e^x</m>, logarithms like <m>\ln(x)</m>, 
-                  and trigonometric functions like <m>\sin(x)</m> and 
-                  <m>\cos(x)</m>. They will also evaluate limits, apply the 
+                  By the end of the course, a successful student will be 
+                  able to differentiate polynomials like 
+                  p(x) = x^3 - 2x + 1, exponentials like e^x, logarithms 
+                  like ln(x), and trigonometric functions like sin(x) and 
+                  cos(x). They will also evaluate limits, apply the 
                   derivative to problems involving rates of change and 
-                  optimization, and interpret the definite integral as a signed 
-                  area.
-                </p>
-
-                <p>
-                  <em>Prerequisites:</em> a grade of C or better in Precalculus, 
-                  or a passing score on the mathematics placement exam. 
-                  Students unsure whether they are adequately prepared should 
-                  speak with me during the first week.
+                  optimization, and interpret the definite integral as a 
+                  signed area.
                 </p>
               ]]>
             </program>
@@ -722,27 +703,30 @@
             <program language="xml">
               <![CDATA[
                 <p>
-                  Homework: 20 percent. Due Sundays at 11:59 pm on Canvas.
-                  Collaborate freely, but write solutions in your own words.
-                  Late work accepted up to 48 hours late at a 20 percent penalty;
-                  lowest two scores dropped.
+                  Homework: 20 percent. 
+                  Due Sundays at 11:59 pm on Canvas. Collaborate 
+                  freely, but write solutions in your own words. 
+                  Late work accepted up to 48 hours late at a 20 
+                  percent penalty; lowest two scores dropped.
 
-                  Quizzes: 10 percent. Short biweekly quizzes covering the recent
+                  Quizzes: 10 percent. 
+                  Short biweekly quizzes covering the recent
                   material.
 
-                  Midterm 1: 20 percent. Held in class during Week 5.
-                  Closed book, closed notes, one handwritten reference sheet
-                  permitted.
+                  Midterm 1: 20 percent. 
+                  Closed book, closed notes, one handwritten 
+                  reference sheet permitted.
 
-                  Midterm 2: 20 percent. Held in class during Week 10.
+                  Midterm 2: 20 percent. 
                   Same format as Midterm 1.
 
-                  Final exam: 30 percent. Cumulative.
-                  Time and room set by the registrar.
+                  Final exam: 30 percent. 
+                  Cumulative. Time and room set by the registrar.
 
-                  Grade cutoffs: at most A at 90 percent, B at 80, C at 70, D at 60.
-                  Cutoffs may be lowered at the end of the term but will never be 
-                  raised.
+                  Grade cutoffs: 
+                  At most A at 90 percent, B at 80, C at 70, D at 60.
+                  Cutoffs may be lowered at the end of the term but 
+                  will never be raised.
                 </p>
               ]]>
             </program>
@@ -755,10 +739,10 @@
               Turn the six components into a labeled description list using:
               <ul>
                 <li>
-                  <xref ref="cheatsheet-lists" text="custom"><pf>&lt;dl&gt;</pf> with <pf>&lt;title&gt;</pf> inside each <pf>&lt;li&gt;</pf></xref>
+                  <xref ref="cheatsheet-lists" text="custom"><tag>dl</tag> with <tag>title</tag> inside each <tag>li</tag></xref>
                 </li>
               </ul>
-              Each component name goes in the <pf>&lt;title&gt;</pf>; the description goes in a <pf>&lt;p&gt;</pf>. Rebuild.
+              Each component name (without the percentage) goes in the <tag>title</tag>; the description goes in a <tag>p</tag>. Rebuild.
             </p>
           </statement>
           <solution>
@@ -768,35 +752,39 @@
                 <p>
                   <dl>
                     <li>
-                      <title>Homework (20%)</title>
+                      <title>Homework</title>
                       <p>
-                        Due Sundays at 11:59 pm on Canvas. Collaborate freely,
-                        but write solutions in your own words. Late work
-                        accepted up to 48 hours late at a 20 percent penalty;
-                        lowest two scores dropped.
+                        Due Sundays at 11:59 pm on Canvas. Collaborate 
+                        freely, but write solutions in your own words. 
+                        Late work accepted up to 48 hours late at a 20 
+                        percent penalty; lowest two scores dropped.
                       </p>
                     </li>
                     <li>
-                      <title>Quizzes (10%)</title>
-                      <p>Short biweekly quizzes covering the recent material.</p>
-                    </li>
-                    <li>
-                      <title>Midterm 1 (20%)</title>
+                      <title>Quizzes</title>
                       <p>
-                        Held in class during Week 5. Closed book, closed notes, 
-                        one handwritten reference sheet permitted.
+                        Short biweekly quizzes covering the recent 
+                        material.
                       </p>
                     </li>
                     <li>
-                      <title>Midterm 2 (20%)</title>
+                      <title>Midterm 1</title>
                       <p>
-                        Held in class during Week 10. Same format as 
-                        Midterm 1.
+                        Closed book, closed notes, one handwritten 
+                        reference sheet permitted.
                       </p>
                     </li>
                     <li>
-                      <title>Final Exam (30%)</title>
-                      <p>Cumulative. Time and room set by the registrar.</p>
+                      <title>Midterm 2</title>
+                      <p>
+                        Same format as Midterm 1.
+                      </p>
+                    </li>
+                    <li>
+                      <title>Final Exam</title>
+                      <p>
+                        Cumulative. Time and room set by the registrar.
+                      </p>
                     </li>
                     <li>
                       <title>Grade Cutoffs</title>
@@ -816,16 +804,16 @@
         <task xml:id="task-graded-table">
           <statement>
             <p>
-              Pull the grade weights out of the list and display them as a compact two-column table. Add a <pf>&lt;tabular&gt;</pf> directly above the <pf>&lt;dl&gt;</pf> using:
+              Pull the grade weights out of the list and display them as a compact two-column table. Add a <tag>tabular</tag> directly above the <tag>dl</tag> using:
               <ul>
-                <li><pf>&lt;tabular&gt;</pf> as the container</li>
-                <li><pf>&lt;row&gt;</pf> for each component</li>
-                <li><pf>&lt;cell&gt;</pf> for the name and the percentage</li>
+                <li><tag>tabular</tag> as the container</li>
+                <li><tag>row</tag> for each component</li>
+                <li><tag>cell</tag> for the name and the percentage</li>
               </ul>
               Rebuild.
             </p>
             <p>
-              After the last rebuild, verify that it resembles the <url href="https://pretext.plus/projects/978d07a7-8c73-4539-ab36-c334c8923f1b/share">target syllabus</url>.
+              After the last rebuild, verify that it resembles the <url href="https://pretext.plus/projects/2c047925-0bf6-47db-a999-ac563af1763b/share">target syllabus</url>.
             </p>
           </statement>
           <solution>
@@ -860,7 +848,7 @@
           <p>
             The last section, and the most dramatic transformation of the
             day. Tables are verbose, so this time we'll hand you a
-            working <pf>&lt;tabular&gt;</pf> and walk through styling it
+            working <tag>tabular</tag> and walk through styling it
             together. Follow along as we go.
           </p>
         </introduction>
@@ -977,7 +965,7 @@
                 <li>
                   <p>
                     Mark the first row as a header by adding
-                    <pf>header="yes"</pf> to its <pf>&lt;row&gt;</pf> tag.
+                    <pf>header="yes"</pf> to its <tag>row</tag> tag.
                   </p>
                 </li>
                 <li>
@@ -985,12 +973,12 @@
                     Add borders by setting
                     <pf>top="minor"</pf>, <pf>bottom="minor"</pf>,
                     <pf>left="minor"</pf>, and <pf>right="minor"</pf> on
-                    the <pf>&lt;tabular&gt;</pf> tag.
+                    the <tag>tabular</tag> tag.
                   </p>
                 </li>
                 <li>
                   <p>
-                    Control column widths by adding four <pf>&lt;col/&gt;</pf>
+                    Control column widths by adding four <tag>col/</tag>
                     elements before the first row. Try
                     <pf>width="9%"</pf>, <pf>width="40%"</pf>,
                     <pf>width="36%"</pf>, and <pf>width="15%"</pf>.
@@ -1001,14 +989,14 @@
                   <p>
                     Highlight the exam weeks by wrapping their topic
                     cells in
-                    <xref ref="cheatsheet-inline-formatting" text="custom"><pf>&lt;alert&gt;</pf></xref>.
+                    <xref ref="cheatsheet-inline-formatting" text="custom"><tag>alert</tag></xref>.
                   </p>
                 </li>
               </ol>
             </p>
             <p>
               Compare your result to the
-              <url href="https://pretext.plus/projects/978d07a7-8c73-4539-ab36-c334c8923f1b/share">target
+              <url href="https://pretext.plus/projects/2c047925-0bf6-47db-a999-ac563af1763b/share">target
               syllabus</url>.
             </p>
           </statement>
@@ -1288,7 +1276,6 @@
     <title>5:35-5:45 Interactive Questions</title>
 
     <introduction>
-
       <p>
         Creating interactive questions can transform the learning experience. 
         They allow students to test their understanding and receive instant 
@@ -1309,15 +1296,15 @@
         Using the <xref ref="block-tf" text="custom">📋 True-False Template</xref> produces the following exercise:
       </p>
 
-            <exercise xml:id="ex-tf">
-              <title> Exercise Title </title>
-              <statement correct="no">
-                <p> A statement that might be true or false. </p>
-              </statement>
-              <feedback>
-                <p> Why the statement is true or false. </p>
-              </feedback>
-            </exercise>
+      <exercise xml:id="ex-tf">
+        <title> Exercise Title </title>
+        <statement correct="no">
+          <p> A statement that might be true or false. </p>
+        </statement>
+        <feedback>
+          <p> Why the statement is true or false. </p>
+        </feedback>
+      </exercise>
     </subsection>
 
     <subsection>
@@ -1327,24 +1314,24 @@
         Using the <xref ref="block-mc" text="custom">📋 Multiple Choice Template</xref> produces the following exercise:
       </p>
 
-            <exercise xml:id="ex-mc">
-              <title> Exercise Title </title>
-              <statement> Problem Statement </statement>
-              <choices randomize="yes">
-                <choice>
-                  <statement> Distractor. </statement>
-                  <feedback> Why this is wrong. </feedback>
-                </choice>
-                <choice correct="yes">
-                  <statement> Correct answer. </statement>
-                  <feedback> Why this is right. </feedback>
-                </choice>
-                <choice>
-                  <statement> Distractor. </statement>
-                  <feedback> Why this is wrong. </feedback>
-                </choice>
-              </choices>
-            </exercise>
+      <exercise xml:id="ex-mc">
+        <title> Exercise Title </title>
+        <statement> Problem Statement </statement>
+        <choices randomize="yes">
+          <choice>
+            <statement> Distractor. </statement>
+            <feedback> Why this is wrong. </feedback>
+          </choice>
+          <choice correct="yes">
+            <statement> Correct answer. </statement>
+            <feedback> Why this is right. </feedback>
+          </choice>
+          <choice>
+            <statement> Distractor. </statement>
+            <feedback> Why this is wrong. </feedback>
+          </choice>
+        </choices>
+      </exercise>
     </subsection>
 
     <subsection>
@@ -1354,33 +1341,33 @@
         Using the <xref ref="block-cardsort" text="custom">📋 Cardsort/Matching Template</xref> produces the following exercise:
       </p>
 
-            <exercise label="chkpt-matching">
-              <title> Exercise Title </title>
-              <statement> Problem Statement </statement>
-              <feedback> General Feedback </feedback>
-              <cardsort>
-                <match>
-                  <premise> Item 1 </premise>
-                  <response> Target 1 </response>
-                </match>
-                <match>
-                  <premise> Item 2 </premise>
-                  <response> Target 2 </response>
-                </match>
-                <match>
-                  <premise> Item 3a </premise>
-                  <premise> Item 3b </premise>
-                  <premise> Item 3c </premise>
-                  <response> Target 3 </response>
-                </match>
-                <match>
-                  <premise> Distractor Item </premise>
-                </match>
-                <match>
-                  <response> Distractor Target </response>
-                </match>
-              </cardsort>
-            </exercise>
+      <exercise label="chkpt-matching">
+        <title> Exercise Title </title>
+        <statement> Problem Statement </statement>
+        <feedback> General Feedback </feedback>
+        <cardsort>
+          <match>
+            <premise> Item 1 </premise>
+            <response> Target 1 </response>
+          </match>
+          <match>
+            <premise> Item 2 </premise>
+            <response> Target 2 </response>
+          </match>
+          <match>
+            <premise> Item 3a </premise>
+            <premise> Item 3b </premise>
+            <premise> Item 3c </premise>
+            <response> Target 3 </response>
+          </match>
+          <match>
+            <premise> Distractor Item </premise>
+          </match>
+          <match>
+            <response> Distractor Target </response>
+          </match>
+        </cardsort>
+      </exercise>
     </subsection>
 
     <subsection>

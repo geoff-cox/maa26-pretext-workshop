@@ -164,7 +164,7 @@
 
 		</slide>
 
-		<slide label="today-plan">
+		<!-- <slide label="today-plan">
 				<title>Today's Plan</title>
 
 				<dl pause="no">
@@ -185,14 +185,14 @@
 								<p>Your lesson goes live on a public URL.</p>
 						</li>
 				</dl>
-		</slide>
+		</slide> -->
 
 		<slide label="how-we-work">
 				<title>How We Will Work Together</title>
 
 				<ul pause="no">
 						<li>Follow along on your own laptop; this is hands-on, not a lecture</li>
-						<li>Keep the workshop hub open in a second tab for the cheatsheet and timeline</li>
+						<li>Keep the workshop hub open in a second tab to refer back to the timeline</li>
 						<li>Ask your neighbor first; ask me second</li>
 						<li>Ask questions out loud when it makes sense; someone else probably has the same one</li>
 						<li>If something breaks, that's normal</li>
@@ -206,7 +206,7 @@
 		<slide label="ready">
 			<title>Ready?</title>
 
-			<p>
+			<!-- <p>
 				Open your laptop, open a browser, and go to
 				<c>pretext.plus</c>.
 			</p>
@@ -217,7 +217,7 @@
 
 			<p>
 				Let's build something.
-			</p>
+			</p> -->
 		</slide>
 
 	</slideshow>
