@@ -401,7 +401,7 @@
 
     <introduction>
       <p>
-        For today's workshop, everyone works inside <url href="https://pretext.plus"><c>pretext.plus</c></url>, a browser-based editor for <pretext/> that needs nothing installed. You'll make a free account, create a project, and get oriented to the editor. By the end of this phase you should have an empty project open and be ready to paste in content.
+        For today's workshop, everyone works inside <url href="https://pretext.plus"><c>pretext.plus</c></url>, a browser-based editor for <pretext/> that needs nothing installed. You'll make a free account, create a project, and get oriented to the editor. By the end of this phase, you should have an empty project open and be ready to paste in content.
       </p>
     </introduction>
 
