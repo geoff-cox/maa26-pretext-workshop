@@ -125,10 +125,10 @@
 
 			<tabular>
 				<row>
-					<cell>Inline math</cell><cell><pre>\(*\)</pre></cell><cell><pre>&lt;m&gt;*&lt;/m&gt;</pre></cell>
+					<cell>Inline math</cell><cell><c>\(*\)</c>, <c>$*$</c></cell><cell><tag>m</tag>*&lt;/m&gt;</cell>
 				</row>
 				<row>
-					<cell>Displayed math</cell><cell><pre>\[*\]</pre></cell><cell><pre>&lt;md&gt;*&lt;/md&gt;</pre></cell>
+					<cell>Displayed math</cell><cell><pre>\[*\]</pre></cell><cell><tag>md</tag>*&lt;/md&gt;</cell>
 				</row>
 				<row>
 					<cell>Ordered Lists</cell>
