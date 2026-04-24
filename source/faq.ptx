@@ -88,9 +88,9 @@
           <p>
             Partially. PreTeXt.Plus includes a <latex/>-to-<pretext/> converter,
             and <url href="https://pandoc.org">Pandoc</url> can produce rough
-            <pretext/> from <c>.tex</c>. Treat either tool's output as a
-            <em>starting point</em> that will likely need some cleanup. For 
-            documents that are mostly prose and basic math, this is still faster 
+            <pretext/> source from <c>.tex</c>. Treat either tool's output as a
+            <em>starting point</em> that will likely need cleanup. For
+            documents that are mostly prose and basic math, this is still faster
             than starting from scratch.
           </p>
         </li>
@@ -98,12 +98,12 @@
         <li xml:id="faq-images">
           <title>How do I include images?</title>
           <p>
-            (<em>This is outside the scope of this workshop</em>). Put the image 
-              file (PNG, JPG, or SVG) in your <c>assets</c> folder
+            This topic is outside the scope of this workshop. Put the image
+            file (PNG, JPG, or SVG) in your <c>assets</c> folder
             and reference it with <c>&lt;image source="filename.png"/&gt;</c>.
-            Add a <c>&lt;shortdescription&gt;</c> for the alt text. See 
+            Add a <c>&lt;shortdescription&gt;</c> for the alt text. See
             <xref ref="a11y-author" text="custom">What You, the Author, Must Do</xref>
-            for details. You can also generate figures using TikZ or PGFPlots, and 
+            for details. You can also generate figures using TikZ or PGFPlots, and
             <pretext/> will produce accessible SVG output automatically.
           </p>
         </li>
@@ -114,8 +114,9 @@
             Yes, when the document is hosted on Runestone Academy. True/false,
             multiple-choice, fill-in-the-blank, matching, and clickable-area
             exercises are all auto-graded with per-answer feedback. If you host
-            on GitHub Pages or embed them into your LMS instead, exercises still 
-            display and work interactively, they just aren't tracked in a gradebook.
+            on GitHub Pages or embed them into your LMS instead, the exercises
+            still display and work interactively, but they are not tracked in a
+            gradebook.
           </p>
         </li>
 
@@ -179,9 +180,9 @@
         <li xml:id="faq-lms">
           <title>Can I use <pretext/> materials inside my LMS?</title>
           <p>
-            Two ways. Link directly to the published HTML from Canvas,
-            Blackboard, or similar. If you host on Runestone Academy, 
-            you can also integrate via LTI so that exercise grades flow
+            There are two common approaches. Link directly to the published HTML
+            from Canvas, Blackboard, or a similar LMS. If you host on Runestone
+            Academy, you can also integrate via LTI so that exercise grades flow
             back into your LMS gradebook.
           </p>
         </li>
