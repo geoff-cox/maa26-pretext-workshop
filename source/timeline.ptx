@@ -56,7 +56,7 @@
 
     <introduction>
       <p>
-        Before you write any <pretext/> yourself, it helps to see where this is going. The key idea is that you describe <em>what your content is</em> — a definition, an example, an exercise, an interactive — and <pretext/> decides how it should look on the page, in a PDF, on a phone, or through a screen reader.
+        Before you write any <pretext/> yourself, it helps to see where this is going. The key idea is that you describe <em>what your content is</em>: a definition, an example, an exercise, or an interactive. Then <pretext/> decides how it should look on the page, in a PDF, on a phone, or through a screen reader.
       </p>
 
       <p>
@@ -96,7 +96,7 @@
         <title>✔ True/False Questions</title>
 
         <p>
-          Auto-graded true/false questions with targeted feedback — students see an explanation tailored to the answer they gave.
+          Auto-graded true/false questions with targeted feedback. Students see an explanation tailored to the answer they gave.
         </p>
 
         <exercise label="vector-space-dimension">
@@ -275,7 +275,7 @@
       <subsubsection xml:id="talk-demo-doenetml">
         <title>DoenetML</title>
         <p>
-          DoenetML is a newer platform designed specifically for interactive math documents. The example below lets students drag vectors to visualize a determinant identity — the kind of thing that is genuinely hard to show on paper.
+          DoenetML is a newer platform designed specifically for interactive math documents. The example below lets students drag vectors to visualize a determinant identity, which is the kind of thing that is genuinely hard to show on paper.
         </p>
 
         <interactive label="interactive-doenetml-example" platform="doenetml" width="100%">
@@ -381,11 +381,11 @@
         <title>Sample Interactive Features</title>
         <p>
           <ul marker="">
-            <li>▷ <url href="https://runestone.academy/ns/books/published/debookrs/connection-to-alg-calc.html">Audio</url> — embedded narration.</li>
-            <li>▷ <url href="https://runestone.academy/ns/books/published/debookrs/class-problems-main.html">Multi-part Questions</url> — one exercise broken into scaffolded parts.</li>
+            <li>▷ <url href="https://runestone.academy/ns/books/published/debookrs/connection-to-alg-calc.html">Audio</url> with embedded narration.</li>
+            <li>▷ <url href="https://runestone.academy/ns/books/published/debookrs/class-problems-main.html">Multi-part Questions</url>, where one exercise is broken into scaffolded parts.</li>
             <li>▷ <url href="https://runestone.academy/ns/books/published/debookrs/visualizing-solutions.html">Interactive Visualization</url>.</li>
-            <li>▷ <url href="https://runestone.academy/ns/books/published/debookrs/autonomous-eqns.html">TikZ</url> — <latex/> graphics rendered as accessible SVG.</li>
-            <li>▷ <url href="https://runestone.academy/ns/books/published/debookrs/chpt-laplace-transform-method.html">Slide Show</url> — a lecture deck built from the same source.</li>
+            <li>▷ <url href="https://runestone.academy/ns/books/published/debookrs/autonomous-eqns.html">TikZ</url> examples with <latex/> graphics rendered as accessible SVG.</li>
+            <li>▷ <url href="https://runestone.academy/ns/books/published/debookrs/chpt-laplace-transform-method.html">Slide Show</url>, a lecture deck built from the same source.</li>
             <li>▷ <url href="https://runestone.academy/ns/books/published/debookrs/unit-step-functions.html#def-windowed-unit-step">More Visualization</url>.</li>
           </ul>
         </p>
@@ -401,7 +401,7 @@
 
     <introduction>
       <p>
-        For today's workshop, everyone works inside <url href="https://pretext.plus"><c>pretext.plus</c></url> — a browser-based editor for <pretext/> that needs nothing installed. You'll make a free account, create a project, and get oriented to the editor. By the end of this phase you should have an empty project open and be ready to paste in content.
+        For today's workshop, everyone works inside <url href="https://pretext.plus"><c>pretext.plus</c></url>, a browser-based editor for <pretext/> that needs nothing installed. You'll make a free account, create a project, and get oriented to the editor. By the end of this phase you should have an empty project open and be ready to paste in content.
       </p>
     </introduction>
 
@@ -412,7 +412,7 @@
         <ol>
           <li>
             <p>
-              Go to <url href="https://pretext.plus"><c>pretext.plus</c></url> and click <term>Sign up</term>. Use an email you can check right now — there's a confirmation step.
+              Go to <url href="https://pretext.plus"><c>pretext.plus</c></url> and click <term>Sign up</term>. Use an email you can check right now because there's a confirmation step.
             </p>
           </li>
           <li>
@@ -436,7 +436,7 @@
           </li>
           <li>
             <p>
-              Give it a title — <c>My First Lesson</c> works fine — and click <term>Create</term>.
+              Give it a title. <c>My First Lesson</c> works fine. Then click <term>Create</term>.
             </p>
           </li>
           <li>
@@ -476,9 +476,9 @@
 
       <p>
         <ul>
-          <li>The <em>source panel</em> on the left is where you type. It's <pretext/> XML — we'll get to what that means in the next section.</li>
+          <li>The <em>source panel</em> on the left is where you type. It's <pretext/> XML, and we'll get to what that means in the next section.</li>
           <li>The <em>preview panel</em> on the right is what your readers will see.</li>
-          <li>There's a short starter document already loaded. Don't delete it — you'll paste new material <em>inside</em> it.</li>
+          <li>There's a short starter document already loaded. Don't delete it. You'll paste new material <em>inside</em> it.</li>
         </ul>
       </p>
 
@@ -1204,7 +1204,7 @@
           </li>
 
           <li>
-            <title>Page 1 — structure</title>
+            <title>Page 1: structure</title>
             <p>
               Inside the first <tag>page</tag>, paste the following blocks in order:
               <ul marker="square">
@@ -1220,7 +1220,7 @@
           <li>
             <title>Paragraphs</title>
             <p>
-              Copy the two short paragraphs from the target worksheet — the lead-in sentence and the bridge sentence before the example — into your two <tag>p</tag> tags.
+              Copy the two short paragraphs from the target worksheet, namely the lead-in sentence and the bridge sentence before the example, into your two <tag>p</tag> tags.
             </p>
           </li>
 
@@ -1241,7 +1241,7 @@
           <li>
             <title>Practice exercise</title>
             <p>
-              Give the exercise a <tag>title</tag> of <q>Practice</q> and a <tag>workspace</tag> of <c>2.5in</c>. Add an <tag>introduction</tag> that references <tag>xref ref="def-product-rule"</tag>. Then add two <tag>task</tag> elements — one for each function in the target worksheet — each with a <tag>statement</tag> and an <tag>answer</tag>.
+              Give the exercise a <tag>title</tag> of <q>Practice</q> and a <tag>workspace</tag> of <c>2.5in</c>. Add an <tag>introduction</tag> that references <tag>xref ref="def-product-rule"</tag>. Then add two <tag>task</tag> elements, one for each function in the target worksheet, each with a <tag>statement</tag> and an <tag>answer</tag>.
             </p>
           </li>
         </dl>
@@ -1305,16 +1305,16 @@
       <p>
         <dl width="medium">
           <li>
-            <title>Page 2 — multiple-choice question</title>
+            <title>Page 2: multiple-choice question</title>
             <p>
-              Inside the second <tag>page</tag>, paste a <xref ref="block-mc" text="custom">📋 multiple-choice template</xref>. Give it the <c>xml:id</c> <q>ex-product-rule-mc</q> and the title <q>Spot the derivative</q>. Add four <tag>choice</tag> elements — mark one <c>correct="yes"</c> — and copy the statement and feedback text for each from the target worksheet.
+              Inside the second <tag>page</tag>, paste a <xref ref="block-mc" text="custom">📋 multiple-choice template</xref>. Give it the <c>xml:id</c> <q>ex-product-rule-mc</q> and the title <q>Spot the derivative</q>. Add four <tag>choice</tag> elements, mark one <c>correct="yes"</c>, and copy the statement and feedback text for each from the target worksheet.
             </p>
           </li>
 
           <li>
             <title>True/false question</title>
             <p>
-              Add a <xref ref="block-tf" text="custom">📋 true/false template</xref> below the multiple-choice question. This works similarly to the multiple-choice question you just built, with two key differences: the <c>correct</c> attribute goes on the <tag>statement</tag> itself, and there is no <tag>choices</tag> block — just a single <tag>feedback</tag>.
+              Add a <xref ref="block-tf" text="custom">📋 true/false template</xref> below the multiple-choice question. This works similarly to the multiple-choice question you just built, with two key differences: the <c>correct</c> attribute goes on the <tag>statement</tag> itself, and there is no <tag>choices</tag> block. Instead, add just a single <tag>feedback</tag>.
             </p>
             <p>
               Try replicating the question below. Drop it onto the second page of your worksheet, just above the closing <tag>/page</tag> tag, and rebuild.
@@ -1335,7 +1335,7 @@
         </statement>
         <feedback>
           <p>
-            The correct statement is <m>(fg)' = f'g + fg'</m>; see <xref ref="def-product-rule"/>. Multiplying derivatives gives <m>f'(x)\,g'(x) = (2x)(\cos x)</m> for the example on page 1, but the actual derivative of <m>h(x) = x^2\sin(x)</m> is <m>2x\sin(x) + x^2\cos(x)</m> — two terms, not one.
+            The correct statement is <m>(fg)' = f'g + fg'</m>; see <xref ref="def-product-rule"/>. Multiplying derivatives gives <m>f'(x)\,g'(x) = (2x)(\cos x)</m> for the example on page 1, but the actual derivative of <m>h(x) = x^2\sin(x)</m> is <m>2x\sin(x) + x^2\cos(x)</m>. It has two terms, not one.
           </p>
         </feedback>
       </exercise>
@@ -1368,7 +1368,7 @@
           </li>
           <li>
             <p>
-              Copy the URL and give it to your neighbor — on paper, by email, or just turn your screen.
+              Copy the URL and give it to your neighbor on paper, by email, or just by turning your screen.
             </p>
           </li>
         </ol>
@@ -1420,21 +1420,21 @@
     <paragraphs>
       <title>Keep using PreTeXt.Plus</title>
       <p>
-        Your free account stays. You can create up to ten projects — plenty for a term's worth of handouts, a worksheet series, or a short open-access textbook. If you adopt <pretext/> seriously, this is a perfectly good home for a while.
+        Your free account stays. You can create up to ten projects, which is plenty for a term's worth of handouts, a worksheet series, or a short open-access textbook. If you adopt <pretext/> seriously, this is a perfectly good home for a while.
       </p>
     </paragraphs>
 
     <paragraphs>
       <title>Move to GitHub Codespaces when you're ready</title>
       <p>
-        When you want version control, multi-file projects, custom assets, or to publish to your own <c>github.io</c> URL, the Codespaces workflow gives you all of that with the same browser-based feel. The <em>Codespace Guide</em> chapter in this hub walks through it step by step. It's a take-home — don't worry about it tonight.
+        When you want version control, multi-file projects, custom assets, or to publish to your own <c>github.io</c> URL, the Codespaces workflow gives you all of that with the same browser-based feel. The <em>Codespace Guide</em> chapter in this hub walks through it step by step. Treat it as take-home material, and don't worry about it tonight.
       </p>
     </paragraphs>
 
     <paragraphs>
       <title>Install locally (long-term)</title>
       <p>
-        Eventually, some of you will want <pretext/> running on your own machine. When that day comes, start at <url href="https://pretextbook.org"><c>pretextbook.org</c></url>. No rush — the browser workflows will take you very far.
+        Eventually, some of you will want <pretext/> running on your own machine. When that day comes, start at <url href="https://pretextbook.org"><c>pretextbook.org</c></url>. No rush. The browser workflows will take you very far.
       </p>
     </paragraphs>
 
@@ -1448,7 +1448,7 @@
     <paragraphs>
       <title>Questions</title>
       <p>
-        Whatever's on your mind — about today, about where to go next, or about whether <pretext/> fits a specific thing you teach. The floor is yours.
+        Whatever's on your mind, whether it's about today, about where to go next, or about whether <pretext/> fits a specific thing you teach. The floor is yours.
       </p>
     </paragraphs>
   </section>

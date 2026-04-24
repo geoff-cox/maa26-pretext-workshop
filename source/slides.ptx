@@ -67,8 +67,8 @@
 			</p>
 
 			<p>
-				The key idea: you describe <em>what your content is</em> —
-				a definition, an example, an exercise — and <pretext/>
+				The key idea is simple: you describe <em>what your content is</em>,
+				such as a definition, an example, or an exercise, and <pretext/>
 				decides how it should look.
 			</p>
 
@@ -103,7 +103,7 @@
 			<dl pause="no">
 				<li>
 					<title>Accessibility by default</title>
-					<p>Screen-reader friendly, keyboard navigable, and ready for students who need alternative formats — without extra work from you.</p>
+					<p>Screen-reader friendly, keyboard navigable, and ready for students who need alternative formats, all without extra work from you.</p>
 				</li>
 				<li>
 					<title>Your content, your control</title>
@@ -183,7 +183,7 @@
 			<title>How We Will Work Together</title>
 
 			<ul pause="no">
-				<li>Follow along on your own laptop — this is hands-on, not a lecture</li>
+				<li>Follow along on your own laptop because this is hands-on, not a lecture</li>
 				<li>Use the printed quick reference when you need a reminder</li>
 				<li>Ask your neighbor first; ask me second</li>
 				<li>Ask questions out loud when it makes sense; someone else probably has the same one</li>
