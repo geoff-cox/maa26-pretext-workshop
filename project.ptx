@@ -5,6 +5,5 @@
     <target name="slides"     source="slides.ptx"     format="revealjs" output-filename="slides.html"     deploy-dir="talk"/>
     <target name="hub"        source="hub.ptx"        format="html"     publication="publication-hub.ptx" deploy-dir="hub"/>
     <target name="dev"        source="hub-dev.ptx"    format="html"     publication="publication-hub.ptx" deploy-dir="dev"/>
-    <target name="pre"        source="hub.ptx"        format="html"     publication="publication-pre.ptx" deploy-dir="pre"/>
   </targets>
 </project>
