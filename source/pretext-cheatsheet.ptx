@@ -280,7 +280,7 @@
           <program language="xml">
             <![CDATA[
               <example xml:id="ex-x">
-                <title>T</title>
+                <title>Title</title>
                 <statement>
                   <p>...</p>
                 </statement>
@@ -431,6 +431,20 @@
             ]]>
           </program>
           <p>Place at the top of a worksheet or chapter. The <tag>p</tag> tags inside <tag>li</tag> are optional when the item is a single paragraph.</p>
+        </li>
+
+        <li xml:id="block-workspace">
+          <title>Exercise with workspace</title>
+          <program language="xml">
+            <![CDATA[
+              <exercise workspace="2.5in">
+                <statement>
+                  <p>...</p>
+                </statement>
+              </exercise>
+            ]]>
+          </program>
+          <p>Add <c>workspace="2.5in"</c> to an exercise inside a worksheet to leave blank space for student work when the worksheet is printed. Adjust the measurement to suit the problem.</p>
         </li>
       </dl>
     </p>
