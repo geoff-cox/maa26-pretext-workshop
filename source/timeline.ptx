@@ -22,23 +22,9 @@
     <title>4:00-4:10 Welcome</title>
 
     <p>
-      Thanks for coming. In the next two hours, you will author, preview, and publish a small lesson using <pretext/>, entirely in your web browser. No installs, no command line, no GitHub account required for today.
-    </p>
+      Thanks for coming. We'll start with a <url href="https://geoff-cox.github.io/maa26-pretext-workshop/talk/slides.html">short orientation</url>, take a quick tour of what <pretext/> can do, then spend most of our time in a hands-on editor.
 
-    <p>
-      We'll start with a short orientation, take a quick tour of what <pretext/> can do, then spend most of our time in a hands-on editor.
     </p>
-
-    <paragraphs>
-      <title>Slides and reference material</title>
-      <p>
-        <ul marker="">
-          <li><url href="https://geoff-cox.github.io/maa26-pretext-workshop/talk/slides.html">Slides</url></li>
-          <li><url href="https://runestone.academy/ns/books/published/debookrs/">Sample textbook (viewable HTML)</url></li>
-          <li><url href="https://github.com/geoff-cox/debookrs">Sample textbook (source on GitHub)</url></li>
-        </ul>
-      </p>
-    </paragraphs>
 
     <paragraphs>
       <title>What you'll leave with</title>
