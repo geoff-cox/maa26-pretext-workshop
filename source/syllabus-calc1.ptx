@@ -4,7 +4,7 @@
   <!-- ============================================================ -->
   <!-- Course and Instructor Information                            -->
   <!-- ============================================================ -->
-  <subsection xml:id="sec-course-info">
+  <subsection>
     <title>Course and Instructor Information</title>
 
     <p>
@@ -27,7 +27,7 @@
   <!-- ============================================================ -->
   <!-- Course Description                                           -->
   <!-- ============================================================ -->
-  <subsection xml:id="sec-description">
+  <subsection>
     <title>Course Description</title>
     <p>
       Calculus I is a first course in differential calculus.
@@ -55,7 +55,7 @@
   <!-- ============================================================ -->
   <!-- Graded Work                                                  -->
   <!-- ============================================================ -->
-  <subsection xml:id="sec-graded-work">
+  <subsection>
     <title>Graded Work</title>
 
     <tabular>
