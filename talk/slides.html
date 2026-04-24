@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2026-04-24T11:59:04-04:00       *-->
+<!--*   A recent stable commit (2022-07-01):   *-->
+<!--* 6c761d3dba23af92cba35001c852aac04ae99a5f *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html xmlns:pi="http://pretextbook.org/2020/pretext/internal">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Getting Started with PreTeXt</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/reset.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/reveal.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/theme/simple.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/reveal.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/plugin/math/math.js"></script><link href="_static/pretext/css/pretext-reveal.css" rel="stylesheet">
+<style></style>
+</head>
+<body><div class="reveal ptx-content">
+<div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="slides">
+<section><section><h1>Getting Started with PreTeXt</h1>
+<h2>Write, Preview, and Publish in Two Hours</h2>
+<table>
+<tr><th align="center" style="border-bottom: 0px;">Geoff Cox</th></tr>
+<tr><td align="center" style="border-bottom: 0px;">Applied Mathematics @ Virginia Military Institute</td></tr>
+<tr><td align="center"></td></tr>
+</table>
+<h4><div class="date">April 24, 2026</div></h4></section></section><section><h3>Welcome</h3>
+<div align="left">
+<p>Thanks for being here. Over the next two hours, you will author, build, and publish a small lesson using PreTeXt entirely in your web browser.</p>
+<p>This workshop assumes you are:</p>
+<ul class="disc" id="welcome-4">
+<li>An instructor curious about authoring your own course materials</li>
+<li>New to PreTeXt.</li>
+<li>Comfortable editing text and navigating a browser</li>
+</ul>
+</div></section><section><h3>What You Will Leave With</h3>
+<div align="left">
+<p>By the end of this session, you will have:</p>
+<dl class="description-list">
+<div>
+<dt>A working authoring setup</dt>
+<dd><p>Running in your browser, ready to use again tomorrow.</p></dd>
+</div>
+<div>
+<dt>A small lesson you wrote yourself</dt>
+<dd><p>Built from real PreTeXt source, on a topic you actually teach.</p></dd>
+</div>
+<div>
+<dt>A shareable link</dt>
+<dd><p>A public URL you can send to a colleague or a student.</p></dd>
+</div>
+</dl>
+<p>That’s the whole goal. Everything else is a bonus.</p>
+</div></section><section><h3>What Is PreTeXt?</h3>
+<div align="left">
+<p>PreTeXt is a free, open-source authoring system for textbooks, lecture notes, worksheets, and articles.</p>
+<p>The key idea is simple: you describe <em class="emphasis">what your content is</em>, such as a definition, an example, or an exercise, and PreTeXt decides how it should look.</p>
+<p>One source file. Many polished outputs.</p>
+</div></section><section><h3>Write Once, Publish Everywhere</h3>
+<div align="left">
+<p>From a single PreTeXt source, you can generate:</p>
+<ul class="disc" id="write-once-3">
+<li>An interactive website</li>
+<li>A print-ready PDF</li>
+<li>An ePub for e-readers</li>
+<li>Accessible alternative formats when students need them</li>
+</ul>
+<p>You write your content once. When tomorrow’s format comes along, your source is ready for it.</p>
+</div></section><section><h3>Why Instructors Care</h3>
+<div align="left"><dl class="description-list">
+<div>
+<dt>Accessibility by default</dt>
+<dd><p>Screen-reader friendly, keyboard navigable, and ready for students who need alternative formats, all without extra work from you.</p></dd>
+</div>
+<div>
+<dt>Your content, your control</dt>
+<dd><p>Free, open, and yours to adapt, remix, and share.</p></dd>
+</div>
+<div>
+<dt>Built for the long run</dt>
+<dd><p>Structured source that will still be usable in ten years.</p></dd>
+</div>
+</dl></div></section><section><h3>If You Know <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span>, You Have a Head Start</h3>
+<div align="left">
+<p>Much of what you already know transfers directly.</p>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b0 r0 l0 t0" style="max-width:120"><p>Inline math</p></td>
+<td class="c m b0 r0 l0 t0" style="max-width:120"><p><pre class="code-block tex2jax_ignore">$*$
+</pre></p></td>
+<td class="c m b0 r0 l0 t0" style="max-width:120"><p><pre class="code-block tex2jax_ignore">&lt;m&gt;*&lt;/m&gt;
+</pre></p></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0" style="max-width:120"><p>Displayed math</p></td>
+<td class="c m b0 r0 l0 t0" style="max-width:120"><p><pre class="code-block tex2jax_ignore">$$*$$
+</pre></p></td>
+<td class="c m b0 r0 l0 t0" style="max-width:120"><p><pre class="code-block tex2jax_ignore">&lt;me&gt;*&lt;/me&gt;
+</pre></p></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0" style="max-width:120"><p>Ordered Lists</p></td>
+<td class="c m b0 r0 l0 t0" style="max-width:120"><p><pre class="code-block tex2jax_ignore">\begin{enumerate}
+  \item *
+\end{enumerate}
+</pre></p></td>
+<td class="c m b0 r0 l0 t0" style="max-width:120"><p><pre class="code-block tex2jax_ignore">&lt;ol&gt;
+  &lt;li&gt;*&lt;/li&gt;
+&lt;/ol&gt;
+</pre></p></td>
+</tr>
+</table></div>
+<p>The math inside the tags is still <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span>. You are mostly learning a new wrapper, not a new language.</p>
+</div></section><section><h3>Today’s Plan</h3>
+<div align="left"><dl class="description-list">
+<div>
+<dt>First: everyone gets an account</dt>
+<dd><p>A free PreTeXt.Plus account in a browser tab.</p></dd>
+</div>
+<div>
+<dt>Warm-up: build a syllabus together</dt>
+<dd><p>Four short parts. Paste, rebuild, transform.</p></dd>
+</div>
+<div>
+<dt>Main event: build a worksheet lesson</dt>
+<dd><p>A product-rule worksheet you can adapt for your own class.</p></dd>
+</div>
+<div>
+<dt>Close: share, see each other’s work, what’s next</dt>
+<dd><p>Your lesson goes live on a public URL.</p></dd>
+</div>
+</dl></div></section><section><h3>How We Will Work Together</h3>
+<div align="left">
+<ul class="disc" id="how-we-work-2">
+<li>Follow along on your own laptop; this is hands-on, not a lecture</li>
+<li>Keep the workshop hub open in a second tab for the cheatsheet and timeline</li>
+<li>Ask your neighbor first; ask me second</li>
+<li>Ask questions out loud when it makes sense; someone else probably has the same one</li>
+<li>If something breaks, that’s normal</li>
+</ul>
+<p>The goal is <em class="emphasis">finished</em>, not <em class="emphasis">perfect</em>.</p>
+</div></section><section><h3>Ready?</h3>
+<div align="left">
+<p>Open your laptop, open a browser, and go to <code class="code-inline tex2jax_ignore">pretext.plus</code>.</p>
+<p>In a moment we will all sign up together.</p>
+<p>Let’s build something.</p>
+</div></section>
+</div>
+</div></body>
+<script>
+Reveal.initialize({
+  controls: true,
+  controlsTutorial: true,
+  controlsLayout: 'bottom-right',
+  controlsBackArrows: 'faded',
+  navigationMode: 'default',
+  progress: false,
+  center: false,
+  hash: true,
+  transition: 'fade',
+  width: "100%",
+  height: "100%",
+  margin: "0.025",
+  math: {
+    mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+    config: 'TeX-AMS_HTML-full',
+    // other options are passed into MathJax.Hub.Config()
+    tex2jax: {
+      inlineMath:  [['\\(','\\)']],
+      displayMath: [],
+    }
+  },
+  plugins: [ RevealMath ]
+});
+</script>
+</html>
