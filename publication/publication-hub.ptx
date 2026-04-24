@@ -131,7 +131,7 @@
         example-solution="yes"
         project="yes"
         task="no"
-        remark="yes"
+        remark="no"
         objectives="no"
         outcomes="yes"
         assemblage="yes"

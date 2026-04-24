@@ -14,7 +14,7 @@
     </p>
   </introduction>
 
-  <subsection xml:id="fb-triggers">
+  <section xml:id="fb-triggers">
     <title>When to switch to fallback mode</title>
 
     <p>
@@ -33,9 +33,9 @@
     <p>
       Don't switch the whole room if only two or three people are stuck; pair them with neighbors who are working and keep going. Switch the whole room if the pattern is clearly environmental.
     </p>
-  </subsection>
+  </section>
 
-  <subsection xml:id="fb-levels">
+  <section xml:id="fb-levels">
     <title>Graceful degradation: three levels</title>
 
     <p>
@@ -70,14 +70,14 @@
             <em>Use when:</em> nothing online is usable, not even for the facilitator.
           </p>
           <p>
-            Distribute the prebuilt offline packet (see the next subsection). Walk through the <q>source on the left, output on the right</q> comparison sheets for the syllabus exercises, then hand out the printed product rule worksheet and ask participants to annotate the source in pencil and share with a neighbor. The session still ends on time and participants leave with a realistic mental model of the workflow.
+            Distribute the prebuilt offline packet (see the next section). Walk through the <q>source on the left, output on the right</q> comparison sheets for the syllabus exercises, then hand out the printed product rule worksheet and ask participants to annotate the source in pencil and share with a neighbor. The session still ends on time and participants leave with a realistic mental model of the workflow.
           </p>
         </li>
       </dl>
     </p>
-  </subsection>
+  </section>
 
-  <subsection xml:id="fb-offline-packet">
+  <section xml:id="fb-offline-packet">
     <title>Offline packet to have on hand</title>
 
     <p>
@@ -113,9 +113,9 @@
         </li>
       </ol>
     </p>
-  </subsection>
+  </section>
 
-  <subsection xml:id="fb-completion-path">
+  <section xml:id="fb-completion-path">
     <title>A non-deployment completion path</title>
 
     <p>
@@ -133,9 +133,9 @@
     <p>
       Whatever form it takes, each participant should leave having produced <em>something concrete</em> they could point at and say <q>I made that.</q> That's the contract.
     </p>
-  </subsection>
+  </section>
 
-  <subsection xml:id="fb-pacing">
+  <section xml:id="fb-pacing">
     <title>Pacing adjustments</title>
 
     <p>
@@ -155,5 +155,5 @@
     <p>
       Protect the Worksheet Lesson phase (<xref ref="sec-build-lesson" text="title"/>). That's where the core learning happens, and it's the last thing to cut.
     </p>
-  </subsection>
+  </section>
 </appendix>

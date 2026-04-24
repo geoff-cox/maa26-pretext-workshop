@@ -1112,17 +1112,14 @@
     </introduction>
 
     <subsection xml:id="bl-tour">
-      <title>Tour the target</title>
-
+      <title>Tour the Target</title>
       <p>
-        Open the rendered worksheet <url href="https://pretext.plus/projects/57d11227-7627-4760-810a-ba11c188afe7/share">Product Rule Lesson Worksheet</url>. We'll walk through it together and come back here to get you started building it.
+        Open the worksheet <url href="https://pretext.plus/projects/57d11227-7627-4760-810a-ba11c188afe7/share">Product Rule Lesson Worksheet</url>. We'll walk through what the students would see and discuss the elements involved in building it.
       </p>
-
     </subsection>
 
-    <subsection xml:id="bl-build">
-      <title>Build it in <pretext/></title>
-
+    <subsection xml:id="bl-initialize-project">
+      <title>Initialize Your Project</title>
       <p>
         <dl width="narrow">
           <li>
@@ -1140,77 +1137,120 @@
           </li>
         </dl>
       </p>
+    </subsection>
 
-      <p>
-        As you work through the steps below, click <term>Rebuild</term> or press <kbd>Ctrl</kbd>+<kbd>S</kbd> after each one to see your progress in the preview pane.
-      </p>
+    <subsection xml:id="bl-cyoa">
+      <title>Choose Your Own Adventure</title>
+      <paragraphs>
+        <title>PATH A: Build your Own</title>
+        
+        <p>
+          If you would like to take off the training wheels and build the worksheet from scratch, then go ahead and get started. You can choose your own topic and use the <xref ref="sec-cheatsheet" text="title"/> for templates and reference. If you get stuck, you can always come back to the guided instructions in "PATH B: Guided Build".
+        </p>
+      </paragraphs>
 
-      <p>
-        <dl width="medium">
-          <li>
+      <paragraphs>
+        <title>PATH B: Guided Build</title>
+
+        <p>
+          If you would like a more guided experience, follow the instructions below to recreate the <url href="https://pretext.plus/projects/57d11227-7627-4760-810a-ba11c188afe7/share">Product Rule Lesson Worksheet</url> step by step. The instructions are designed to be followed in order, but feel free to skip around if you want to work on a particular part of the worksheet first.
+        </p>
+
+        <exercise>
+          <introduction>
+            <p>
+              As you work through the steps below, click <term>Rebuild</term> or press <kbd>Ctrl</kbd>+<kbd>S</kbd> after each one to see your progress in the preview pane.
+            </p>
+          </introduction>
+
+          <task>
             <title>Worksheet</title>
-            <p>
-              The <tag>worksheet</tag> tag will span your entire <pretext/> document. Paste the <xref ref="block-worksheet" text="custom">📋 worksheet template</xref> over the default <tag>section</tag> currently in your project.
-            </p>
-          </li>
+            <statement>
+              <p>
+                The <tag>worksheet</tag> tag will span your entire <pretext/> document. Paste the <xref ref="block-worksheet" text="custom">📋 worksheet template</xref> over the default <tag>section</tag> currently in your project.
+              </p>
+            </statement>
+          </task>
 
-          <li>
+          <task>
             <title>Title</title>
-            <p>
-              Fill the <tag>title</tag> tag with <q><term>The Product Rule</term></q>.
-            </p>
-          </li>
+            <statement>
+              <p>
+                Fill the <tag>title</tag> tag with <q><term>The Product Rule</term></q>.
+              </p>
+            </statement>
+          </task>
 
-          <li>
+          <task>
             <title>Objectives</title>
-            <p>
-              Replace the <tag>objectives</tag> placeholder with the <xref ref="block-objectives" text="custom">📋 objectives template</xref>, then copy and paste each objective from the target worksheet.
-            </p>
-          </li>
+            <statement>
+              <p>
+                Replace the <tag>objectives</tag> placeholder with the <xref ref="block-objectives" text="custom">📋 objectives template</xref>, then copy and paste each objective from the target worksheet.
+              </p>
+            </statement>
+          </task>
 
-          <li>
-            <title>Page 1: structure</title>
-            <p>
-              Inside the first <tag>page</tag>, paste the following blocks in order:
-              <ul marker="square">
-                <li><xref ref="block-p" text="custom">📋 paragraph</xref></li>
-                <li><xref ref="block-definition" text="custom">📋 definition</xref></li>
-                <li><xref ref="block-p" text="custom">📋 paragraph</xref></li>
-                <li><xref ref="block-example" text="custom">📋 example</xref></li>
-                <li><xref ref="block-exercise-tasks" text="custom">📋 exercise with tasks</xref></li>
-              </ul>
-            </p>
-          </li>
+          <task>
+            <title>Page Structure</title>
+            <statement>
+              <p>
+                Inside the first <tag>page</tag>, paste the following blocks in order:
+                <ul marker="square">
+                  <li><xref ref="block-p" text="custom">📋 paragraph</xref></li>
+                  <li><xref ref="block-definition" text="custom">📋 definition</xref></li>
+                  <li><xref ref="block-p" text="custom">📋 paragraph</xref></li>
+                  <li><xref ref="block-example" text="custom">📋 example</xref></li>
+                  <li><xref ref="block-exercise-tasks" text="custom">📋 exercise with tasks</xref></li>
+                </ul>
+              </p>
+            </statement>
+          </task>
 
-          <li>
+          <task>
             <title>Paragraphs</title>
-            <p>
-              Copy the two short paragraphs from the target worksheet, namely the lead-in sentence and the bridge sentence before the example, into your two <tag>p</tag> tags.
-            </p>
-          </li>
 
-          <li>
+            <statement>
+              <p>
+                Copy the two short paragraphs from the target worksheet, namely the lead-in sentence and the bridge sentence before the example, into your two <tag>p</tag> tags.
+              </p>
+            </statement>
+
+          </task>
+
+          <task>
             <title>Definition</title>
-            <p>
-              Add <c>xml:id="def-product-rule"</c> to the <tag>definition</tag> tag so you can cross-reference it later. Then copy the definition text from the target worksheet into the <tag>p</tag> inside <tag>statement</tag>. For the math, right-click any expression in the rendered worksheet and choose <term>Copy to Clipboard</term> ▸ <term>TeX Commands</term>.
-            </p>
-          </li>
 
-          <li>
+            <statement>
+              <p>
+                Add <c>xml:id="def-product-rule"</c> to the <tag>definition</tag> tag so you can cross-reference it later. Then copy the definition text from the target worksheet into the <tag>p</tag> inside <tag>statement</tag>. For the math, right-click any expression in the rendered worksheet and choose <term>Copy to Clipboard</term> ▸ <term>TeX Commands</term>.
+              </p>
+            </statement>
+
+          </task>
+
+          <task>
             <title>Example</title>
-            <p>
-              Add <c>xml:id="ex-applying-product-rule"</c> and set the <tag>title</tag> to <q>Applying the product rule</q>. Copy the problem statement and solution text from the target worksheet. In the solution, link back to the definition using <tag>xref ref="def-product-rule"</tag>.
-            </p>
-          </li>
 
-          <li>
-            <title>Practice exercise</title>
-            <p>
-              Give the exercise a <tag>title</tag> of <q>Practice</q> and a <tag>workspace</tag> of <c>2.5in</c>. Add an <tag>introduction</tag> that references <tag>xref ref="def-product-rule"</tag>. Then add two <tag>task</tag> elements, one for each function in the target worksheet, each with a <tag>statement</tag> and an <tag>answer</tag>.
-            </p>
-          </li>
-        </dl>
-      </p>
+            <statement>
+              <p>
+                Add <c>xml:id="ex-applying-product-rule"</c> and set the <tag>title</tag> to <q>Applying the product rule</q>. Copy the problem statement and solution text from the target worksheet. In the solution, link back to the definition using <tag>xref ref="def-product-rule"</tag>.
+              </p>
+            </statement>
+
+          </task>
+
+          <task>
+            <title>Practice Exercises</title>
+
+            <statement>
+              <p>
+                Give the exercise a <tag>title</tag> of <q>Practice</q> and a <tag>workspace</tag> of <c>2.5in</c>. Add an <tag>introduction</tag> that references <tag>xref ref="def-product-rule"</tag>. Then add two <tag>task</tag> elements, one for each function in the target worksheet, each with a <tag>statement</tag> and an <tag>answer</tag>.
+              </p>
+            </statement>
+
+          </task>
+        </exercise>
+      </paragraphs>
     </subsection>
 
     <subsection xml:id="bl-if-stuck">
@@ -1249,6 +1289,13 @@
       </p>
     </subsection>
 
+    <conclusion>
+      <title>🕰️ If you finish early</title>
+      <p>
+        If you finish building the worksheet before 5:45, go ahead and move on to the next self-guided section where you'll add some interactive questions to your worksheet.
+      </p>
+    </conclusion>
+
   </section>
 
   <!-- ================================================= -->
@@ -1258,6 +1305,7 @@
     <title>5:35-5:45 Interactive Questions</title>
 
     <introduction>
+
       <p>
         Creating interactive questions can transform the learning experience. 
         They allow students to test their understanding and receive instant 
@@ -1438,28 +1486,28 @@
     <paragraphs>
       <title>Keep using PreTeXt.Plus</title>
       <p>
-        Your free account stays. You can create up to ten projects, which is plenty for a term's worth of handouts, a worksheet series, or a short open-access textbook. If you adopt <pretext/> seriously, this is a perfectly good home for a while.
+        Your free account stays. You can create up to ten projects. If you adopt <pretext/> seriously, this is a perfectly good home for a while.
       </p>
     </paragraphs>
 
     <paragraphs>
       <title>Move to GitHub Codespaces when you're ready</title>
       <p>
-        When you want version control, multi-file projects, custom assets, or to publish to your own <c>github.io</c> URL, the Codespaces workflow gives you all of that with the same browser-based feel. The <em>Codespace Guide</em> chapter in this hub walks through it step by step. Treat it as take-home material, and don't worry about it tonight.
+        When you want multi-file projects, custom assets, or to publish to your own <c>github.io</c> URL, the Codespaces workflow gives you all of that with the same browser-based feel. The <em>Codespace Guide</em> chapter in this hub walks through the process. There are also some <url href="https://pretextbook.org/doc/guide/html/tutorial-videos.html">YouTube videos</url> that make good starting points.
       </p>
     </paragraphs>
 
     <paragraphs>
       <title>Install locally (long-term)</title>
       <p>
-        Eventually, some of you will want <pretext/> running on your own machine. When that day comes, start at <url href="https://pretextbook.org"><c>pretextbook.org</c></url>. No rush. The browser workflows will take you very far.
+        Eventually, some of you will want <pretext/> running on your own machine. When that day comes, start at <url href="https://pretextbook.org"><pretext /> Homepage</url>. No rush. The <pretext/>Plus and GitHub codespace workflows will take you far.
       </p>
     </paragraphs>
 
     <paragraphs>
       <title>Community</title>
       <p>
-        The <pretext/> community is active and welcoming. See the <em>Information &amp; Links</em> chapter in this hub for forums, documentation, and the author's guide.
+        The <pretext/> community is active and welcoming. See the <xref ref="chp-resource-links" text="title"/> in this hub for forums, documentation, and the author's guide.
       </p>
     </paragraphs>
 
