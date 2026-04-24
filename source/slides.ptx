@@ -123,28 +123,39 @@
 				Much of what you already know transfers directly.
 			</p>
 
-			<tabular>
+			<tabular halign="center">
+				<col/>
+				<col/>
+				<col/>
 				<row>
-					<cell>Inline math</cell><cell><c>\(*\)</c>, <c>$*$</c></cell><cell><tag>m</tag>*&lt;/m&gt;</cell>
+					<cell><p>Inline math</p></cell>
+					<cell><p><pre>$*$</pre></p></cell>
+					<cell><p><pre>&lt;m&gt;*&lt;/m&gt;</pre></p></cell>
 				</row>
 				<row>
-					<cell>Displayed math</cell><cell><pre>\[*\]</pre></cell><cell><tag>md</tag>*&lt;/md&gt;</cell>
+					<cell><p>Displayed math</p></cell>
+					<cell><p><pre>$$*$$</pre></p></cell>
+					<cell><p><pre>&lt;me&gt;*&lt;/me&gt;</pre></p></cell>
 				</row>
 				<row>
-					<cell>Ordered Lists</cell>
+					<cell><p>Ordered Lists</p></cell>
 					<cell>
-						<pre>
-							\begin{enumerate}
-								\item *
-							\end{enumerate}
-						</pre>
+						<p>
+							<pre>
+								\begin{enumerate}
+								  \item *
+								\end{enumerate}
+							</pre>
+						</p>
 					</cell>
 					<cell>
-						<pre>
-							&lt;ol&gt;
-								&lt;li&gt;*&lt;/li&gt;
-							&lt;/ol&gt;
-						</pre>
+						<p>
+							<pre>
+								&lt;ol&gt;
+								  &lt;li&gt;*&lt;/li&gt;
+								&lt;/ol&gt;
+							</pre>
+						</p>
 					</cell>
 				</row>
 			</tabular>
