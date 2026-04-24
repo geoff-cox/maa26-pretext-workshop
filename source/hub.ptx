@@ -17,9 +17,9 @@
 		<xi:include href="./accessibility-information.ptx" />
 		<xi:include href="./faq.ptx" />
 		<xi:include href="./codespace-guide.ptx" />
-		<xi:include href="./syllabus-calc1.ptx" />
+		<!-- <xi:include href="./syllabus-calc1.ptx" />
 		<xi:include href="./product-rule-worksheet.ptx" />
-		<xi:include href="./fallback-plan.ptx" />
+		<xi:include href="./fallback-plan.ptx" /> -->
 
 	</book>
 	
