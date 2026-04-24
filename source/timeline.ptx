@@ -353,9 +353,6 @@
           </interactive>
         </sidebyside>
 
-        <interactive xml:id="interactive-infinity" platform="jsxgraph" width="60%" source="code/infinity.js">
-          <slate xml:id="jsxgraph-infinity" surface="jsxboard" aspect="1:1"/>
-        </interactive>
       </subsubsection>
 
     </subsection>
