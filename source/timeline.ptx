@@ -502,6 +502,10 @@
       <p>
         Where you see placeholders like <c>==YourName==</c>, feel free to replace them with your own information. Or leave them for now and swap them in later. Whichever helps you focus on the tags.
       </p>
+
+      <p>
+        <alert>A note on large group dynamics:</alert> With this many participants, answering questions and facilitating everyone's progress can be challenging. Please pair up with a neighbor for support. If neither of you can figure out how to proceed, then ask me for help.
+      </p>
     </introduction>
 
     <!-- ============================================ -->
@@ -1284,26 +1288,39 @@
   <!-- ================================================= -->
   <section xml:id="sec-interactive-questions">
     <title>5:35-5:45 Interactive Questions</title>
-    <subsection xml:id="bl-bonus">
-      <title>If you have time — add a true/false question</title>
+
+    <introduction>
+      <p>
+        Now that you've created the basic structure of the worksheet, let's add interactive questions that give students immediate feedback. We'll add two types: a multiple-choice question and a true/false question.
+      </p>
+    </introduction>
+
+    <subsection xml:id="bl-add-interactives">
+      <title>Add interactive questions</title>
 
       <p>
-        <dl>
+        As you work through the steps below, click <term>Rebuild</term> or press <kbd>Ctrl</kbd>+<kbd>S</kbd> after each one to see your progress in the preview pane.
+      </p>
+
+      <p>
+        <dl width="medium">
           <li>
             <title>Page 2 — multiple-choice question</title>
             <p>
               Inside the second <tag>page</tag>, paste a <xref ref="block-mc" text="custom">📋 multiple-choice template</xref>. Give it the <c>xml:id</c> <q>ex-product-rule-mc</q> and the title <q>Spot the derivative</q>. Add four <tag>choice</tag> elements — mark one <c>correct="yes"</c> — and copy the statement and feedback text for each from the target worksheet.
             </p>
           </li>
+
+          <li>
+            <title>True/false question</title>
+            <p>
+              Add a <xref ref="block-tf" text="custom">📋 true/false template</xref> below the multiple-choice question. This works similarly to the multiple-choice question you just built, with two key differences: the <c>correct</c> attribute goes on the <tag>statement</tag> itself, and there is no <tag>choices</tag> block — just a single <tag>feedback</tag>.
+            </p>
+            <p>
+              Try replicating the question below. Drop it onto the second page of your worksheet, just above the closing <tag>/page</tag> tag, and rebuild.
+            </p>
+          </li>
         </dl>
-      </p>
-
-      <p>
-        There is one more interactive exercise type in the cheatsheet that we haven't used yet: <xref ref="block-tf" text="custom">📋 true/false</xref>. It works like the multiple-choice question you just built, with two differences: the <c>correct</c> attribute moves onto the <tag>statement</tag> itself, and there is no <tag>choices</tag> block — just a single <tag>feedback</tag>.
-      </p>
-
-      <p>
-        Try replicating the question below. Drop it onto the second page of your worksheet, just above the closing <tag>/page</tag> tag, and rebuild.
       </p>
 
       <exercise xml:id="ex-product-rule-tf-demo">
@@ -1332,7 +1349,7 @@
     <title>5:45-5:50 Share Your Lesson</title>
 
     <p>
-      Before we regroup, trade lessons with the person next to you. Five minutes, two minutes each way.
+      Now that you've created your lesson, it's time to share it. There are multiple ways to share your work, depending on your teaching context.
     </p>
 
     <paragraphs>
@@ -1355,6 +1372,23 @@
             </p>
           </li>
         </ol>
+      </p>
+    </paragraphs>
+
+    <paragraphs>
+      <title>Embedding in your LMS</title>
+      <p>
+        If you're using a learning management system (LMS) like Canvas, Blackboard, or Moodle, you can embed your PreTeXt.Plus lesson directly into an assignment. Most LMS platforms support embedding external content via an iframe or external tool link. Simply copy the shareable link from PreTeXt.Plus and paste it into your LMS assignment as an external URL or embed code.
+      </p>
+      <p>
+        If your LMS doesn't support embedding or you prefer a simpler approach, you can also just share the link directly with students through your LMS announcements, assignment descriptions, or course homepage.
+      </p>
+    </paragraphs>
+
+    <paragraphs>
+      <title>Quick peer review</title>
+      <p>
+        Before we regroup, trade lessons with the person next to you. Five minutes, two minutes each way.
       </p>
     </paragraphs>
 
