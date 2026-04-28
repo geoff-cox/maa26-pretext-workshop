@@ -892,7 +892,7 @@
   <choices randomize="yes">
     <choice>
       <statement><p><m>3x^2\cos x</m></p></statement>
-      <feedback><p>This differentiates each factor incorrectly and then multiplies the results.</p></feedback>
+      <feedback><p>This multiplies the individual derivatives instead of adding the two terms required by the product rule.</p></feedback>
     </choice>
     <choice correct="yes">
       <statement><p><m>3x^2\sin x + x^3\cos x</m></p></statement>
@@ -944,7 +944,7 @@
   </areas>
   <feedback>
     <p>
-      Look for a product of two factors being multiplied together. Composition suggests the chain rule, and a quotient suggests the quotient rule.
+      Look for a product of two factors being multiplied together. Composition suggests the chain rule, and a quotient such as <m>\dfrac{x^2+1}{x-3}</m> suggests the quotient rule instead.
     </p>
   </feedback>
 </exercise>
