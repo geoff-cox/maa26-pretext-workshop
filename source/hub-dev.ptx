@@ -13,7 +13,7 @@
 
 		<xi:include href="./resource-links.ptx" />
 		<xi:include href="./pretext-cheatsheet.ptx" />
-		<xi:include href="./timeline.ptx" />
+		<xi:include href="./self-paced-tutorial.ptx" />
 		<!-- <xi:include href="./accessibility-information.ptx" /> -->
 		<!-- <xi:include href="./faq.ptx" /> -->
 		<!-- <xi:include href="./codespace-guide.ptx" /> -->
