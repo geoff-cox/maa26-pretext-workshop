@@ -976,7 +976,7 @@
             <p>Save the project and return to the project list.</p>
           </li>
           <li>
-            <p>Select the project and choose <term>Sharable link</term>.</p>
+            <p>Select the project and choose its <term>shareable link</term> option.</p>
           </li>
           <li>
             <p>Copy the URL and test it in a fresh browser tab.</p>
