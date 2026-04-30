@@ -7,7 +7,7 @@
 	</docinfo>
 
 	<book>
-		<title>Getting Started with <pretext/> Workshop HUB</title>
+		<title>Getting Started with PreTeXt</title>
 
 		<xi:include href="./frontmatter-hub.ptx" />
 
