@@ -213,13 +213,13 @@
           </program>
         </li>
 
-        <!-- <li xml:id="block-men">
+        <li xml:id="block-md-numbered">
           <title>Numbered display equation</title>
           <program language="xml">
-            <![CDATA[ <men>e^{i\pi} + 1 = 0</men> ]]>
+            <![CDATA[ <md number="yes">e^{i\pi} + 1 = 0</md> ]]>
           </program>
           <p>Give the equation an <c>xml:id</c> to reference it with <tag>xref</tag>.</p>
-        </li> -->
+        </li>
 
         <li xml:id="block-md-aligned">
           <title>Aligned, multi-line</title>
