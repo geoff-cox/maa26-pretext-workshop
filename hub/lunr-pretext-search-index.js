@@ -79,7 +79,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Set Up PreTeXt.Plus",
-  "body": " Set Up PreTeXt .Plus   The rest of this tutorial happens in pretext.plus . If you already have an account, skip to the project steps below. Otherwise, take two minutes to get oriented.    Create or Open Your Account     Go to pretext.plus and choose Sign up if you are new.    Confirm your email, then sign in.    Notice the list of projects. This is where you will return each time you come back to continue the tutorial.       Create a Fresh Project     Click Projects , then New project .    Give the project a clear title. You will create a new project for each guided build, so choose names you will recognize later.    Open the project with Edit . The source appears on the left and the preview appears on the right.       Know the Three Panels You Need    The source panel is where you type XML.  The preview panel shows the built result.  The project list is how you return to saved work later.    That is enough to begin. The first guided build focuses on the handful of tags that most new authors need right away.   "
+  "body": " Set Up PreTeXt .Plus   The rest of this tutorial happens in pretext.plus . If you already have an account, skip to the project steps below. Otherwise, take two minutes to get oriented.   If possible, use an .edu email  If you have an .edu email address, use it to sign up. This gives you access to a free account. Otherwise, you'll have to request an invitation code from support@pretext.plus to complete this tutorial.     Create or Open Your Account     Go to pretext.plus and choose Sign up if you are new.    Confirm your email, then sign in.    Notice the list of projects. This is where you will return each time you come back to continue the tutorial.       Create a Fresh Project     Click Projects , then New project .    Give the project a clear title. You will create a new project for each guided build, so choose names you will recognize later.    Open the project with Edit . The source appears on the left and the preview appears on the right.       Know the Three Panels You Need    The source panel is where you type XML.  The preview panel shows the built result.  The project list is how you return to saved work later.    That is enough to begin. The first guided build focuses on the handful of tags that most new authors need right away.   "
+},
+{
+  "id": "sec-pretextplus-setup-2-2",
+  "level": "2",
+  "url": "sec-pretextplus-setup.html#sec-pretextplus-setup-2-2",
+  "type": "Remark",
+  "number": "3",
+  "title": "If possible, use an <code class=\"code-inline tex2jax_ignore\">.edu<\/code> email.",
+  "body": " If possible, use an .edu email  If you have an .edu email address, use it to sign up. This gives you access to a free account. Otherwise, you'll have to request an invitation code from support@pretext.plus to complete this tutorial.  "
 },
 {
   "id": "tutorial-account-2",
@@ -113,7 +122,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-guided-project-syllabus.html#exr-syllabus-structure",
   "type": "Checkpoint",
-  "number": "3",
+  "number": "4",
   "title": "Set up the section and subsection skeleton.",
   "body": " Set up the section and subsection skeleton   Start by shaping the document before you worry about wording. This makes every later paste easier because you already know where each chunk belongs.     Delete the starter content and paste a single <section> template into your project.    Target shape  <section> <title>Calculus I Syllabus<\/title> <subsection> <title>Course and Instructor Information<\/title> <\/subsection> <subsection> <title>Course Description<\/title> <\/subsection> <subsection> <title>Graded Work<\/title> <\/subsection> <subsection> <title>Course Schedule<\/title> <\/subsection> <\/section>      Rebuild and confirm that the preview now shows one section with four empty subsections. If it does, your document structure is ready for content.    "
 },
@@ -122,7 +131,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-guided-project-syllabus.html#exr-syllabus-course-info",
   "type": "Checkpoint",
-  "number": "4",
+  "number": "5",
   "title": "Turn plain text into a structured list.",
   "body": " Turn plain text into a structured list    Paste the block below into your first subsection, rebuild once, and notice that the content appears as one continuous paragraph.  <p> Course: ==CourseName==, ==Term== Instructor: ==YourName== Email: ==yourname@example.edu== Office: ==OfficeLocation== Office Hours: ==OfficeHours== Lecture: ==MeetingTime==, ==Room== Course Website: ==CanvasURL== <\/p>      Convert that paragraph into a formatted list using:  <ul> and <li> for the seven lines,  <c> for the email address, and  <url> for the course website.      If you want to compare  <subsection> <title>Course and Instructor Information<\/title> <p> <ul> <li>Course: ==CourseName==, ==Term==<\/li> <li>Instructor: ==YourName==<\/li> <li>Email: <c>==yourname@example.edu==<\/c><\/li> <li>Office: ==OfficeLocation==<\/li> <li>Office Hours: ==OfficeHours==<\/li> <li>Lecture: ==MeetingTime==, ==Room==<\/li> <li>Course Website: <url href=\"==URL==\">Canvas<\/url><\/li> <\/ul> <\/p> <p> The best way to reach me outside of office hours is by email. I aim to reply within one business day. <\/p> <\/subsection>    "
 },
@@ -131,7 +140,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-guided-project-syllabus.html#exr-syllabus-description",
   "type": "Checkpoint",
-  "number": "5",
+  "number": "6",
   "title": "Separate paragraphs and mark up the math.",
   "body": " Separate paragraphs and mark up the math    Paste the following into the second subsection and rebuild. The prose will look dense and the math will render as plain text.  <p> Calculus I is a first course in differential calculus. We develop the concept of the limit from scratch, use it to give a precise definition of the derivative, and spend most of the semester learning to compute and apply derivatives. The course closes with an introduction to integration and the Fundamental Theorem of Calculus, which connects the two main ideas of the subject. By the end of the course, a successful student will be able to differentiate polynomials like p(x) = x^3 - 2x + 1, exponentials like e^x, logarithms like ln(x), and trigonometric functions like sin(x) and cos(x). They will also evaluate limits, apply the derivative to problems involving rates of change and optimization, and interpret the definite integral as a signed area. <\/p>      Improve the structure by splitting the text into two <p> tags , wrapping every formula with <m> , and emphasizing the word Prerequisites somewhere in a final sentence with <em> .    One clean version  <subsection> <title>Course Description<\/title> <p> Calculus I is a first course in differential calculus. We develop the concept of the limit from scratch, use it to give a precise definition of the derivative, and spend most of the semester learning to compute and apply derivatives. The course closes with an introduction to integration and the Fundamental Theorem of Calculus, which connects the two main ideas of the subject. <\/p> <p> By the end of the course, a successful student will be able to differentiate polynomials like <m>p(x)=x^3-2x+1<\/m>, exponentials like <m>e^x<\/m>, logarithms like <m>\\ln(x)<\/m>, and trigonometric functions like <m>\\sin(x)<\/m> and <m>\\cos(x)<\/m>. They will also evaluate limits, apply the derivative to problems involving rates of change and optimization, and interpret the definite integral as a signed area. <\/p> <p> <em>Prerequisites:<\/em> successful completion of precalculus or the equivalent. <\/p> <\/subsection>    "
 },
@@ -140,7 +149,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-guided-project-syllabus.html#exr-syllabus-graded-work",
   "type": "Checkpoint",
-  "number": "6",
+  "number": "7",
   "title": "Use a description list and a table together.",
   "body": " Use a description list and a table together    Paste the block below into the third subsection. Rebuild once so you can see why plain text is not the right structure for policy information.  <p> Homework: 20 percent. Due Sundays at 11:59 pm on Canvas. Collaborate freely, but write solutions in your own words. Late work accepted up to 48 hours late at a 20 percent penalty; lowest two scores dropped. Quizzes: 10 percent. Short biweekly quizzes covering the recent material. Midterm 1: 20 percent. Closed book, closed notes, one handwritten reference sheet permitted. Midterm 2: 20 percent. Same format as Midterm 1. Final exam: 30 percent. Cumulative. Time and room set by the registrar. Grade cutoffs: A at 90 percent or above, B at 80 percent or above, C at 70 percent or above, D at 60 percent or above. Cutoffs may be lowered at the end of the term but will never be raised. <\/p>      Turn the policy text into a <dl> description list . Put each grading component in the <title> of an item and each explanation in a <p>.      Add a summary table above the description list using the <tabular>, <row>, and <cell> templates. Two columns are enough: the component and the percentage.    Checkpoint  <subsection> <title>Graded Work<\/title> <tabular> <row> <cell>Homework<\/cell> <cell>20%<\/cell> <\/row> <row> <cell>Quizzes<\/cell> <cell>10%<\/cell> <\/row> <row> <cell>Midterm 1<\/cell> <cell>20%<\/cell> <\/row> <row> <cell>Midterm 2<\/cell> <cell>20%<\/cell> <\/row> <row> <cell>Final Exam<\/cell> <cell>30%<\/cell> <\/row> <\/tabular> <p> <dl> <li> <title>Homework<\/title> <p>Due Sundays at 11:59 pm on Canvas. Collaborate freely, but write solutions in your own words. Late work accepted up to 48 hours late at a 20 percent penalty; lowest two scores dropped.<\/p> <\/li> <li> <title>Quizzes<\/title> <p>Short biweekly quizzes covering the recent material.<\/p> <\/li> <li> <title>Midterm 1<\/title> <p>Closed book, closed notes, one handwritten reference sheet permitted.<\/p> <\/li> <li> <title>Midterm 2<\/title> <p>Same format as Midterm 1.<\/p> <\/li> <li> <title>Final Exam<\/title> <p>Cumulative. Time and room set by the registrar.<\/p> <\/li> <li> <title>Grade Cutoffs<\/title> <p>At most A at 90 percent, B at 80, C at 70, D at 60. Cutoffs may be lowered at the end of the term but will never be raised.<\/p> <\/li> <\/dl> <\/p> <\/subsection>    "
 },
@@ -149,7 +158,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-guided-project-syllabus.html#exr-syllabus-schedule",
   "type": "Checkpoint",
-  "number": "7",
+  "number": "8",
   "title": "Style a longer table.",
   "body": " Style a longer table   This final subsection turns a large block of schedule data into a readable table. The syntax is a little verbose, so work slowly and rebuild after each small edit.     Paste this starter table into your last subsection.  <tabular> <row> <cell><p>Week<\/p><\/cell><cell><p>Dates<\/p><\/cell> <cell><p>Topics<\/p><\/cell><cell><p>Reading<\/p><\/cell> <\/row> <row><cell>1<\/cell><cell>Aug 25-Aug 29<\/cell><cell>Introduction; average\/instantaneous velocity<\/cell><cell>1.1<\/cell><\/row> <row><cell>2<\/cell><cell>Sep 1-Sep 5<\/cell><cell>The limit of a function; limit laws<\/cell><cell>1.2<\/cell><\/row> <row><cell>3<\/cell><cell>Sep 8-Sep 12<\/cell><cell>Continuity; limits at infinity<\/cell><cell>1.3, 1.4<\/cell><\/row> <row><cell>4<\/cell><cell>Sep 15-Sep 19<\/cell><cell>Definition of the derivative<\/cell><cell>2.1, 2.2<\/cell><\/row> <row><cell>5<\/cell><cell>Sep 22-Sep 26<\/cell><cell>Midterm 1<\/cell><cell><\/cell><\/row> <row><cell>6<\/cell><cell>Sep 29-Oct 3<\/cell><cell>Product\/quotient rules<\/cell><cell>2.4, 2.5<\/cell><\/row> <row><cell>7<\/cell><cell>Oct 6-Oct 10<\/cell><cell>The chain rule<\/cell><cell>2.6<\/cell><\/row> <row><cell>8<\/cell><cell>Oct 13-Oct 17<\/cell><cell>Implicit differentiation; inverse functions<\/cell><cell>2.7, 2.8<\/cell><\/row> <row><cell>9<\/cell><cell>Oct 20-Oct 24<\/cell><cell>Related rates; linear approximation<\/cell><cell>3.1, 3.2<\/cell><\/row> <row><cell>10<\/cell><cell>Oct 27-Oct 31<\/cell><cell>Midterm 2<\/cell><cell><\/cell><\/row> <row><cell>11<\/cell><cell>Nov 3-Nov 7<\/cell><cell>Increasing\/decreasing; Concavity<\/cell><cell>3.4, 3.5<\/cell><\/row> <row><cell>12<\/cell><cell>Nov 10-Nov 14<\/cell><cell>Optimization<\/cell><cell>3.6<\/cell><\/row> <row><cell>13<\/cell><cell>Nov 17-Nov 21<\/cell><cell>L'Hopital's rule; antiderivatives<\/cell><cell>3.7, 4.1<\/cell><\/row> <row><cell>14<\/cell><cell>Dec 1-Dec 5<\/cell><cell>The definite integral; Riemann sums<\/cell><cell>4.2, 4.3<\/cell><\/row> <row><cell>15<\/cell><cell>Dec 8-Dec 12<\/cell><cell>Fundamental Theorem of Calculus; review<\/cell><cell>4.4<\/cell><\/row> <row><cell>16<\/cell><cell>Dec 16<\/cell><cell>Final Exam, 8:00-10:00 am<\/cell><cell>Cumulative<\/cell><\/row> <\/tabular>      Apply the following table improvements, rebuilding after each one:  Mark the first row as a header with header=\"yes\" .  Add borders on the <tabular> .  Add four <col\/> tags for width and alignment.  Wrap the exam weeks in <alert> .      Styled version  <subsection> <title>Course Schedule<\/title> <p> Section numbers refer to <em>Active Calculus<\/em>. Topic coverage may shift by a class or two depending on pacing. <\/p> <tabular top=\"minor\" bottom=\"minor\" left=\"minor\" right=\"minor\"> <col width=\"9%\" halign=\"center\"\/> <col width=\"40%\" halign=\"center\"\/> <col width=\"36%\"\/> <col width=\"15%\"\/> <row header=\"yes\"> <cell><p>Week<\/p><\/cell><cell><p>Dates<\/p><\/cell> <cell><p>Topics<\/p><\/cell><cell><p>Reading<\/p><\/cell> <\/row> <row><cell>1<\/cell><cell>Aug 25-Aug 29<\/cell><cell>Introduction; average\/instantaneous velocity<\/cell><cell>1.1<\/cell><\/row> <row><cell>2<\/cell><cell>Sep 1-Sep 5<\/cell><cell>The limit of a function; limit laws<\/cell><cell>1.2<\/cell><\/row> <row><cell>3<\/cell><cell>Sep 8-Sep 12<\/cell><cell>Continuity; limits at infinity<\/cell><cell>1.3, 1.4<\/cell><\/row> <row><cell>4<\/cell><cell>Sep 15-Sep 19<\/cell><cell>Definition of the derivative<\/cell><cell>2.1, 2.2<\/cell><\/row> <row><cell>5<\/cell><cell>Sep 22-Sep 26<\/cell><cell><alert>Midterm 1<\/alert><\/cell><cell><\/cell><\/row> <row><cell>6<\/cell><cell>Sep 29-Oct 3<\/cell><cell>Product\/quotient rules<\/cell><cell>2.4, 2.5<\/cell><\/row> <row><cell>7<\/cell><cell>Oct 6-Oct 10<\/cell><cell>The chain rule<\/cell><cell>2.6<\/cell><\/row> <row><cell>8<\/cell><cell>Oct 13-Oct 17<\/cell><cell>Implicit differentiation; inverse functions<\/cell><cell>2.7, 2.8<\/cell><\/row> <row><cell>9<\/cell><cell>Oct 20-Oct 24<\/cell><cell>Related rates; linear approximation<\/cell><cell>3.1, 3.2<\/cell><\/row> <row><cell>10<\/cell><cell>Oct 27-Oct 31<\/cell><cell><alert>Midterm 2<\/alert><\/cell><cell><\/cell><\/row> <row><cell>11<\/cell><cell>Nov 3-Nov 7<\/cell><cell>Increasing\/decreasing; Concavity<\/cell><cell>3.4, 3.5<\/cell><\/row> <row><cell>12<\/cell><cell>Nov 10-Nov 14<\/cell><cell>Optimization<\/cell><cell>3.6<\/cell><\/row> <row><cell>13<\/cell><cell>Nov 17-Nov 21<\/cell><cell>L'Hopital's rule; antiderivatives<\/cell><cell>3.7, 4.1<\/cell><\/row> <row><cell>14<\/cell><cell>Dec 1-Dec 5<\/cell><cell>The definite integral; Riemann sums<\/cell><cell>4.2, 4.3<\/cell><\/row> <row><cell>15<\/cell><cell>Dec 8-Dec 12<\/cell><cell>Fundamental Theorem of Calculus; review<\/cell><cell>4.4<\/cell><\/row> <row><cell>16<\/cell><cell>Dec 16<\/cell><cell><alert>Final Exam, 8:00-10:00 am<\/alert><\/cell><cell>Cumulative<\/cell><\/row> <\/tabular> <p> <em>Note:<\/em> There is no class November 24-28 (Thanksgiving break). <\/p> <\/subsection>    "
 },
@@ -167,7 +176,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-guided-project-worksheet.html#exr-worksheet-shell",
   "type": "Checkpoint",
-  "number": "8",
+  "number": "9",
   "title": "",
   "body": "   Replace the default starter <section> with the worksheet template from the cheatsheet.      Set the worksheet title to The Product Rule and replace the objectives placeholder with the objectives template .      Copy the objective text from the finished worksheet. Rebuild and confirm that the page now has a title and a short list of learning goals.    "
 },
@@ -176,7 +185,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-guided-project-worksheet.html#exr-worksheet-page-one",
   "type": "Checkpoint",
-  "number": "9",
+  "number": "10",
   "title": "",
   "body": "  The first page combines a few reusable teaching blocks. Use the cheatsheet templates instead of trying to write the syntax from memory.     Inside the first <page>, paste these pieces in order:  a paragraph  a definition  another paragraph  an example  an exercise with tasks        Copy the two short paragraphs from the target worksheet into the two <p> tags you just placed.      Give the definition xml:id=\"def-product-rule\" , then paste the product-rule statement into the <statement>. For the mathematics, right-click the rendered target and use Copy to Clipboard → TeX Commands when needed.      Give the example xml:id=\"ex-applying-product-rule\" and the title Applying the product rule . Add a solution that links back to the definition with <xref> .      Build the practice exercise with a title, an introduction, and two tasks. Add workspace=\"2.5in\" so the worksheet leaves room for student work when printed.    Reminder  The <workspace> example in the cheatsheet shows the exact attribute placement.    "
 },
@@ -194,7 +203,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-guided-project-reading-check.html#exr-reading-check-structure",
   "type": "Checkpoint",
-  "number": "10",
+  "number": "11",
   "title": "",
   "body": "   Start with the <section> template . Give the section the title Product Rule Reading Check .      Replace the section's <introduction> with a short paragraph explaining that learners should answer the questions before class and use the feedback to review.    Possible introduction  <introduction> <p> Use this short reading check to make sure you recognize the product rule, can distinguish it from nearby derivative rules, and can identify where it applies. <\/p> <\/introduction>    "
 },
@@ -203,7 +212,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-guided-project-reading-check.html#exr-reading-check-tf",
   "type": "Checkpoint",
-  "number": "11",
+  "number": "12",
   "title": "",
   "body": "   Paste the true\/false template and adapt it to this statement: The product rule is needed to differentiate .       Set the correct attribute appropriately and write feedback that explains why the answer is correct.    One working version  <exercise> <title>True\/False<\/title> <statement correct=\"yes\"> <p> The product rule is needed to differentiate <m>f(x)=x^2e^x<\/m>. <\/p> <\/statement> <feedback> <p> Correct. The function is a product of <m>x^2<\/m> and <m>e^x<\/m>, so the derivative requires the product rule. <\/p> <\/feedback> <\/exercise>    "
 },
@@ -212,7 +221,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-guided-project-reading-check.html#exr-reading-check-mc",
   "type": "Checkpoint",
-  "number": "12",
+  "number": "13",
   "title": "",
   "body": "   Paste the multiple-choice template . Ask which derivative matches .      Keep three answer choices, mark the correct one, and write feedback for every option so the learner gets useful guidance even when they miss it.    Possible answer choices  <exercise> <title>Multiple Choice<\/title> <statement> <p> Which derivative is correct for <m>f(x)=x^3\\sin x<\/m>? <\/p> <\/statement> <choices randomize=\"yes\"> <choice> <statement> <p><m>3x^2\\cos x<\/m><\/p> <\/statement> <feedback> <p> This multiplies the individual derivatives instead of adding the two terms required by the product rule. <\/p> <\/feedback> <\/choice> <choice correct=\"yes\"> <statement> <p><m>3x^2\\sin x + x^3\\cos x<\/m><\/p> <\/statement> <feedback> <p> Yes. Differentiate one factor at a time and add the two products. <\/p> <\/feedback> <\/choice> <choice> <statement> <p><m>x^3\\cos x<\/m><\/p> <\/statement> <feedback> <p> This differentiates only the sine factor and forgets the derivative of <m>x^3<\/m>. <\/p> <\/feedback> <\/choice> <\/choices> <\/exercise>    "
 },
@@ -221,7 +230,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-guided-project-reading-check.html#exr-reading-check-clickable",
   "type": "Checkpoint",
-  "number": "13",
+  "number": "14",
   "title": "",
   "body": "   Paste the clickable-area template . Use it to ask learners to click every expression that would require the product rule.      Include at least four expressions, with a mix of correct and incorrect choices. Write feedback that tells the learner to look for an actual product of two nonconstant factors.    One working version  <exercise> <title>Clickable Area<\/title> <statement> <p> Click every function that requires the product rule. <\/p> <\/statement> <areas> <p> <area><m>x^2\\cos x<\/m><\/area>, <area correct=\"no\"><m>\\sin(x^2)<\/m><\/area>, <area><m>(x+1)e^x<\/m><\/area>, <area correct=\"no\"><m>\\dfrac{x^2+1}{x-3}<\/m><\/area> <\/p> <\/areas> <feedback> <p> Look for a product of two factors being multiplied together. Composition suggests the chain rule, and a quotient such as <m>\\dfrac{x^2+1}{x-3}<\/m> suggests the quotient rule instead. <\/p> <\/feedback> <\/exercise>    "
 },
@@ -671,7 +680,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "codespace-latex-bridge.html#codespace-latex-bridge-3",
   "type": "Table",
-  "number": "14",
+  "number": "15",
   "title": "Common <span class=\"latex-logo\">L<span class=\"A\">a<\/span>T<span class=\"E\">e<\/span>X<\/span> patterns and their PreTeXt equivalents",
   "body": " Common latex patterns and their PreTeXt equivalents      latex  PreTeXt    \\(x^2\\)  <m>x^2<\/m>    \\[ \\int f \\]  <me>\\int f<\/me>    \\section{Title}  <section><title>Title<\/title>    \\begin{itemize}  <ul>    \\item text  <li><p>text<\/p><\/li>    \\begin{definition}  <definition><statement><p>    \\emph{word}  <em>word<\/em>    \\textbf{word}  <term>word<\/term>    \\ref{label}  <xref ref=\"label\"\/>    "
 },
