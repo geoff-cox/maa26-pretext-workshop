@@ -198,33 +198,31 @@
     <p>
       <dl width="narrow">
         <li xml:id="block-m">
-          <title>Inline math</title>
+          <title>Inline</title>
           <program language="xml">
             <![CDATA[ <m>x^2 + 1</m> ]]>
           </program>
         </li>
 
         <li xml:id="block-me-md">
-          <title>Display math</title>
+          <title>Display, single-line</title>
           <program language="xml">
             <![CDATA[
-              <me>\int_0^1 f(x)\,dx</me>
               <md>\sum_{i=1}^n x_i^2</md>
             ]]>
           </program>
-          <p>Use <tag>me</tag> for a single line, <tag>md</tag> when you may want to add aligned rows later.</p>
         </li>
 
-        <li xml:id="block-men">
+        <!-- <li xml:id="block-men">
           <title>Numbered display equation</title>
           <program language="xml">
             <![CDATA[ <men>e^{i\pi} + 1 = 0</men> ]]>
           </program>
           <p>Give the equation an <c>xml:id</c> to reference it with <tag>xref</tag>.</p>
-        </li>
+        </li> -->
 
         <li xml:id="block-md-aligned">
-          <title>Aligned, multi-line math</title>
+          <title>Aligned, multi-line</title>
           <program language="xml">
             <![CDATA[
               <md>
