@@ -65,6 +65,9 @@
 
     <introduction>
       <p>
+        <url href="https://geoff-cox.github.io/maa26-pretext-workshop/talk/slides.html">These slides</url> contain a short orientation into <pretext/>. Feel free to review them before you start the tutorial, but they are not required.
+      </p>
+      <p>
         Before you build anything, it helps to see the range. The core idea of <pretext/> is that you describe <em>what a piece of content is</em>, whether it be a definition, an example, an exercise, an interactive and the system handles presentation for web, print, and accessibility.
       </p>
       <p>
