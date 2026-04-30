@@ -79,7 +79,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Set Up PreTeXt.Plus",
-  "body": " Set Up PreTeXt .Plus   The rest of this tutorial happens in pretext.plus . If you already have an account, skip to the project steps below. Otherwise, take two minutes to get oriented.   If possible, use an .edu email  If you have an .edu email address, use it to sign up. This gives you access to a free account. Otherwise, you'll have to request an invitation code from support@pretext.plus to complete this tutorial.     Create or Open Your Account     Go to pretext.plus and choose Sign up if you are new.    Confirm your email, then sign in.    Notice the list of projects. This is where you will return each time you come back to continue the tutorial.       Create a Fresh Project     Click Projects , then New project .    Give the project a clear title. You will create a new project for each guided build, so choose names you will recognize later.    Open the project with Edit . The source appears on the left and the preview appears on the right.       Know the Three Panels You Need    The source panel is where you type XML.  The preview panel shows the built result.  The project list is how you return to saved work later.    That is enough to begin. The first guided build focuses on the handful of tags that most new authors need right away.   "
+  "body": " Set Up PreTeXt .Plus   The rest of this tutorial happens in pretext.plus . If you already have an account, skip to the project steps below. Otherwise, take two minutes to get oriented.   If possible, use an .edu email  If you have an .edu email address, use it to sign up. This gives you direct access to a free account. Otherwise, you'll have to request an invitation code from support@pretext.plus to complete this tutorial.     Create or Open Your Account     Go to pretext.plus and choose Sign up if you are new.    Confirm your email, then sign in.    Notice the list of projects. This is where you will return each time you come back to continue the tutorial.       Create a Fresh Project     Click Projects , then New project .    Give the project a clear title. You will create a new project for each guided build, so choose names you will recognize later.    Open the project with Edit . The source appears on the left and the preview appears on the right.       Know the Three Panels You Need    The source panel is where you type XML.  The preview panel shows the built result.  The project list is how you return to saved work later.    That is enough to begin. The first guided build focuses on the handful of tags that most new authors need right away.   "
 },
 {
   "id": "sec-pretextplus-setup-2-2",
@@ -88,7 +88,7 @@ var ptx_lunr_docs = [
   "type": "Remark",
   "number": "3",
   "title": "If possible, use an <code class=\"code-inline tex2jax_ignore\">.edu<\/code> email.",
-  "body": " If possible, use an .edu email  If you have an .edu email address, use it to sign up. This gives you access to a free account. Otherwise, you'll have to request an invitation code from support@pretext.plus to complete this tutorial.  "
+  "body": " If possible, use an .edu email  If you have an .edu email address, use it to sign up. This gives you direct access to a free account. Otherwise, you'll have to request an invitation code from support@pretext.plus to complete this tutorial.  "
 },
 {
   "id": "tutorial-account-2",
