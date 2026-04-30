@@ -158,6 +158,12 @@
       <p>
         The rest of this tutorial happens in <url href="https://pretext.plus"><c>pretext.plus</c></url>. If you already have an account, skip to the project steps below. Otherwise, take two minutes to get oriented.
       </p>
+      <remark>
+        <title>If possible, use an <c>.edu</c> email</title>
+        <p>
+          If you have an <c>.edu</c> email address, use it to sign up. This gives you access to a free account. Otherwise, you'll have to request an invitation code from <url href="mailto:support@pretext.plus">support@pretext.plus</url> to complete this tutorial.
+        </p>
+      </remark>
     </introduction>
 
     <subsection xml:id="tutorial-account">
