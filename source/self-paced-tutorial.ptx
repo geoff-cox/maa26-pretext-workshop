@@ -838,46 +838,63 @@
     </subsection>
   </section>
 
-  <section xml:id="sec-guided-project-reading-check">
-    <title>Project 3: Build an Interactive Reading Check</title>
+  <section xml:id="sec-guided-project-reading-questions">
+    <title>Project 3: Interactive Reading Questions</title>
 
     <introduction>
       <p>
         This project is intentionally different from the first two. Instead of building a reference document or a printable worksheet, you will build a short online activity designed for immediate feedback. It is a good pattern for pre-class checks, warm-ups, or low-stakes review.
       </p>
       <p>
-        Create a new project called <c>Product Rule Reading Check</c>. This time you will build the whole activity from the instructions below rather than from a finished target.
+        Create a new project called <c>Product Rule Reading Questions</c>. This time you will build the whole activity from the instructions below rather than from a finished target.
+      </p>
+      <p>
+        Here is the target activity for reference: <url href="https://pretext.plus/projects/5b1d2729-1e9b-4b6a-a223-bf24b7e1e4fd/share">Product Rule Reading Questions</url>.
       </p>
     </introduction>
 
-    <subsection xml:id="reading-check-structure">
+    <subsection xml:id="reading-questions-structure">
       <title>Build the page structure</title>
-      <exercise xml:id="exr-reading-check-structure">
+      <exercise xml:id="exr-reading-questions-structure">
         <task>
           <statement>
             <p>
-              Start with the <xref ref="block-section-layout" text="custom"><![CDATA[<section>]]> template</xref>. Give the section the title <q>Product Rule Reading Check</q>.
+              Start with the <xref ref="block-section-layout" text="custom"><![CDATA[<section>]]> template</xref>. Give the section the title <q>Product Rule Reading Questions</q>.
             </p>
           </statement>
         </task>
         <task>
           <statement>
             <p>
-              Replace the section's <![CDATA[<introduction>]]> with a short paragraph explaining that learners should answer the questions before class and use the feedback to review.
+              Delete the two subsections and the conclusion. We will only need the <tag>introduction</tag> and the <tag>exercises</tag> for this activity.
             </p>
           </statement>
+        </task>
+        <task>
+          <statement>
+            <p>
+              Replace the section's <![CDATA[<introduction>]]> with a short paragraph explaining that learners should answer the questions before class and use the feedback to review. For example,
+            </p>
+            <program>
+                Answer the following questions before class to check that you recognize the product rule and can identify where it applies.
+            </program>
+          </statement>
           <solution>
-            <title>Possible introduction</title>
+            <title>PreTeXt Source so far</title>
             <program language="xml">
               <![CDATA[
-                <introduction>
-                  <p>
-                    Use this short reading check to make sure you 
-                    recognize the product rule, can distinguish it 
-                    from nearby derivative rules, and can identify 
-                    where it applies.
-                  </p>
-                </introduction>
+                <section>
+                  <title>Product Rule Reading Questions</title>
+                  <introduction>
+                    <p>
+                      Answer the following questions before class 
+                      to check that you recognize the product rule 
+                      and can identify where it applies.
+                    </p>
+                  </introduction>
+
+                  <exercises>...</exercises>
+                </section>
               ]]>
             </program>
           </solution>
@@ -885,14 +902,15 @@
       </exercise>
     </subsection>
 
-    <subsection xml:id="reading-check-tf">
+    <subsection xml:id="reading-questions-tf">
       <title>Add a true/false question</title>
-      <exercise xml:id="exr-reading-check-tf">
+      <exercise xml:id="exr-reading-questions-tf">
         <task>
           <statement>
             <p>
-              Paste the <xref ref="block-tf" text="custom">true/false template</xref> and adapt it to this statement: <q>The product rule is needed to differentiate <m>f(x)=x^2e^x</m>.</q>
+              Make some room inside the <tag>exercises</tag> block and paste the <xref ref="block-tf" text="custom">true/false template</xref>. Then adapt it to this statement: 
             </p>
+            <blockquote><p>The product rule is needed to differentiate <m>f(x)=x^2e^x</m>.</p></blockquote>
           </statement>
         </task>
         <task>
@@ -928,13 +946,13 @@
       </exercise>
     </subsection>
 
-    <subsection xml:id="reading-check-mc">
+    <subsection xml:id="reading-questions-mc">
       <title>Add a multiple-choice question</title>
-      <exercise xml:id="exr-reading-check-mc">
+      <exercise xml:id="exr-reading-questions-mc">
         <task>
           <statement>
             <p>
-              Paste the <xref ref="block-mc" text="custom">multiple-choice template</xref>. Ask which derivative matches <m>\dfrac{d}{dx}(x^3\sin x)</m>.
+              Next, paste the <xref ref="block-mc" text="custom">multiple-choice template</xref>. Ask which derivative matches <m>\dfrac{d}{dx}(x^3\sin x)</m>.
             </p>
           </statement>
         </task>
@@ -999,20 +1017,20 @@
       </exercise>
     </subsection>
 
-    <subsection xml:id="reading-check-clickable">
+    <subsection xml:id="reading-questions-clickable">
       <title>Add a clickable-area question</title>
-      <exercise xml:id="exr-reading-check-clickable">
+      <exercise xml:id="exr-reading-questions-clickable">
         <task>
           <statement>
             <p>
-              Paste the <xref ref="block-clickable-area" text="custom">clickable-area template</xref>. Use it to ask learners to click every expression that would require the product rule.
+              Finally, paste the <xref ref="block-clickable-area" text="custom">clickable-area template</xref>. Use it to ask learners to click every expression that would require the product rule.
             </p>
           </statement>
         </task>
         <task>
           <statement>
             <p>
-              Include at least four expressions, with a mix of correct and incorrect choices. Write feedback that tells the learner to look for an actual product of two nonconstant factors.
+              To space out the answer choices, use a <xref ref="block-tabular" text="custom"><![CDATA[<tabular>]]></xref> with one row and four cells. Put one expression in each cell and wrap it in an <xref ref="block-clickable-area" text="custom"><![CDATA[<area>]]></xref>. Mark the correct choices and write feedback that helps learners understand the difference between a product, a composition, and a quotient.
             </p>
           </statement>
           <solution>
@@ -1028,20 +1046,26 @@
                     </p>
                   </statement>
                   <areas>
-                    <p>
-                      <area><m>x^2\cos x</m></area>,
-                      <area correct="no"><m>\sin(x^2)</m></area>,
-                      <area><m>(x+1)e^x</m></area>,
-                      <area correct="no"><m>\dfrac{x^2+1}{x-3}</m></area>
-                    </p>
+                  <tabular>
+                    <row>
+                      <cell>
+                        <area><m>x^2\cos x</m>,</area>
+                      </cell>
+                      <cell>
+                        <area correct="no"><m>\sin(x^2)</m>,</area>
+                      </cell>
+                      <cell>
+                        <area><m>(x+1)e^x</m>,</area>
+                      </cell>
+                      <cell>
+                        <area correct="no"><m>\dfrac{x^2+1}{x-3}</m></area>
+                      </cell>
+                    </row>
+                  </tabular>
                   </areas>
                   <feedback>
                     <p>
-                      Look for a product of two factors being 
-                      multiplied together. Composition suggests 
-                      the chain rule, and a quotient such as 
-                      <m>\dfrac{x^2+1}{x-3}</m> suggests the 
-                      quotient rule instead.
+                      Look for a product of two factors being multiplied.
                     </p>
                   </feedback>
                 </exercise>
@@ -1052,13 +1076,13 @@
       </exercise>
     </subsection>
 
-    <subsection xml:id="reading-check-finish">
+    <subsection xml:id="reading-questions-finish">
       <title>Finish the activity</title>
       <p>
         Add one final <xref ref="block-p" text="custom"><![CDATA[<p>]]></xref> at the bottom inviting learners to revisit the product-rule definition or worksheet if they struggled. If you want, link back to the worksheet you built in the previous project with a <xref ref="block-url" text="custom"><![CDATA[<url>]]></xref> once it has a shareable link.
       </p>
       <p>
-        This pattern generalizes well. You can build reading checks for theorem recognition, notation review, common misconceptions, or short pre-class quizzes without leaving <pretext/>.Plus.
+        You can build reading questions for theorem recognition, notation review, common misconceptions, or short pre-class quizzes without leaving <pretext/>.Plus.
       </p>
     </subsection>
   </section>
