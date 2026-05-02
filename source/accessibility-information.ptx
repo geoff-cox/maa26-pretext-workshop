@@ -81,7 +81,7 @@
       <title>Accessible Mathematics</title>
       <p>
         Every equation you write inside an <c>&lt;m&gt;</c> or
-        <c>&lt;me&gt;</c> tag is rendered with MathJax, which simultaneously
+        <c>&lt;md&gt;</c> tag is rendered with MathJax, which simultaneously
         produces MathML, a structured, machine-readable form of the math.
         Screen readers that support MathML (JAWS with MathPlayer, NVDA with
         MathCAT, VoiceOver on recent macOS and iOS) can navigate equations

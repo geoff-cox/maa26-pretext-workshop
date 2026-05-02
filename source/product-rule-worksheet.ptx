@@ -33,10 +33,10 @@
       <statement>
         <p>
           If <m>f</m> and <m>g</m> are differentiable functions, then
-          <me>
+          <md>
             \frac{d}{dx}\bigl[f(x)\,g(x)\bigr]
             = f'(x)\,g(x) + f(x)\,g'(x).
-          </me>
+          </md>
         </p>
       </statement>
     </definition>
@@ -57,10 +57,10 @@
       <solution>
         <p>
           Let <m>f = x^2</m> and <m>g = \sin(x)</m>, so <m>f' = 2x</m> and <m>g' = \cos(x)</m>. By <xref ref="def-product-rule"/>,
-          <me>
+          <md>
             h'(x) = f'(x)\,g(x) + f(x)\,g'(x)
                   = 2x\sin(x) + x^2 \cos(x).
-          </me>
+          </md>
         </p>
       </solution>
     </example>
