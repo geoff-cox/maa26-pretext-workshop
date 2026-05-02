@@ -162,27 +162,27 @@
           </statement>
           <cardsort>
             <match>
-              <premise><me>f(t) = \frac{K}{t}</me></premise>
-              <response><me>K\ln|t| + C</me></response>
+              <premise><md>f(t) = \frac{K}{t}</md></premise>
+              <response><md>K\ln|t| + C</md></response>
             </match>
             <match>
-              <premise><me>g(t) = \frac{1}{K}</me></premise>
-              <response><me>\frac{t}{K} + C</me></response>
+              <premise><md>g(t) = \frac{1}{K}</md></premise>
+              <response><md>\frac{t}{K} + C</md></response>
             </match>
             <match>
-              <premise><me>h(t) = e^{Kt}</me></premise>
-              <response><me>\frac{1}{K} e^{Kt} + C</me></response>
+              <premise><md>h(t) = e^{Kt}</md></premise>
+              <response><md>\frac{1}{K} e^{Kt} + C</md></response>
             </match>
             <match>
-              <premise><me>h(t) = e^{K}</me></premise>
-              <response><me>t e^{K} + C</me></response>
+              <premise><md>h(t) = e^{K}</md></premise>
+              <response><md>t e^{K} + C</md></response>
             </match>
             <match>
-              <premise><me>m(t) = \frac{t}{K}</me></premise>
-              <response><me>\frac{t^2}{2K} + C</me></response>
+              <premise><md>m(t) = \frac{t}{K}</md></premise>
+              <response><md>\frac{t^2}{2K} + C</md></response>
             </match>
             <match>
-              <response><me>\ln|K| + C</me></response>
+              <response><md>\ln|K| + C</md></response>
             </match>
           </cardsort>
         </exercise>

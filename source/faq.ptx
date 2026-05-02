@@ -37,7 +37,7 @@
           <title>Do I need to know <latex/>?</title>
           <p>
             Only for mathematics. <pretext/> uses <latex/> syntax inside the
-            <c>&lt;m&gt;</c> and <c>&lt;me&gt;</c> tags, so if you can write
+            <c>&lt;m&gt;</c> and <c>&lt;md&gt;</c> tags, so if you can write
             <c>x^2 + 1</c> or <c>\frac{a}{b}</c>, you have enough. Prose, lists,
             definitions, examples, and exercises all use <pretext/>'s own tags.
           </p>

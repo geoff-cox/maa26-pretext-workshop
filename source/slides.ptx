@@ -132,7 +132,7 @@
 				<row>
 					<cell><p>Displayed math</p></cell>
 					<cell><p><pre>$$*$$</pre></p></cell>
-					<cell><p><pre>&lt;me&gt;*&lt;/me&gt;</pre></p></cell>
+					<cell><p><pre>&lt;md&gt;*&lt;/md&gt;</pre></p></cell>
 				</row>
 				<row>
 					<cell><p>Ordered Lists</p></cell>

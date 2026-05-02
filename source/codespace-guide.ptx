@@ -883,7 +883,7 @@
         </row>
         <row>
           <cell><c>\[ \int f \]</c></cell>
-          <cell><c>&lt;me&gt;\int f&lt;/me&gt;</c></cell>
+          <cell><c>&lt;md&gt;\int f&lt;/md&gt;</c></cell>
         </row>
         <row>
           <cell><c>\section{Title}</c></cell>
