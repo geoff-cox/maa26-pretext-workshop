@@ -323,8 +323,7 @@
             <url href="https://prefigure.org/docs/pr-guide.html">PreFigure</url>,
             that same source can produce the visual figure, a tactile diagram,
             and accessibility annotations for the image. The
-            <url href="https://pretextbook.org/examples/sample-article/html/section-graphics.html#prefigure-diagrams">PreTeXt
-            section on PreFigure</url> shows how this fits into a <pretext/>
+            <url href="https://pretextbook.org/examples/sample-article/html/section-graphics.html#prefigure-diagrams">PreTeXt section on PreFigure</url> shows how this fits into a <pretext/>
             project. The approach has been validated on full-length textbooks in
             abstract algebra and calculus, with quality checked by a certified
             transcriber and readability confirmed by a blind mathematician.
