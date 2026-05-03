@@ -104,7 +104,12 @@
             Add a <c>&lt;shortdescription&gt;</c> for the alt text. See
             <xref ref="a11y-author" text="custom">What You, the Author, Must Do</xref>
             for details. You can also generate figures using TikZ or PGFPlots, and
-            <pretext/> will produce accessible SVG output automatically.
+            <pretext/> will produce accessible SVG output automatically. For
+            mathematical diagrams, <url href="https://prefigure.org/docs/pr-guide.html">PreFigure</url>
+            is also worth knowing: the same source can support tactile diagrams
+            and accessibility annotations. See the
+            <url href="https://pretextbook.org/examples/sample-article/html/section-graphics.html#prefigure-diagrams">PreTeXt
+            overview of PreFigure</url>.
           </p>
         </li>
 
