@@ -593,7 +593,7 @@
             <![CDATA[
               <figure xml:id="fig-x">
                 <caption>My caption.</caption>
-                <image source="path.png">
+                <image source="figs/path.png">
                   <shortdescription>
                     Brief alt text.
                   </shortdescription>
