@@ -269,7 +269,7 @@ eBookConfig.enable_chatcodes =  false;
 </h3>
 <div class="para" id="a11y-images-2">Every informative image needs a <code class="code-inline tex2jax_ignore">&lt;shortdescription&gt;</code>. This becomes the <code class="code-inline tex2jax_ignore">alt</code> attribute in HTML and the described content in EPUB and Braille.<div class="autopermalink" data-description="Paragraph"><a href="#a11y-images-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="code-box"><pre class="program clipboardable"><code class="language-xml">&lt;image source="graph.png" width="60%"&gt;
+<div class="code-box"><pre class="program clipboardable"><code class="language-xml">&lt;image source="figs/graph.png" width="60%"&gt;
   &lt;shortdescription&gt;
     A graph of f(x) = x squared on the interval [-2, 2],
     showing a parabola opening upward with vertex at the origin.
@@ -278,13 +278,16 @@ eBookConfig.enable_chatcodes =  false;
 </code></pre></div>
 <div class="para" id="a11y-images-4">For images that carry substantial information (complex diagrams, data tables presented as images, and geometric constructions), add a longer <code class="code-inline tex2jax_ignore">&lt;description&gt;</code> element as well. It appears in the HTML as an expandable region that sighted readers can ignore and screen-reader users can access.<div class="autopermalink" data-description="Paragraph"><a href="#a11y-images-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="code-box"><pre class="program clipboardable"><code class="language-xml">&lt;image source="venn.png" width="60%"&gt;
-  &lt;shortdescription&gt;Venn diagram of sets A, B, and A intersect B.&lt;/shortdescription&gt;
+<div class="code-box"><pre class="program clipboardable"><code class="language-xml">&lt;image source="figs/venn.png" width="60%"&gt;
+  &lt;shortdescription&gt;
+    Venn diagram of sets A, B, and A intersect B.
+  &lt;/shortdescription&gt;
   &lt;description&gt;
     &lt;p&gt;
-      Two overlapping circles. The left circle is labeled A and contains
-      the elements 1, 2, 3. The right circle is labeled B and contains
-      3, 4, 5. The overlapping region contains 3, representing A intersect B.
+      Two overlapping circles. The left circle is labeled A 
+      and contains the elements 1, 2, 3. The right circle is 
+      labeled B and contains 3, 4, 5. The overlapping region 
+      contains 3, representing A intersect B.
     &lt;/p&gt;
   &lt;/description&gt;
 &lt;/image&gt;
@@ -311,37 +314,37 @@ eBookConfig.enable_chatcodes =  false;
 </h3>
 <div class="para logical" id="a11y-checklist-2">
 <dl class="description-list">
-<dt id="a11y-checklist-2-1-1">Every informative image has a <code class="code-inline tex2jax_ignore">&lt;shortdescription&gt;</code>.<div class="autopermalink" data-description="Item: Every informative image has a &lt;shortdescription&gt;."><a href="#a11y-checklist-2-1-1" title="Copy heading and permalink for Item: Every informative image has a &lt;shortdescription&gt;." aria-label="Copy heading and permalink for Item: Every informative image has a &lt;shortdescription&gt;.">🔗</a></div>
+<dt id="a11y-checklist-2-1-1">Every informative image has a <code class="code-inline tex2jax_ignore">&lt;shortdescription&gt;</code><div class="autopermalink" data-description="Item: Every informative image has a &lt;shortdescription&gt;"><a href="#a11y-checklist-2-1-1" title="Copy heading and permalink for Item: Every informative image has a &lt;shortdescription&gt;" aria-label="Copy heading and permalink for Item: Every informative image has a &lt;shortdescription&gt;">🔗</a></div>
 </dt>
 <dd>
 <div class="para" id="a11y-checklist-2-1-1-2">Purely decorative images should carry an empty <code class="code-inline tex2jax_ignore">&lt;shortdescription/&gt;</code>.<div class="autopermalink" data-description="Paragraph"><a href="#a11y-checklist-2-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </dd>
-<dt id="a11y-checklist-2-1-2">Complex images have a <code class="code-inline tex2jax_ignore">&lt;description&gt;</code>.<div class="autopermalink" data-description="Item: Complex images have a &lt;description&gt;."><a href="#a11y-checklist-2-1-2" title="Copy heading and permalink for Item: Complex images have a &lt;description&gt;." aria-label="Copy heading and permalink for Item: Complex images have a &lt;description&gt;.">🔗</a></div>
+<dt id="a11y-checklist-2-1-2">Complex images have a <code class="code-inline tex2jax_ignore">&lt;description&gt;</code><div class="autopermalink" data-description="Item: Complex images have a &lt;description&gt;"><a href="#a11y-checklist-2-1-2" title="Copy heading and permalink for Item: Complex images have a &lt;description&gt;" aria-label="Copy heading and permalink for Item: Complex images have a &lt;description&gt;">🔗</a></div>
 </dt>
 <dd>
 <div class="para" id="a11y-checklist-2-1-2-2">Diagrams, graphs, and data figures need the longer form.<div class="autopermalink" data-description="Paragraph"><a href="#a11y-checklist-2-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </dd>
-<dt id="a11y-checklist-2-1-3">Interactive applets have a surrounding prose description.<div class="autopermalink" data-description="Item: Interactive applets have a surrounding prose description."><a href="#a11y-checklist-2-1-3" title="Copy heading and permalink for Item: Interactive applets have a surrounding prose description." aria-label="Copy heading and permalink for Item: Interactive applets have a surrounding prose description.">🔗</a></div>
+<dt id="a11y-checklist-2-1-3">Interactive applets have a surrounding prose description<div class="autopermalink" data-description="Item: Interactive applets have a surrounding prose description"><a href="#a11y-checklist-2-1-3" title="Copy heading and permalink for Item: Interactive applets have a surrounding prose description" aria-label="Copy heading and permalink for Item: Interactive applets have a surrounding prose description">🔗</a></div>
 </dt>
 <dd>
 <div class="para" id="a11y-checklist-2-1-3-2">Students who can’t run the applet can still learn from the text around it.<div class="autopermalink" data-description="Paragraph"><a href="#a11y-checklist-2-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </dd>
-<dt id="a11y-checklist-2-1-4">Figures don’t rely on color alone.<div class="autopermalink" data-description="Item: Figures don’t rely on color alone."><a href="#a11y-checklist-2-1-4" title="Copy heading and permalink for Item: Figures don’t rely on color alone." aria-label="Copy heading and permalink for Item: Figures don’t rely on color alone.">🔗</a></div>
+<dt id="a11y-checklist-2-1-4">Figures don’t rely on color alone<div class="autopermalink" data-description="Item: Figures don’t rely on color alone"><a href="#a11y-checklist-2-1-4" title="Copy heading and permalink for Item: Figures don’t rely on color alone" aria-label="Copy heading and permalink for Item: Figures don’t rely on color alone">🔗</a></div>
 </dt>
 <dd>
 <div class="para" id="a11y-checklist-2-1-4-2">Use dashing, thickness, or labels as secondary distinctions.<div class="autopermalink" data-description="Paragraph"><a href="#a11y-checklist-2-1-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </dd>
-<dt id="a11y-checklist-2-1-5">Cross-references use <code class="code-inline tex2jax_ignore">&lt;xref&gt;</code>, not bare URLs.<div class="autopermalink" data-description="Item: Cross-references use &lt;xref&gt;, not bare URLs."><a href="#a11y-checklist-2-1-5" title="Copy heading and permalink for Item: Cross-references use &lt;xref&gt;, not bare URLs." aria-label="Copy heading and permalink for Item: Cross-references use &lt;xref&gt;, not bare URLs.">🔗</a></div>
+<dt id="a11y-checklist-2-1-5">Cross-references use <code class="code-inline tex2jax_ignore">&lt;xref&gt;</code>, not bare URLs<div class="autopermalink" data-description="Item: Cross-references use &lt;xref&gt;, not bare URLs"><a href="#a11y-checklist-2-1-5" title="Copy heading and permalink for Item: Cross-references use &lt;xref&gt;, not bare URLs" aria-label="Copy heading and permalink for Item: Cross-references use &lt;xref&gt;, not bare URLs">🔗</a></div>
 </dt>
 <dd>
 <div class="para" id="a11y-checklist-2-1-5-2">Semantic cross-references produce meaningful link text (“Definition 3.2”) rather than raw URLs.<div class="autopermalink" data-description="Paragraph"><a href="#a11y-checklist-2-1-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </dd>
-<dt id="a11y-checklist-2-1-6">The document builds without errors.<div class="autopermalink" data-description="Item: The document builds without errors."><a href="#a11y-checklist-2-1-6" title="Copy heading and permalink for Item: The document builds without errors." aria-label="Copy heading and permalink for Item: The document builds without errors.">🔗</a></div>
+<dt id="a11y-checklist-2-1-6">The document builds without errors<div class="autopermalink" data-description="Item: The document builds without errors"><a href="#a11y-checklist-2-1-6" title="Copy heading and permalink for Item: The document builds without errors" aria-label="Copy heading and permalink for Item: The document builds without errors">🔗</a></div>
 </dt>
 <dd>
 <div class="para" id="a11y-checklist-2-1-6-2">A build error may render correctly for sighted readers but produce broken ARIA or heading structure underneath.<div class="autopermalink" data-description="Paragraph"><a href="#a11y-checklist-2-1-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
