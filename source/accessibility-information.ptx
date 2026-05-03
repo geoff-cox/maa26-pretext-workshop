@@ -12,11 +12,11 @@
     <p>
       <em>The short version.</em> <pretext/> takes care of the infrastructure:
       semantic structure, screen-reader-ready math, and multiple output
-      formats. Your remaining job is focused and small: mainly, write good
+      formats. Your remaining job is mainly focused and small: write good
       alt text for your images and design figures that don't depend on
-      color. The structural markup you're already learning in this workshop
-      <em>is</em> the accessibility practice. There is no separate
-      accessibility pass at the end.
+      color. Other than that, the markup you learn in the 
+      <xref ref="chp-self-paced-tutorial" text="custom">Self-Paced Tutorial</xref> 
+      is all you need to produce accessible content.
     </p>
   </introduction>
 

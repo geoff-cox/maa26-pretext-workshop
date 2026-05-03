@@ -98,8 +98,8 @@
         <li xml:id="faq-images">
           <title>How do I include images?</title>
           <p>
-            This topic is outside the scope of this workshop. Put the image
-            file (PNG, JPG, or SVG) in your <c>assets</c> folder
+            <em>This topic is outside the scope of this <xref ref="chp-self-paced-tutorial" text="custom">tutorial</xref> .</em> 
+            Put the image file (PNG, JPG, or SVG) in your <c>assets</c> folder
             and reference it with <c>&lt;image source="filename.png"/&gt;</c>.
             Add a <c>&lt;shortdescription&gt;</c> for the alt text. See
             <xref ref="a11y-author" text="custom">What You, the Author, Must Do</xref>

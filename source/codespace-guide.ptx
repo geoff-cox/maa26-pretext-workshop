@@ -5,10 +5,6 @@
 
   <introduction>
     <p>
-      <em>This is a take-home tutorial. You don't need to do any of it during the workshop.</em> Come back to it on a quiet evening when your laptop is charged, your Wi-Fi is steady, and you have about forty-five minutes of unhurried time.
-    </p>
-
-    <p>
       You already know how to author in <pretext/>.Plus. It is a friendly, frictionless way to draft lessons, and for many instructors it is all they ever need. This guide is for the moment when you want more: multi-file projects, your own public URL, version history, and the same professional toolchain used by authors of full-length open textbooks. That next step is <term>GitHub Codespaces</term>, a browser-based development environment that runs an identical setup to what you'd eventually install locally, without actually installing anything.
     </p>
 
