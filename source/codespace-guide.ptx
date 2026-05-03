@@ -123,7 +123,7 @@
             Near the top right of that page, find the green button labeled <term>Use this template</term> and click it.
           </p>
           <sidebyside widths="20%" margins="auto">
-            <image source="use-this-template.png" width="100%">
+            <image source="figs/use-this-template.png" width="100%">
               <shortdescription>The green "Use this template" button on GitHub.</shortdescription>
             </image>
           </sidebyside>
@@ -185,7 +185,7 @@
             From your new repository's page on GitHub, find the green <term>&lt; &gt; Code</term> button, a bit below the repository name.
           </p>
           <sidebyside widths="20%" margins="auto">
-            <image source="code-button.png" width="100%">
+            <image source="figs/code-button.png" width="100%">
               <shortdescription>The green "Code" button on a GitHub repository page.</shortdescription>
             </image>
           </sidebyside>
@@ -202,7 +202,7 @@
             Click <term>Create codespace on main</term>.
           </p>
           <sidebyside widths="40%" margins="auto">
-            <image source="create-codespace.png" width="100%">
+            <image source="figs/create-codespace.png" width="100%">
               <shortdescription>The "Create codespace on main" button inside the Code popup.</shortdescription>
             </image>
           </sidebyside>
@@ -213,7 +213,7 @@
             A new tab opens and begins the setup. <em>This is the 5-to-10-minute wait from the introduction.</em> Get a cup of coffee. You'll know it's done when the progress messages stop and you see a layout with a file explorer on the left and a welcome file in the center.
           </p>
           <sidebyside widths="85%" margins="auto">
-            <image source="fresh-codespace.png" width="100%">
+            <image source="figs/fresh-codespace.png" width="100%">
               <shortdescription>A freshly loaded Codespace showing the file explorer sidebar on the left and the README open in the main editor.</shortdescription>
             </image>
           </sidebyside>
@@ -281,7 +281,7 @@
             The window will reload after a moment. The file explorer on the left now shows a real project structure.
           </p>
           <sidebyside widths="85%" margins="auto">
-            <image source="new-book.png" width="100%">
+            <image source="figs/new-book.png" width="100%">
               <shortdescription>The Codespace after initializing a book project, with source, assets, and project.ptx visible in the file explorer.</shortdescription>
             </image>
           </sidebyside>
@@ -432,7 +432,7 @@
               Look at the blue bar at the very bottom of the Codespace window. Find the <term>▷ PreTeXt</term> button.
             </p>
             <sidebyside widths="30%" margins="auto">
-              <image source="pretext-button.png" width="100%">
+              <image source="figs/pretext-button.png" width="100%">
                 <shortdescription>The PreTeXt button on the bottom status bar, shown as an arrow followed by the word "PreTeXt".</shortdescription>
               </image>
             </sidebyside>
@@ -585,7 +585,7 @@
           </li>
         </ol>
       </p>
-      <image source="source-control-panel.png" width="100%">
+      <image source="figs/source-control-panel.png" width="100%">
         <shortdescription>The Source Control panel in VS Code, showing the branching-diagram icon on the left rail, a list of changed files, a commit message text box, and a blue Commit and Sync button.</shortdescription>
       </image>
     </sidebyside>
