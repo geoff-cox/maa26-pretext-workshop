@@ -356,44 +356,46 @@
           </p>
 
           <program language="xml">
-            <code><![CDATA[<section xml:id="sec-right-triangles">
-  <title>Right Triangles</title>
+            <![CDATA[
+              <section xml:id="sec-right-triangles">
+                <title>Right Triangles</title>
 
-  <p>This short lesson introduces right triangles and
-  the Pythagorean theorem.</p>
+                <p>This short lesson introduces right triangles and
+                the Pythagorean theorem.</p>
 
-  <definition xml:id="def-right-triangle">
-    <statement>
-      <p>A <term>right triangle</term> is a triangle
-      with one angle measuring exactly 90 degrees.</p>
-    </statement>
-  </definition>
+                <definition xml:id="def-right-triangle">
+                  <statement>
+                    <p>A <term>right triangle</term> is a triangle
+                    with one angle measuring exactly 90 degrees.</p>
+                  </statement>
+                </definition>
 
-  <p>The Pythagorean theorem states that
-  <m>a^2 + b^2 = c^2</m>, where <m>c</m> is the
-  length of the hypotenuse.</p>
+                <p>The Pythagorean theorem states that
+                <m>a^2 + b^2 = c^2</m>, where <m>c</m> is the
+                length of the hypotenuse.</p>
 
-  <example>
-    <title>A 3-4-5 triangle</title>
-    <statement>
-      <p>Show that a triangle with sides 3, 4, and 5
-      is a right triangle.</p>
-    </statement>
-    <solution>
-      <p>Check: <m>3^2 + 4^2 = 9 + 16 = 25 = 5^2</m>.</p>
-    </solution>
-  </example>
+                <example>
+                  <title>A 3-4-5 triangle</title>
+                  <statement>
+                    <p>Show that a triangle with sides 3, 4, and 5
+                    is a right triangle.</p>
+                  </statement>
+                  <solution>
+                    <p>Check: <m>3^2 + 4^2 = 9 + 16 = 25 = 5^2</m>.</p>
+                  </solution>
+                </example>
 
-  <exercise>
-    <statement>
-      <p>Find the length of the hypotenuse of a right
-      triangle with legs of length 5 and 12.</p>
-    </statement>
-  </exercise>
+                <exercise>
+                  <statement>
+                    <p>Find the length of the hypotenuse of a right
+                    triangle with legs of length 5 and 12.</p>
+                  </statement>
+                </exercise>
 
-  <p>For a reminder of the terminology,
-  see <xref ref="def-right-triangle"/>.</p>
-</section>]]></code>
+                <p>For a reminder of the terminology,
+                see <xref ref="def-right-triangle"/>.</p>
+              </section>
+            ]]>
           </program>
         </li>
 

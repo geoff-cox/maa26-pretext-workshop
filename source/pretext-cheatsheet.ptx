@@ -276,7 +276,7 @@
           <program language="xml">
             <![CDATA[
               <example xml:id="ex-x">
-                <title>...</title>
+                <title>..</title>
                 <statement>...</statement>
                 <solution>...</solution>
               </example>
@@ -381,7 +381,7 @@
           <program language="xml">
             <![CDATA[
               <worksheet xml:id="ws-x">
-                <title>...</title>
+                <title>..</title>
                 <objectives>...</objectives>
 
                 <page>...</page>
