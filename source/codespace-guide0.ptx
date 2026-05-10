@@ -5,6 +5,10 @@
 
   <introduction>
     <p>
+      <em>This is a take-home tutorial. You don't need to do any of it during the workshop.</em> Come back to it on a quiet evening when your laptop is charged, your Wi-Fi is steady, and you have about forty-five minutes of unhurried time.
+    </p>
+
+    <p>
       You already know how to author in <pretext/>.Plus. It is a friendly, frictionless way to draft lessons, and for many instructors it is all they ever need. This guide is for the moment when you want more: multi-file projects, your own public URL, version history, and the same professional toolchain used by authors of full-length open textbooks. That next step is <term>GitHub Codespaces</term>, a browser-based development environment that runs an identical setup to what you'd eventually install locally, without actually installing anything.
     </p>
 
@@ -12,7 +16,7 @@
       You'll work in baby steps. At each stop there's a little check that tells you whether things are working before you move on, and a troubleshooting aside for the thing that most commonly goes sideways. By the end you'll have an editable project, a live preview, a saved version on GitHub, and a public web page you can share.
     </p>
 
-    <paragraphs xml:id="codespace-time-warning">
+    <!-- <paragraphs xml:id="codespace-time-warning">
       <title>One thing to know up front</title>
       <p>
         The first time you launch a Codespace, it can take 5 to 10 minutes to set itself up. Every subsequent launch is much faster. Plan for that first session to include a quiet stretch where the screen looks like it isn't doing much. It is doing plenty.
@@ -28,20 +32,20 @@
           <li><p>About 45 minutes of uninterrupted time for your first run.</p></li>
         </ul>
       </p>
-    </paragraphs>
+    </paragraphs> -->
   </introduction>
 
-  <objectives>
-    <ul>
-      <li><p>Created a free GitHub account.</p></li>
-      <li><p>Used the <pretext/> template to create your own GitHub repository.</p></li>
-      <li><p>Launched a Codespace and initialized a <pretext/> project in the browser.</p></li>
-      <li><p>Edited a small lesson, built both HTML and PDF, and previewed both.</p></li>
-      <li><p>Saved your work back to GitHub.</p></li>
-      <li><p>Deployed your HTML as a public web page on GitHub Pages.</p></li>
-      <li><p>Learned several ways to share the finished lesson with colleagues or students.</p></li>
-    </ul>
-  </objectives>
+    <objectives>
+      <ul>
+        <li><p>Created a free GitHub account.</p></li>
+        <li><p>Used the <pretext/> template to create your own GitHub repository.</p></li>
+        <li><p>Launched a Codespace and initialized a <pretext/> project in the browser.</p></li>
+        <li><p>Edited a small lesson, built both HTML and PDF, and previewed both.</p></li>
+        <li><p>Saved your work back to GitHub.</p></li>
+        <li><p>Deployed your HTML as a public web page on GitHub Pages.</p></li>
+        <li><p>Learned several ways to share the finished lesson with colleagues or students.</p></li>
+      </ul>
+    </objectives>
 
   <!-- ================================================= -->
   <!-- Part 1: Create a GitHub account                   -->
@@ -113,11 +117,12 @@
             <url href="https://github.com/PreTeXtBook/pretext-codespace"><c>github.com/PreTeXtBook/pretext-codespace</c></url>
           </p>
         </li>
+
         <li>
           <p>
             Near the top right of that page, find the green button labeled <term>Use this template</term> and click it.
           </p>
-          <sidebyside widths="30%" margins="auto">
+          <sidebyside widths="20%" margins="auto">
             <image source="figs/use-this-template.png" width="100%">
               <shortdescription>The green "Use this template" button on GitHub.</shortdescription>
             </image>
@@ -126,6 +131,7 @@
             From the dropdown, choose <term>Create a new repository</term>.
           </p>
         </li>
+
         <li>
           <p>
             On the next page, fill in:
@@ -138,6 +144,7 @@
             </ul>
           </p>
         </li>
+
         <li>
           <p>
             Click <term>Create repository from template</term>. After a short pause, you'll land on your brand-new repository page, which is now a fresh copy of the template under your own account.
@@ -175,19 +182,21 @@
       <ol>
         <li>
           <p>
-            From your new repository's page on GitHub, find the green <term>Code</term> button, a bit below the repository name.
+            From your new repository's page on GitHub, find the green <term>&lt; &gt; Code</term> button, a bit below the repository name.
           </p>
-          <sidebyside widths="16%" margins="auto">
+          <sidebyside widths="20%" margins="auto">
             <image source="figs/code-button.png" width="100%">
               <shortdescription>The green "Code" button on a GitHub repository page.</shortdescription>
             </image>
           </sidebyside>
         </li>
+
         <li>
           <p>
             Click it, then switch to the <term>Codespaces</term> tab of the little popup that appears.
           </p>
         </li>
+
         <li>
           <p>
             Click <term>Create codespace on main</term>.
@@ -198,11 +207,12 @@
             </image>
           </sidebyside>
         </li>
+
         <li>
           <p>
             A new tab opens and begins the setup. <em>This is the 5-to-10-minute wait from the introduction.</em> Get a cup of coffee. You'll know it's done when the progress messages stop and you see a layout with a file explorer on the left and a welcome file in the center.
           </p>
-          <sidebyside widths="98%" margins="auto">
+          <sidebyside widths="85%" margins="auto">
             <image source="figs/fresh-codespace.png" width="100%">
               <shortdescription>A freshly loaded Codespace showing the file explorer sidebar on the left and the README open in the main editor.</shortdescription>
             </image>
@@ -216,8 +226,8 @@
       <p>
         <ul>
           <li><p>You see a file explorer on the left side of the browser window.</p></li>
+          <li><p>At the very bottom of the window there is a blue bar, and somewhere on that bar is a <term>▷ PreTeXt</term> button.</p></li>
           <li><p>A terminal panel is visible at the bottom (or can be opened by pressing <kbd>Ctrl</kbd>+<kbd>`</kbd>).</p></li>
-          <li><p>The blue bar at the very bottom of the window is visible. The <term>▷ PreTeXt</term> button doesn't appear here yet, that comes once you initialize a project in the next part.</p></li>
         </ul>
       </p>
     </assemblage>
@@ -225,7 +235,7 @@
     <assemblage xml:id="trouble-codespace-slow">
       <title>If you get stuck: the Codespace seems frozen</title>
       <p>
-        First-time setup really does take several minutes, and some of those minutes look silent. Give it at least ten before worrying. If after fifteen minutes there is still no file explorer, close the tab, return to your repository, click <term>Code</term>, then <term>Codespaces</term>, and click your existing codespace to resume rather than creating a new one.
+        First-time setup really does take several minutes, and some of those minutes look silent. Give it at least ten before worrying. If after fifteen minutes there is still no file explorer, close the tab, return to your repository, click <term>&lt; &gt; Code</term>, then <term>Codespaces</term>, and click your existing codespace to resume rather than creating a new one.
       </p>
     </assemblage>
   </section>
@@ -247,28 +257,32 @@
             Press <kbd>F1</kbd> (or <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> on Windows/Linux, <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> on Mac) to open the <term>command palette</term>, a text bar that drops down from the top of the window.
           </p>
         </li>
+
         <li>
           <p>
             Start typing <c>pretext new</c>. From the matching entries, select <term><pretext/>: New Project</term> and press <kbd>Enter</kbd>.
           </p>
         </li>
+
         <li>
           <p>
             You'll be asked what sort of project. Choose <term>book</term>.
           </p>
         </li>
+
         <li>
           <p>
             Next you'll be asked where to put it. The default location (your current folder) is what you want. Press <kbd>Enter</kbd> to accept.
           </p>
         </li>
+
         <li>
           <p>
-            The window will reload after a moment. The file explorer on the left now shows a real project structure, and the <term>▷ PreTeXt</term> button now appears on the blue bar at the bottom. You'll use that button constantly from here on.
+            The window will reload after a moment. The file explorer on the left now shows a real project structure.
           </p>
-          <sidebyside widths="98%" margins="auto">
+          <sidebyside widths="85%" margins="auto">
             <image source="figs/new-book.png" width="100%">
-              <shortdescription>The Codespace after initializing a book project, with source, project.ptx, and publication folders visible in the file explorer.</shortdescription>
+              <shortdescription>The Codespace after initializing a book project, with source, assets, and project.ptx visible in the file explorer.</shortdescription>
             </image>
           </sidebyside>
         </li>
@@ -281,19 +295,23 @@
         <dl>
           <li>
             <title><c>source/</c></title>
-            <p>Your <pretext/> source files live here. Look for <c>main.ptx</c> (the entry point) and at least one chapter or section file that <c>main.ptx</c> pulls in.</p>
+            <p>Your <pretext/> source files live here. Look for <c>main.ptx</c> (the entry point) and at least one chapter file.</p>
+          </li>
+          <li>
+            <title><c>assets/</c></title>
+            <p>Images, data files, and any other supporting materials go here. <pretext/> will include them automatically when you reference them in your source.</p>
+          </li>
+          <li>
+            <title><c>output/</c></title>
+            <p>Generated files (HTML, PDF) land here when you build. You never edit this directly. It will appear after your first build.</p>
           </li>
           <li>
             <title><c>project.ptx</c></title>
             <p>The project manifest. It tells <pretext/> which output formats to produce and where to put them.</p>
           </li>
           <li>
-            <title><c>publication/</c></title>
-            <p>Holds <c>publication.ptx</c>, which controls the look and feel of your output: theme, numbering depth, and similar cosmetic knobs.</p>
-          </li>
-          <li>
-            <title><c>assets/</c> and <c>output/</c> (later)</title>
-            <p>You won't see these folders yet. <c>assets/</c> appears the first time you reference an image, data file, or other supporting material in your source. <c>output/</c> appears the first time you build, and holds the generated HTML and PDF. You never edit either by hand.</p>
+            <title><c>publication.ptx</c></title>
+            <p>Settings that control the look and feel of your output: theme, numbering depth, and similar cosmetic knobs.</p>
           </li>
         </dl>
       </p>
@@ -302,23 +320,20 @@
     <assemblage xml:id="check-part-4">
       <title>✓ You know it worked when…</title>
       <p>
-        <ul>
-          <li><p>The file explorer on the left shows <c>source</c>, <c>publication</c>, and <c>project.ptx</c>.</p></li>
-          <li><p>A <term>▷ PreTeXt</term> button is now visible on the blue bar at the bottom of the window.</p></li>
-        </ul>
+        The file explorer on the left shows <c>source</c>, <c>assets</c>, <c>project.ptx</c>, and <c>publication.ptx</c>.
       </p>
     </assemblage>
 
     <assemblage xml:id="trouble-command-palette">
       <title>If you get stuck: <c>pretext new</c> doesn't appear in the palette</title>
       <p>
-        The <pretext/> extension may still be loading, especially right after the Codespace finishes setup. Wait a minute, then open the command palette again and retry. If the command still isn't there, close the Codespace tab and reopen it from <term>Code → Codespaces</term> on your repository page.
+        The <pretext/> extension may still be loading, especially right after the Codespace finishes setup. Wait a minute, then open the command palette again and retry. If the command still isn't there, close the Codespace tab and reopen it from <term>&lt; &gt; Code → Codespaces</term> on your repository page.
       </p>
     </assemblage>
   </section>
 
   <!-- ================================================= -->
-  <!-- Part 5: Add a starter lesson                      -->
+  <!-- Part 5: Add a starter lesson                       -->
   <!-- ================================================= -->
   <section xml:id="codespace-starter" component="timeline">
     <title>Part 5. Add a Small Starter Lesson</title>
@@ -331,62 +346,54 @@
       <ol>
         <li>
           <p>
-            In the file explorer, open <c>source/</c> and double-click <c>main.ptx</c>. You'll see a <pretext/> document built around a few <c>&lt;chapter&gt;</c> tags. Each chapter pulls in its sections through an <c>&lt;xi:include&gt;</c> line that points at another file in the <c>source/</c> folder, with a name like <c>section-name.ptx</c> or similar.
+            In the file explorer, open <c>source/</c> and double-click <c>main.ptx</c>. You should see a <pretext/> document with a few <c>&lt;chapter&gt;</c> and <c>&lt;section&gt;</c> tags.
           </p>
         </li>
 
         <li>
           <p>
-            Find the first <c>&lt;xi:include&gt;</c> inside the first <c>&lt;chapter&gt;</c>, note the filename it references, and open <em>that</em> file from the <c>source/</c> folder. You should now be looking at a file that contains a single <c>&lt;section&gt;</c>.
-          </p>
-        </li>
-
-        <li>
-          <p>
-            Select everything from the opening <c>&lt;section&gt;</c> tag through its closing <c>&lt;/section&gt;</c>, and replace it with the block below.
+            Find the first <c>&lt;section&gt;</c> inside the first <c>&lt;chapter&gt;</c>. Select everything from the opening <c>&lt;section&gt;</c> tag through its closing <c>&lt;/section&gt;</c>, and replace it with the block below.
           </p>
 
           <program language="xml">
-            <![CDATA[
-              <section xml:id="sec-right-triangles">
-                <title>Right Triangles</title>
+            <code><![CDATA[<section xml:id="sec-right-triangles">
+  <title>Right Triangles</title>
 
-                <p>This short lesson introduces right triangles and
-                the Pythagorean theorem.</p>
+  <p>This short lesson introduces right triangles and
+  the Pythagorean theorem.</p>
 
-                <definition xml:id="def-right-triangle">
-                  <statement>
-                    <p>A <term>right triangle</term> is a triangle
-                    with one angle measuring exactly 90 degrees.</p>
-                  </statement>
-                </definition>
+  <definition xml:id="def-right-triangle">
+    <statement>
+      <p>A <term>right triangle</term> is a triangle
+      with one angle measuring exactly 90 degrees.</p>
+    </statement>
+  </definition>
 
-                <p>The Pythagorean theorem states that
-                <m>a^2 + b^2 = c^2</m>, where <m>c</m> is the
-                length of the hypotenuse.</p>
+  <p>The Pythagorean theorem states that
+  <m>a^2 + b^2 = c^2</m>, where <m>c</m> is the
+  length of the hypotenuse.</p>
 
-                <example>
-                  <title>A 3-4-5 triangle</title>
-                  <statement>
-                    <p>Show that a triangle with sides 3, 4, and 5
-                    is a right triangle.</p>
-                  </statement>
-                  <solution>
-                    <p>Check: <m>3^2 + 4^2 = 9 + 16 = 25 = 5^2</m>.</p>
-                  </solution>
-                </example>
+  <example>
+    <title>A 3-4-5 triangle</title>
+    <statement>
+      <p>Show that a triangle with sides 3, 4, and 5
+      is a right triangle.</p>
+    </statement>
+    <solution>
+      <p>Check: <m>3^2 + 4^2 = 9 + 16 = 25 = 5^2</m>.</p>
+    </solution>
+  </example>
 
-                <exercise>
-                  <statement>
-                    <p>Find the length of the hypotenuse of a right
-                    triangle with legs of length 5 and 12.</p>
-                  </statement>
-                </exercise>
+  <exercise>
+    <statement>
+      <p>Find the length of the hypotenuse of a right
+      triangle with legs of length 5 and 12.</p>
+    </statement>
+  </exercise>
 
-                <p>For a reminder of the terminology,
-                see <xref ref="def-right-triangle"/>.</p>
-              </section>
-            ]]>
+  <p>For a reminder of the terminology,
+  see <xref ref="def-right-triangle"/>.</p>
+</section>]]></code>
           </program>
         </li>
 
@@ -397,13 +404,6 @@
         </li>
       </ol>
     </p>
-
-    <assemblage xml:id="part-5-template-note">
-      <title>If your template looks a little different</title>
-      <p>
-        The starter project gets refreshed from time to time, so the exact filenames and the placeholder content inside the first section may not match what's described here. The shape is what matters: <c>main.ptx</c> includes chapter or section files from <c>source/</c>, and one of those files contains a <c>&lt;section&gt;</c> you can replace. As long as you find a <c>&lt;section&gt;...&lt;/section&gt;</c> block and swap its contents for the one above, you're in good shape.
-      </p>
-    </assemblage>
 
     <assemblage xml:id="make-it-yours">
       <title>Make it yours</title>
@@ -431,7 +431,7 @@
             <p>
               Look at the blue bar at the very bottom of the Codespace window. Find the <term>▷ PreTeXt</term> button.
             </p>
-            <sidebyside widths="75%" margins="auto">
+            <sidebyside widths="30%" margins="auto">
               <image source="figs/pretext-button.png" width="100%">
                 <shortdescription>The PreTeXt button on the bottom status bar, shown as an arrow followed by the word "PreTeXt".</shortdescription>
               </image>
@@ -449,7 +449,7 @@
           </li>
           <li>
             <p>
-              When you see a success message at the end of the terminal output, expand the <c>output</c> folder in the file explorer. (This is the first time you've seen <c>output/</c>, since it's created during the build.) You should see a <c>web</c> subfolder containing an <c>index.html</c>. You may also notice an <c>assets/</c> folder appearing in the project root once the build has copied any image or data files into place.
+              When you see a success message at the end of the terminal output, expand the <c>output</c> folder in the file explorer. You should see a <c>web</c> subfolder containing an <c>index.html</c>.
             </p>
           </li>
         </ol>
@@ -544,7 +544,7 @@
   </section>
 
   <!-- ================================================= -->
-  <!-- Part 7: Save your work                            -->
+  <!-- Part 7: Save your work                             -->
   <!-- ================================================= -->
   <section xml:id="codespace-save" component="timeline">
     <title>Part 7. Save Your Work to GitHub</title>
@@ -557,7 +557,7 @@
       The operation has two parts, traditionally called <em>commit</em> (take a snapshot of the current state with a short note) and <em>sync</em> (upload the snapshot to GitHub). The Codespace combines them into a single action.
     </p>
 
-    <sidebyside widths="85% 6%" margins="auto">
+    <sidebyside widths="85% 5.5%" margins="auto">
       <p>
         <ol>
           <li>
@@ -565,26 +565,19 @@
               On the left side of the window, find the <term>Source Control</term> icon: it looks like a branching diagram with three dots. Click it.
             </p>
           </li>
+
           <li>
             <p>
               You'll see a list of files you've changed. At the top there's a text box asking for a <term>message</term>. Type something brief that describes what you did, for example <c>Add right triangles lesson</c>.
             </p>
           </li>
+
           <li>
             <p>
-              Click the blue <term>Commit &amp; Sync</term> button (sometimes labeled <term>Commit</term> the first time, with <term>Sync</term> appearing after). You may also be asked to allow the Codespace to act on your behalf, which is expected.
+              Click the blue <term>Commit &amp; Sync</term> button (sometimes labeled <term>Commit</term> the first time, with <term>Sync</term> appearing after). If asked to confirm, say yes. You may also be asked to allow the Codespace to act on your behalf, which is expected.
             </p>
           </li>
-          <li>
-            <p>
-              A small dialog will likely pop up that says <em>There are no staged changes to commit. Would you like to stage all your changes and commit them directly?</em> Click <term>Yes</term>. (Staging is just GitHub's word for marking which changed files belong in this snapshot. Saying yes means <q>all of them</q>, which is what you want.)
-            </p>
-            <sidebyside widths="75%" margins="auto">
-              <image source="figs/stage-changes-dialog.png" width="100%">
-                <shortdescription>A VS Code dialog reading "There are no staged changes to commit. Would you like to stage all your changes and commit them directly?" with buttons labeled Never, Always, Cancel, and Yes.</shortdescription>
-              </image>
-            </sidebyside>
-          </li>
+
           <li>
             <p>
               After a few seconds, the changed-files list empties. Your work is now saved to <c>github.com/YOUR-USERNAME/YOUR-REPO-NAME</c>.
@@ -596,6 +589,7 @@
         <shortdescription>The Source Control panel in VS Code, showing the branching-diagram icon on the left rail, a list of changed files, a commit message text box, and a blue Commit and Sync button.</shortdescription>
       </image>
     </sidebyside>
+
 
     <assemblage xml:id="check-part-7">
       <title>✓ You know it worked when…</title>
@@ -613,59 +607,17 @@
   </section>
 
   <!-- ================================================= -->
-  <!-- Part 8: Deploy to GitHub Pages                    -->
+  <!-- Part 8: Deploy to GitHub Pages                     -->
   <!-- ================================================= -->
   <section xml:id="codespace-deploy" component="timeline">
     <title>Part 8. Deploy to a Public Web Page</title>
 
     <p>
-      <term>Deploying</term> means publishing your built HTML at a real URL that anyone can visit. GitHub provides free hosting for this through a service called <term>GitHub Pages</term>. The order of operations matters here: <em>first</em> you run the deploy command from the Codespace, <em>then</em> you flip a setting on GitHub to point Pages at the result. The deploy command needs to run first because it creates a special <c>gh-pages</c> branch behind the scenes, and that branch needs to exist before GitHub will let you choose it as a source.
+      <term>Deploying</term> means publishing your built HTML at a real URL that anyone can visit. GitHub provides free hosting for this through a service called <term>GitHub Pages</term>. There's a one-time setup step and then a single command does the rest.
     </p>
 
-    <paragraphs xml:id="codespace-run-deploy">
-      <title>Run the deploy command</title>
-      <p>
-        Back in your Codespace:
-      </p>
-      <p>
-        <ol>
-          <li>
-            <p>
-              Make sure you've committed and synced any pending changes from Part 7. The deploy command publishes from what's on GitHub, not from unsaved edits in your editor.
-            </p>
-          </li>
-          <li>
-            <p>
-              Click <term>▷ PreTeXt</term> on the blue bar.
-            </p>
-          </li>
-          <li>
-            <p>
-              Choose <term>Deploy</term>.
-            </p>
-          </li>
-          <li>
-            <p>
-              Watch the terminal. The command builds your site, creates (or updates) a <c>gh-pages</c> branch in your repository, and pushes the built HTML to it.
-            </p>
-          </li>
-          <li>
-            <p>
-              When the command finishes, the terminal will tell you what to do next, including the <c>github.io</c> URL your site will live at. The URL looks like:
-            </p>
-            <p>
-              <c>https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/</c>
-            </p>
-            <p>
-              Don't try the URL just yet. The <c>gh-pages</c> branch now exists, but GitHub hasn't been told to publish from it. That's the next step.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </paragraphs>
-
     <paragraphs xml:id="codespace-enable-pages">
-      <title>Point GitHub Pages at the <c>gh-pages</c> branch</title>
+      <title>One-time setup: turn on GitHub Pages</title>
       <p>
         <ol>
           <li>
@@ -685,27 +637,51 @@
           </li>
           <li>
             <p>
-              Under <term>Build and deployment</term>, find the <term>Source</term> dropdown. Make sure it says <term>Deploy from a branch</term>. (If it says <term>GitHub Actions</term>, change it.)
+              Under <term>Source</term>, use the dropdown to select <term>GitHub Actions</term>. You'll <em>not</em> need to configure a workflow by hand; the <pretext/> deploy command will handle that for you.
             </p>
           </li>
           <li>
             <p>
-              Just below that, the <term>Branch</term> section will appear with two dropdowns. Set the first one to <c>gh-pages</c> and leave the second one as <c>/ (root)</c>. Then click <term>Save</term>.
+              That's it. No save button to press, the setting takes effect immediately.
             </p>
-            <sidebyside widths="85%" margins="auto">
-              <image source="figs/pages-source-settings.png" width="100%">
-                <shortdescription>The GitHub Pages "Build and deployment" settings panel, with Source set to "Deploy from a branch" and Branch set to gh-pages with the / (root) folder.</shortdescription>
-              </image>
-            </sidebyside>
+          </li>
+        </ol>
+      </p>
+    </paragraphs>
+
+    <paragraphs xml:id="codespace-run-deploy">
+      <title>Deploy your site</title>
+      <p>
+        Back in your Codespace:
+      </p>
+      <p>
+        <ol>
+          <li>
+            <p>
+              Click <term>▷ PreTeXt</term> on the blue bar.
+            </p>
           </li>
           <li>
             <p>
-              GitHub will now build and publish the site. The first publish takes a minute or two. You can watch progress on the repository's <term>Actions</term> tab; a green checkmark means it's live.
+              Choose <term>Deploy</term>. (If you don't see it, first commit and sync any pending changes from Part 7, then try again.)
             </p>
           </li>
           <li>
             <p>
-              Once the green check shows up, open the <c>github.io</c> URL from the deploy command in a new tab. Your lesson should be there.
+              Watch the terminal. Several things happen in sequence: a build, a push to a special <c>gh-pages</c> branch, and a trigger of the GitHub Actions workflow that actually publishes the site.
+            </p>
+          </li>
+          <li>
+            <p>
+              When the command finishes, the terminal will print your public URL. It looks like:
+            </p>
+            <p>
+              <c>https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/</c>
+            </p>
+          </li>
+          <li>
+            <p>
+              The site itself may take another minute or two to actually go live even after the command finishes. You can check progress by going to your repository on <c>github.com</c> and clicking the <term>Actions</term> tab; a green checkmark means it's up.
             </p>
           </li>
         </ol>
@@ -719,17 +695,10 @@
       </p>
     </assemblage>
 
-    <assemblage xml:id="codespace-redeploy">
-      <title>Redeploying after edits</title>
-      <p>
-        The Pages setting is a one-time configuration. From now on, every time you want to publish updates, the cycle is just: edit, build, commit and sync, then run <term>▷ PreTeXt → Deploy</term>. The new build replaces the old one at the same URL within a minute or two.
-      </p>
-    </assemblage>
-
     <assemblage xml:id="trouble-deploy-404">
       <title>If you get stuck: the URL shows a 404</title>
       <p>
-        Three usual causes. First, give it another two or three minutes; the initial publish sometimes lags behind the deploy command. Second, go to the repository's <term>Actions</term> tab and look for a recent <em>pages build and deployment</em> workflow run; if it has a red X, click into it for details. Third, return to <term>Settings → Pages</term> and confirm the source is <term>Deploy from a branch</term> with the branch set to <c>gh-pages</c> and the folder set to <c>/ (root)</c>.
+        Two usual causes. First, give it another two or three minutes; the initial publish sometimes lags behind the deploy command. Second, go to <term>Settings → Pages</term> and confirm the source really is set to <term>GitHub Actions</term>. If it still says <term>Deploy from a branch</term>, change it, then run <term>Deploy</term> one more time.
       </p>
     </assemblage>
 
@@ -742,7 +711,7 @@
   </section>
 
   <!-- ================================================= -->
-  <!-- Part 9: Share your work                           -->
+  <!-- Part 9: Share your work                            -->
   <!-- ================================================= -->
   <section xml:id="codespace-share" component="timeline">
     <title>Part 9. Share Your Work</title>
@@ -796,7 +765,7 @@
   </section>
 
   <!-- ================================================= -->
-  <!-- Part 10: Coming back later                        -->
+  <!-- Part 10: Coming back later                         -->
   <!-- ================================================= -->
   <section xml:id="codespace-returning" component="timeline">
     <title>Part 10. Coming Back Later</title>
@@ -858,12 +827,39 @@
     </p>
 
     <p>
-      You don't need to go local to write great <pretext/> documents, and the Codespaces workflow will carry you a long way. When you're ready, the <pretext/> documentation has install paths for Mac, Windows, and Linux at <url href="https://pretextbook.org/doc/guide/html/tutorial-install.html"><c>pretextbook.org</c></url>.
+      You don't need to go local to write great <pretext/> documents, and the Codespaces workflow will carry you a long way. But when you're ready, the official <pretext/> Guide has a thorough installation chapter at <url href="https://pretextbook.org/doc/guide/html/tutorial-install.html"><c>pretextbook.org/doc/guide/html/tutorial-install.html</c></url>. There are three supported paths, in rough order of how hands-on they get:
+    </p>
+
+    <p>
+      <dl>
+        <li>
+          <title>Docker container (easiest)</title>
+          <p>
+            Install <term>VS Code</term>, install <term>Docker Desktop</term>, and the official <pretext/> Docker image gives you an environment identical to the Codespace but running entirely on your own computer. Needs roughly 5 GB of disk space. Works the same way on Windows, Mac, and Linux.
+          </p>
+        </li>
+        <li>
+          <title>Python install via <c>pip</c> (medium)</title>
+          <p>
+            If you already have Python 3.10 or later, a single command (<c>pip install pretext</c>) gets you the <pretext/> command-line interface. For PDF and Braille output you'll also need <latex/> and (for Braille) Node.js. This is the lightest-weight option if you're a comfortable Python user.
+          </p>
+        </li>
+        <li>
+          <title>Developer install (advanced)</title>
+          <p>
+            For contributors to <pretext/> itself, or for very custom setups. Not recommended as a first local install.
+          </p>
+        </li>
+      </dl>
+    </p>
+
+    <p>
+      Whichever you pick, the <em>source code stays identical</em>. You can move a project between your local install and your Codespace freely through GitHub. That's one of the big payoffs of the version-controlled workflow you set up in Part 7: your work is portable across environments.
     </p>
   </section>
 
   <!-- ================================================= -->
-  <!-- LaTeX bridge                                      -->
+  <!-- LaTeX bridge                                       -->
   <!-- ================================================= -->
   <section xml:id="codespace-latex-bridge" component="timeline">
     <title>Bonus: <latex/> to <pretext/> Quick Reference</title>
@@ -922,7 +918,7 @@
   </section>
 
   <!-- ================================================= -->
-  <!-- Troubleshooting appendix                          -->
+  <!-- Troubleshooting appendix                           -->
   <!-- ================================================= -->
   <section xml:id="codespace-troubleshooting" component="timeline">
     <title>Troubleshooting Quick Reference</title>
@@ -945,24 +941,10 @@
       </p>
     </assemblage>
 
-    <assemblage xml:id="ts-pretext-button-missing">
-      <title>The <term>▷ PreTeXt</term> button isn't on the blue bar</title>
-      <p>
-        That button only appears once a <pretext/> project has been initialized. If you're at Part 3 you haven't reached that step yet; continue to Part 4. If you're past Part 4 and the button is still missing, the <pretext/> extension may have failed to load. Reload the Codespace tab.
-      </p>
-    </assemblage>
-
     <assemblage xml:id="ts-pretext-command">
       <title><c>pretext new</c> isn't in the command palette</title>
       <p>
         The <pretext/> extension may still be initializing. Wait a minute and retry. If it still isn't there, close and reopen the Codespace.
-      </p>
-    </assemblage>
-
-    <assemblage xml:id="ts-no-assets-folder">
-      <title>I don't see an <c>assets/</c> folder</title>
-      <p>
-        That's expected before your first build. <c>assets/</c> shows up the first time the build copies image or data files into the project. If you have no images yet, you may not see it at all, and your build will still succeed. Nothing to fix.
       </p>
     </assemblage>
 
@@ -980,13 +962,6 @@
       </p>
     </assemblage>
 
-    <assemblage xml:id="ts-stage-changes-prompt">
-      <title>VS Code asks me about staging changes when I commit</title>
-      <p>
-        That dialog reads <em>There are no staged changes to commit. Would you like to stage all your changes and commit them directly?</em> Click <term>Yes</term>. It just means VS Code is offering to include all your edits in this commit at once, which is what you want.
-      </p>
-    </assemblage>
-
     <assemblage xml:id="ts-codespace-gone">
       <title>My Codespace disappeared</title>
       <p>
@@ -997,7 +972,7 @@
     <assemblage xml:id="ts-deploy-404">
       <title>Deploy URL shows a 404</title>
       <p>
-        Wait 2 to 3 minutes for the first deploy to finish on GitHub's side. If it still 404s, check <term>Settings → Pages</term> on your repository and confirm the source is set to <term>Deploy from a branch</term>, with the branch set to <c>gh-pages</c> and the folder set to <c>/ (root)</c>.
+        Wait 2 to 3 minutes for the first deploy to finish on GitHub's side. If it still 404s, check <term>Settings → Pages</term> on your repository and confirm the source is set to <term>GitHub Actions</term>.
       </p>
     </assemblage>
 
