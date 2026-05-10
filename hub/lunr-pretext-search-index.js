@@ -403,7 +403,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Part 3. Launch Your Codespace",
-  "body": " Part 3. Launch Your Codespace  Your repository is just the storage. The Codespace is where you'll actually edit, build, and preview: a full development environment that runs entirely in your browser, with every PreTeXt dependency already installed.     From your new repository's page on GitHub, find the green < > Code button, a bit below the repository name.    The green \"Code\" button on a GitHub repository page.      Click it, then switch to the Codespaces tab of the little popup that appears.    Click Create codespace on main .    The \"Create codespace on main\" button inside the Code popup.      A new tab opens and begins the setup. This is the 5-to-10-minute wait from the introduction. Get a cup of coffee. You'll know it's done when the progress messages stop and you see a layout with a file explorer on the left and a welcome file in the center.    A freshly loaded Codespace showing the file explorer sidebar on the left and the README open in the main editor.        ✓ You know it worked when…    You see a file explorer on the left side of the browser window.  At the very bottom of the window there is a blue bar, and somewhere on that bar is a ▷ PreTeXt button.  A terminal panel is visible at the bottom (or can be opened by pressing Ctrl + ` ).      If you get stuck: the Codespace seems frozen  First-time setup really does take several minutes, and some of those minutes look silent. Give it at least ten before worrying. If after fifteen minutes there is still no file explorer, close the tab, return to your repository, click < > Code , then Codespaces , and click your existing codespace to resume rather than creating a new one.   "
+  "body": " Part 3. Launch Your Codespace  Your repository is just the storage. The Codespace is where you'll actually edit, build, and preview: a full development environment that runs entirely in your browser, with every PreTeXt dependency already installed.     From your new repository's page on GitHub, find the green Code button, a bit below the repository name.    The green \"Code\" button on a GitHub repository page.      Click it, then switch to the Codespaces tab of the little popup that appears.    Click Create codespace on main .    The \"Create codespace on main\" button inside the Code popup.      A new tab opens and begins the setup. This is the 5-to-10-minute wait from the introduction. Get a cup of coffee. You'll know it's done when the progress messages stop and you see a layout with a file explorer on the left and a welcome file in the center.    A freshly loaded Codespace showing the file explorer sidebar on the left and the README open in the main editor.        ✓ You know it worked when…    You see a file explorer on the left side of the browser window.  A terminal panel is visible at the bottom (or can be opened by pressing Ctrl + ` ).  The blue bar at the very bottom of the window is visible. The ▷ PreTeXt button doesn't appear here yet, that comes once you initialize a project in the next part.      If you get stuck: the Codespace seems frozen  First-time setup really does take several minutes, and some of those minutes look silent. Give it at least ten before worrying. If after fifteen minutes there is still no file explorer, close the tab, return to your repository, click Code , then Codespaces , and click your existing codespace to resume rather than creating a new one.   "
 },
 {
   "id": "codespace-launch-2",
@@ -421,7 +421,7 @@ var ptx_lunr_docs = [
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
-  "body": "< > Code Codespaces Create codespace on main "
+  "body": "Code Codespaces Create codespace on main "
 },
 {
   "id": "check-part-3-2",
@@ -439,7 +439,7 @@ var ptx_lunr_docs = [
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
-  "body": "< > Code Codespaces "
+  "body": "Code Codespaces "
 },
 {
   "id": "codespace-new-project",
@@ -448,7 +448,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Part 4. Initialize Your PreTeXt Project",
-  "body": " Part 4. Initialize Your PreTeXt Project  Your Codespace is ready but empty of PreTeXt files. The template is deliberately minimal so you can pick what sort of document you want. You'll create a book project, which is a good default for lessons, course notes, or worksheets.     Press F1 (or Ctrl + Shift + P on Windows\/Linux, Cmd + Shift + P on Mac) to open the command palette , a text bar that drops down from the top of the window.    Start typing pretext new . From the matching entries, select PreTeXt : New Project and press Enter .    You'll be asked what sort of project. Choose book .    Next you'll be asked where to put it. The default location (your current folder) is what you want. Press Enter to accept.    The window will reload after a moment. The file explorer on the left now shows a real project structure.    The Codespace after initializing a book project, with source, assets, and project.ptx visible in the file explorer.        A quick tour of what you just created     source\/  Your PreTeXt source files live here. Look for main.ptx (the entry point) and at least one chapter file.    assets\/  Images, data files, and any other supporting materials go here. PreTeXt will include them automatically when you reference them in your source.    output\/  Generated files (HTML, PDF) land here when you build. You never edit this directly. It will appear after your first build.    project.ptx  The project manifest. It tells PreTeXt which output formats to produce and where to put them.    publication.ptx  Settings that control the look and feel of your output: theme, numbering depth, and similar cosmetic knobs.       ✓ You know it worked when…  The file explorer on the left shows source , assets , project.ptx , and publication.ptx .    If you get stuck: pretext new doesn't appear in the palette  The PreTeXt extension may still be loading, especially right after the Codespace finishes setup. Wait a minute, then open the command palette again and retry. If the command still isn't there, close the Codespace tab and reopen it from < > Code → Codespaces on your repository page.   "
+  "body": " Part 4. Initialize Your PreTeXt Project  Your Codespace is ready but empty of PreTeXt files. The template is deliberately minimal so you can pick what sort of document you want. You'll create a book project, which is a good default for lessons, course notes, or worksheets.     Press F1 (or Ctrl + Shift + P on Windows\/Linux, Cmd + Shift + P on Mac) to open the command palette , a text bar that drops down from the top of the window.    Start typing pretext new . From the matching entries, select PreTeXt : New Project and press Enter .    You'll be asked what sort of project. Choose book .    Next you'll be asked where to put it. The default location (your current folder) is what you want. Press Enter to accept.    The window will reload after a moment. The file explorer on the left now shows a real project structure, and the ▷ PreTeXt button now appears on the blue bar at the bottom. You'll use that button constantly from here on.    The Codespace after initializing a book project, with source, project.ptx, and publication folders visible in the file explorer.        A quick tour of what you just created     source\/  Your PreTeXt source files live here. Look for main.ptx (the entry point) and at least one chapter or section file that main.ptx pulls in.    project.ptx  The project manifest. It tells PreTeXt which output formats to produce and where to put them.    publication\/  Holds publication.ptx , which controls the look and feel of your output: theme, numbering depth, and similar cosmetic knobs.    assets\/ and output\/ (later)  You won't see these folders yet. assets\/ appears the first time you reference an image, data file, or other supporting material in your source. output\/ appears the first time you build, and holds the generated HTML and PDF. You never edit either by hand.       ✓ You know it worked when…    The file explorer on the left shows source , publication , and project.ptx .  A ▷ PreTeXt button is now visible on the blue bar at the bottom of the window.      If you get stuck: pretext new doesn't appear in the palette  The PreTeXt extension may still be loading, especially right after the Codespace finishes setup. Wait a minute, then open the command palette again and retry. If the command still isn't there, close the Codespace tab and reopen it from Code → Codespaces on your repository page.   "
 },
 {
   "id": "codespace-new-project-2",
@@ -466,7 +466,16 @@ var ptx_lunr_docs = [
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
-  "body": "command palette PreTeXt : New Project book "
+  "body": "command palette PreTeXt : New Project book ▷ PreTeXt "
+},
+{
+  "id": "check-part-4-2",
+  "level": "2",
+  "url": "codespace-new-project.html#check-part-4-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "▷ PreTeXt "
 },
 {
   "id": "trouble-command-palette-2",
@@ -475,7 +484,7 @@ var ptx_lunr_docs = [
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
-  "body": "< > Code → Codespaces "
+  "body": "Code → Codespaces "
 },
 {
   "id": "codespace-starter",
@@ -484,7 +493,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Part 5. Add a Small Starter Lesson",
-  "body": " Part 5. Add a Small Starter Lesson  The template book comes with placeholder content that's fine but not very interesting to edit. Let's replace a chunk of it with a short lesson you can actually work with.     In the file explorer, open source\/ and double-click main.ptx . You should see a PreTeXt document with a few <chapter> and <section> tags.    Find the first <section> inside the first <chapter> . Select everything from the opening <section> tag through its closing <\/section> , and replace it with the block below.  <section xml:id=\"sec-right-triangles\"> <title>Right Triangles<\/title> <p>This short lesson introduces right triangles and the Pythagorean theorem.<\/p> <definition xml:id=\"def-right-triangle\"> <statement> <p>A <term>right triangle<\/term> is a triangle with one angle measuring exactly 90 degrees.<\/p> <\/statement> <\/definition> <p>The Pythagorean theorem states that <m>a^2 + b^2 = c^2<\/m>, where <m>c<\/m> is the length of the hypotenuse.<\/p> <example> <title>A 3-4-5 triangle<\/title> <statement> <p>Show that a triangle with sides 3, 4, and 5 is a right triangle.<\/p> <\/statement> <solution> <p>Check: <m>3^2 + 4^2 = 9 + 16 = 25 = 5^2<\/m>.<\/p> <\/solution> <\/example> <exercise> <statement> <p>Find the length of the hypotenuse of a right triangle with legs of length 5 and 12.<\/p> <\/statement> <\/exercise> <p>For a reminder of the terminology, see <xref ref=\"def-right-triangle\"\/>.<\/p> <\/section>    Save the file: Ctrl + S on Windows\/Linux, Cmd + S on Mac.      Make it yours  If you have a few extra minutes, change the topic to something you actually teach. Swap the definition, rewrite the example, replace the exercise. The structure stays the same; only the content changes. This is the authoring rhythm you'll use for everything you write in PreTeXt from here on out.   "
+  "body": " Part 5. Add a Small Starter Lesson  The template book comes with placeholder content that's fine but not very interesting to edit. Let's replace a chunk of it with a short lesson you can actually work with.     In the file explorer, open source\/ and double-click main.ptx . You'll see a PreTeXt document built around a few <chapter> tags. Each chapter pulls in its sections through an <xi:include> line that points at another file in the source\/ folder, with a name like section-name.ptx or similar.    Find the first <xi:include> inside the first <chapter> , note the filename it references, and open that file from the source\/ folder. You should now be looking at a file that contains a single <section> .    Select everything from the opening <section> tag through its closing <\/section> , and replace it with the block below.  <section xml:id=\"sec-right-triangles\"> <title>Right Triangles<\/title> <p>This short lesson introduces right triangles and the Pythagorean theorem.<\/p> <definition xml:id=\"def-right-triangle\"> <statement> <p>A <term>right triangle<\/term> is a triangle with one angle measuring exactly 90 degrees.<\/p> <\/statement> <\/definition> <p>The Pythagorean theorem states that <m>a^2 + b^2 = c^2<\/m>, where <m>c<\/m> is the length of the hypotenuse.<\/p> <example> <title>A 3-4-5 triangle<\/title> <statement> <p>Show that a triangle with sides 3, 4, and 5 is a right triangle.<\/p> <\/statement> <solution> <p>Check: <m>3^2 + 4^2 = 9 + 16 = 25 = 5^2<\/m>.<\/p> <\/solution> <\/example> <exercise> <statement> <p>Find the length of the hypotenuse of a right triangle with legs of length 5 and 12.<\/p> <\/statement> <\/exercise> <p>For a reminder of the terminology, see <xref ref=\"def-right-triangle\"\/>.<\/p> <\/section>    Save the file: Ctrl + S on Windows\/Linux, Cmd + S on Mac.      If your template looks a little different  The starter project gets refreshed from time to time, so the exact filenames and the placeholder content inside the first section may not match what's described here. The shape is what matters: main.ptx includes chapter or section files from source\/ , and one of those files contains a <section> you can replace. As long as you find a <section>...<\/section> block and swap its contents for the one above, you're in good shape.    Make it yours  If you have a few extra minutes, change the topic to something you actually teach. Swap the definition, rewrite the example, replace the exercise. The structure stays the same; only the content changes. This is the authoring rhythm you'll use for everything you write in PreTeXt from here on out.   "
 },
 {
   "id": "codespace-build",
@@ -493,7 +502,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Part 6. Build and Preview",
-  "body": " Part 6. Build and Preview  Building a PreTeXt project means running the toolchain that converts your source XML into polished HTML (or PDF, or ePub). You'll do this dozens of times as you write, so it's worth learning two ways to trigger it: a button and a command.   Build the HTML version     Look at the blue bar at the very bottom of the Codespace window. Find the ▷ PreTeXt button.    The PreTeXt button on the bottom status bar, shown as an arrow followed by the word \"PreTeXt\".      Click it. A small menu appears. Choose Build default target .    A terminal panel opens and shows the build's progress. The first build takes a little longer than subsequent ones because it downloads some supporting files. Typical time: 30 to 60 seconds.    When you see a success message at the end of the terminal output, expand the output folder in the file explorer. You should see a web subfolder containing an index.html .       Preview the HTML version  Don't try to open index.html by hand, it won't render correctly from the file system. Use the built-in preview instead.     Click ▷ PreTeXt on the blue bar again.    Choose View Full Document , then web .    A new tab opens with your document rendered as a real web page: table of contents on the left, your lesson in the middle, equations typeset with MathJax.       Build a PDF too     Click ▷ PreTeXt one more time and choose Build Another Target .    From the list, pick print . This triggers a latex -based build to produce a typeset PDF, which lands in output\/print\/ .    The first PDF build takes longer because it needs to fetch latex packages. Expect two or three minutes.    When it finishes, preview it the same way as the HTML: ▷ PreTeXt → View Full Document → print .       The rebuild rhythm  The preview does not update on its own. Every time you edit the source, you need to build again and then refresh the preview tab. You'll internalize this rhythm in the first ten minutes: edit, build, refresh, look .    ✓ You know it worked when…    The output folder exists and has a web\/index.html inside it.  A browser tab is showing your lesson with a navigation sidebar.  Optionally, you also have a output\/print\/main.pdf .      If you get stuck: build fails with a red error  Almost always a missing or mismatched tag in the source. Read the error message, which will usually include a line number. Double-check that every <tag> you added has a matching <\/tag> . If you can't find it, copy the starter block from Part 5 again carefully. Don't panic at red text. These errors are routine and fixable.    If you get stuck: preview is blank or stale  Build again first, then refresh the preview tab with F5 . If that doesn't help, close the preview tab and reopen it with ▷ PreTeXt → View Full Document → web .   "
+  "body": " Part 6. Build and Preview  Building a PreTeXt project means running the toolchain that converts your source XML into polished HTML (or PDF, or ePub). You'll do this dozens of times as you write, so it's worth learning two ways to trigger it: a button and a command.   Build the HTML version     Look at the blue bar at the very bottom of the Codespace window. Find the ▷ PreTeXt button.    The PreTeXt button on the bottom status bar, shown as an arrow followed by the word \"PreTeXt\".      Click it. A small menu appears. Choose Build default target .    A terminal panel opens and shows the build's progress. The first build takes a little longer than subsequent ones because it downloads some supporting files. Typical time: 30 to 60 seconds.    When you see a success message at the end of the terminal output, expand the output folder in the file explorer. (This is the first time you've seen output\/ , since it's created during the build.) You should see a web subfolder containing an index.html . You may also notice an assets\/ folder appearing in the project root once the build has copied any image or data files into place.       Preview the HTML version  Don't try to open index.html by hand, it won't render correctly from the file system. Use the built-in preview instead.     Click ▷ PreTeXt on the blue bar again.    Choose View Full Document , then web .    A new tab opens with your document rendered as a real web page: table of contents on the left, your lesson in the middle, equations typeset with MathJax.       Build a PDF too     Click ▷ PreTeXt one more time and choose Build Another Target .    From the list, pick print . This triggers a latex -based build to produce a typeset PDF, which lands in output\/print\/ .    The first PDF build takes longer because it needs to fetch latex packages. Expect two or three minutes.    When it finishes, preview it the same way as the HTML: ▷ PreTeXt → View Full Document → print .       The rebuild rhythm  The preview does not update on its own. Every time you edit the source, you need to build again and then refresh the preview tab. You'll internalize this rhythm in the first ten minutes: edit, build, refresh, look .    ✓ You know it worked when…    The output folder exists and has a web\/index.html inside it.  A browser tab is showing your lesson with a navigation sidebar.  Optionally, you also have a output\/print\/main.pdf .      If you get stuck: build fails with a red error  Almost always a missing or mismatched tag in the source. Read the error message, which will usually include a line number. Double-check that every <tag> you added has a matching <\/tag> . If you can't find it, copy the starter block from Part 5 again carefully. Don't panic at red text. These errors are routine and fixable.    If you get stuck: preview is blank or stale  Build again first, then refresh the preview tab with F5 . If that doesn't help, close the preview tab and reopen it with ▷ PreTeXt → View Full Document → web .   "
 },
 {
   "id": "codespace-build-html-2",
@@ -547,7 +556,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Part 7. Save Your Work to GitHub",
-  "body": " Part 7. Save Your Work to GitHub  Your edits live inside the Codespace, which is a good enough home for an active work session but not a permanent one. GitHub will eventually recycle inactive Codespaces (after about a month of disuse at the time of writing), so you should periodically push your work back to the repository on github.com , where it is safe forever.  The operation has two parts, traditionally called commit (take a snapshot of the current state with a short note) and sync (upload the snapshot to GitHub). The Codespace combines them into a single action.      On the left side of the window, find the Source Control icon: it looks like a branching diagram with three dots. Click it.    You'll see a list of files you've changed. At the top there's a text box asking for a message . Type something brief that describes what you did, for example Add right triangles lesson .    Click the blue Commit & Sync button (sometimes labeled Commit the first time, with Sync appearing after). If asked to confirm, say yes. You may also be asked to allow the Codespace to act on your behalf, which is expected.    After a few seconds, the changed-files list empties. Your work is now saved to github.com\/YOUR-USERNAME\/YOUR-REPO-NAME .      The Source Control panel in VS Code, showing the branching-diagram icon on the left rail, a list of changed files, a commit message text box, and a blue Commit and Sync button.     ✓ You know it worked when…  Open a new tab, go to your repository's page on github.com , and you'll see your changed files listed with your commit message next to them. If you refresh the page you see your latest edits reflected in the source files on GitHub itself.    A habit worth building  Commit and sync often. Every time you finish a meaningful chunk of work (a new example, a fixed exercise, a reorganized section) is a reasonable moment. Each commit is a save point you can return to later if you decide you liked an earlier version better.   "
+  "body": " Part 7. Save Your Work to GitHub  Your edits live inside the Codespace, which is a good enough home for an active work session but not a permanent one. GitHub will eventually recycle inactive Codespaces (after about a month of disuse at the time of writing), so you should periodically push your work back to the repository on github.com , where it is safe forever.  The operation has two parts, traditionally called commit (take a snapshot of the current state with a short note) and sync (upload the snapshot to GitHub). The Codespace combines them into a single action.      On the left side of the window, find the Source Control icon: it looks like a branching diagram with three dots. Click it.    You'll see a list of files you've changed. At the top there's a text box asking for a message . Type something brief that describes what you did, for example Add right triangles lesson .    Click the blue Commit & Sync button (sometimes labeled Commit the first time, with Sync appearing after). You may also be asked to allow the Codespace to act on your behalf, which is expected.    A small dialog will likely pop up that says There are no staged changes to commit. Would you like to stage all your changes and commit them directly? Click Yes . (Staging is just GitHub's word for marking which changed files belong in this snapshot. Saying yes means all of them , which is what you want.)    A VS Code dialog reading \"There are no staged changes to commit. Would you like to stage all your changes and commit them directly?\" with buttons labeled Never, Always, Cancel, and Yes.      After a few seconds, the changed-files list empties. Your work is now saved to github.com\/YOUR-USERNAME\/YOUR-REPO-NAME .      The Source Control panel in VS Code, showing the branching-diagram icon on the left rail, a list of changed files, a commit message text box, and a blue Commit and Sync button.     ✓ You know it worked when…  Open a new tab, go to your repository's page on github.com , and you'll see your changed files listed with your commit message next to them. If you refresh the page you see your latest edits reflected in the source files on GitHub itself.    A habit worth building  Commit and sync often. Every time you finish a meaningful chunk of work (a new example, a fixed exercise, a reorganized section) is a reasonable moment. Each commit is a save point you can return to later if you decide you liked an earlier version better.   "
 },
 {
   "id": "codespace-save-4-1",
@@ -556,7 +565,7 @@ var ptx_lunr_docs = [
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
-  "body": "Source Control message Commit & Sync Commit Sync "
+  "body": "Source Control message Commit & Sync Commit Sync Yes "
 },
 {
   "id": "codespace-deploy",
@@ -565,7 +574,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Part 8. Deploy to a Public Web Page",
-  "body": " Part 8. Deploy to a Public Web Page   Deploying means publishing your built HTML at a real URL that anyone can visit. GitHub provides free hosting for this through a service called GitHub Pages . There's a one-time setup step and then a single command does the rest.   One-time setup: turn on GitHub Pages     Open your repository page on github.com in a new tab.    Click Settings in the top row of tabs on that page.    In the left sidebar, click Pages (under Code and automation ).    Under Source , use the dropdown to select GitHub Actions . You'll not need to configure a workflow by hand; the PreTeXt deploy command will handle that for you.    That's it. No save button to press, the setting takes effect immediately.       Deploy your site  Back in your Codespace:     Click ▷ PreTeXt on the blue bar.    Choose Deploy . (If you don't see it, first commit and sync any pending changes from Part 7, then try again.)    Watch the terminal. Several things happen in sequence: a build, a push to a special gh-pages branch, and a trigger of the GitHub Actions workflow that actually publishes the site.    When the command finishes, the terminal will print your public URL. It looks like:   https:\/\/YOUR-USERNAME.github.io\/YOUR-REPO-NAME\/     The site itself may take another minute or two to actually go live even after the command finishes. You can check progress by going to your repository on github.com and clicking the Actions tab; a green checkmark means it's up.       ✓ You know it worked when…  You can open the github.io URL in a fresh browser tab (or on your phone, or from a friend's laptop) and see your lesson live on the public internet.    If you get stuck: the URL shows a 404  Two usual causes. First, give it another two or three minutes; the initial publish sometimes lags behind the deploy command. Second, go to Settings → Pages and confirm the source really is set to GitHub Actions . If it still says Deploy from a branch , change it, then run Deploy one more time.    If you get stuck: deploy command fails with a permissions error  On your repository page, go to Settings → Actions → General , scroll to Workflow permissions , and make sure Read and write permissions is selected. Save. Return to the Codespace and run Deploy again.   "
+  "body": " Part 8. Deploy to a Public Web Page   Deploying means publishing your built HTML at a real URL that anyone can visit. GitHub provides free hosting for this through a service called GitHub Pages . The order of operations matters here: first you run the deploy command from the Codespace, then you flip a setting on GitHub to point Pages at the result. The deploy command needs to run first because it creates a special gh-pages branch behind the scenes, and that branch needs to exist before GitHub will let you choose it as a source.   Run the deploy command  Back in your Codespace:     Make sure you've committed and synced any pending changes from Part 7. The deploy command publishes from what's on GitHub, not from unsaved edits in your editor.    Click ▷ PreTeXt on the blue bar.    Choose Deploy .    Watch the terminal. The command builds your site, creates (or updates) a gh-pages branch in your repository, and pushes the built HTML to it.    When the command finishes, the terminal will tell you what to do next, including the github.io URL your site will live at. The URL looks like:   https:\/\/YOUR-USERNAME.github.io\/YOUR-REPO-NAME\/   Don't try the URL just yet. The gh-pages branch now exists, but GitHub hasn't been told to publish from it. That's the next step.       Point GitHub Pages at the gh-pages branch     Open your repository page on github.com in a new tab.    Click Settings in the top row of tabs on that page.    In the left sidebar, click Pages (under Code and automation ).    Under Build and deployment , find the Source dropdown. Make sure it says Deploy from a branch . (If it says GitHub Actions , change it.)    Just below that, the Branch section will appear with two dropdowns. Set the first one to gh-pages and leave the second one as \/ (root) . Then click Save .    The GitHub Pages \"Build and deployment\" settings panel, with Source set to \"Deploy from a branch\" and Branch set to gh-pages with the \/ (root) folder.      GitHub will now build and publish the site. The first publish takes a minute or two. You can watch progress on the repository's Actions tab; a green checkmark means it's live.    Once the green check shows up, open the github.io URL from the deploy command in a new tab. Your lesson should be there.       ✓ You know it worked when…  You can open the github.io URL in a fresh browser tab (or on your phone, or from a friend's laptop) and see your lesson live on the public internet.    Redeploying after edits  The Pages setting is a one-time configuration. From now on, every time you want to publish updates, the cycle is just: edit, build, commit and sync, then run ▷ PreTeXt → Deploy . The new build replaces the old one at the same URL within a minute or two.    If you get stuck: the URL shows a 404  Three usual causes. First, give it another two or three minutes; the initial publish sometimes lags behind the deploy command. Second, go to the repository's Actions tab and look for a recent pages build and deployment workflow run; if it has a red X, click into it for details. Third, return to Settings → Pages and confirm the source is Deploy from a branch with the branch set to gh-pages and the folder set to \/ (root) .    If you get stuck: deploy command fails with a permissions error  On your repository page, go to Settings → Actions → General , scroll to Workflow permissions , and make sure Read and write permissions is selected. Save. Return to the Codespace and run Deploy again.   "
 },
 {
   "id": "codespace-deploy-2",
@@ -577,22 +586,31 @@ var ptx_lunr_docs = [
   "body": "Deploying GitHub Pages "
 },
 {
-  "id": "codespace-enable-pages-2",
-  "level": "2",
-  "url": "codespace-deploy.html#codespace-enable-pages-2",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "Settings Pages Source GitHub Actions "
-},
-{
   "id": "codespace-run-deploy-3",
   "level": "2",
   "url": "codespace-deploy.html#codespace-run-deploy-3",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
-  "body": "▷ PreTeXt Deploy Actions "
+  "body": "▷ PreTeXt Deploy "
+},
+{
+  "id": "codespace-enable-pages-2",
+  "level": "2",
+  "url": "codespace-deploy.html#codespace-enable-pages-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Settings Pages Build and deployment Source Deploy from a branch GitHub Actions Branch Save Actions "
+},
+{
+  "id": "codespace-redeploy-2",
+  "level": "2",
+  "url": "codespace-deploy.html#codespace-redeploy-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "▷ PreTeXt → Deploy "
 },
 {
   "id": "trouble-deploy-404-2",
@@ -601,7 +619,7 @@ var ptx_lunr_docs = [
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
-  "body": "Settings → Pages GitHub Actions Deploy from a branch Deploy "
+  "body": "Actions Settings → Pages Deploy from a branch "
 },
 {
   "id": "trouble-deploy-permission-2",
@@ -655,16 +673,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "The Next Level: Installing PreTeXt Locally",
-  "body": " The Next Level: Installing PreTeXt Locally  At some point you may want PreTeXt running on your own machine rather than in the cloud. Reasons to consider this:    You work somewhere with unreliable internet.  You're drafting a long book and prefer the speed of a local editor.  You want to use your favorite editor (Vim, Emacs, BBEdit, something else) instead of the browser's VS Code.  You want to avoid the free-tier Codespace monthly hours.    You don't need to go local to write great PreTeXt documents, and the Codespaces workflow will carry you a long way. But when you're ready, the official PreTeXt Guide has a thorough installation chapter at pretextbook.org\/doc\/guide\/html\/tutorial-install.html . There are three supported paths, in rough order of how hands-on they get:     Docker container (easiest)  Install VS Code , install Docker Desktop , and the official PreTeXt Docker image gives you an environment identical to the Codespace but running entirely on your own computer. Needs roughly 5 GB of disk space. Works the same way on Windows, Mac, and Linux.    Python install via pip (medium)  If you already have Python 3.10 or later, a single command ( pip install pretext ) gets you the PreTeXt command-line interface. For PDF and Braille output you'll also need latex and (for Braille) Node.js. This is the lightest-weight option if you're a comfortable Python user.    Developer install (advanced)  For contributors to PreTeXt itself, or for very custom setups. Not recommended as a first local install.     Whichever you pick, the source code stays identical . You can move a project between your local install and your Codespace freely through GitHub. That's one of the big payoffs of the version-controlled workflow you set up in Part 7: your work is portable across environments.  "
-},
-{
-  "id": "codespace-next-level-5",
-  "level": "2",
-  "url": "codespace-next-level.html#codespace-next-level-5",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "VS Code Docker Desktop "
+  "body": " The Next Level: Installing PreTeXt Locally  At some point you may want PreTeXt running on your own machine rather than in the cloud. Reasons to consider this:    You work somewhere with unreliable internet.  You're drafting a long book and prefer the speed of a local editor.  You want to use your favorite editor (Vim, Emacs, BBEdit, something else) instead of the browser's VS Code.  You want to avoid the free-tier Codespace monthly hours.    You don't need to go local to write great PreTeXt documents, and the Codespaces workflow will carry you a long way. When you're ready, the PreTeXt documentation has install paths for Mac, Windows, and Linux at pretextbook.org .  "
 },
 {
   "id": "codespace-latex-bridge",
@@ -691,7 +700,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Troubleshooting Quick Reference",
-  "body": " Troubleshooting Quick Reference  These are the issues that come up most often. Each has already been mentioned in the relevant part of the tutorial; they're collected here for easy lookup.   The Use this template button is missing  You aren't signed in to GitHub, or haven't confirmed your email address. Sign in or confirm and refresh the page.    The Codespace looks frozen during first-time setup  First-time setup takes 5 to 10 minutes. Give it fifteen before worrying. If it still hasn't loaded, close the tab and reopen the Codespace from your repository's < > Code → Codespaces menu.    pretext new isn't in the command palette  The PreTeXt extension may still be initializing. Wait a minute and retry. If it still isn't there, close and reopen the Codespace.    Build fails with a red error  Almost always a missing or mismatched tag. Check the line number in the error message. Confirm every <tag> has a matching <\/tag> .    Preview is blank or stale  Build again, then refresh the preview tab with F5 . If that fails, close the preview tab and reopen via ▷ PreTeXt → View Full Document .    My Codespace disappeared  Inactive Codespaces are recycled after about a month. Your files are safe on github.com as long as you've committed and synced. Create a fresh Codespace from the same repository to pick up where you left off.    Deploy URL shows a 404  Wait 2 to 3 minutes for the first deploy to finish on GitHub's side. If it still 404s, check Settings → Pages on your repository and confirm the source is set to GitHub Actions .    Deploy fails with a permissions error  On your repository, go to Settings → Actions → General → Workflow permissions and select Read and write permissions . Save, then run Deploy again.    Something else is wrong  The PreTeXt community forums and Discord server (see the Information & Links chapter of this hub) are genuinely helpful for unusual problems. Post a short description of what you were trying to do, what happened instead, and any error text. Someone has almost certainly hit the same thing before.   "
+  "body": " Troubleshooting Quick Reference  These are the issues that come up most often. Each has already been mentioned in the relevant part of the tutorial; they're collected here for easy lookup.   The Use this template button is missing  You aren't signed in to GitHub, or haven't confirmed your email address. Sign in or confirm and refresh the page.    The Codespace looks frozen during first-time setup  First-time setup takes 5 to 10 minutes. Give it fifteen before worrying. If it still hasn't loaded, close the tab and reopen the Codespace from your repository's < > Code → Codespaces menu.    The ▷ PreTeXt button isn't on the blue bar  That button only appears once a PreTeXt project has been initialized. If you're at Part 3 you haven't reached that step yet; continue to Part 4. If you're past Part 4 and the button is still missing, the PreTeXt extension may have failed to load. Reload the Codespace tab.    pretext new isn't in the command palette  The PreTeXt extension may still be initializing. Wait a minute and retry. If it still isn't there, close and reopen the Codespace.    I don't see an assets\/ folder  That's expected before your first build. assets\/ shows up the first time the build copies image or data files into the project. If you have no images yet, you may not see it at all, and your build will still succeed. Nothing to fix.    Build fails with a red error  Almost always a missing or mismatched tag. Check the line number in the error message. Confirm every <tag> has a matching <\/tag> .    Preview is blank or stale  Build again, then refresh the preview tab with F5 . If that fails, close the preview tab and reopen via ▷ PreTeXt → View Full Document .    VS Code asks me about staging changes when I commit  That dialog reads There are no staged changes to commit. Would you like to stage all your changes and commit them directly? Click Yes . It just means VS Code is offering to include all your edits in this commit at once, which is what you want.    My Codespace disappeared  Inactive Codespaces are recycled after about a month. Your files are safe on github.com as long as you've committed and synced. Create a fresh Codespace from the same repository to pick up where you left off.    Deploy URL shows a 404  Wait 2 to 3 minutes for the first deploy to finish on GitHub's side. If it still 404s, check Settings → Pages on your repository and confirm the source is set to Deploy from a branch , with the branch set to gh-pages and the folder set to \/ (root) .    Deploy fails with a permissions error  On your repository, go to Settings → Actions → General → Workflow permissions and select Read and write permissions . Save, then run Deploy again.    Something else is wrong  The PreTeXt community forums and Discord server (see the Information & Links chapter of this hub) are genuinely helpful for unusual problems. Post a short description of what you were trying to do, what happened instead, and any error text. Someone has almost certainly hit the same thing before.   "
 },
 {
   "id": "ts-codespace-slow-2",
@@ -712,13 +721,22 @@ var ptx_lunr_docs = [
   "body": "▷ PreTeXt → View Full Document "
 },
 {
+  "id": "ts-stage-changes-prompt-2",
+  "level": "2",
+  "url": "codespace-troubleshooting.html#ts-stage-changes-prompt-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Yes "
+},
+{
   "id": "ts-deploy-404-2",
   "level": "2",
   "url": "codespace-troubleshooting.html#ts-deploy-404-2",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
-  "body": "Settings → Pages GitHub Actions "
+  "body": "Settings → Pages Deploy from a branch "
 },
 {
   "id": "ts-deploy-permission-2",

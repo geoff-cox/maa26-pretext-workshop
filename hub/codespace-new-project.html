@@ -101,15 +101,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.13.5';
+eBookConfig.runestone_version = '8.0.0';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.52176322e2c1dde5.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.bbf2283c5c1d4f99.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
+<script src="_static/prefix-runtime.ce7e0a2163cb330f.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.f4a2ffb04bb978bb.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
 <script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-numbers/prism-line-numbers.min.js" integrity="sha512-dubtf8xMHSQlExGRQ5R7toxHLgSDZ0K7AunqPWHXmJQ8XyVIG19S1T95gBxlAeGOK02P4Da2RTnQz0Za0H0ebQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-highlight/prism-line-highlight.min.js" integrity="sha512-93uCmm0q+qO5Lb1huDqr7tywS8A2TFA+1/WHvyiWaK6/pvsFl6USnILagntBx8JnVbQH5s3n0vQZY6xNthNfKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
@@ -285,11 +285,11 @@ eBookConfig.enable_chatcodes =  false;
 <div class="autopermalink" data-description="Item 4"><a href="#codespace-new-project-3-1-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
 </li>
 <li id="codespace-new-project-3-1-5">
-<div class="para" id="codespace-new-project-3-1-5-1">The window will reload after a moment. The file explorer on the left now shows a real project structure.<div class="autopermalink" data-description="Paragraph"><a href="#codespace-new-project-3-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="codespace-new-project-3-1-5-1">The window will reload after a moment. The file explorer on the left now shows a real project structure, and the <dfn class="terminology">▷ PreTeXt</dfn> button now appears on the blue bar at the bottom. You’ll use that button constantly from here on.<div class="autopermalink" data-description="Paragraph"><a href="#codespace-new-project-3-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="sidebyside">
-<div class="sbsrow" style="margin-left:7.5%;margin-right:7.5%;grid-template-columns:100%;column-gap:0%;">
-<div class="sbspanel sbspanel--top top" style=""><div class="image-box"><img src="external/figs/new-book.png" class="contained" alt="The Codespace after initializing a book project, with source, assets, and project.ptx visible in the file explorer."></div></div>
+<div class="sbsrow" style="margin-left:1%;margin-right:1%;grid-template-columns:100%;column-gap:0%;">
+<div class="sbspanel sbspanel--top top" style=""><div class="image-box"><img src="external/figs/new-book.png" class="contained" alt="The Codespace after initializing a book project, with source, project.ptx, and publication folders visible in the file explorer."></div></div>
 </div>
 </div>
 <div class="autopermalink" data-description="Item 5"><a href="#codespace-new-project-3-1-5" title="Copy heading and permalink for Item 5" aria-label="Copy heading and permalink for Item 5">🔗</a></div>
@@ -304,35 +304,28 @@ eBookConfig.enable_chatcodes =  false;
 <code class="code-inline tex2jax_ignore">source/</code><div class="autopermalink" data-description="Item: source/"><a href="#codespace-folder-tour-2-1-1" title="Copy heading and permalink for Item: source/" aria-label="Copy heading and permalink for Item: source/">🔗</a></div>
 </dt>
 <dd>
-<div class="para" id="codespace-folder-tour-2-1-1-2">Your PreTeXt source files live here. Look for <code class="code-inline tex2jax_ignore">main.ptx</code> (the entry point) and at least one chapter file.<div class="autopermalink" data-description="Paragraph"><a href="#codespace-folder-tour-2-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="codespace-folder-tour-2-1-1-2">Your PreTeXt source files live here. Look for <code class="code-inline tex2jax_ignore">main.ptx</code> (the entry point) and at least one chapter or section file that <code class="code-inline tex2jax_ignore">main.ptx</code> pulls in.<div class="autopermalink" data-description="Paragraph"><a href="#codespace-folder-tour-2-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </dd>
 <dt id="codespace-folder-tour-2-1-2">
-<code class="code-inline tex2jax_ignore">assets/</code><div class="autopermalink" data-description="Item: assets/"><a href="#codespace-folder-tour-2-1-2" title="Copy heading and permalink for Item: assets/" aria-label="Copy heading and permalink for Item: assets/">🔗</a></div>
+<code class="code-inline tex2jax_ignore">project.ptx</code><div class="autopermalink" data-description="Item: project.ptx"><a href="#codespace-folder-tour-2-1-2" title="Copy heading and permalink for Item: project.ptx" aria-label="Copy heading and permalink for Item: project.ptx">🔗</a></div>
 </dt>
 <dd>
-<div class="para" id="codespace-folder-tour-2-1-2-2">Images, data files, and any other supporting materials go here. PreTeXt will include them automatically when you reference them in your source.<div class="autopermalink" data-description="Paragraph"><a href="#codespace-folder-tour-2-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="codespace-folder-tour-2-1-2-2">The project manifest. It tells PreTeXt which output formats to produce and where to put them.<div class="autopermalink" data-description="Paragraph"><a href="#codespace-folder-tour-2-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </dd>
 <dt id="codespace-folder-tour-2-1-3">
-<code class="code-inline tex2jax_ignore">output/</code><div class="autopermalink" data-description="Item: output/"><a href="#codespace-folder-tour-2-1-3" title="Copy heading and permalink for Item: output/" aria-label="Copy heading and permalink for Item: output/">🔗</a></div>
+<code class="code-inline tex2jax_ignore">publication/</code><div class="autopermalink" data-description="Item: publication/"><a href="#codespace-folder-tour-2-1-3" title="Copy heading and permalink for Item: publication/" aria-label="Copy heading and permalink for Item: publication/">🔗</a></div>
 </dt>
 <dd>
-<div class="para" id="codespace-folder-tour-2-1-3-2">Generated files (HTML, PDF) land here when you build. You never edit this directly. It will appear after your first build.<div class="autopermalink" data-description="Paragraph"><a href="#codespace-folder-tour-2-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="codespace-folder-tour-2-1-3-2">Holds <code class="code-inline tex2jax_ignore">publication.ptx</code>, which controls the look and feel of your output: theme, numbering depth, and similar cosmetic knobs.<div class="autopermalink" data-description="Paragraph"><a href="#codespace-folder-tour-2-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </dd>
 <dt id="codespace-folder-tour-2-1-4">
-<code class="code-inline tex2jax_ignore">project.ptx</code><div class="autopermalink" data-description="Item: project.ptx"><a href="#codespace-folder-tour-2-1-4" title="Copy heading and permalink for Item: project.ptx" aria-label="Copy heading and permalink for Item: project.ptx">🔗</a></div>
+<code class="code-inline tex2jax_ignore">assets/</code> and <code class="code-inline tex2jax_ignore">output/</code> (later)<div class="autopermalink" data-description="Item: assets/ and output/ (later)"><a href="#codespace-folder-tour-2-1-4" title="Copy heading and permalink for Item: assets/ and output/ (later)" aria-label="Copy heading and permalink for Item: assets/ and output/ (later)">🔗</a></div>
 </dt>
 <dd>
-<div class="para" id="codespace-folder-tour-2-1-4-2">The project manifest. It tells PreTeXt which output formats to produce and where to put them.<div class="autopermalink" data-description="Paragraph"><a href="#codespace-folder-tour-2-1-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-</dd>
-<dt id="codespace-folder-tour-2-1-5">
-<code class="code-inline tex2jax_ignore">publication.ptx</code><div class="autopermalink" data-description="Item: publication.ptx"><a href="#codespace-folder-tour-2-1-5" title="Copy heading and permalink for Item: publication.ptx" aria-label="Copy heading and permalink for Item: publication.ptx">🔗</a></div>
-</dt>
-<dd>
-<div class="para" id="codespace-folder-tour-2-1-5-2">Settings that control the look and feel of your output: theme, numbering depth, and similar cosmetic knobs.<div class="autopermalink" data-description="Paragraph"><a href="#codespace-folder-tour-2-1-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="codespace-folder-tour-2-1-4-2">You won’t see these folders yet. <code class="code-inline tex2jax_ignore">assets/</code> appears the first time you reference an image, data file, or other supporting material in your source. <code class="code-inline tex2jax_ignore">output/</code> appears the first time you build, and holds the generated HTML and PDF. You never edit either by hand.<div class="autopermalink" data-description="Paragraph"><a href="#codespace-folder-tour-2-1-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </dd>
 </dl>
@@ -341,12 +334,25 @@ eBookConfig.enable_chatcodes =  false;
 <div class="autopermalink" data-description="Paragraphs: A quick tour of what you just created"><a href="#codespace-folder-tour" title="Copy heading and permalink for Paragraphs: A quick tour of what you just created" aria-label="Copy heading and permalink for Paragraphs: A quick tour of what you just created">🔗</a></div>
 </section>
 <article class="assemblage assemblage-like" id="check-part-4"><h3 class="heading"><span class="title">✓ You know it worked when….</span></h3>
-<div class="para" id="check-part-4-2">The file explorer on the left shows <code class="code-inline tex2jax_ignore">source</code>, <code class="code-inline tex2jax_ignore">assets</code>, <code class="code-inline tex2jax_ignore">project.ptx</code>, and <code class="code-inline tex2jax_ignore">publication.ptx</code>.<div class="autopermalink" data-description="Paragraph"><a href="#check-part-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para logical" id="check-part-4-2">
+<ul class="disc" id="check-part-4-2-1">
+<li id="check-part-4-2-1-1">
+<div class="para" id="check-part-4-2-1-1-1">The file explorer on the left shows <code class="code-inline tex2jax_ignore">source</code>, <code class="code-inline tex2jax_ignore">publication</code>, and <code class="code-inline tex2jax_ignore">project.ptx</code>.<div class="autopermalink" data-description="Paragraph"><a href="#check-part-4-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#check-part-4-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="check-part-4-2-1-2">
+<div class="para" id="check-part-4-2-1-2-1">A <dfn class="terminology">▷ PreTeXt</dfn> button is now visible on the blue bar at the bottom of the window.<div class="autopermalink" data-description="Paragraph"><a href="#check-part-4-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#check-part-4-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#check-part-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Assemblage: ✓ You know it worked when…"><a href="#check-part-4" title="Copy heading and permalink for Assemblage: ✓ You know it worked when…" aria-label="Copy heading and permalink for Assemblage: ✓ You know it worked when…">🔗</a></div>
 </article>
 <article class="assemblage assemblage-like" id="trouble-command-palette"><h3 class="heading"><span class="title">If you get stuck: <code class="code-inline tex2jax_ignore">pretext new</code> doesn’t appear in the palette.</span></h3>
-<div class="para" id="trouble-command-palette-2">The PreTeXt extension may still be loading, especially right after the Codespace finishes setup. Wait a minute, then open the command palette again and retry. If the command still isn’t there, close the Codespace tab and reopen it from <dfn class="terminology">&lt; &gt; Code → Codespaces</dfn> on your repository page.<div class="autopermalink" data-description="Paragraph"><a href="#trouble-command-palette-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="trouble-command-palette-2">The PreTeXt extension may still be loading, especially right after the Codespace finishes setup. Wait a minute, then open the command palette again and retry. If the command still isn’t there, close the Codespace tab and reopen it from <dfn class="terminology">Code → Codespaces</dfn> on your repository page.<div class="autopermalink" data-description="Paragraph"><a href="#trouble-command-palette-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Assemblage: If you get stuck: pretext new doesn’t appear in the palette"><a href="#trouble-command-palette" title="Copy heading and permalink for Assemblage: If you get stuck: pretext new doesn’t appear in the palette" aria-label="Copy heading and permalink for Assemblage: If you get stuck: pretext new doesn’t appear in the palette">🔗</a></div>
 </article><div class="autopermalink" data-description="Section: Part 4. Initialize Your PreTeXt Project"><a href="#codespace-new-project" title="Copy heading and permalink for Section: Part 4. Initialize Your PreTeXt Project" aria-label="Copy heading and permalink for Section: Part 4. Initialize Your PreTeXt Project">🔗</a></div>

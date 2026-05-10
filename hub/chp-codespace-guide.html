@@ -101,15 +101,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.13.5';
+eBookConfig.runestone_version = '8.0.0';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.52176322e2c1dde5.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.bbf2283c5c1d4f99.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
+<script src="_static/prefix-runtime.ce7e0a2163cb330f.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.f4a2ffb04bb978bb.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
 <script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-numbers/prism-line-numbers.min.js" integrity="sha512-dubtf8xMHSQlExGRQ5R7toxHLgSDZ0K7AunqPWHXmJQ8XyVIG19S1T95gBxlAeGOK02P4Da2RTnQz0Za0H0ebQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-highlight/prism-line-highlight.min.js" integrity="sha512-93uCmm0q+qO5Lb1huDqr7tywS8A2TFA+1/WHvyiWaK6/pvsFl6USnILagntBx8JnVbQH5s3n0vQZY6xNthNfKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
@@ -263,7 +263,35 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="chp-codespace-guide-2-1">You already know how to author in PreTeXt.Plus. It is a friendly, frictionless way to draft lessons, and for many instructors it is all they ever need. This guide is for the moment when you want more: multi-file projects, your own public URL, version history, and the same professional toolchain used by authors of full-length open textbooks. That next step is <dfn class="terminology">GitHub Codespaces</dfn>, a browser-based development environment that runs an identical setup to what you’d eventually install locally, without actually installing anything.<div class="autopermalink" data-description="Paragraph"><a href="#chp-codespace-guide-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="chp-codespace-guide-2-2">You’ll work in baby steps. At each stop there’s a little check that tells you whether things are working before you move on, and a troubleshooting aside for the thing that most commonly goes sideways. By the end you’ll have an editable project, a live preview, a saved version on GitHub, and a public web page you can share.<div class="autopermalink" data-description="Paragraph"><a href="#chp-codespace-guide-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section>
+</div>
+<section class="paragraphs" id="codespace-time-warning"><h2 class="heading"><span class="title">One thing to know up front.</span></h2>
+<div class="para" id="codespace-time-warning-2">The first time you launch a Codespace, it can take 5 to 10 minutes to set itself up. Every subsequent launch is much faster. Plan for that first session to include a quiet stretch where the screen looks like it isn’t doing much. It is doing plenty.<div class="autopermalink" data-description="Paragraph"><a href="#codespace-time-warning-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: One thing to know up front"><a href="#codespace-time-warning" title="Copy heading and permalink for Paragraphs: One thing to know up front" aria-label="Copy heading and permalink for Paragraphs: One thing to know up front">🔗</a></div>
+</section>
+<section class="paragraphs" id="codespace-prerequisites"><h2 class="heading"><span class="title">What you need.</span></h2>
+<div class="para logical" id="codespace-prerequisites-2">
+<ul class="disc" id="codespace-prerequisites-2-1">
+<li id="codespace-prerequisites-2-1-1">
+<div class="para" id="codespace-prerequisites-2-1-1-1">A laptop or desktop with a modern browser (Chrome, Firefox, Edge, or Safari are all fine).<div class="autopermalink" data-description="Paragraph"><a href="#codespace-prerequisites-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#codespace-prerequisites-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="codespace-prerequisites-2-1-2">
+<div class="para" id="codespace-prerequisites-2-1-2-1">An email address you can check right now, for account confirmation.<div class="autopermalink" data-description="Paragraph"><a href="#codespace-prerequisites-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#codespace-prerequisites-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="codespace-prerequisites-2-1-3">
+<div class="para" id="codespace-prerequisites-2-1-3-1">About 45 minutes of uninterrupted time for your first run.<div class="autopermalink" data-description="Paragraph"><a href="#codespace-prerequisites-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#codespace-prerequisites-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#codespace-prerequisites-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: What you need"><a href="#codespace-prerequisites" title="Copy heading and permalink for Paragraphs: What you need" aria-label="Copy heading and permalink for Paragraphs: What you need">🔗</a></div>
+</section></section>
 <article class="objectives goal-like" id="chp-codespace-guide-3"><h2 class="heading"><span class="type">Objectives</span></h2>
 <ul class="disc" id="chp-codespace-guide-3-1">
 <li id="chp-codespace-guide-3-1-1">

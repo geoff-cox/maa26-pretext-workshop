@@ -101,15 +101,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.13.5';
+eBookConfig.runestone_version = '8.0.0';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.52176322e2c1dde5.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.bbf2283c5c1d4f99.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
+<script src="_static/prefix-runtime.ce7e0a2163cb330f.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.f4a2ffb04bb978bb.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
 <script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-numbers/prism-line-numbers.min.js" integrity="sha512-dubtf8xMHSQlExGRQ5R7toxHLgSDZ0K7AunqPWHXmJQ8XyVIG19S1T95gBxlAeGOK02P4Da2RTnQz0Za0H0ebQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-highlight/prism-line-highlight.min.js" integrity="sha512-93uCmm0q+qO5Lb1huDqr7tywS8A2TFA+1/WHvyiWaK6/pvsFl6USnILagntBx8JnVbQH5s3n0vQZY6xNthNfKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
@@ -265,12 +265,17 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para logical" id="codespace-starter-3">
 <ol class="decimal" id="codespace-starter-3-1">
 <li id="codespace-starter-3-1-1">
-<div class="para" id="codespace-starter-3-1-1-1">In the file explorer, open <code class="code-inline tex2jax_ignore">source/</code> and double-click <code class="code-inline tex2jax_ignore">main.ptx</code>. You should see a PreTeXt document with a few <code class="code-inline tex2jax_ignore">&lt;chapter&gt;</code> and <code class="code-inline tex2jax_ignore">&lt;section&gt;</code> tags.<div class="autopermalink" data-description="Paragraph"><a href="#codespace-starter-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="codespace-starter-3-1-1-1">In the file explorer, open <code class="code-inline tex2jax_ignore">source/</code> and double-click <code class="code-inline tex2jax_ignore">main.ptx</code>. You’ll see a PreTeXt document built around a few <code class="code-inline tex2jax_ignore">&lt;chapter&gt;</code> tags. Each chapter pulls in its sections through an <code class="code-inline tex2jax_ignore">&lt;xi:include&gt;</code> line that points at another file in the <code class="code-inline tex2jax_ignore">source/</code> folder, with a name like <code class="code-inline tex2jax_ignore">section-name.ptx</code> or similar.<div class="autopermalink" data-description="Paragraph"><a href="#codespace-starter-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item 1"><a href="#codespace-starter-3-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
 </li>
 <li id="codespace-starter-3-1-2">
-<div class="para" id="codespace-starter-3-1-2-1">Find the first <code class="code-inline tex2jax_ignore">&lt;section&gt;</code> inside the first <code class="code-inline tex2jax_ignore">&lt;chapter&gt;</code>. Select everything from the opening <code class="code-inline tex2jax_ignore">&lt;section&gt;</code> tag through its closing <code class="code-inline tex2jax_ignore">&lt;/section&gt;</code>, and replace it with the block below.<div class="autopermalink" data-description="Paragraph"><a href="#codespace-starter-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="codespace-starter-3-1-2-1">Find the first <code class="code-inline tex2jax_ignore">&lt;xi:include&gt;</code> inside the first <code class="code-inline tex2jax_ignore">&lt;chapter&gt;</code>, note the filename it references, and open <em class="emphasis">that</em> file from the <code class="code-inline tex2jax_ignore">source/</code> folder. You should now be looking at a file that contains a single <code class="code-inline tex2jax_ignore">&lt;section&gt;</code>.<div class="autopermalink" data-description="Paragraph"><a href="#codespace-starter-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#codespace-starter-3-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="codespace-starter-3-1-3">
+<div class="para" id="codespace-starter-3-1-3-1">Select everything from the opening <code class="code-inline tex2jax_ignore">&lt;section&gt;</code> tag through its closing <code class="code-inline tex2jax_ignore">&lt;/section&gt;</code>, and replace it with the block below.<div class="autopermalink" data-description="Paragraph"><a href="#codespace-starter-3-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="code-box"><pre class="program clipboardable"><code class="language-xml">&lt;section xml:id="sec-right-triangles"&gt;
   &lt;title&gt;Right Triangles&lt;/title&gt;
@@ -311,16 +316,21 @@ eBookConfig.enable_chatcodes =  false;
   see &lt;xref ref="def-right-triangle"/&gt;.&lt;/p&gt;
 &lt;/section&gt;
 </code></pre></div>
-<div class="autopermalink" data-description="Item 2"><a href="#codespace-starter-3-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
-</li>
-<li id="codespace-starter-3-1-3">
-<div class="para" id="codespace-starter-3-1-3-1">Save the file: <kbd class="kbdkey">Ctrl</kbd>+<kbd class="kbdkey">S</kbd> on Windows/Linux, <kbd class="kbdkey">Cmd</kbd>+<kbd class="kbdkey">S</kbd> on Mac.<div class="autopermalink" data-description="Paragraph"><a href="#codespace-starter-3-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
 <div class="autopermalink" data-description="Item 3"><a href="#codespace-starter-3-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="codespace-starter-3-1-4">
+<div class="para" id="codespace-starter-3-1-4-1">Save the file: <kbd class="kbdkey">Ctrl</kbd>+<kbd class="kbdkey">S</kbd> on Windows/Linux, <kbd class="kbdkey">Cmd</kbd>+<kbd class="kbdkey">S</kbd> on Mac.<div class="autopermalink" data-description="Paragraph"><a href="#codespace-starter-3-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4"><a href="#codespace-starter-3-1-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
 </li>
 </ol>
 <div class="autopermalink" data-description="Paragraph"><a href="#codespace-starter-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<article class="assemblage assemblage-like" id="part-5-template-note"><h3 class="heading"><span class="title">If your template looks a little different.</span></h3>
+<div class="para" id="part-5-template-note-2">The starter project gets refreshed from time to time, so the exact filenames and the placeholder content inside the first section may not match what’s described here. The shape is what matters: <code class="code-inline tex2jax_ignore">main.ptx</code> includes chapter or section files from <code class="code-inline tex2jax_ignore">source/</code>, and one of those files contains a <code class="code-inline tex2jax_ignore">&lt;section&gt;</code> you can replace. As long as you find a <code class="code-inline tex2jax_ignore">&lt;section&gt;...&lt;/section&gt;</code> block and swap its contents for the one above, you’re in good shape.<div class="autopermalink" data-description="Paragraph"><a href="#part-5-template-note-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Assemblage: If your template looks a little different"><a href="#part-5-template-note" title="Copy heading and permalink for Assemblage: If your template looks a little different" aria-label="Copy heading and permalink for Assemblage: If your template looks a little different">🔗</a></div>
+</article>
 <article class="assemblage assemblage-like" id="make-it-yours"><h3 class="heading"><span class="title">Make it yours.</span></h3>
 <div class="para" id="make-it-yours-2">If you have a few extra minutes, change the topic to something you actually teach. Swap the definition, rewrite the example, replace the exercise. The structure stays the same; only the content changes. This is the authoring rhythm you’ll use for everything you write in PreTeXt from here on out.<div class="autopermalink" data-description="Paragraph"><a href="#make-it-yours-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
